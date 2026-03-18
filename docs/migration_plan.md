@@ -20,25 +20,25 @@ Current outputs of Phase 2:
 - [current_assets_index.json](/Users/macbook15/Downloads/MacAi/DentalPro/registry/current_assets_index.json)
 - [review_queue.json](/Users/macbook15/Downloads/MacAi/DentalPro/registry/review_queue.json)
 - [superseded_assets.json](/Users/macbook15/Downloads/MacAi/DentalPro/registry/superseded_assets.json)
-- [phase2_migration_report.md](/Users/macbook15/Downloads/MacAi/DentalPro/reports/phase2_migration_report.md)
+- [migration_phase2_report_2026-03-18.md](/Users/macbook15/Downloads/MacAi/DentalPro/reports/migration_phase2_report_2026-03-18.md)
 
 Current outputs of Phase 3:
 
 - [patient_layer_overview.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/patient_layer_overview.md)
 - [patient_assets_index.json](/Users/macbook15/Downloads/MacAi/DentalPro/registry/patient_assets_index.json)
-- [phase3_patient_migration_report.md](/Users/macbook15/Downloads/MacAi/DentalPro/reports/phase3_patient_migration_report.md)
+- [migration_phase3_patient_report_2026-03-18.md](/Users/macbook15/Downloads/MacAi/DentalPro/reports/migration_phase3_patient_report_2026-03-18.md)
 
 Current outputs of Phase 4:
 
 - [patient_dossier_tabs_overview.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/patient_dossier_tabs_overview.md)
 - [patient_dossier_tabs_index.json](/Users/macbook15/Downloads/MacAi/DentalPro/registry/patient_dossier_tabs_index.json)
-- [phase4_dossier_tabs_migration_report.md](/Users/macbook15/Downloads/MacAi/DentalPro/reports/phase4_dossier_tabs_migration_report.md)
+- [migration_phase4_dossier_tabs_report_2026-03-18.md](/Users/macbook15/Downloads/MacAi/DentalPro/reports/migration_phase4_dossier_tabs_report_2026-03-18.md)
 
 Current outputs of Phase 5:
 
 - [patient_dossier_remaining_tabs_overview.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/patient_dossier_remaining_tabs_overview.md)
 - [patient_remaining_tabs_index.json](/Users/macbook15/Downloads/MacAi/DentalPro/registry/patient_remaining_tabs_index.json)
-- [phase5_remaining_tabs_closure_report.md](/Users/macbook15/Downloads/MacAi/DentalPro/reports/phase5_remaining_tabs_closure_report.md)
+- [migration_phase5_remaining_tabs_report_2026-03-18.md](/Users/macbook15/Downloads/MacAi/DentalPro/reports/migration_phase5_remaining_tabs_report_2026-03-18.md)
 
 ## Что переносить в первую очередь
 

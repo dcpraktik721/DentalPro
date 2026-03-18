@@ -272,8 +272,8 @@
   {
     "asset_id": "manager_report_2026_03_06_md",
     "title": "Manager report 2026-03-06 markdown",
-    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/manager-report-2026-03-06.md",
-    "repo_path": "reports/manager-report-2026-03-06.md",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/manager_report_2026-03-06.md",
+    "repo_path": "reports/manager_report_2026-03-06.md",
     "asset_type": "artifact_md",
     "patient_subdomain": "mixed",
     "proof_status": "artifact_proven",
@@ -467,8 +467,8 @@
   {
     "asset_id": "artifact_scope_mobile_client_json",
     "title": "Scope mobile client verified responses JSON",
-    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/scope-runner/mobile_client-2026-01-15.json",
-    "repo_path": "patients/mobile_client-2026-01-15.json",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/scope-runner/patient_mobile_client-2026-01-15.json",
+    "repo_path": "patients/patient_mobile_client-2026-01-15.json",
     "asset_type": "artifact_json",
     "patient_subdomain": "token_mechanics",
     "proof_status": "artifact_proven",
@@ -497,8 +497,8 @@
   {
     "asset_id": "artifact_scope_insurance_json",
     "title": "Scope insurance verified responses JSON",
-    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/scope-runner/insurance-2026-01-15.json",
-    "repo_path": "patients/insurance-2026-01-15.json",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/scope-runner/patient_insurance-2026-01-15.json",
+    "repo_path": "patients/patient_insurance-2026-01-15.json",
     "asset_type": "artifact_json",
     "patient_subdomain": "files_documents",
     "proof_status": "artifact_proven",
@@ -752,8 +752,8 @@
   {
     "asset_id": "artifact_ultimate_patient_dossier_live_15900",
     "title": "Ultimate patient dossier live 15900",
-    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/ultimate_patient_dossier_live_15900.json",
-    "repo_path": "patients/ultimate_patient_dossier_live_15900.json",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/patient_dossier_live_15900_2026-03-14.json",
+    "repo_path": "patients/patient_dossier_live_15900_2026-03-14.json",
     "asset_type": "artifact_json",
     "patient_subdomain": "dossier_bundle",
     "proof_status": "artifact_proven",

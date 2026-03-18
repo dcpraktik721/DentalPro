@@ -53,7 +53,7 @@
 - `DMS / insurance`
   - через verified library и supporting patient-linked JSON:
     - [scope-insurance-verified-library-2026-01-15.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/scope-insurance-verified-library-2026-01-15.md)
-    - [insurance-2026-01-15.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/insurance-2026-01-15.json)
+    - [patient_insurance-2026-01-15.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/patient_insurance-2026-01-15.json)
 - `medcards`
   - через empty-cards registry family:
     - [dentalpro_empty_cards_report_2026_03_16.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/dentalpro_empty_cards_report_2026_03_16.md)

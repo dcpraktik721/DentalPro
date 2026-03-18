@@ -13,7 +13,7 @@
 | Asset | Source Path | New Repo Path | Dossier Subdomain | Why migrated |
 |---|---|---|---|---|
 | Task Graph Blueprint Ultimate Patient Dossier | `/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md` | `/Users/macbook15/Downloads/MacAi/DentalPro/docs/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md` | `mixed` | Current curated blueprint for all remaining tabs |
-| Ultimate patient dossier live 15900 | `/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/ultimate_patient_dossier_live_15900.json` | `/Users/macbook15/Downloads/MacAi/DentalPro/patients/ultimate_patient_dossier_live_15900.json` | `mixed` | Current sample output covering comments/files/documents/family/history |
+| Ultimate patient dossier live 15900 | `/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/patient_dossier_live_15900_2026-03-14.json` | `/Users/macbook15/Downloads/MacAi/DentalPro/patients/patient_dossier_live_15900_2026-03-14.json` | `mixed` | Current sample output covering comments/files/documents/family/history |
 | Base profile and tabs network pack | `/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part3/network_trace_pack/base_profile_and_tabs.json` | `/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/base_profile_and_tabs.json` | `mixed` | Current route and ready-state evidence for comments/family/history |
 | Files and documents network pack | `/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part3/network_trace_pack/files_and_documents.json` | `/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/files_and_documents.json` | `mixed` | Current route/modal/download contract for files/documents |
 | Documents state machine | `/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part3/state_machines/documents_state_machine.md` | `/Users/macbook15/Downloads/MacAi/DentalPro/docs/documents_state_machine.md` | `documents` | Current workflow summary for read-safe document operations |
@@ -111,7 +111,7 @@ Counts:
 1. [patient_dossier_remaining_tabs_overview.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/patient_dossier_remaining_tabs_overview.md)
 2. [patient_remaining_tabs_index.json](/Users/macbook15/Downloads/MacAi/DentalPro/registry/patient_remaining_tabs_index.json)
 3. [Task_Graph_Blueprint_Ultimate_Patient_Dossier.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md)
-4. [ultimate_patient_dossier_live_15900.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/ultimate_patient_dossier_live_15900.json)
+4. [patient_dossier_live_15900_2026-03-14.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/patient_dossier_live_15900_2026-03-14.json)
 5. [base_profile_and_tabs.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/base_profile_and_tabs.json)
 6. [files_and_documents.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/files_and_documents.json)
 7. [documents_state_machine.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/documents_state_machine.md)

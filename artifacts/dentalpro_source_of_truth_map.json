@@ -2,41 +2,65 @@
   {
     "area": "project_state",
     "asset": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/dentalpro-master-worklog.md",
-    "role": "source_of_truth"
+    "role": "source_of_truth",
+    "asset_in_repo": false,
+    "migration_status": "external_pending",
+    "original_legacy_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/dentalpro-master-worklog.md"
   },
   {
     "area": "report_verification",
     "asset": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/report-api-verification-dossier-2026-03-09.md",
-    "role": "source_of_truth"
+    "role": "source_of_truth",
+    "asset_in_repo": false,
+    "migration_status": "external_pending",
+    "original_legacy_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/report-api-verification-dossier-2026-03-09.md"
   },
   {
     "area": "schedule_runtime",
-    "asset": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_operational_dump_master.md",
-    "role": "source_of_truth"
+    "asset": "schedule/schedule_2026-03-10_operational_dump_master.md",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_operational_dump_master.md"
   },
   {
     "area": "ticket_semantics",
-    "asset": "/Users/macbook15/Downloads/MacAi/artifacts/ticket_dictionary_v2.json",
-    "role": "source_of_truth"
+    "asset": "tickets/ticket_dictionary_v2.json",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/ticket_dictionary_v2.json"
   },
   {
     "area": "ticket_registry",
-    "asset": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v2.json",
-    "role": "source_of_truth"
+    "asset": "tickets/schedule_2026-03-10_ticket_registry_v2.json",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v2.json"
   },
   {
     "area": "patient_ready_schedule",
-    "asset": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v5.json",
-    "role": "source_of_truth"
+    "asset": "schedule/schedule_2026-03-10_patient_full_report_v5.json",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v5.json"
   },
   {
     "area": "cashbox_document_model",
-    "asset": "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_18910_document_model_2026-03-18.json",
-    "role": "source_of_truth"
+    "asset": "finance/patient_cashbox_18910_document_model_2026-03-18.json",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_18910_document_model_2026-03-18.json"
   },
   {
     "area": "reporting_architecture",
-    "asset": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_reporting_architecture_map.md",
-    "role": "secondary_enrichment"
+    "asset": "EXTERNAL — not yet migrated",
+    "role": "secondary_enrichment",
+    "asset_in_repo": false,
+    "migration_status": "external_pending",
+    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_reporting_architecture_map.md"
   }
 ]

@@ -1,0 +1,67 @@
+{
+  "triage_date": "2026-03-18",
+  "total_items": 30,
+  "decisions": {
+    "migrate": 11,
+    "legacy": 10,
+    "deferred": 5,
+    "superseded": 4
+  },
+  "already_in_repo": [
+    "artifacts/xray-2026-01-15.json",
+    "patients/patient_cashbox_18910_forensic_2026-03-18.md",
+    "docs/scope-xray-verification-2026-01-15.md"
+  ],
+  "migrate_pending_external": [
+    "cashbox_payments_live_probe",
+    "cashbox_detail_86644",
+    "script_inspect_cashbox_detail",
+    "script_probe_cashbox_payments",
+    "artifact_dentalpro_browser_access_2026_03_16",
+    "doc_api_endpoints_data_table",
+    "fixture_empty_family_json",
+    "fixture_document_submit_unknown"
+  ],
+  "deferred_items": [
+    {
+      "id": "script_run_targeted_report_pass_ts",
+      "blocker": "external TypeScript/playwright env"
+    },
+    {
+      "id": "doc_xray_api_mapping",
+      "blocker": "mixed domain — needs editorial"
+    },
+    {
+      "id": "doc_xray_orthopantomography_api_mapping",
+      "blocker": "mixed domain — needs editorial"
+    },
+    {
+      "id": "script_clinic_manager_agent",
+      "blocker": "mixed scope"
+    },
+    {
+      "id": "artifact_dentalpro_js_auth_flow_analysis_2026_03_16",
+      "blocker": "outside daily usage scope"
+    }
+  ],
+  "superseded_items": [
+    "script_build_schedule_patient_full_report_v4",
+    "script_run_schedule_patient_identity_probe_v4",
+    "schedule_full_schedule_report_v3",
+    "schedule_custom_schema_v3"
+  ],
+  "legacy_items_no_migration": [
+    "ticket_example_visit_130329",
+    "artifact_dentalpro_empty_cards_login_page_html",
+    "artifact_dentalpro_empty_cards_runtime_page_html",
+    "artifact_trackb_extension_evidence_2026_03_14",
+    "fixture_files_html",
+    "fixture_documents_html",
+    "fixture_family_html",
+    "fixture_comments_html",
+    "fixture_schedule_history_html",
+    "fixture_medical_history_html"
+  ],
+  "phase5a_outcome": "review_queue has zero pending items — all 30 have explicit decisions",
+  "next_action": "Execute external migrations when source files are available on local Mac"
+}

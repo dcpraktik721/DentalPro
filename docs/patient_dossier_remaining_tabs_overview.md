@@ -39,7 +39,7 @@ Primary current assets:
 
 - [files_and_documents.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/files_and_documents.json)
 - [Task_Graph_Blueprint_Ultimate_Patient_Dossier.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md)
-- [ultimate_patient_dossier_live_15900.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/ultimate_patient_dossier_live_15900.json)
+- [patient_dossier_live_15900_2026-03-14.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/patient_dossier_live_15900_2026-03-14.json)
 
 ### Limits
 
@@ -62,7 +62,7 @@ Primary current assets:
 
 - [files_and_documents.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/files_and_documents.json)
 - [documents_state_machine.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/documents_state_machine.md)
-- [ultimate_patient_dossier_live_15900.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/ultimate_patient_dossier_live_15900.json)
+- [patient_dossier_live_15900_2026-03-14.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/patient_dossier_live_15900_2026-03-14.json)
 
 ### Limits
 
@@ -83,7 +83,7 @@ Primary current assets:
 
 - [base_profile_and_tabs.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/base_profile_and_tabs.json)
 - [Task_Graph_Blueprint_Ultimate_Patient_Dossier.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md)
-- [ultimate_patient_dossier_live_15900.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/ultimate_patient_dossier_live_15900.json)
+- [patient_dossier_live_15900_2026-03-14.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/patient_dossier_live_15900_2026-03-14.json)
 
 ### Limits
 
@@ -104,7 +104,7 @@ Primary current assets:
 
 - [base_profile_and_tabs.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/base_profile_and_tabs.json)
 - [Task_Graph_Blueprint_Ultimate_Patient_Dossier.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md)
-- [ultimate_patient_dossier_live_15900.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/ultimate_patient_dossier_live_15900.json)
+- [patient_dossier_live_15900_2026-03-14.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/patient_dossier_live_15900_2026-03-14.json)
 
 ### Limits
 
@@ -125,7 +125,7 @@ Primary current assets:
 
 - [base_profile_and_tabs.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/base_profile_and_tabs.json)
 - [Task_Graph_Blueprint_Ultimate_Patient_Dossier.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md)
-- [ultimate_patient_dossier_live_15900.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/ultimate_patient_dossier_live_15900.json)
+- [patient_dossier_live_15900_2026-03-14.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/patient_dossier_live_15900_2026-03-14.json)
 
 ### Limits
 
@@ -182,7 +182,7 @@ Primary current assets:
 
 ### `ready_with_limits`
 
-- [ultimate_patient_dossier_live_15900.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/ultimate_patient_dossier_live_15900.json)
+- [patient_dossier_live_15900_2026-03-14.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/patient_dossier_live_15900_2026-03-14.json)
 - [base_profile_and_tabs.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/base_profile_and_tabs.json)
 - [files_and_documents.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/files_and_documents.json)
 - [documents_state_machine.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/documents_state_machine.md)
@@ -213,7 +213,7 @@ Primary current assets:
 
 - [patient_remaining_tabs_index.json](/Users/macbook15/Downloads/MacAi/DentalPro/registry/patient_remaining_tabs_index.json)
 - [Task_Graph_Blueprint_Ultimate_Patient_Dossier.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md)
-- [ultimate_patient_dossier_live_15900.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/ultimate_patient_dossier_live_15900.json)
+- [patient_dossier_live_15900_2026-03-14.json](/Users/macbook15/Downloads/MacAi/DentalPro/patients/patient_dossier_live_15900_2026-03-14.json)
 - [base_profile_and_tabs.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/base_profile_and_tabs.json)
 - [files_and_documents.json](/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/files_and_documents.json)
 - [documents_state_machine.md](/Users/macbook15/Downloads/MacAi/DentalPro/docs/documents_state_machine.md)

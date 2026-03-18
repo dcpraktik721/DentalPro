@@ -7,7 +7,7 @@
 - не включать write-методы, empty-result методы и отрицательные ответы в field-level библиотеку.
 
 Источник доказательства:
-- `projects/dentalpro-integration/artifacts/api/scope-runner/insurance-2026-01-15.json`
+- `projects/dentalpro-integration/artifacts/api/scope-runner/patient_insurance-2026-01-15.json`
 
 ## Подтвержденные методы
 

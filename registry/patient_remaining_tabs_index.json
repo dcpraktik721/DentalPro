@@ -48,8 +48,8 @@
   {
     "asset_id": "artifact_ultimate_patient_dossier_live_15900",
     "title": "Ultimate patient dossier live 15900",
-    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/ultimate_patient_dossier_live_15900.json",
-    "repo_path": "patients/ultimate_patient_dossier_live_15900.json",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/patient_dossier_live_15900_2026-03-14.json",
+    "repo_path": "patients/patient_dossier_live_15900_2026-03-14.json",
     "asset_type": "artifact_json",
     "dossier_subdomain": "mixed",
     "related_tabs": [

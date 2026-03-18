@@ -670,7 +670,7 @@
     },
     {
       "artifact_id": "manager_report_2026_03_06_md",
-      "path": "reports/manager-report-2026-03-06.md",
+      "path": "reports/manager_report_2026-03-06.md",
       "artifact_type": "artifact_md",
       "domain": "reporting, schedule, patients",
       "asset_role": "secondary_enrichment",
@@ -888,7 +888,7 @@
     },
     {
       "artifact_id": "artifact_scope_mobile_client_json",
-      "path": "patients/mobile_client-2026-01-15.json",
+      "path": "patients/patient_mobile_client-2026-01-15.json",
       "artifact_type": "artifact_json",
       "domain": "patients",
       "asset_role": "forensic_only",
@@ -922,7 +922,7 @@
     },
     {
       "artifact_id": "artifact_scope_insurance_json",
-      "path": "patients/insurance-2026-01-15.json",
+      "path": "patients/patient_insurance-2026-01-15.json",
       "artifact_type": "artifact_json",
       "domain": "patients, finance",
       "asset_role": "secondary_enrichment",
@@ -1124,7 +1124,7 @@
     },
     {
       "artifact_id": "artifact_ultimate_patient_dossier_live_15900",
-      "path": "patients/ultimate_patient_dossier_live_15900.json",
+      "path": "patients/patient_dossier_live_15900_2026-03-14.json",
       "artifact_type": "artifact_json",
       "domain": "patients",
       "asset_role": "source_of_truth",

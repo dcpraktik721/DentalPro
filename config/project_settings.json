@@ -1,6 +1,6 @@
 {
   "project_name": "DentalPro",
-  "repo_root": "/Users/macbook15/Downloads/MacAi/DentalPro",
+  "repo_root": ".",
   "artifact_naming_policy": {
     "date_format": "YYYY-MM-DD",
     "use_domain_prefix": true,
@@ -26,5 +26,6 @@
     "derived",
     "superseded"
   ],
-  "notes": "Bootstrap config. Update after first migration pass."
+  "notes": "Bootstrap config. Update after first migration pass.",
+  "_updated": "2026-03-18"
 }

@@ -7,7 +7,7 @@
 - отделить положительные read-ответы от token-blocked и no-safe-signal методов.
 
 Источники доказательств:
-- `projects/dentalpro-integration/artifacts/api/scope-runner/mobile_client-2026-01-15.json`
+- `projects/dentalpro-integration/artifacts/api/scope-runner/patient_mobile_client-2026-01-15.json`
 - `projects/dentalpro-integration/docs/scope-mobile-user-verified-library-2026-01-15.md`
 
 ## Подтвержденные method families

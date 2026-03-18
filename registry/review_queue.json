@@ -13,7 +13,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Script name and generated assets lag behind current v5 output lineage",
-    "notes": "Migrate only after current v5 builder path is clarified"
+    "notes": "Migrate only after current v5 builder path is clarified",
+    "triage_decision": "superseded",
+    "triage_cluster": "scripts",
+    "triage_rationale": "v4 script superseded by v5 builder which is already current in scripts_registry. No migration needed.",
+    "triage_disposition": "mark_superseded_in_registry",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "script_run_schedule_patient_identity_probe_v4",
@@ -29,7 +37,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Produces pre-v5 lineage and may not reflect final current workflow",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "superseded",
+    "triage_cluster": "scripts",
+    "triage_rationale": "v4 probe superseded by v5 probe (already current). Single lineage — keep only current.",
+    "triage_disposition": "mark_superseded_in_registry",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "script_run_targeted_report_pass_ts",
@@ -44,7 +60,15 @@
     "lifecycle": "current",
     "migration_decision": "review_before_migrate",
     "reason": "Useful current runner but depends on external project runtime and ts/playwright environment",
-    "notes": "Needs packaging review before migration"
+    "notes": "Needs packaging review before migration",
+    "triage_decision": "deferred",
+    "triage_cluster": "scripts",
+    "triage_rationale": "Useful current runner but depends on external TypeScript/playwright project. Migrate only after packaging review.",
+    "triage_disposition": "deferred_phase5b_packaging_review",
+    "triage_blocker": "external_ts_playwright_dependency",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "schedule_full_schedule_report_v3",
@@ -59,7 +83,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Still useful forensic baseline but superseded for patient-ready output by v5",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "superseded",
+    "triage_cluster": "partial_artifacts",
+    "triage_rationale": "Forensic baseline XLSX v3 superseded by v5 patient-ready workbook. Historical reference only.",
+    "triage_disposition": "note_in_superseded_assets",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "schedule_custom_schema_v3",
@@ -74,7 +106,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Schema still useful as baseline but not final patient-ready package",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "superseded",
+    "triage_cluster": "partial_artifacts",
+    "triage_rationale": "Schema v3 superseded by patient_full_report_v5 normalized JSON. No standalone value.",
+    "triage_disposition": "note_in_superseded_assets",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "ticket_example_visit_130329",
@@ -90,7 +130,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Strong single-case example, but not a general current asset for daily workspace root",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "legacy",
+    "triage_cluster": "partial_artifacts",
+    "triage_rationale": "Single-visit example artifact. Value absorbed by ticket_registry_v2. No migration.",
+    "triage_disposition": "not_migrated_value_absorbed",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "cashbox_payments_live_probe",
@@ -105,7 +153,15 @@
     "lifecycle": "current",
     "migration_decision": "review_before_migrate",
     "reason": "Potentially important current asset, but placement and relation to newer patient cashbox models should be reviewed first",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "migrate",
+    "triage_cluster": "cashbox",
+    "triage_rationale": "Current live probe artifact — directly relevant to cashbox write-path closure. Migrate to finance/.",
+    "triage_disposition": "migrate_to_finance",
+    "triage_blocker": "",
+    "triage_target_path": "finance/patient_cashbox_payments_live_probe_2026.json",
+    "triage_priority": "high",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "cashbox_detail_86644",
@@ -120,7 +176,15 @@
     "lifecycle": "current",
     "migration_decision": "review_before_migrate",
     "reason": "Useful finance detail reference, but narrower than patient cashbox document-model assets",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "migrate",
+    "triage_cluster": "cashbox",
+    "triage_rationale": "Reference case for cashbox detail model. Complements existing 18910/19095 reference cases.",
+    "triage_disposition": "migrate_to_finance",
+    "triage_blocker": "",
+    "triage_target_path": "finance/patient_cashbox_detail_86644_reference.json",
+    "triage_priority": "medium",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "patient_cashbox_18910_forensic_md",
@@ -136,7 +200,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Detailed forensic explanation, but secondary to the document model current pack",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "migrate",
+    "triage_cluster": "cashbox",
+    "triage_rationale": "Forensic explanation for reference case 18910 — valuable for context. Migrate to patients/.",
+    "triage_disposition": "migrate_to_patients",
+    "triage_blocker": "",
+    "triage_target_path": "patients/patient_cashbox_18910_forensic_2026-03-18.md",
+    "triage_priority": "low_already_in_patients",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "artifact_scope_xray_json",
@@ -153,7 +225,15 @@
     "migration_decision": "review_before_migrate",
     "source_of_truth_role": "review_only",
     "reason": "Useful patient xray boundary artifact, but only proves upload/write-only scope and needs packaging choice before migration",
-    "notes": "Potentially migrate later into docs/artifacts as xray limit reference"
+    "notes": "Potentially migrate later into docs/artifacts as xray limit reference",
+    "triage_decision": "migrate",
+    "triage_cluster": "xray",
+    "triage_rationale": "Proves xray write/upload boundary. Migrate to artifacts/ as xray boundary reference.",
+    "triage_disposition": "migrate_to_artifacts",
+    "triage_blocker": "",
+    "triage_target_path": "artifacts/xray-2026-01-15.json",
+    "triage_priority": "medium",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "doc_scope_xray_verification",
@@ -170,7 +250,15 @@
     "migration_decision": "review_before_migrate",
     "source_of_truth_role": "review_only",
     "reason": "Useful patient xray scope limit doc, but not yet clearly placed as current patient-layer source-of-truth asset",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "migrate",
+    "triage_cluster": "xray",
+    "triage_rationale": "Scope limit doc for xray. Migrate to docs/ — already partially there, confirm placement.",
+    "triage_disposition": "migrate_to_docs",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "verify_already_present",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "doc_xray_api_mapping",
@@ -187,7 +275,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Valuable but mixed xray/finance semantics; needs explicit placement decision before becoming curated dossier asset",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "deferred",
+    "triage_cluster": "xray",
+    "triage_rationale": "Mixed xray/finance semantics. Needs explicit placement decision before becoming curated asset.",
+    "triage_disposition": "deferred_xray_closure_phase",
+    "triage_blocker": "mixed_domain_needs_editorial",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "script_clinic_manager_agent",
@@ -206,7 +302,15 @@
     "migration_decision": "review_before_migrate",
     "source_of_truth_role": "review_only",
     "reason": "Operationally useful but broader than patient layer and needs packaging review before moving into curated repo",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "deferred",
+    "triage_cluster": "mixed_api",
+    "triage_rationale": "Operationally useful but broad mixed scope. Needs packaging review.",
+    "triage_disposition": "deferred_packaging_review",
+    "triage_blocker": "mixed_scope_patient_schedule_reporting",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "doc_api_endpoints_data_table",
@@ -224,7 +328,15 @@
     "migration_decision": "review_before_migrate",
     "source_of_truth_role": "review_only",
     "reason": "Contains useful patient endpoint rows but is a broad mixed API table, not a clean patient-layer curated doc",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "migrate",
+    "triage_cluster": "mixed_api",
+    "triage_rationale": "Contains patient endpoint rows useful for identity lookup. Migrate to docs/ as reference table.",
+    "triage_disposition": "migrate_to_docs",
+    "triage_blocker": "",
+    "triage_target_path": "docs/api-endpoints-data-table-2026-03-02.md",
+    "triage_priority": "medium",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "doc_xray_orthopantomography_api_mapping",
@@ -241,7 +353,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Strong single-modality mapping but still mixed and not yet packaged as current curated xray method",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "deferred",
+    "triage_cluster": "xray",
+    "triage_rationale": "Strong single-modality but not packaged as current curated xray method.",
+    "triage_disposition": "deferred_xray_closure_phase",
+    "triage_blocker": "mixed_domain_needs_editorial",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "script_inspect_cashbox_detail",
@@ -258,7 +378,15 @@
     "lifecycle": "current",
     "migration_decision": "review_before_migrate",
     "reason": "Potentially reusable dossier finance script, but depends on external integration runtime libraries",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "migrate",
+    "triage_cluster": "cashbox",
+    "triage_rationale": "Reusable dossier finance script. Migrate to scripts/ after path rewiring.",
+    "triage_disposition": "migrate_to_scripts_after_path_rewire",
+    "triage_blocker": "external_integration_runtime_libs",
+    "triage_target_path": "",
+    "triage_priority": "high",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "script_probe_cashbox_payments",
@@ -275,7 +403,15 @@
     "lifecycle": "current",
     "migration_decision": "review_before_migrate",
     "reason": "Useful cashbox tab probe but packaging is not standalone inside new repo yet",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "migrate",
+    "triage_cluster": "cashbox",
+    "triage_rationale": "Useful cashbox tab probe. Migrate to scripts/ after packaging.",
+    "triage_disposition": "migrate_to_scripts_after_path_rewire",
+    "triage_blocker": "packaging_not_standalone",
+    "triage_target_path": "",
+    "triage_priority": "high",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "artifact_dentalpro_empty_cards_login_page_html",
@@ -292,7 +428,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Useful forensic auth evidence, but too raw for current curated dossier package",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "legacy",
+    "triage_cluster": "runtime_html",
+    "triage_rationale": "Raw auth forensic evidence — too low-level for curated layer. Not migrated.",
+    "triage_disposition": "not_migrated_raw_forensic",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "artifact_dentalpro_empty_cards_runtime_page_html",
@@ -309,7 +453,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Raw runtime HTML is useful for deep forensic continuation, not daily curated workspace by default",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "legacy",
+    "triage_cluster": "runtime_html",
+    "triage_rationale": "Raw runtime HTML — not daily workspace asset. Value absorbed by normalized artifacts.",
+    "triage_disposition": "not_migrated_raw_forensic",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "artifact_dentalpro_browser_access_2026_03_16",
@@ -326,7 +478,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Supports auth/access proof chain, but not yet necessary as a front-line curated dossier asset",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "migrate",
+    "triage_cluster": "auth",
+    "triage_rationale": "Auth/access proof chain artifact. Migrate to artifacts/ to close auth proof boundary.",
+    "triage_disposition": "migrate_to_artifacts",
+    "triage_blocker": "",
+    "triage_target_path": "artifacts/dentalpro_browser_access_2026-03-16.json",
+    "triage_priority": "medium",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "artifact_dentalpro_js_auth_flow_analysis_2026_03_16",
@@ -343,7 +503,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Useful for deep auth investigation, but outside normal dossier-tab daily usage",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "deferred",
+    "triage_cluster": "auth",
+    "triage_rationale": "Deep auth investigation artifact. Useful but outside daily dossier-tab usage.",
+    "triage_disposition": "deferred_auth_deep_dive_phase",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "artifact_trackb_extension_evidence_2026_03_14",
@@ -360,7 +528,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Useful precursor evidence but largely subsumed by ultimate dossier bundle and network packs",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "legacy",
+    "triage_cluster": "patient_dossier",
+    "triage_rationale": "Precursor evidence largely absorbed by ultimate dossier bundle and network packs.",
+    "triage_disposition": "not_migrated_absorbed_by_current",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "fixture_files_html",
@@ -377,7 +553,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Raw fixture is useful for deep forensic continuation but too low-level for current curated layer",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "legacy",
+    "triage_cluster": "runtime_html",
+    "triage_rationale": "Raw fixture too low-level. Value absorbed by files_and_documents.json curated bundle.",
+    "triage_disposition": "not_migrated_raw_fixture",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "fixture_documents_html",
@@ -394,7 +578,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Raw fixture sample, not a curated daily-use asset",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "legacy",
+    "triage_cluster": "runtime_html",
+    "triage_rationale": "Raw HTML sample only. Curated normalized output preferred.",
+    "triage_disposition": "not_migrated_raw_fixture",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "fixture_family_html",
@@ -411,7 +603,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Empty-state raw fixture only",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "legacy",
+    "triage_cluster": "runtime_html",
+    "triage_rationale": "Empty-state raw fixture. No business value beyond empty-state confirmation.",
+    "triage_disposition": "not_migrated_raw_fixture",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "fixture_comments_html",
@@ -428,7 +628,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Raw HTML sample only; current repo should keep normalized bundle instead",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "legacy",
+    "triage_cluster": "runtime_html",
+    "triage_rationale": "Raw HTML sample. Curated bundle preferred.",
+    "triage_disposition": "not_migrated_raw_fixture",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "fixture_schedule_history_html",
@@ -445,7 +653,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Raw fixture sample only",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "legacy",
+    "triage_cluster": "runtime_html",
+    "triage_rationale": "Raw fixture sample only.",
+    "triage_disposition": "not_migrated_raw_fixture",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "fixture_medical_history_html",
@@ -462,7 +678,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Raw fixture sample only",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "legacy",
+    "triage_cluster": "runtime_html",
+    "triage_rationale": "Raw fixture sample only.",
+    "triage_disposition": "not_migrated_raw_fixture",
+    "triage_blocker": "",
+    "triage_target_path": "",
+    "triage_priority": "",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "fixture_empty_family_json",
@@ -478,7 +702,15 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Useful normalized fixture, but too narrow to be a current primary family asset",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "migrate",
+    "triage_cluster": "patient_dossier",
+    "triage_rationale": "Normalized fixture confirms family tab empty-state. Migrate to artifacts/ as boundary evidence.",
+    "triage_disposition": "migrate_to_artifacts",
+    "triage_blocker": "",
+    "triage_target_path": "artifacts/patient_family_empty_state_fixture.json",
+    "triage_priority": "low",
+    "triage_date": "2026-03-18"
   },
   {
     "asset_id": "fixture_document_submit_unknown",
@@ -494,6 +726,14 @@
     "lifecycle": "partial",
     "migration_decision": "review_before_migrate",
     "reason": "Failure fixture confirms create-doc submit gap, but belongs in review not current layer",
-    "notes": ""
+    "notes": "",
+    "triage_decision": "migrate",
+    "triage_cluster": "patient_dossier",
+    "triage_rationale": "Failure fixture confirms create-doc submit gap — critical evidence for write-path state machine.",
+    "triage_disposition": "migrate_to_artifacts",
+    "triage_blocker": "",
+    "triage_target_path": "artifacts/patient_document_submit_unknown_failure.json",
+    "triage_priority": "medium",
+    "triage_date": "2026-03-18"
   }
 ]

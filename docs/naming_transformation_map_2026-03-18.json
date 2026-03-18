@@ -1,0 +1,49 @@
+{
+  "transformation_map_version": "1.0.0",
+  "created": "2026-03-18",
+  "purpose": "Naming policy compliance cleanup — Phase 3 hardening",
+  "policy": "ISO date YYYY-MM-DD + domain prefix + underscore separators",
+  "transforms": [
+    {
+      "old": "patients/patient_insurance-2026-01-15.json",
+      "new": "patients/patient_patient_insurance-2026-01-15.json",
+      "rule": "add domain prefix patient_"
+    },
+    {
+      "old": "patients/patient_mobile_client-2026-01-15.json",
+      "new": "patients/patient_patient_mobile_client-2026-01-15.json",
+      "rule": "add domain prefix patient_"
+    },
+    {
+      "old": "patients/patient_dossier_live_15900_2026-03-14.json",
+      "new": "patients/patient_dossier_live_15900_2026-03-14.json",
+      "rule": "add domain prefix + date (date from Phase5 closure context)"
+    },
+    {
+      "old": "reports/manager_report_2026-03-06.md",
+      "new": "reports/manager_report_2026-03-06.md",
+      "rule": "normalize dashes to underscore (json variant already correct)"
+    },
+    {
+      "old": "reports/migration_phase2_report_2026-03-18.md",
+      "new": "reports/migration_phase2_report_2026-03-18.md",
+      "rule": "add date; domain prefix migration_"
+    },
+    {
+      "old": "reports/migration_phase3_patient_report_2026-03-18.md",
+      "new": "reports/migration_phase3_patient_report_2026-03-18.md",
+      "rule": "add date; domain prefix migration_"
+    },
+    {
+      "old": "reports/migration_phase4_dossier_tabs_report_2026-03-18.md",
+      "new": "reports/migration_phase4_dossier_tabs_report_2026-03-18.md",
+      "rule": "add date"
+    },
+    {
+      "old": "reports/migration_phase5_remaining_tabs_report_2026-03-18.md",
+      "new": "reports/migration_phase5_remaining_tabs_report_2026-03-18.md",
+      "rule": "add date"
+    }
+  ],
+  "update_references_script": "grep -r OLD_NAME . | grep -v .git — then sed replace"
+}

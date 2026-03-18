@@ -53,7 +53,7 @@ Phase 2 curated migration index for current verified DentalPRO assets moved into
 | Doctor patients Geyushova enriched by RPT24 JSON | `patients/doctor_patients_Geyushova_2026-02_enriched_rpt24.json` | patients, reporting | ready_with_limits | Current two-source operational patient roster + revenue enrichment example |
 | Doctor patients Geyushova enriched by RPT24 workbook | `excel/doctor_patients_Geyushova_2026-02_enriched_rpt24.xlsx` | patients, reporting | ready_with_limits | Workbook for doctor roster enriched by report data |
 | Manager report 2026-03-06 JSON | `reports/manager_report_2026-03-06.json` | reporting, schedule, patients | ready_with_limits | Current verified clinic manager report example |
-| Manager report 2026-03-06 markdown | `reports/manager-report-2026-03-06.md` | reporting, schedule, patients | ready_with_limits | Markdown disclosure for manager report example |
+| Manager report 2026-03-06 markdown | `reports/manager_report_2026-03-06.md` | reporting, schedule, patients | ready_with_limits | Markdown disclosure for manager report example |
 | Report universe 2026-03-16 JSON | `reporting/report_universe_2026_03_16.json` | reporting | ready_with_limits | Current report universe registry |
 | Reports scan JSON | `reporting/reports_scan.json` | reporting | ready_with_limits | Current reports module structural scan |
 | DentalPRO structured reports catalog JSON | `reporting/dentalpro-reports-structured-catalog-2026-03-09.json` | reporting | ready_with_limits | Current structured catalog of reports universe |

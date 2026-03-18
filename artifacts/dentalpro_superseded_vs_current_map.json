@@ -1,26 +1,42 @@
 [
   {
-    "asset": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v1.json",
-    "status": "deprecated_or_superseded",
-    "replaced_by": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v2.json",
+    "asset": "schedule_2026-03-10_ticket_registry_v1.json",
+    "asset_in_repo": false,
+    "asset_relative": "NOT_IN_REPO/schedule_2026-03-10_ticket_registry_v1.json",
+    "status": "superseded",
+    "replaced_by": "schedule_2026-03-10_ticket_registry_v2.json",
+    "replaced_by_relative": "tickets/schedule_2026-03-10_ticket_registry_v2.json",
+    "replaced_by_in_repo": true,
     "reason": "v2 carries proof-aware semantic closure"
   },
   {
-    "asset": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v4.json",
-    "status": "deprecated_or_superseded",
-    "replaced_by": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v5.json",
+    "asset": "schedule_2026-03-10_patient_full_report_v4.json",
+    "asset_in_repo": false,
+    "asset_relative": "NOT_IN_REPO/schedule_2026-03-10_patient_full_report_v4.json",
+    "status": "superseded",
+    "replaced_by": "schedule_2026-03-10_patient_full_report_v5.json",
+    "replaced_by_relative": "schedule/schedule_2026-03-10_patient_full_report_v5.json",
+    "replaced_by_in_repo": true,
     "reason": "v5 closes patient_id gaps"
   },
   {
-    "asset": "/Users/macbook15/Downloads/MacAi/artifacts/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18.json",
-    "status": "deprecated_or_superseded",
-    "replaced_by": "/Users/macbook15/Downloads/MacAi/artifacts/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18_v2.json",
+    "asset": "patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18.json",
+    "asset_in_repo": false,
+    "asset_relative": "NOT_IN_REPO/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18.json",
+    "status": "superseded",
+    "replaced_by": "patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18_v2.json",
+    "replaced_by_relative": "patients/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18_v2.json",
+    "replaced_by_in_repo": true,
     "reason": "v2 adds normalized doctor split and management view"
   },
   {
-    "asset": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_popup_linkage_v2.json",
-    "status": "deprecated_or_superseded",
-    "replaced_by": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_popup_linkage_v3.json",
+    "asset": "schedule_2026-03-10_popup_linkage_v2.json",
+    "asset_in_repo": false,
+    "asset_relative": "NOT_IN_REPO/schedule_2026-03-10_popup_linkage_v2.json",
+    "status": "superseded",
+    "replaced_by": "schedule_2026-03-10_popup_linkage_v3.json",
+    "replaced_by_relative": "schedule/schedule_2026-03-10_popup_linkage_v3.json",
+    "replaced_by_in_repo": true,
     "reason": "v3 expands subset families"
   }
 ]
