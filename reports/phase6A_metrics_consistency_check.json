@@ -2,81 +2,76 @@
   {
     "metric": "2026-02-15 total_rows",
     "source_files": [
-      "schedule_2026-02-15_validation_summary.json",
-      "cross_date_validation_matrix.json"
+      "schedule/schedule_2026-02-15_validation_summary.json",
+      "reports/cross_date_validation_matrix.json"
     ],
     "result": "pass",
-    "notes": "summary=6 matrix=6"
+    "notes": "6 vs 6"
   },
   {
     "metric": "2026-02-15 patient_id_resolved",
     "source_files": [
-      "schedule_2026-02-15_validation_summary.json",
-      "cross_date_validation_matrix.json"
+      "schedule/schedule_2026-02-15_validation_summary.json",
+      "schedule/schedule_2026-02-15_patient_identity_validation.json",
+      "reports/cross_date_validation_matrix.json"
     ],
     "result": "pass",
-    "notes": "summary=5 matrix=5"
+    "notes": "6 vs 6 vs 6"
   },
   {
-    "metric": "2026-02-16 total_rows",
+    "metric": "2026-02-15 cash_status",
     "source_files": [
-      "schedule_2026-02-16_validation_summary.json",
-      "cross_date_validation_matrix.json"
+      "schedule/schedule_2026-02-15_cash_enrichment_validation.json",
+      "reports/cross_date_validation_matrix.json"
     ],
     "result": "pass",
-    "notes": "summary=69 matrix=69"
+    "notes": "blocked / 0 matched"
   },
   {
-    "metric": "2026-02-16 patient_id_resolved_probed",
+    "metric": "2026-02-16 identity subset",
     "source_files": [
-      "schedule_2026-02-16_validation_summary.json",
-      "cross_date_validation_matrix.json"
+      "schedule/schedule_2026-02-16_validation_summary.json",
+      "schedule/schedule_2026-02-16_identity_repro_pass.json",
+      "reports/cross_date_validation_matrix.json"
     ],
     "result": "pass",
-    "notes": "summary=24 matrix=24 (subset-based)"
+    "notes": "24/40 reproducible"
   },
   {
-    "metric": "baseline total_rows",
+    "metric": "2026-02-16 cash_status",
     "source_files": [
-      "schedule_2026-03-10_patient_full_report_v5.json",
-      "cross_date_validation_matrix.json"
+      "schedule/schedule_2026-02-16_validation_summary.json",
+      "schedule/schedule_2026-02-16_cash_enrichment_validation.json",
+      "reports/cross_date_validation_matrix.json"
     ],
-    "result": "pass",
-    "notes": "baseline=56 matrix=56"
+    "result": "pass_with_limits",
+    "notes": "matrix retains only external_dependent_partial boundary"
   },
   {
-    "metric": "baseline patient_id_resolved",
+    "metric": "2026-03-10 baseline rows",
     "source_files": [
-      "schedule_2026-03-10_patient_full_report_v5.json",
-      "cross_date_validation_matrix.json"
+      "schedule/schedule_2026-03-10_patient_full_report_v5.json",
+      "reports/cross_date_validation_matrix.json"
     ],
     "result": "pass",
-    "notes": "baseline=54 matrix=54"
+    "notes": "56 total, 54 patient rows"
   },
   {
-    "metric": "baseline tickets 304/293/11",
+    "metric": "2026-03-10 ticket counts",
     "source_files": [
-      "schedule_2026-03-10_ticket_registry_v2.json"
+      "tickets/schedule_2026-03-10_ticket_registry_v2.json",
+      "reports/cross_date_validation_matrix.json"
     ],
     "result": "pass",
-    "notes": "{'total_rows': 56, 'patient_id_resolved': 54, 'tickets_total': 304, 'tickets_proven': 293, 'tickets_inferred': 11, 'schi_10_count': 11, 'cash_match_count': 51}"
+    "notes": "304 total, 11 schi-10"
   },
   {
-    "metric": "baseline schi_10_count=11",
+    "metric": "2026-03-10 cash matched rows",
     "source_files": [
-      "schedule_2026-03-10_ticket_registry_v2.json",
-      "cross_date_validation_matrix.json"
+      "finance/schedule_2026-03-10_cash_enrichment_v5.json",
+      "reports/cross_date_validation_matrix.json"
     ],
     "result": "pass",
-    "notes": "baseline=11 matrix=11"
-  },
-  {
-    "metric": "baseline cash matched rows",
-    "source_files": [
-      "schedule_2026-03-10_cash_enrichment_v5.json",
-      "cross_date_validation_matrix.json"
-    ],
-    "result": "pass",
-    "notes": "baseline=51 matrix=51"
+    "notes": "51 patient-day matches"
   }
 ]

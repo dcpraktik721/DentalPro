@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "issue_id": "phase6a-001",
+    "title": "February ticket supporting slices drift from canonical summaries",
+    "severity": "medium",
+    "area": "tickets",
+    "affected_files": [
+      "schedule/schedule_2026-02-15_ticket_validation.json",
+      "schedule/schedule_2026-02-16_ticket_validation.json"
+    ],
+    "description": "Supporting February ticket artifacts contain narrower or manual observations that do not match the canonical per-date validation summaries.",
+    "evidence": "cross_date_validation_matrix.json now treats them as supporting_noncanonical_sources.",
+    "recommended_fix": "Do not use these files as canonical metric sources; either relabel them explicitly or regenerate them later from the canonical method.",
+    "status": "open"
+  },
+  {
+    "issue_id": "phase6a-002",
+    "title": "February cash validation is not fully internalized in repo",
+    "severity": "medium",
+    "area": "finance",
+    "affected_files": [
+      "schedule/schedule_2026-02-16_validation_summary.json",
+      "schedule/schedule_2026-02-16_cash_enrichment_validation.json"
+    ],
+    "description": "One February cash slice references an external RPT_24 export path and therefore cannot be promoted to fully internal repo closure.",
+    "evidence": "schedule_2026-02-16_validation_summary.json -> cash_validation.source_evidence points outside repo.",
+    "recommended_fix": "Internalize the February export evidence or keep February cash at partial/blocked boundary.",
+    "status": "open"
+  }
+]

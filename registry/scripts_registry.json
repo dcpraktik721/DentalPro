@@ -160,6 +160,93 @@
         "Scope stays within observed live schedule window"
       ],
       "notes": "Current normalized operational script for patients with outdated hygiene ticket and no later hygienist visit"
+    },
+    {
+      "script_id": "script_run_phase6a_cross_date_validation",
+      "path": "scripts/run_phase6a_cross_date_validation.js",
+      "language": "node",
+      "purpose": "Run Phase 6A cross-date validation",
+      "domain": "mixed",
+      "inputs": [],
+      "outputs": [
+        "scripts/run_phase6a_cross_date_validation.js"
+      ],
+      "artifacts_produced": [
+        "schedule/schedule_2026-02-15_validation_summary.json",
+        "schedule/schedule_2026-02-16_validation_summary.json",
+        "reports/cross_date_validation_matrix.json"
+      ],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Cross-date evidence is limited to selected dates",
+        "Depends on local auth/runtime state"
+      ],
+      "notes": "Current Phase 6A validator/orchestrator"
+    },
+    {
+      "script_id": "runtime_auth_refresh",
+      "path": "runtime/auth_refresh.js",
+      "language": "node",
+      "purpose": "Refresh local DentalPRO auth state via login form",
+      "domain": "runtime",
+      "inputs": [],
+      "outputs": [
+        "runtime/auth_refresh_result.json"
+      ],
+      "artifacts_produced": [
+        "runtime/auth_refresh_result.json"
+      ],
+      "proof_scope": "proven",
+      "current_status": "current",
+      "limitations": [
+        "Requires local credentials",
+        "Not a self-contained repo bootstrap"
+      ],
+      "notes": "Local auth recovery path"
+    },
+    {
+      "script_id": "runtime_auth_smoke_check",
+      "path": "runtime/auth_smoke_check.js",
+      "language": "node",
+      "purpose": "Check whether current auth state still opens key routes",
+      "domain": "runtime",
+      "inputs": [],
+      "outputs": [
+        "runtime/auth_smoke_check_result.json"
+      ],
+      "artifacts_produced": [
+        "runtime/auth_smoke_check_result.json"
+      ],
+      "proof_scope": "proven",
+      "current_status": "current",
+      "limitations": [
+        "Confirms current local auth only"
+      ],
+      "notes": "Required auth freshness gate for live runtime work"
+    },
+    {
+      "script_id": "script_run_schedule_2026_02_16_identity_repro_pass",
+      "path": "scripts/run_schedule_2026_02_16_identity_repro_pass.js",
+      "language": "node",
+      "purpose": "Reproduce 2026-02-16 identity-only subset result",
+      "domain": "patients, schedule, runtime",
+      "inputs": [],
+      "outputs": [
+        "schedule/schedule_2026-02-16_identity_repro_pass.json",
+        "schedule/schedule_2026-02-16_identity_repro_diff.md"
+      ],
+      "artifacts_produced": [
+        "schedule/schedule_2026-02-16_identity_repro_pass.json",
+        "schedule/schedule_2026-02-16_identity_repro_diff.md"
+      ],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "40-row subset only",
+        "Identity-only; no ticket or cash rerun"
+      ],
+      "notes": "Current reproducibility harness for February 16 identity subset"
     }
   ]
 }

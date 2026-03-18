@@ -1,6 +1,6 @@
 {
   "registry_name": "methods_registry",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "status": "current_curated_registry",
   "entry_schema": {
     "method_id": "",
@@ -9,13 +9,16 @@
     "purpose": "",
     "inputs": [],
     "outputs": [],
+    "status": "current|partial|superseded|template",
     "proof_status": "proven|artifact_proven|structurally_observed|inferred|not_proven",
     "readiness": "ready|ready_with_limits|validation_required|blocked",
-    "status": "current|partial|superseded|template",
     "limitations": [],
     "local_evidence": [],
+    "related_scripts": [],
+    "validated_dates": [],
     "cross_date_validated": false,
     "cross_date_stable": false,
+    "safe_claim_boundary": "",
     "current_scope": "",
     "notes": ""
   },
@@ -24,15 +27,15 @@
       "method_id": "browser_first_route_access",
       "method_name": "Browser-first route access",
       "domain": "runtime",
-      "purpose": "Open authenticated DentalPRO routes directly and verify page-level runtime state.",
-      "inputs": ["route URL", "Playwright browser context", "storageState"],
-      "outputs": ["final URL", "page title", "route accessibility verdict", "runtime root presence"],
+      "purpose": "Open authenticated DentalPRO routes directly and verify expected runtime roots.",
+      "inputs": ["route URL", "browser context", "authenticated state"],
+      "outputs": ["final URL", "title", "route accessibility verdict", "runtime root presence"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Depends on external storageState session",
-        "Validated on selected routes and dates, not a blanket proof for every screen"
+        "Depends on local authenticated state",
+        "Validated on selected routes and dates only"
       ],
       "local_evidence": [
         "runtime/auth_smoke_check_result.json",
@@ -40,24 +43,29 @@
         "schedule/schedule_2026-02-16_validation_summary.json",
         "schedule/schedule_2026-03-10_operational_dump_master.md"
       ],
+      "related_scripts": [
+        "runtime/auth_smoke_check.js"
+      ],
+      "validated_dates": ["2026-02-15", "2026-02-16", "2026-03-10"],
       "cross_date_validated": true,
       "cross_date_stable": false,
-      "current_scope": "Validated on schedule day route for 2026-02-15, 2026-02-16, 2026-03-10 plus patient card and API test shell via auth smoke.",
-      "notes": "Cross-date wording must stay at validated_on_three_dates_not_promoted_to_stable."
+      "safe_claim_boundary": "Validated on three dates and selected routes; do not promote to globally stable.",
+      "current_scope": "Schedule day route, patient card route and API test shell route on current local workstation.",
+      "notes": "Primary route-opening method for live runtime work."
     },
     {
       "method_id": "direct_tab_url_access",
       "method_name": "Direct tab URL access",
       "domain": "patients",
-      "purpose": "Open patient hub and known patient tabs directly by route contract without menu traversal.",
+      "purpose": "Open patient hub and known dossier tabs directly by route contract.",
       "inputs": ["patient_id", "tab route pattern", "browser context"],
-      "outputs": ["opened patient tab", "tab route proof", "HTML-first tab content"],
+      "outputs": ["opened tab", "tab route proof", "HTML-first tab content"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Requires already known route contract",
-        "Does not prove write flows"
+        "Read-path only",
+        "Requires known route contract"
       ],
       "local_evidence": [
         "docs/patient_layer_overview.md",
@@ -65,281 +73,339 @@
         "docs/patient_dossier_remaining_tabs_overview.md",
         "patients/ultimate_patient_dossier_live_15900.json"
       ],
+      "related_scripts": [],
+      "validated_dates": [],
       "cross_date_validated": false,
       "cross_date_stable": false,
-      "current_scope": "Patient hub and dossier read-path tabs only.",
-      "notes": "Read-path method only."
+      "safe_claim_boundary": "Use for tab reading only; does not prove write or save flows.",
+      "current_scope": "Patient hub and curated dossier tabs.",
+      "notes": "Canonical patient read-path route method."
     },
     {
       "method_id": "storageState_auth_reuse",
       "method_name": "storageState auth reuse",
       "domain": "runtime",
-      "purpose": "Reuse existing authenticated browser state for deterministic DentalPRO passes.",
-      "inputs": ["external dentalpro.storage.json", "Playwright browser context"],
-      "outputs": ["authenticated session reuse", "repeatable browser passes"],
+      "purpose": "Reuse a pre-authenticated Playwright storageState for live DentalPRO work.",
+      "inputs": ["storageState file", "browser context"],
+      "outputs": ["authenticated session reuse", "repeatable local runtime passes"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "External dependency outside repo",
-        "Session can expire",
-        "Does not make repo self-bootstrapping"
+        "External local dependency outside repo",
+        "Session drift can silently break live work"
       ],
       "local_evidence": [
         "runtime/auth_smoke_check_result.json",
-        "runtime/auth_smoke_check.js",
-        "schedule/schedule_2026-02-15_validation_summary.json",
-        "schedule/schedule_2026-02-16_validation_summary.json"
+        "runtime/auth_refresh_result.json",
+        "docs/auth_runtime_readiness.md"
       ],
+      "related_scripts": [
+        "runtime/auth_smoke_check.js",
+        "runtime/auth_refresh.js"
+      ],
+      "validated_dates": ["2026-02-15", "2026-02-16", "2026-03-10"],
       "cross_date_validated": true,
       "cross_date_stable": false,
-      "current_scope": "Reusable authenticated browsing for current local workstation where storageState exists.",
-      "notes": "Auth must stay ready_with_limits, not execution-ready."
+      "safe_claim_boundary": "Usable locally with refresh/smoke discipline; not self-bootstrapping and not execution-ready.",
+      "current_scope": "Current workstation only.",
+      "notes": "Auth dependency layer, not a repo-contained auth solution."
     },
     {
       "method_id": "auth_smoke_check",
       "method_name": "Auth smoke check",
       "domain": "runtime",
-      "purpose": "Verify whether current storageState still opens key runtime routes without login fallback.",
-      "inputs": ["storageState", "schedule route", "patient card route", "API test route"],
+      "purpose": "Verify that current auth state still opens critical routes without login fallback.",
+      "inputs": ["storageState", "schedule route", "patient route", "API shell route"],
       "outputs": ["authenticated route results", "auth readiness verdict"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Confirms current local auth session only",
-        "Not a login/bootstrap implementation"
+        "Confirms current session only",
+        "Not a login flow"
       ],
       "local_evidence": [
-        "runtime/auth_smoke_check.js",
         "runtime/auth_smoke_check_result.json",
         "docs/auth_runtime_readiness.md"
       ],
+      "related_scripts": [
+        "runtime/auth_smoke_check.js"
+      ],
+      "validated_dates": ["2026-03-18"],
       "cross_date_validated": false,
       "cross_date_stable": false,
-      "current_scope": "Three-route smoke: schedule day, patient card, API test shell.",
-      "notes": "Primary auth readiness evidence for repo."
+      "safe_claim_boundary": "Use as freshness gate for local auth only; failure means auth drift, not app instability.",
+      "current_scope": "Current repo-local auth readiness checking.",
+      "notes": "Required before live runtime claims."
     },
     {
       "method_id": "auth_refresh_via_login_form",
       "method_name": "Auth refresh via login form",
       "domain": "runtime",
-      "purpose": "Refresh external DentalPRO storageState by logging in through the current login form and re-saving browser state.",
-      "inputs": ["DP_LOGIN", "DP_PASSWORD", "login page route", "Playwright browser context"],
-      "outputs": ["refreshed storageState", "auth refresh result artifact"],
+      "purpose": "Refresh authenticated state by submitting DentalPRO login form and saving storageState.",
+      "inputs": ["base URL", "login credentials", "storageState target path"],
+      "outputs": ["fresh storageState", "refresh result artifact"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Still depends on external credentials and external storageState location",
-        "Does not make auth self-contained inside repo",
-        "Refresh success must still be confirmed by auth smoke"
+        "Requires secrets outside repo",
+        "Local-only operating path"
       ],
       "local_evidence": [
-        "runtime/auth_refresh.js",
         "runtime/auth_refresh_result.json",
-        "runtime/auth_smoke_check_result.json"
+        "docs/auth_runtime_readiness.md"
       ],
+      "related_scripts": [
+        "runtime/auth_refresh.js"
+      ],
+      "validated_dates": ["2026-03-18"],
       "cross_date_validated": false,
       "cross_date_stable": false,
-      "current_scope": "Local workstation auth refresh path for current DentalPRO runtime work.",
-      "notes": "Use auth_refresh first, then auth_smoke_check; keep auth at ready_with_limits."
+      "safe_claim_boundary": "Refresh path exists locally; do not call this self-contained repo auth bootstrap.",
+      "current_scope": "Local recovery path when storageState drifts to login.",
+      "notes": "Recovery path, not productized auth."
     },
     {
       "method_id": "schedule_dom_row_extraction",
       "method_name": "Schedule DOM row extraction",
       "domain": "schedule",
-      "purpose": "Extract visit/task rows, doctor columns and row-level runtime structure from HTML-first day schedule.",
-      "inputs": ["schedule date route", "browser DOM"],
-      "outputs": ["rows", "doctor count", "service row split", "row metrics"],
+      "purpose": "Extract doctors, visit rows, service rows and schedule-day structure from HTML-first schedule screen.",
+      "inputs": ["schedule date", "authenticated page DOM"],
+      "outputs": ["row inventory", "doctor list", "service row list", "schedule metrics"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready",
-      "status": "current",
       "limitations": [
-        "HTML-first page proof, not a server-side source closure by itself"
+        "Describes read-path structure only",
+        "Does not itself close popup-derived fields"
       ],
       "local_evidence": [
+        "schedule/schedule_2026-03-10_operational_dump_master.md",
         "schedule/schedule_2026-02-15_validation_summary.json",
-        "schedule/schedule_2026-02-16_validation_summary.json",
-        "schedule/schedule_2026-03-10_operational_dump_master.md"
+        "schedule/schedule_2026-02-16_validation_summary.json"
       ],
+      "related_scripts": [
+        "scripts/run_phase6a_cross_date_validation.js"
+      ],
+      "validated_dates": ["2026-02-15", "2026-02-16", "2026-03-10"],
       "cross_date_validated": true,
       "cross_date_stable": false,
-      "current_scope": "Validated on 2026-02-15, 2026-02-16 and baseline 2026-03-10.",
-      "notes": "Current evidence supports repeated extraction on three dates only."
+      "safe_claim_boundary": "Validated on three dates; keep as HTML-first schedule read method, not universal guarantee.",
+      "current_scope": "Day schedule extraction and row counting.",
+      "notes": "Core schedule read method."
     },
     {
       "method_id": "focused_rc_tooltip_extraction",
       "method_name": "Focused rc-tooltip extraction",
       "domain": "tickets",
-      "purpose": "Trigger exact ticket tooltip on icon node and capture live rendered rc-tooltip text.",
-      "inputs": ["task icon node", "React onMouseEnter handler", "browser DOM"],
-      "outputs": ["ticket_order", "icon_class", "exact tooltip text", "normalized category"],
+      "purpose": "Trigger ticket icon handlers and capture live rendered rc-tooltip content.",
+      "inputs": ["exact icon node", "runtime handler or deterministic hover path"],
+      "outputs": ["tooltip text", "icon ordering", "ticket semantics candidate"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Requires exact icon-level runtime probing",
-        "schi-10 semantics remain inferred",
-        "Must avoid stale tooltip contamination"
+        "Ticket semantics still require proof-aware normalization",
+        "schi-10 remains inferred"
       ],
       "local_evidence": [
         "tickets/schedule_2026-03-10_ticket_registry_v2.json",
         "tickets/ticket_dictionary_v2.json",
-        "schedule/schedule_2026-02-15_ticket_validation.json",
-        "schedule/schedule_2026-02-16_ticket_validation.json"
+        "tickets/ticket_semantic_closure_v2.json",
+        "tickets/schedule_ticket_extraction_algorithm.md"
       ],
-      "cross_date_validated": true,
+      "related_scripts": [
+        "scripts/run_schedule_ticket_registry_probe_v1.js"
+      ],
+      "validated_dates": ["2026-03-10"],
+      "cross_date_validated": false,
       "cross_date_stable": false,
-      "current_scope": "Full-day tooltip capture validated on 2026-02-15 and 2026-02-16; baseline registry on 2026-03-10.",
-      "notes": "Only live rendered rc-tooltip is source of truth."
+      "safe_claim_boundary": "Tooltip text is canonical; downstream semantic promotion must keep schi-10 inferred.",
+      "current_scope": "Ticket icon tooltip extraction and ordering.",
+      "notes": "Ticket source-of-truth extraction method."
     },
     {
       "method_id": "popup_clean_click_probe",
       "method_name": "Popup clean click probe",
       "domain": "schedule",
-      "purpose": "Open patient popup from schedule card and capture full name, phones and actions from the rendered popup.",
-      "inputs": ["task card selector", "browser DOM"],
-      "outputs": ["popup linkage verdict", "patient full name", "phones", "button inventory"],
+      "purpose": "Open visit popup one card at a time and extract patient-facing popup data without stale popup contamination.",
+      "inputs": ["task card", "clean popup state", "browser context"],
+      "outputs": ["popup linkage verdict", "popup button list", "patient contact layer"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Subset-sensitive across families",
-        "Not every row yields clean popup",
-        "Must keep stale-layer prevention"
+        "Subset-sensitive",
+        "Not proven for every visit family on every day"
       ],
       "local_evidence": [
         "schedule/schedule_2026-03-10_popup_linkage_v3.json",
         "schedule/schedule_2026-02-15_patient_identity_validation.json",
-        "schedule/schedule_2026-02-16_patient_identity_validation.json"
+        "schedule/schedule_2026-02-16_patient_identity_validation.json",
+        "schedule/schedule_2026-02-16_identity_repro_pass.json"
       ],
+      "related_scripts": [
+        "scripts/run_schedule_interaction_probe_v3.js",
+        "scripts/run_schedule_2026_02_16_identity_repro_pass.js"
+      ],
+      "validated_dates": ["2026-02-15", "2026-02-16", "2026-03-10"],
       "cross_date_validated": true,
       "cross_date_stable": false,
-      "current_scope": "Validated on three dates, but 2026-02-16 remains subset-based for identity probing.",
-      "notes": "Do not promote to 100% popup success."
+      "safe_claim_boundary": "Subset-based reproducible on 2026-02-16; do not promote to universal full-day popup success.",
+      "current_scope": "Per-card popup extraction for curated schedule subsets.",
+      "notes": "Main popup method for identity/contact enrichment."
     },
     {
       "method_id": "patient_info_button_id_resolution",
-      "method_name": "Patient-info button ID resolution",
+      "method_name": "Patient info button ID resolution",
       "domain": "patients",
-      "purpose": "Resolve patient_id by clicking popup action 'Информация о пациенте' and reading cbase/detail route.",
-      "inputs": ["clean popup", "patient-info button", "browser navigation"],
-      "outputs": ["patient_id", "patient card route proof"],
+      "purpose": "Resolve patient_id from popup actions by following patient-info detail route.",
+      "inputs": ["opened visit popup", "patient info action"],
+      "outputs": ["patient_id", "patient detail route evidence"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Requires clean popup linkage",
-        "Subset-based on 2026-02-16",
-        "Not available for service rows"
+        "Fails when popup lacks working patient link or modal does not open",
+        "Depends on popup success first"
       ],
       "local_evidence": [
-        "patients/schedule_2026-03-10_patient_identity_probe_v5.json",
         "schedule/schedule_2026-02-15_patient_identity_validation.json",
-        "schedule/schedule_2026-02-16_patient_identity_validation.json"
+        "schedule/schedule_2026-02-16_patient_identity_validation.json",
+        "schedule/schedule_2026-02-16_identity_repro_pass.json",
+        "patients/schedule_2026-03-10_patient_identity_probe_v5.json"
       ],
+      "related_scripts": [
+        "scripts/run_schedule_patient_identity_focused_probe_v5.js",
+        "scripts/run_schedule_2026_02_16_identity_repro_pass.js"
+      ],
+      "validated_dates": ["2026-02-15", "2026-02-16", "2026-03-10"],
       "cross_date_validated": true,
       "cross_date_stable": false,
-      "current_scope": "Full-day identity closure on 2026-03-10, full on 2026-02-15, subset on 2026-02-16.",
-      "notes": "Keep date-specific and subset-specific boundaries explicit."
+      "safe_claim_boundary": "Proven when patient info action resolves; unresolved families must stay unresolved rather than backfilled.",
+      "current_scope": "Schedule-to-patient identity closure on proven rows.",
+      "notes": "Identity closure method, not a blanket 100 percent resolver."
     },
     {
       "method_id": "chair_view_cross_map",
       "method_name": "Chair-view cross-map",
       "domain": "schedule",
-      "purpose": "Recover cabinet attribution by reconciling the same task IDs across doctor view and chair view.",
-      "inputs": ["task-record IDs", "doctor view", "chair view"],
+      "purpose": "Recover cabinet attribution by reconciling doctor and chair views on shared task IDs.",
+      "inputs": ["doctor view rows", "chair view rows", "task IDs"],
       "outputs": ["visit-to-cabinet mapping"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Indirect method",
-        "Not replaced by direct canonical cabinet field"
+        "Derived reconciliation method",
+        "Not a direct canonical cabinet field"
       ],
       "local_evidence": [
         "schedule/schedule_2026-03-10_operational_dump_master.md",
         "schedule/schedule_2026-03-10_patient_full_report_v5.json"
       ],
+      "related_scripts": [
+        "scripts/run_schedule_interaction_probe_v3.js"
+      ],
+      "validated_dates": ["2026-03-10"],
       "cross_date_validated": false,
       "cross_date_stable": false,
-      "current_scope": "Baseline 2026-03-10 closure method.",
-      "notes": "Still the accepted operational method for cabinet attribution."
+      "safe_claim_boundary": "Use as reconciliation method only; do not call it direct cabinet source field.",
+      "current_scope": "Cabinet recovery for schedule modeling.",
+      "notes": "Schedule reconciliation layer."
     },
     {
       "method_id": "patient_day_cash_matching",
       "method_name": "Patient-day cash matching",
       "domain": "finance",
-      "purpose": "Match schedule rows to RPT_24 at patient-day grain using exact full name, phone and date.",
-      "inputs": ["patient identity", "RPT_24 parsed rows", "schedule date"],
-      "outputs": ["cash_amount_total_candidate", "payment_event_count", "join_status"],
+      "purpose": "Match schedule rows to cash evidence at patient-day grain using RPT_24-style exports.",
+      "inputs": ["full name", "phone", "date", "doctor context", "RPT_24 or equivalent export"],
+      "outputs": ["patient-day financial signal", "conditional join verdict"],
+      "status": "current",
       "proof_status": "proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Patient-day grain only",
-        "Not safe as direct visit-to-cash fact",
-        "Ambiguity remains when multiple doctors share the same patient-day"
+        "Never visit-level",
+        "Depends on export availability",
+        "February evidence is partial/external-dependent"
       ],
       "local_evidence": [
         "finance/schedule_2026-03-10_cash_enrichment_v5.json",
         "schedule/schedule_2026-02-15_cash_enrichment_validation.json",
-        "schedule/schedule_2026-02-16_cash_enrichment_validation.json"
+        "schedule/schedule_2026-02-16_cash_enrichment_validation.json",
+        "schedule/schedule_2026-02-16_validation_summary.json"
       ],
+      "related_scripts": [
+        "scripts/find_patients_old_hygiene_no_followup_live.js"
+      ],
+      "validated_dates": ["2026-02-15", "2026-02-16", "2026-03-10"],
       "cross_date_validated": true,
       "cross_date_stable": false,
-      "current_scope": "Validated on 2026-02-15, 2026-02-16 and 2026-03-10 at patient-day grain only.",
-      "notes": "Cash boundary must stay patient-day only."
+      "safe_claim_boundary": "Allowed only as patient-day enrichment; February remains partial and export-dependent.",
+      "current_scope": "March baseline closed in repo; February partial validation only.",
+      "notes": "Keep explicit distinction between in-repo March closure and partial February validation."
     },
     {
       "method_id": "proof_aware_schedule_workbook_build",
       "method_name": "Proof-aware schedule workbook build",
       "domain": "schedule",
-      "purpose": "Build patient-ready schedule workbook while preserving proof fields and enrichment boundaries.",
-      "inputs": ["normalized schedule rows", "ticket semantics", "cash enrichment layer"],
-      "outputs": ["JSON report", "XLSX workbook", "QC summary"],
+      "purpose": "Build schedule reports that preserve proof status and source layer boundaries.",
+      "inputs": ["normalized JSON", "proof flags", "cash enrichment layer", "ticket semantics"],
+      "outputs": ["xlsx workbook", "json export", "qc layer"],
+      "status": "current",
       "proof_status": "artifact_proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Inherits source boundaries from input layers",
-        "Does not create stronger proof than inputs"
+        "Output quality depends on upstream proof-aware inputs",
+        "Does not create proof on its own"
       ],
       "local_evidence": [
         "schedule/schedule_2026-03-10_patient_full_report_v5.json",
         "excel/schedule_2026-03-10_patient_full_report_v5.xlsx"
       ],
+      "related_scripts": [
+        "scripts/build_schedule_patient_full_report_v5.py"
+      ],
+      "validated_dates": ["2026-03-10"],
       "cross_date_validated": false,
       "cross_date_stable": false,
-      "current_scope": "Current proven workbook build on 2026-03-10 baseline.",
-      "notes": "Keep cash blank in main sheet when direct visit-to-cash proof is absent."
+      "safe_claim_boundary": "Builder preserves proof boundaries; it must not be treated as independent evidence generator.",
+      "current_scope": "Patient-ready workbook generation from curated schedule artifacts.",
+      "notes": "Reporting/build step, not runtime extraction."
     },
     {
       "method_id": "phase6a_cross_date_validation",
       "method_name": "Phase 6A cross-date validation",
       "domain": "mixed",
-      "purpose": "Validate selected runtime methods on additional dates and publish raw date-specific summaries plus cross-date matrix.",
-      "inputs": ["selected validation dates", "storageState", "schedule runtime", "RPT_24 parsed file"],
-      "outputs": ["date-specific validation summaries", "cross-date matrix", "Phase 6A report"],
+      "purpose": "Compare selected schedule methods across three dates and document exact safe claim boundary.",
+      "inputs": ["per-date validation summaries", "identity validation artifacts", "repro pass artifacts", "baseline March assets"],
+      "outputs": ["cross-date matrix", "comparison report", "Phase 6A report"],
+      "status": "current",
       "proof_status": "artifact_proven",
       "readiness": "ready_with_limits",
-      "status": "current",
       "limitations": [
-        "Current evidence covers only 2026-02-15, 2026-02-16 and 2026-03-10",
-        "2026-02-16 patient identity is subset-based",
-        "Cross-date validated does not mean globally stable"
+        "Three dates only",
+        "Not a global stability proof",
+        "Uses canonical summaries and marks supporting/manual slices as non-canonical where they drift"
       ],
       "local_evidence": [
-        "schedule/schedule_2026-02-15_validation_summary.json",
-        "schedule/schedule_2026-02-16_validation_summary.json",
         "reports/cross_date_validation_matrix.json",
-        "reports/phase6A_cross_date_and_repo_hardening_report.md"
+        "reports/cross_date_validation_2026-02-15_2026-02-16_vs_2026-03-10.md",
+        "reports/phase6A_cross_date_and_repo_hardening_report.md",
+        "schedule/schedule_2026-02-16_identity_repro_pass.json"
       ],
+      "related_scripts": [
+        "scripts/run_phase6a_cross_date_validation.js",
+        "scripts/run_schedule_2026_02_16_identity_repro_pass.js"
+      ],
+      "validated_dates": ["2026-02-15", "2026-02-16", "2026-03-10"],
       "cross_date_validated": true,
       "cross_date_stable": false,
-      "current_scope": "Selected methods validated on three dates with explicit limits.",
-      "notes": "Keep wording at validated_on_three_dates_not_promoted_to_stable."
+      "safe_claim_boundary": "Allowed wording is validated on three dates; forbidden wording is stable or globally reproducible.",
+      "current_scope": "Repo-level cross-date validation slice.",
+      "notes": "Canonical cross-date layer for current repo."
     }
   ]
 }

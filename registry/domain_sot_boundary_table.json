@@ -1,34 +1,34 @@
 {
   "registry_name": "domain_sot_boundary_table",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "created": "2026-03-18",
-  "purpose": "Machine-readable map: domain → primary SoT asset → proof boundary → known gaps",
+  "purpose": "Machine-readable map from domain to current primary source-of-truth asset and safe boundary.",
   "schema": {
-    "domain": "domain name",
-    "subdomain": "subdomain or topic",
-    "primary_sot_asset": "repo-relative path to primary source-of-truth",
-    "primary_sot_in_repo": "boolean",
+    "domain": "",
+    "subdomain": "",
+    "primary_sot_asset": "",
+    "primary_sot_in_repo": true,
     "proof_level": "proven|artifact_proven|structurally_observed|inferred|not_proven",
     "readiness": "ready|ready_with_limits|validation_required|blocked",
     "coverage": "full|partial|boundary_only|empty",
-    "known_gaps": "list of unresolved items",
-    "secondary_assets": "supporting artifacts",
-    "external_dependencies": "external files this domain depends on"
+    "scope_note": "",
+    "known_gaps": [],
+    "secondary_assets": [],
+    "external_dependencies": []
   },
   "domains": [
     {
       "domain": "schedule",
-      "subdomain": "day_schedule",
+      "subdomain": "baseline_day_model",
       "primary_sot_asset": "schedule/schedule_2026-03-10_patient_full_report_v5.json",
       "primary_sot_in_repo": true,
       "proof_level": "proven",
       "readiness": "ready_with_limits",
       "coverage": "partial",
-      "scope_note": "Single date 10.03.2026 only — not a universal framework",
+      "scope_note": "Primary patient-ready baseline day model for 2026-03-10.",
       "known_gaps": [
-        "no cross-date reproducibility validation",
-        "popup_linkage subset-proven only",
-        "cabinet attribution via cross-map workaround"
+        "popup linkage is subset-based",
+        "cabinet attribution still relies on cross-map reconciliation"
       ],
       "secondary_assets": [
         "schedule/schedule_2026-03-10_operational_dump_master.md",
@@ -38,18 +38,38 @@
       "external_dependencies": []
     },
     {
+      "domain": "schedule",
+      "subdomain": "cross_date_validation",
+      "primary_sot_asset": "reports/cross_date_validation_matrix.json",
+      "primary_sot_in_repo": true,
+      "proof_level": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "coverage": "partial",
+      "scope_note": "Validated on 2026-02-15, 2026-02-16 and 2026-03-10 only.",
+      "known_gaps": [
+        "three dates only",
+        "2026-02-16 identity remains subset-based",
+        "February cash is not fully closed in-repo"
+      ],
+      "secondary_assets": [
+        "schedule/schedule_2026-02-15_validation_summary.json",
+        "schedule/schedule_2026-02-16_validation_summary.json",
+        "schedule/schedule_2026-02-16_identity_repro_pass.json"
+      ],
+      "external_dependencies": []
+    },
+    {
       "domain": "tickets",
-      "subdomain": "visit_tickets",
+      "subdomain": "visit_ticket_semantics",
       "primary_sot_asset": "tickets/schedule_2026-03-10_ticket_registry_v2.json",
       "primary_sot_in_repo": true,
       "proof_level": "proven",
       "readiness": "ready_with_limits",
       "coverage": "partial",
-      "scope_note": "293/304 proven; schi-10 (11 units) INFERRED — must not be promoted",
+      "scope_note": "Canonical ticket registry and semantics are anchored on 2026-03-10.",
       "known_gaps": [
-        "schi-10 semantic closure pending",
-        "schi-3 free_text semantic basis weak",
-        "no cross-date ticket registry"
+        "schi-10 remains inferred",
+        "no separate cross-date ticket registry dataset"
       ],
       "secondary_assets": [
         "tickets/ticket_dictionary_v2.json",
@@ -60,193 +80,128 @@
     },
     {
       "domain": "patients",
-      "subdomain": "identity_and_schedule",
+      "subdomain": "schedule_identity",
       "primary_sot_asset": "patients/schedule_2026-03-10_patient_identity_probe_v5.json",
       "primary_sot_in_repo": true,
       "proof_level": "proven",
       "readiness": "ready_with_limits",
       "coverage": "partial",
-      "scope_note": "54/56 identity rows proven for 10.03.2026 batch only",
+      "scope_note": "March baseline identity closure is canonical; February 16 subset repro is separately documented.",
       "known_gaps": [
-        "no full CRM-wide patient universe",
-        "cross-date identity not validated"
+        "2026-02-16 remains subset-based",
+        "no CRM-wide patient identity closure"
       ],
       "secondary_assets": [
-        "patients/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18_v2.json",
-        "patients/doctor_patients_Geyushova_2026-02_enriched_rpt24.json"
+        "schedule/schedule_2026-02-15_patient_identity_validation.json",
+        "schedule/schedule_2026-02-16_patient_identity_validation.json",
+        "schedule/schedule_2026-02-16_identity_repro_pass.json"
       ],
       "external_dependencies": []
     },
     {
       "domain": "patients",
-      "subdomain": "dossier_tabs_routes",
-      "primary_sot_asset": "docs/dentalpro-screen-map-2026-03-09.md",
+      "subdomain": "dossier_read_path",
+      "primary_sot_asset": "docs/patient_dossier_remaining_tabs_overview.md",
       "primary_sot_in_repo": true,
       "proof_level": "artifact_proven",
       "readiness": "ready_with_limits",
       "coverage": "partial",
-      "scope_note": "Route/URL map confirmed; payload closure partial",
+      "scope_note": "Read-path dossier tabs are curated; write flows remain outside closure.",
       "known_gaps": [
-        "files tab payload not fully closed",
-        "family tab empty-state only",
-        "comments/history write paths not validated",
-        "medical_history payload not closed"
+        "write flows not closed",
+        "non-empty family sample absent",
+        "generalized multi-patient dossier pack absent"
       ],
       "secondary_assets": [
-        "registry/patient_dossier_tabs_index.json",
-        "registry/patient_remaining_tabs_index.json",
-        "artifacts/base_profile_and_tabs.json"
-      ],
-      "external_dependencies": []
-    },
-    {
-      "domain": "patients",
-      "subdomain": "cashbox_payments",
-      "primary_sot_asset": "finance/patient_cashbox_18910_document_model_2026-03-18.json",
-      "primary_sot_in_repo": true,
-      "proof_level": "proven",
-      "readiness": "ready_with_limits",
-      "coverage": "partial",
-      "scope_note": "Document-grain model proven for 2 reference cases (18910, 19095) only",
-      "known_gaps": [
-        "cashbox domain not globally source-closed",
-        "direct visit-to-cash linkage not proven",
-        "write paths not validated"
-      ],
-      "secondary_assets": [
-        "finance/patient_cashbox_19095_document_model_2026-03-18.json",
-        "patients/patient_cashbox_18910_forensic_2026-03-18.md"
-      ],
-      "external_dependencies": []
-    },
-    {
-      "domain": "patients",
-      "subdomain": "xray_medcards",
-      "primary_sot_asset": "docs/scope-xray-verification-2026-01-15.md",
-      "primary_sot_in_repo": true,
-      "proof_level": "artifact_proven",
-      "readiness": "validation_required",
-      "coverage": "boundary_only",
-      "scope_note": "Upload/write-only boundary confirmed; read model NOT closed",
-      "known_gaps": [
-        "xray read model not proven",
-        "orthopantomography vs periapical mechanics not closed",
-        "no patient-linked xray list extraction"
-      ],
-      "secondary_assets": [
-        "artifacts/xray-2026-01-15.json"
-      ],
-      "external_dependencies": []
-    },
-    {
-      "domain": "patients",
-      "subdomain": "insurance_dms",
-      "primary_sot_asset": "docs/scope-insurance-verified-library-2026-01-15.md",
-      "primary_sot_in_repo": true,
-      "proof_level": "artifact_proven",
-      "readiness": "ready_with_limits",
-      "coverage": "partial",
-      "scope_note": "Insurance token boundary confirmed; DMS linkage mechanics partial",
-      "known_gaps": [
-        "DMS write path not validated",
-        "insurance approval flow not traced"
-      ],
-      "secondary_assets": [
-        "patients/patient_insurance-2026-01-15.json"
+        "docs/patient_dossier_tabs_overview.md",
+        "patients/ultimate_patient_dossier_live_15900.json",
+        "artifacts/base_profile_and_tabs.json",
+        "artifacts/files_and_documents.json"
       ],
       "external_dependencies": []
     },
     {
       "domain": "reporting",
-      "subdomain": "report_families",
+      "subdomain": "report_family_map",
       "primary_sot_asset": "reporting/report_universe_2026_03_16.json",
       "primary_sot_in_repo": true,
       "proof_level": "artifact_proven",
       "readiness": "ready_with_limits",
       "coverage": "partial",
-      "scope_note": "Family maps proven for RPT_18/23/33/34/35/24/48; not every family closed",
+      "scope_note": "Current report family map and governed verdicts are curated in repo.",
       "known_gaps": [
-        "not all report families production-closed",
-        "some runtime vs export parity unresolved"
+        "not all report families are production-closed",
+        "some parity cases remain family-specific"
       ],
       "secondary_assets": [
         "reporting/RPT_18_final_governed_verdict_2026-03-18.json",
         "reporting/RPT_23_final_governed_verdict_2026-03-11.json",
-        "reporting/RPT_33_final_governed_verdict_2026-03-15.json",
-        "reporting/rpt_24_48_file_first_canonicalization_2026_03_10.json"
+        "reporting/RPT_33_final_governed_verdict_2026-03-15.json"
       ],
-      "external_dependencies": [
-        "/Users/macbook15/.../report-api-verification-dossier-2026-03-09.md — NOT IN REPO"
-      ]
+      "external_dependencies": []
     },
     {
       "domain": "finance",
-      "subdomain": "cash_enrichment_schedule",
+      "subdomain": "schedule_cash_enrichment",
       "primary_sot_asset": "finance/schedule_2026-03-10_cash_enrichment_v5.json",
       "primary_sot_in_repo": true,
       "proof_level": "proven",
       "readiness": "ready_with_limits",
       "coverage": "partial",
-      "scope_note": "Patient-day grain via RPT_24; 91.1% match rate for 10.03.2026. NOT visit-level.",
+      "scope_note": "March baseline patient-day cash enrichment is canonical in repo.",
       "known_gaps": [
-        "direct visit-to-cash linkage not proven",
-        "RPT_24 lacks visit_id field",
-        "23 multi-doctor ambiguous rows"
+        "never visit-level",
+        "February cash remains only partially validated",
+        "export dependency remains explicit"
       ],
       "secondary_assets": [
-        "excel/schedule_2026-03-10_patient_full_report_v5.xlsx"
+        "schedule/schedule_2026-02-15_cash_enrichment_validation.json",
+        "schedule/schedule_2026-02-16_cash_enrichment_validation.json",
+        "schedule/schedule_2026-02-16_validation_summary.json"
+      ],
+      "external_dependencies": [
+        "External February RPT_24 export referenced inside 2026-02-16 validation summary"
+      ]
+    },
+    {
+      "domain": "runtime",
+      "subdomain": "auth",
+      "primary_sot_asset": "docs/auth_runtime_readiness.md",
+      "primary_sot_in_repo": true,
+      "proof_level": "proven",
+      "readiness": "ready_with_limits",
+      "coverage": "partial",
+      "scope_note": "Repo documents auth refresh and smoke-check discipline, but depends on external local secrets/state.",
+      "known_gaps": [
+        "not self-bootstrapping",
+        "session drift remains possible"
+      ],
+      "secondary_assets": [
+        "runtime/auth_refresh_result.json",
+        "runtime/auth_smoke_check_result.json"
+      ],
+      "external_dependencies": [
+        "local storageState path outside repo",
+        "local secrets/credentials"
+      ]
+    },
+    {
+      "domain": "repo_state",
+      "subdomain": "current_freeze",
+      "primary_sot_asset": "docs/repo_current_state_master.md",
+      "primary_sot_in_repo": true,
+      "proof_level": "artifact_proven",
+      "readiness": "ready",
+      "coverage": "partial",
+      "scope_note": "Current frozen state of repo, claims and boundaries.",
+      "known_gaps": [
+        "future phases must update freeze docs when evidence changes"
+      ],
+      "secondary_assets": [
+        "reports/phaseA_current_state_freeze_report.md",
+        "reports/final_repo_verification_report.md"
       ],
       "external_dependencies": []
-    },
-    {
-      "domain": "auth",
-      "subdomain": "session_state",
-      "primary_sot_asset": null,
-      "primary_sot_in_repo": false,
-      "proof_level": "not_proven",
-      "readiness": "blocked",
-      "coverage": "empty",
-      "scope_note": "storageState NOT in repo. Auth drift is silent failure mode for all live probes.",
-      "known_gaps": [
-        "storageState file absent",
-        "no smoke-check script",
-        "no auth expiry monitoring",
-        "no re-auth flow documented"
-      ],
-      "secondary_assets": [],
-      "external_dependencies": [
-        "storageState — lives only on local Mac, not version-controlled"
-      ]
-    },
-    {
-      "domain": "project_state",
-      "subdomain": "decision_log",
-      "primary_sot_asset": null,
-      "primary_sot_in_repo": false,
-      "proof_level": "not_proven",
-      "readiness": "blocked",
-      "coverage": "empty",
-      "scope_note": "dentalpro-master-worklog.md is external. No project state SoT in repo.",
-      "known_gaps": [
-        "worklog not migrated",
-        "decision rationale not in repo",
-        "historical capability claims with dates not available"
-      ],
-      "secondary_assets": [],
-      "external_dependencies": [
-        "/Users/macbook15/.../dentalpro-master-worklog.md — NOT IN REPO"
-      ]
     }
-  ],
-  "summary": {
-    "domains_total": 11,
-    "fully_in_repo": 9,
-    "external_blocked": 2,
-    "ready_or_ready_with_limits": 7,
-    "validation_required": 1,
-    "blocked": 2,
-    "coverage_partial": 8,
-    "coverage_boundary_only": 1,
-    "coverage_empty": 2
-  }
+  ]
 }

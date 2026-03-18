@@ -1,35 +1,35 @@
 [
   {
-    "area": "project_state",
-    "asset": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/dentalpro-master-worklog.md",
-    "role": "source_of_truth",
-    "asset_in_repo": false,
-    "migration_status": "external_pending",
-    "original_legacy_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/dentalpro-master-worklog.md"
-  },
-  {
-    "area": "report_verification",
-    "asset": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/report-api-verification-dossier-2026-03-09.md",
-    "role": "source_of_truth",
-    "asset_in_repo": false,
-    "migration_status": "external_pending",
-    "original_legacy_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/report-api-verification-dossier-2026-03-09.md"
-  },
-  {
-    "area": "schedule_runtime",
-    "asset": "schedule/schedule_2026-03-10_operational_dump_master.md",
+    "area": "repo_current_state",
+    "asset": "docs/repo_current_state_master.md",
     "role": "source_of_truth",
     "asset_in_repo": true,
     "migration_status": "current",
-    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_operational_dump_master.md"
+    "boundary": "Frozen current-state narrative and safe claim boundary."
   },
   {
-    "area": "ticket_semantics",
-    "asset": "tickets/ticket_dictionary_v2.json",
+    "area": "schedule_baseline",
+    "asset": "schedule/schedule_2026-03-10_patient_full_report_v5.json",
     "role": "source_of_truth",
     "asset_in_repo": true,
     "migration_status": "current",
-    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/ticket_dictionary_v2.json"
+    "boundary": "Canonical baseline schedule dataset for 2026-03-10."
+  },
+  {
+    "area": "schedule_cross_date_validation",
+    "asset": "reports/cross_date_validation_matrix.json",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "boundary": "Cross-date evidence on three dates only; not stable."
+  },
+  {
+    "area": "schedule_feb16_identity_subset_repro",
+    "asset": "schedule/schedule_2026-02-16_identity_repro_pass.json",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "boundary": "Subset-based reproducibility proof for 24/40 identity result."
   },
   {
     "area": "ticket_registry",
@@ -37,30 +37,78 @@
     "role": "source_of_truth",
     "asset_in_repo": true,
     "migration_status": "current",
-    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v2.json"
+    "boundary": "Ticket registry and counts anchored on 2026-03-10."
   },
   {
-    "area": "patient_ready_schedule",
-    "asset": "schedule/schedule_2026-03-10_patient_full_report_v5.json",
+    "area": "ticket_semantics_dictionary",
+    "asset": "tickets/ticket_dictionary_v2.json",
     "role": "source_of_truth",
     "asset_in_repo": true,
     "migration_status": "current",
-    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v5.json"
+    "boundary": "schi-10 remains inferred."
   },
   {
-    "area": "cashbox_document_model",
+    "area": "patient_identity_baseline",
+    "asset": "patients/schedule_2026-03-10_patient_identity_probe_v5.json",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "boundary": "Canonical patient identity closure for March baseline."
+  },
+  {
+    "area": "patient_dossier_read_path",
+    "asset": "docs/patient_dossier_remaining_tabs_overview.md",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "boundary": "Read-path dossier closure only; write flows excluded."
+  },
+  {
+    "area": "patient_day_cash_baseline",
+    "asset": "finance/schedule_2026-03-10_cash_enrichment_v5.json",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "boundary": "Patient-day only; never visit-level."
+  },
+  {
+    "area": "finance_document_model_reference",
     "asset": "finance/patient_cashbox_18910_document_model_2026-03-18.json",
     "role": "source_of_truth",
     "asset_in_repo": true,
     "migration_status": "current",
-    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_18910_document_model_2026-03-18.json"
+    "boundary": "Reference-case document model, not global cashbox closure."
   },
   {
-    "area": "reporting_architecture",
-    "asset": "EXTERNAL — not yet migrated",
+    "area": "auth_runtime",
+    "asset": "docs/auth_runtime_readiness.md",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "boundary": "ready_with_limits only; local external auth dependency remains."
+  },
+  {
+    "area": "report_family_map",
+    "asset": "reporting/report_universe_2026_03_16.json",
+    "role": "source_of_truth",
+    "asset_in_repo": true,
+    "migration_status": "current",
+    "boundary": "Curated report-family map; not every family is closed."
+  },
+  {
+    "area": "external_auth_state",
+    "asset": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/auth/dentalpro.storage.json",
     "role": "secondary_enrichment",
     "asset_in_repo": false,
-    "migration_status": "external_pending",
-    "original_legacy_path": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_reporting_architecture_map.md"
+    "migration_status": "external_dependency",
+    "boundary": "Required for live runtime work; not version-controlled."
+  },
+  {
+    "area": "external_february_cash_export",
+    "asset": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_24_file_parse_2026-02-01_to_2026-02-28.json",
+    "role": "secondary_enrichment",
+    "asset_in_repo": false,
+    "migration_status": "external_dependency",
+    "boundary": "Referenced by 2026-02-16 cash validation; not internalized as repo SoT."
   }
 ]

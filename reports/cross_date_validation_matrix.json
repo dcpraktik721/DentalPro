@@ -1,90 +1,94 @@
 {
-  "generated_at": "2026-03-18T16:14:21.475Z",
+  "generated_at": "2026-03-18T18:30:00+05:00",
+  "status": "current_canonical_matrix",
   "dates": [
     "2026-02-15",
     "2026-02-16",
     "2026-03-10"
   ],
+  "canonical_sources": {
+    "2026-02-15": [
+      "schedule/schedule_2026-02-15_validation_summary.json",
+      "schedule/schedule_2026-02-15_patient_identity_validation.json",
+      "schedule/schedule_2026-02-15_cash_enrichment_validation.json"
+    ],
+    "2026-02-16": [
+      "schedule/schedule_2026-02-16_validation_summary.json",
+      "schedule/schedule_2026-02-16_patient_identity_validation.json",
+      "schedule/schedule_2026-02-16_identity_repro_pass.json",
+      "schedule/schedule_2026-02-16_cash_enrichment_validation.json"
+    ],
+    "2026-03-10": [
+      "schedule/schedule_2026-03-10_patient_full_report_v5.json",
+      "tickets/schedule_2026-03-10_ticket_registry_v2.json",
+      "finance/schedule_2026-03-10_cash_enrichment_v5.json"
+    ]
+  },
+  "supporting_noncanonical_sources": {
+    "2026-02-15": [
+      "schedule/schedule_2026-02-15_ticket_validation.json"
+    ],
+    "2026-02-16": [
+      "schedule/schedule_2026-02-16_ticket_validation.json"
+    ]
+  },
   "by_date": {
     "2026-02-15": {
       "total_rows": 6,
       "patient_rows": 6,
+      "service_rows": 0,
       "doctors_count": 2,
-      "patient_id_resolved": 5,
-      "ticket_icons_total": 36,
-      "tooltip_captures": 36,
+      "patient_id_resolved": 6,
+      "patient_id_resolution_scope": "full_day",
+      "ticket_icons_total": 33,
+      "tooltip_captures": 2,
       "schi_10_count": 0,
-      "cash_matched_rows": 5
+      "cash_status": "blocked",
+      "cash_matched_rows": 0,
+      "cash_notes": "No in-repo February RPT_24 evidence for this date."
     },
     "2026-02-16": {
       "total_rows": 69,
       "patient_rows": 67,
+      "service_rows": 2,
       "doctors_count": 12,
-      "patient_id_resolved": 24,
+      "patient_rows_probed": 40,
+      "patient_id_resolved_probed": 24,
+      "popup_success_count": 30,
+      "patient_id_resolution_scope": "subset_reproducible",
       "ticket_icons_total": 372,
       "tooltip_captures": 372,
       "schi_10_count": 8,
-      "cash_matched_rows": 12
+      "cash_status": "external_dependent_partial",
+      "cash_matched_rows_probed": 12,
+      "cash_probe_scope": "20_probed_rows_external_rpt24_reference",
+      "cash_notes": "External RPT_24 reference exists in validation summary but is not internalized as repo SoT."
     },
     "2026-03-10": {
-      "date": "2026-03-10",
       "total_rows": 56,
       "patient_rows": 54,
+      "service_rows": 2,
       "doctors_count": 11,
       "patient_id_resolved": 54,
+      "patient_id_resolution_scope": "baseline_day",
       "ticket_icons_total": 304,
       "tooltip_captures": 304,
       "schi_10_count": 11,
+      "cash_status": "closed_patient_day_baseline",
       "cash_matched_rows": 51,
       "cash_boundary": "patient-day only"
     }
   },
-  "method_observations": [
-    {
-      "method_id": "browser_first_route_access",
-      "dates_validated": [
-        "2026-02-15",
-        "2026-02-16",
-        "2026-03-10"
-      ],
-      "cross_date_stable": false,
-      "note": "validated on three dates; not promoted to global stability claim"
-    },
-    {
-      "method_id": "popup_clean_click_probe",
-      "dates_validated": [
-        "2026-02-15",
-        "2026-02-16",
-        "2026-03-10"
-      ],
-      "cross_date_stable": false,
-      "note": "validated on three dates, but popup success remains subset-sensitive"
-    },
-    {
-      "method_id": "focused_rc_tooltip_extraction",
-      "dates_validated": [
-        "2026-02-15",
-        "2026-02-16",
-        "2026-03-10"
-      ],
-      "cross_date_stable": false,
-      "note": "validated on three dates; tooltip semantics still keep schi-10 inferred"
-    },
-    {
-      "method_id": "patient_day_cash_matching",
-      "dates_validated": [
-        "2026-02-15",
-        "2026-02-16",
-        "2026-03-10"
-      ],
-      "cross_date_stable": false,
-      "note": "validated on three dates at patient-day grain only"
-    }
-  ],
   "claim_boundaries": {
     "cross_date_claim": "validated_on_three_dates_not_promoted_to_stable",
     "schi_10": "inferred",
     "cash": "patient-day only",
-    "auth": "ready_with_limits"
-  }
+    "auth": "ready_with_limits",
+    "feb_16_identity": "subset_based_reproducible"
+  },
+  "notes": [
+    "Canonical matrix prefers validation summaries and direct identity/cash artifacts over older supporting/manual ticket slices when they drift.",
+    "2026-02-16 ticket_validation.json is retained as supporting observation, not canonical metric source.",
+    "2026-02-16 cash is not promoted to closed repo cash layer because supporting RPT_24 export remains external."
+  ]
 }

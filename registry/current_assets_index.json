@@ -1852,5 +1852,57 @@
     "path": "docs/external_sot_extraction_worklog.md",
     "type": "documentation",
     "created": "2026-03-18"
+  },
+  {
+    "path": "docs/repo_current_state_master.md",
+    "type": "documentation",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "docs/current_methods_manual.md",
+    "type": "documentation",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "docs/source_of_truth_hierarchy.md",
+    "type": "documentation",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-16_identity_repro_pass.json",
+    "type": "validation_data",
+    "date": "2026-02-16",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-16_identity_repro_diff.md",
+    "type": "validation_report",
+    "date": "2026-02-16",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "scripts/run_schedule_2026_02_16_identity_repro_pass.js",
+    "type": "script",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "reports/phaseA_current_state_freeze_report.md",
+    "type": "phase_report",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "reports/phaseBC_methods_and_sot_closure_report.md",
+    "type": "phase_report",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "reports/phaseDEF_runtime_and_validation_closure_report.md",
+    "type": "phase_report",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "reports/final_repo_verification_report.md",
+    "type": "phase_report",
+    "created": "2026-03-18"
   }
 ]

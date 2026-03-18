@@ -4,16 +4,27 @@
 
 | Area | Result | Notes |
 | --- | --- | --- |
-| Feb 15 live validation | completed | raw files committed under schedule/ |
-| Feb 16 live validation | completed | raw files committed under schedule/ |
-| Cross-date matrix | completed | based on raw Feb dates + baseline 2026-03-10 |
-| Auth smoke | pass | readiness=ready_with_limits |
-| Methods registry | completed | current evidence-backed entries are expected in registry/methods_registry.json |
+| Feb 15 live validation | completed | canonical summary and sub-artifacts exist in repo |
+| Feb 16 live validation | completed | canonical summary exists; identity subset repro exists |
+| Cross-date matrix | completed | canonicalized to current evidence hierarchy |
+| Auth refresh and smoke | completed | repo-local scripts and results exist |
+| Methods registry | completed | current evidence-backed entries updated |
 
-## Safe Boundaries
+## Canonical boundaries
 
-- cross-date wording is intentionally weakened to "validated on three dates", not "globally stable"
-- schi-10 stays inferred
-- cash stays patient-day only
-- auth is ready_with_limits while storageState remains an external dependency
-  
+- cross-date wording: `validated on three dates`
+- forbidden wording: `stable`
+- `schi-10`: `inferred`
+- cash: `patient-day only`
+- auth: `ready_with_limits`
+- `2026-02-16` identity: `subset-based reproducible`
+
+## Evidence notes
+
+- `2026-02-16` identity result is supported by exact repro overlap:
+  - `40` probed
+  - `30` popup success
+  - `24` patient IDs resolved
+  - `16` unresolved
+- February ticket supporting notes are not canonical metric sources when they drift from validation summaries.
+- February cash remains partially validated, not fully closed in repo.

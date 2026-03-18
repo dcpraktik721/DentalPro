@@ -1,0 +1,555 @@
+{
+  "generated_at": "2026-03-18T16:59:19.050Z",
+  "date": "2026-02-16",
+  "method_scope": "identity_only_repro_pass",
+  "subset_limit": 40,
+  "auth": {
+    "refresh_result_path": "runtime/auth_refresh_result.json",
+    "smoke_result_path": "runtime/auth_smoke_check_result.json",
+    "refresh_status": "refreshed",
+    "smoke_readiness": "ready_with_limits",
+    "runtime_authenticated": true,
+    "final_url": "https://dcpraktik.dental-pro.online/visits/schedule/index?date=2026-02-16"
+  },
+  "reference_result": {
+    "patient_rows_total": 67,
+    "patient_rows_probed": 40,
+    "popup_success_count": 30,
+    "patient_id_resolved_probed": 24,
+    "unresolved_probed": 16
+  },
+  "old_summary": {
+    "patient_rows_total": 67,
+    "patient_rows_probed": 40,
+    "popup_success_count": 30,
+    "patient_id_resolved_probed": 24,
+    "unresolved_probed": 16,
+    "subset_mode": "subset"
+  },
+  "repro_summary": {
+    "patient_rows_total": 67,
+    "patient_rows_probed": 40,
+    "popup_success_count": 30,
+    "patient_id_resolved_probed": 24,
+    "unresolved_probed": 16,
+    "subset_mode": "subset"
+  },
+  "overlaps": {
+    "resolved_rows_overlap": [
+      "126932",
+      "128863",
+      "128717",
+      "128544",
+      "128663",
+      "128807",
+      "128539",
+      "128385",
+      "128364",
+      "128760",
+      "127056",
+      "127169",
+      "127778",
+      "127971",
+      "128070",
+      "128297",
+      "128533",
+      "128566",
+      "128645",
+      "128792",
+      "128862",
+      "127126",
+      "127394",
+      "127613"
+    ],
+    "resolved_rows_only_old": [],
+    "resolved_rows_only_new": [],
+    "failed_rows_overlap": [
+      "127844",
+      "128122",
+      "126886",
+      "126893",
+      "127055",
+      "127356",
+      "127661",
+      "127786",
+      "128505",
+      "128749",
+      "128879",
+      "128884",
+      "128889",
+      "127127",
+      "127246",
+      "127615"
+    ],
+    "failed_rows_only_old": [],
+    "failed_rows_only_new": [],
+    "old_failure_reason_counts": {
+      "missing_patient_link": 6,
+      "modal_not_opened": 10
+    },
+    "new_failure_reason_counts": {
+      "missing_patient_link": 6,
+      "modal_not_opened": 10
+    }
+  },
+  "changed_rows": [],
+  "row_logs": [
+    {
+      "row_index": 1,
+      "visit_id": "126932",
+      "patient_name": "БАРАНОВА Е. И.",
+      "doctor_name": "Ортодонты Мамонтова С.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "13047",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 2,
+      "visit_id": "127844",
+      "patient_name": "КАРЕВА К. И.",
+      "doctor_name": "Хирурги, Терапевты, Детская терапия, Гигиенисты Аушева М.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "missing_patient_link",
+      "notes": [
+        "patient info click did not yield cbase/detail id"
+      ]
+    },
+    {
+      "row_index": 3,
+      "visit_id": "128863",
+      "patient_name": "СБИТНЕВ Д. Ю.",
+      "doctor_name": "Терапевты, Пародонтологи, Детская терапия, Гигиенисты Жихар З.К.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "14567",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 4,
+      "visit_id": "128717",
+      "patient_name": "КУЗЕВАНОВА В. А.",
+      "doctor_name": "Хирурги, Ортопеды Иващенко А.Н.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "11821",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 5,
+      "visit_id": "128544",
+      "patient_name": "ИЛЬИНА Е. Н.",
+      "doctor_name": "Хирурги, Ортопеды Иващенко А.Н.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "13817",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 6,
+      "visit_id": "128663",
+      "patient_name": "КОЖЕВНИКОВА С. С.",
+      "doctor_name": "Хирурги, Ортопеды Иващенко А.Н.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "14250",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 7,
+      "visit_id": "128807",
+      "patient_name": "ТИМЕРБАЕВА Л. Х.",
+      "doctor_name": "Ортодонты Гулямхайдаров А.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "11461",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 8,
+      "visit_id": "128539",
+      "patient_name": "КОЗЛОВ А. В.",
+      "doctor_name": "Хирурги, Гигиенисты Дышлевой К.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "18929",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 9,
+      "visit_id": "128122",
+      "patient_name": "ГОБУЗОВ И. Г.",
+      "doctor_name": "Ортодонты Гулямхайдаров А.А.",
+      "popup_opened": "no",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "modal_not_opened",
+      "notes": []
+    },
+    {
+      "row_index": 10,
+      "visit_id": "128385",
+      "patient_name": "МАРЧЕНКО Н. С.",
+      "doctor_name": "Гигиенисты Храпонова Н.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "15327",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 11,
+      "visit_id": "128364",
+      "patient_name": "ХАМОШИНА Н. П.",
+      "doctor_name": "Ортопеды Оленев А.О.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "18988",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 12,
+      "visit_id": "128760",
+      "patient_name": "МИНАКОВА Д. Ф.",
+      "doctor_name": "Хирурги, Терапевты, Детская терапия, Гигиенисты Аушева М.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "19036",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 13,
+      "visit_id": "126886",
+      "patient_name": "НОВИКОВА Д. А.",
+      "doctor_name": "Ортодонты Мамонтова С.А.",
+      "popup_opened": "no",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "modal_not_opened",
+      "notes": []
+    },
+    {
+      "row_index": 14,
+      "visit_id": "126893",
+      "patient_name": "НОМЕРОВСКИХ И. А.",
+      "doctor_name": "Ортодонты Мамонтова С.А.",
+      "popup_opened": "no",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "modal_not_opened",
+      "notes": []
+    },
+    {
+      "row_index": 15,
+      "visit_id": "127055",
+      "patient_name": "КНЫШ А. А.",
+      "doctor_name": "Ортодонты Гулямхайдаров А.А.",
+      "popup_opened": "no",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "modal_not_opened",
+      "notes": []
+    },
+    {
+      "row_index": 16,
+      "visit_id": "127056",
+      "patient_name": "КНЫШ А. А.",
+      "doctor_name": "Гигиенисты Храпонова Н.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "12014",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 17,
+      "visit_id": "127169",
+      "patient_name": "АНИЩЕНКО А. С.",
+      "doctor_name": "Ортодонты Гулямхайдаров А.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "8397",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 18,
+      "visit_id": "127356",
+      "patient_name": "МАРЧЕНКО Н. С.",
+      "doctor_name": "Ортодонты Мамонтова С.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "missing_patient_link",
+      "notes": [
+        "patient info click did not yield cbase/detail id"
+      ]
+    },
+    {
+      "row_index": 19,
+      "visit_id": "127661",
+      "patient_name": "ШАГАРОВА А. А.",
+      "doctor_name": "Ортодонты Гулямхайдаров А.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "missing_patient_link",
+      "notes": [
+        "patient info click did not yield cbase/detail id"
+      ]
+    },
+    {
+      "row_index": 20,
+      "visit_id": "127778",
+      "patient_name": "ЧУБА О. Д.",
+      "doctor_name": "Ортодонты Мамонтова С.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "9503",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 21,
+      "visit_id": "127786",
+      "patient_name": "ЖИЛКИНА Т. И.",
+      "doctor_name": "Хирурги Логвинчук Д.Н.",
+      "popup_opened": "no",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "modal_not_opened",
+      "notes": []
+    },
+    {
+      "row_index": 22,
+      "visit_id": "127971",
+      "patient_name": "НОВИКОВА Д. А.",
+      "doctor_name": "Гигиенисты Храпонова Н.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "12153",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 23,
+      "visit_id": "128070",
+      "patient_name": "САВГИЛЬДИНА С. Ф.",
+      "doctor_name": "Ортодонты Кулешов К.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "18681",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 24,
+      "visit_id": "128297",
+      "patient_name": "ФИШЕР С. Ю.",
+      "doctor_name": "Терапевты, Пародонтологи, Детская терапия, Гигиенисты Буряк Л.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "656",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 25,
+      "visit_id": "128505",
+      "patient_name": "ДЕСЯТОВ С. М.",
+      "doctor_name": "Ортопеды Оленев А.О.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "missing_patient_link",
+      "notes": [
+        "patient info click did not yield cbase/detail id"
+      ]
+    },
+    {
+      "row_index": 26,
+      "visit_id": "128533",
+      "patient_name": "ЗВОНОВА С. А.",
+      "doctor_name": "Терапевты, Ортопеды Зотов В.Д.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "11313",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 27,
+      "visit_id": "128566",
+      "patient_name": "ЗАБОЛОТНЫЙ А. С.",
+      "doctor_name": "Ортопеды Оленев А.О.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "17914",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 28,
+      "visit_id": "128645",
+      "patient_name": "ПРЯХИНА Е. В.",
+      "doctor_name": "Терапевты, Пародонтологи, Детская терапия, Гигиенисты Буряк Л.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "18649",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 29,
+      "visit_id": "128749",
+      "patient_name": "БОДУРОВА Л. А.",
+      "doctor_name": "Ортодонты Мамонтова С.А.",
+      "popup_opened": "no",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "modal_not_opened",
+      "notes": []
+    },
+    {
+      "row_index": 30,
+      "visit_id": "128792",
+      "patient_name": "ГРАЧЕВА А. П.",
+      "doctor_name": "Гигиенисты Храпонова Н.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "12498",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 31,
+      "visit_id": "128862",
+      "patient_name": "ТИУНОВА У. Р.",
+      "doctor_name": "Ортодонты Мамонтова С.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "16717",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 32,
+      "visit_id": "128879",
+      "patient_name": "КРАВЧЕНКО Д. М.",
+      "doctor_name": "Хирурги, Терапевты, Детская терапия, Гигиенисты Аушева М.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "missing_patient_link",
+      "notes": [
+        "patient info click did not yield cbase/detail id"
+      ]
+    },
+    {
+      "row_index": 33,
+      "visit_id": "128884",
+      "patient_name": "ТКАЧЕНКО Ю. Д.",
+      "doctor_name": "Ортопеды Оленев А.О.",
+      "popup_opened": "no",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "modal_not_opened",
+      "notes": []
+    },
+    {
+      "row_index": 34,
+      "visit_id": "128889",
+      "patient_name": "ПАНАСЮРА С. В.",
+      "doctor_name": "Хирурги Логвинчук Д.Н.",
+      "popup_opened": "no",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "modal_not_opened",
+      "notes": []
+    },
+    {
+      "row_index": 35,
+      "visit_id": "127126",
+      "patient_name": "ЧЕРЕПАНОВА М. Я.",
+      "doctor_name": "Ортодонты Гулямхайдаров А.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "13206",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 36,
+      "visit_id": "127127",
+      "patient_name": "ЧЕРЕПАНОВА А. Я.",
+      "doctor_name": "Ортодонты Гулямхайдаров А.А.",
+      "popup_opened": "no",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "modal_not_opened",
+      "notes": []
+    },
+    {
+      "row_index": 37,
+      "visit_id": "127246",
+      "patient_name": "ЯЛОВАЯ Ю. Е.",
+      "doctor_name": "Ортодонты Кулешов К.А.",
+      "popup_opened": "no",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "modal_not_opened",
+      "notes": []
+    },
+    {
+      "row_index": 38,
+      "visit_id": "127394",
+      "patient_name": "ПЕТРОВА А. Н.",
+      "doctor_name": "Ортодонты Гулямхайдаров А.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "8323",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 39,
+      "visit_id": "127613",
+      "patient_name": "РОДИНА А. В.",
+      "doctor_name": "Ортодонты Кулешов К.А.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "yes",
+      "patient_id": "16818",
+      "failure_reason": "",
+      "notes": []
+    },
+    {
+      "row_index": 40,
+      "visit_id": "127615",
+      "patient_name": "РОДИНА А. В.",
+      "doctor_name": "Хирурги Логвинчук Д.Н.",
+      "popup_opened": "yes",
+      "patient_id_extracted": "no",
+      "patient_id": "",
+      "failure_reason": "missing_patient_link",
+      "notes": [
+        "patient info click did not yield cbase/detail id"
+      ]
+    }
+  ],
+  "verdict": {
+    "reproducibility": "reproducible",
+    "trust": "old 24/40 trusted",
+    "further_followup_beyond_40": "yes, another follow-up beyond 40 is still useful if broader February identity closure is needed"
+  }
+}

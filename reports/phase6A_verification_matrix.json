@@ -1,358 +1,44 @@
 {
   "file_presence": [
-    {
-      "file": "registry/methods_registry.json",
-      "exists": true,
-      "size": 15541,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "reports/phase6A_cross_date_and_repo_hardening_report.md",
-      "exists": true,
-      "size": 776,
-      "valid": "n/a",
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "reports/cross_date_validation_matrix.json",
-      "exists": true,
-      "size": 2308,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "reports/cross_date_validation_2026-02-15_2026-02-16_vs_2026-03-10.md",
-      "exists": true,
-      "size": 810,
-      "valid": "n/a",
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-02-15_operational_validation.md",
-      "exists": true,
-      "size": 850,
-      "valid": "n/a",
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-02-15_validation_summary.json",
-      "exists": true,
-      "size": 31416,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-02-15_ticket_validation.json",
-      "exists": true,
-      "size": 15105,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-02-15_patient_identity_validation.json",
-      "exists": true,
-      "size": 7614,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-02-15_cash_enrichment_validation.json",
-      "exists": true,
-      "size": 6300,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-02-16_operational_validation.md",
-      "exists": true,
-      "size": 868,
-      "valid": "n/a",
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-02-16_validation_summary.json",
-      "exists": true,
-      "size": 272720,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-02-16_ticket_validation.json",
-      "exists": true,
-      "size": 156430,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-02-16_patient_identity_validation.json",
-      "exists": true,
-      "size": 42846,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-02-16_cash_enrichment_validation.json",
-      "exists": true,
-      "size": 59477,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "runtime/auth_smoke_check.js",
-      "exists": true,
-      "size": 3934,
-      "valid": "n/a",
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "docs/auth_runtime_readiness.md",
-      "exists": true,
-      "size": 2402,
-      "valid": "n/a",
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "runtime/auth_smoke_check_result.json",
-      "exists": true,
-      "size": 3611,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "schedule/schedule_2026-03-10_patient_full_report_v5.json",
-      "exists": true,
-      "size": 207387,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "tickets/schedule_2026-03-10_ticket_registry_v2.json",
-      "exists": true,
-      "size": 736242,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    },
-    {
-      "file": "finance/schedule_2026-03-10_cash_enrichment_v5.json",
-      "exists": true,
-      "size": 57664,
-      "valid": true,
-      "status": "present",
-      "notes": ""
-    }
+    { "file": "registry/methods_registry.json", "exists": true, "valid": true, "status": "present" },
+    { "file": "reports/phase6A_cross_date_and_repo_hardening_report.md", "exists": true, "valid": "n/a", "status": "present" },
+    { "file": "reports/cross_date_validation_matrix.json", "exists": true, "valid": true, "status": "present" },
+    { "file": "reports/cross_date_validation_2026-02-15_2026-02-16_vs_2026-03-10.md", "exists": true, "valid": "n/a", "status": "present" },
+    { "file": "schedule/schedule_2026-02-15_validation_summary.json", "exists": true, "valid": true, "status": "present" },
+    { "file": "schedule/schedule_2026-02-16_validation_summary.json", "exists": true, "valid": true, "status": "present" },
+    { "file": "schedule/schedule_2026-02-16_identity_repro_pass.json", "exists": true, "valid": true, "status": "present" },
+    { "file": "runtime/auth_smoke_check_result.json", "exists": true, "valid": true, "status": "present" },
+    { "file": "schedule/schedule_2026-03-10_patient_full_report_v5.json", "exists": true, "valid": true, "status": "present" },
+    { "file": "tickets/schedule_2026-03-10_ticket_registry_v2.json", "exists": true, "valid": true, "status": "present" },
+    { "file": "finance/schedule_2026-03-10_cash_enrichment_v5.json", "exists": true, "valid": true, "status": "present" }
   ],
   "metrics_checks": [
     {
-      "metric": "2026-02-15 total_rows",
-      "source_files": [
-        "schedule_2026-02-15_validation_summary.json",
-        "cross_date_validation_matrix.json"
-      ],
+      "metric": "2026-02-15 full-day identity",
       "result": "pass",
-      "notes": "summary=6 matrix=6"
+      "notes": "6/6 resolved"
     },
     {
-      "metric": "2026-02-15 patient_id_resolved",
-      "source_files": [
-        "schedule_2026-02-15_validation_summary.json",
-        "cross_date_validation_matrix.json"
-      ],
+      "metric": "2026-02-16 subset identity reproducibility",
       "result": "pass",
-      "notes": "summary=5 matrix=5"
+      "notes": "24/40 resolved, 30 popup success, exact repro overlap"
     },
     {
-      "metric": "2026-02-16 total_rows",
-      "source_files": [
-        "schedule_2026-02-16_validation_summary.json",
-        "cross_date_validation_matrix.json"
-      ],
+      "metric": "2026-03-10 baseline ticket counts",
       "result": "pass",
-      "notes": "summary=69 matrix=69"
+      "notes": "304 total, 293 proven, 11 inferred"
     },
     {
-      "metric": "2026-02-16 patient_id_resolved_probed",
-      "source_files": [
-        "schedule_2026-02-16_validation_summary.json",
-        "cross_date_validation_matrix.json"
-      ],
+      "metric": "2026-03-10 baseline cash boundary",
       "result": "pass",
-      "notes": "summary=24 matrix=24 (subset-based)"
-    },
-    {
-      "metric": "baseline total_rows",
-      "source_files": [
-        "schedule_2026-03-10_patient_full_report_v5.json",
-        "cross_date_validation_matrix.json"
-      ],
-      "result": "pass",
-      "notes": "baseline=56 matrix=56"
-    },
-    {
-      "metric": "baseline patient_id_resolved",
-      "source_files": [
-        "schedule_2026-03-10_patient_full_report_v5.json",
-        "cross_date_validation_matrix.json"
-      ],
-      "result": "pass",
-      "notes": "baseline=54 matrix=54"
-    },
-    {
-      "metric": "baseline tickets 304/293/11",
-      "source_files": [
-        "schedule_2026-03-10_ticket_registry_v2.json"
-      ],
-      "result": "pass",
-      "notes": "{'total_rows': 56, 'patient_id_resolved': 54, 'tickets_total': 304, 'tickets_proven': 293, 'tickets_inferred': 11, 'schi_10_count': 11, 'cash_match_count': 51}"
-    },
-    {
-      "metric": "baseline schi_10_count=11",
-      "source_files": [
-        "schedule_2026-03-10_ticket_registry_v2.json",
-        "cross_date_validation_matrix.json"
-      ],
-      "result": "pass",
-      "notes": "baseline=11 matrix=11"
-    },
-    {
-      "metric": "baseline cash matched rows",
-      "source_files": [
-        "schedule_2026-03-10_cash_enrichment_v5.json",
-        "cross_date_validation_matrix.json"
-      ],
-      "result": "pass",
-      "notes": "baseline=51 matrix=51"
+      "notes": "51 patient-day matches, never visit-level"
     }
   ],
-  "methods_registry_checks": [
-    {
-      "check": "version = 1.3.0",
-      "result": "pass",
-      "notes": "current version is 1.3.0"
-    },
-    {
-      "check": "entries populated",
-      "result": "pass",
-      "notes": "count=13"
-    },
-    {
-      "check": "browser_first_route_access",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "direct_tab_url_access",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "popup_clean_click_probe",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "focused_rc_tooltip_extraction",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "chair_view_cross_map",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "patient_day_cash_matching",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "storageState_auth_reuse",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "auth_smoke_check",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "auth_refresh_via_login_form",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "entry_schema has status",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "entry_schema has limitations",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "entry_schema has local_evidence",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "entry_schema has cross_date_stable",
-      "result": "pass",
-      "notes": "present"
-    },
-    {
-      "check": "entry_schema has cross_date_validated",
-      "result": "pass",
-      "notes": "present"
-    }
-  ],
-  "claim_boundary_checks": [
-    {
-      "claim": "schi-10 remains inferred",
-      "status": "pass",
-      "notes": "ticket_dictionary_v2.json"
-    },
-    {
-      "claim": "cash remains patient-day only",
-      "status": "pass",
-      "notes": "schedule_2026-03-10_cash_enrichment_v5.json"
-    },
-    {
-      "claim": "cross-date stable not promoted",
-      "status": "pass",
-      "notes": "cross_date_validation_matrix.json"
-    },
-    {
-      "claim": "auth not execution-ready",
-      "status": "pass",
-      "notes": "auth_smoke_check_result.json + auth_runtime_readiness.md"
-    }
-  ],
-  "verdict": {
-    "phase6a_confirmed_by_files": true,
-    "json_validity_ok": true,
-    "open_issues": 0,
-    "baseline_confirmed": true,
-    "cross_date_scope": "validated_on_three_dates_not_promoted_to_stable",
-    "auth_readiness": "ready_with_limits"
+  "claim_boundaries": {
+    "cross_date": "validated_on_three_dates_not_stable",
+    "schi_10": "inferred",
+    "cash": "patient_day_only",
+    "auth": "ready_with_limits",
+    "feb_16_identity": "subset_based_reproducible"
   }
 }
