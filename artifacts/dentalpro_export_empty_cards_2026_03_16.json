@@ -1,0 +1,17 @@
+{
+  "export_available": false,
+  "export_triggered": false,
+  "file_received": false,
+  "file_path": null,
+  "file_type": null,
+  "file_parsed": false,
+  "parsed_headers": [],
+  "parsed_row_count": 0,
+  "limitations": [
+    "No export control detected in live runtime DOM"
+  ],
+  "evidence_reference": [
+    "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_empty_cards_login_page_2026_03_16.html",
+    "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_empty_cards_runtime_page_2026_03_16.html"
+  ]
+}

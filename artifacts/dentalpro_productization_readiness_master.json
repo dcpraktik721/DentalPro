@@ -1,0 +1,156 @@
+[
+  {
+    "identifier": "schedule_day_runtime",
+    "category": "domain",
+    "current_status": "current",
+    "canonicalization_level": "proven",
+    "safe_for_future_reporting": "yes",
+    "required_guardrails": "treat as HTML-first runtime dataset; popup/detail layers remain subset-sensitive",
+    "what_is_missing": "full dedicated transport proof",
+    "evidence_reference": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_operational_dump_master.md",
+    "notes": ""
+  },
+  {
+    "identifier": "schedule_ticket_layer",
+    "category": "domain",
+    "current_status": "current",
+    "canonicalization_level": "proven",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": "only live rendered rc-tooltip is source of truth; schi-10 remains inferred",
+    "what_is_missing": "global proof for all icon families",
+    "evidence_reference": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v2.json",
+    "notes": ""
+  },
+  {
+    "identifier": "patient_schedule_full_v5",
+    "category": "artifact",
+    "current_status": "current",
+    "canonicalization_level": "artifact_proven",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": "do not treat cash sheet as visit-level truth",
+    "what_is_missing": "direct visit->cash linkage",
+    "evidence_reference": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v5.json",
+    "notes": ""
+  },
+  {
+    "identifier": "cash_enrichment_v5",
+    "category": "artifact",
+    "current_status": "current",
+    "canonicalization_level": "artifact_proven",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": "patient-day conditional join only",
+    "what_is_missing": "visit-level cash proof",
+    "evidence_reference": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_cash_enrichment_v5.json",
+    "notes": ""
+  },
+  {
+    "identifier": "patient_cashbox_document_model",
+    "category": "domain",
+    "current_status": "current",
+    "canonicalization_level": "proven",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": "keep act_reference and payment_block_scope separate from row-level paid_amount",
+    "what_is_missing": "full-clinic source closure",
+    "evidence_reference": "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_18910_document_model_2026-03-18.json",
+    "notes": ""
+  },
+  {
+    "identifier": "RPT_18",
+    "category": "report",
+    "current_status": "current",
+    "canonicalization_level": "proven",
+    "safe_for_future_reporting": "yes",
+    "required_guardrails": "use grouped-header projection policy",
+    "what_is_missing": "",
+    "evidence_reference": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_18_final_governed_verdict_2026-03-18.json",
+    "notes": ""
+  },
+  {
+    "identifier": "RPT_23",
+    "category": "report",
+    "current_status": "current",
+    "canonicalization_level": "proven",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": "use first-column normalization policy; do not claim canonicalized_now",
+    "what_is_missing": "global transferability of policy",
+    "evidence_reference": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_final_governed_verdict_2026-03-11.json",
+    "notes": ""
+  },
+  {
+    "identifier": "RPT_33",
+    "category": "report",
+    "current_status": "current",
+    "canonicalization_level": "proven",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": "respect explicit normalization and field boundary rules",
+    "what_is_missing": "",
+    "evidence_reference": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_33_final_governed_verdict_2026-03-15.json",
+    "notes": ""
+  },
+  {
+    "identifier": "RPT_24_file_first_family",
+    "category": "report_family",
+    "current_status": "current",
+    "canonicalization_level": "artifact_proven",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": "file-first only; xray performer gap remains",
+    "what_is_missing": "xray performer key",
+    "evidence_reference": "/Users/macbook15/Downloads/MacAi/artifacts/rpt_24_48_file_first_canonicalization_2026_03_10.json",
+    "notes": ""
+  },
+  {
+    "identifier": "RPT_34_35_dual_layer",
+    "category": "report_family",
+    "current_status": "current",
+    "canonicalization_level": "artifact_proven",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": "no direct row parity",
+    "what_is_missing": "aggregate reconciliation maturation",
+    "evidence_reference": "/Users/macbook15/Downloads/MacAi/artifacts/rpt_34_35_shape_reconciliation_2026_03_10.json",
+    "notes": ""
+  },
+  {
+    "identifier": "RPT_4",
+    "category": "report",
+    "current_status": "current",
+    "canonicalization_level": "proven",
+    "safe_for_future_reporting": "no",
+    "required_guardrails": "treat as replay/debug family only",
+    "what_is_missing": "residual semantics and replay closure",
+    "evidence_reference": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_4_final_governed_verdict_2026-03-17.json",
+    "notes": ""
+  },
+  {
+    "identifier": "RPT_9_RPT_29",
+    "category": "report_family",
+    "current_status": "current",
+    "canonicalization_level": "proven",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": "explicitly omit hidden updater/reason fields or keep as partial",
+    "what_is_missing": "history/update source",
+    "evidence_reference": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/report-api-verification-dossier-2026-03-09.md",
+    "notes": ""
+  },
+  {
+    "identifier": "RPT_21",
+    "category": "report",
+    "current_status": "current",
+    "canonicalization_level": "proven",
+    "safe_for_future_reporting": "no",
+    "required_guardrails": "keep blocked; DDS overlap is not statement source",
+    "what_is_missing": "hidden statement family",
+    "evidence_reference": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/report-api-verification-dossier-2026-03-09.md",
+    "notes": ""
+  },
+  {
+    "identifier": "empty_medcards_internal_runtime",
+    "category": "domain",
+    "current_status": "current",
+    "canonicalization_level": "proven",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": "browser-authenticated internal runtime only",
+    "what_is_missing": "published API equivalent",
+    "evidence_reference": "/Users/macbook15/Downloads/MacAi/docs/dentalpro_empty_cards_forensic_disclosure_2026_03_16.md",
+    "notes": ""
+  }
+]

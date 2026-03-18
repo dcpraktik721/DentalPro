@@ -1,0 +1,586 @@
+{
+  "scopeId": "scope-mobile_client",
+  "scopeName": "MobileApp: Пациент",
+  "mode": "generic_probe",
+  "targetDate": "2026-01-15",
+  "processedAt": "2026-03-08T12:53:50.385Z",
+  "summary": {
+    "methodsInScope": 14,
+    "safeReadCandidates": 8,
+    "skippedUnsafe": 2,
+    "skippedUnknown": 4,
+    "executed": 8,
+    "ok": 7,
+    "failed": 1
+  },
+  "methods": [
+    {
+      "method": "mobile/auth",
+      "description": "Отправляет код авторизации в приложении на указанный номер телефона",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "skip_unsafe",
+        "reason": "description_write_hint"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "phone",
+        "text"
+      ],
+      "paramsPreview": {
+        "phone": "+79044888808"
+      },
+      "executed": false,
+      "skipReason": "description_write_hint"
+    },
+    {
+      "method": "mobile/branches/all",
+      "description": "Список всех филиалов",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/mobile/branches/all?token=<redacted>&secret=<redacted>"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": true,
+          "error_field": null,
+          "method_field": "mobile/branches/all",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 1,
+          "data_item_keys": [
+            "id",
+            "name",
+            "displayName",
+            "addressIndex",
+            "addressCountry",
+            "addressState",
+            "addressCity",
+            "addressStreet",
+            "addressFlat",
+            "factAddress",
+            "workTime",
+            "phone",
+            "site",
+            "logo",
+            "yamap",
+            "coordinates",
+            "yamapToken",
+            "is_hidden",
+            "mobileAddress",
+            "mobileFlat"
+          ],
+          "data_item_preview": {
+            "id": 2,
+            "name": "Общество с ограниченной ответственностью «НЬЮ ЛАЙФ»",
+            "displayName": "ООО НЬЮ ЛАЙФ ( СК ПRАКТИК )",
+            "addressIndex": "625000",
+            "addressCountry": "Россия",
+            "addressState": "Тюменская область",
+            "addressCity": "город Тюмень",
+            "addressStreet": "ул. 8 Марта, д. 1",
+            "addressFlat": "цокольный этаж, офис 1",
+            "factAddress": "Россия, Тюменская область, город Тюмень, ул. 8 Марта, д. 1 цокольный этаж, офис 1",
+            "workTime": "c 8:00 до 21:00",
+            "phone": "+73452699992",
+            "site": "https://praktik72.ru",
+            "logo": "/content/upload/24.01.2020/mvfile_299a27efd4106a39221d22f3cc5fda50.jpg",
+            "yamap": null,
+            "coordinates": null,
+            "yamapToken": null,
+            "is_hidden": false,
+            "mobileAddress": "ул. 8 Марта, д. 1",
+            "mobileFlat": "цокольный этаж, офис 1"
+          }
+        }
+      }
+    },
+    {
+      "method": "mobile/branches/info",
+      "description": "Инфо о филиале по его ID",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "id"
+      ],
+      "paramsPreview": {
+        "id": "1"
+      },
+      "executed": true,
+      "response": {
+        "httpStatus": 404,
+        "ok": false,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/mobile/branches/info?token=<redacted>&secret=<redacted>&id=1"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": false,
+          "error_field": "Филиал не найден",
+          "method_field": "mobile/branches/info",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 0
+        }
+      }
+    },
+    {
+      "method": "mobile/branches/user",
+      "description": "Список филиалов доступных текущему пользователю",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/mobile/branches/user?token=<redacted>&secret=<redacted>"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": true,
+          "error_field": null,
+          "method_field": "mobile/branches/user",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 1,
+          "data_item_keys": [
+            "id",
+            "name",
+            "displayName",
+            "addressIndex",
+            "addressCountry",
+            "addressState",
+            "addressCity",
+            "addressStreet",
+            "addressFlat",
+            "factAddress",
+            "workTime",
+            "phone",
+            "site",
+            "logo",
+            "yamap",
+            "coordinates",
+            "yamapToken",
+            "is_hidden",
+            "mobileAddress",
+            "mobileFlat"
+          ],
+          "data_item_preview": {
+            "id": 2,
+            "name": "Общество с ограниченной ответственностью «НЬЮ ЛАЙФ»",
+            "displayName": "ООО НЬЮ ЛАЙФ ( СК ПRАКТИК )",
+            "addressIndex": "625000",
+            "addressCountry": "Россия",
+            "addressState": "Тюменская область",
+            "addressCity": "город Тюмень",
+            "addressStreet": "ул. 8 Марта, д. 1",
+            "addressFlat": "цокольный этаж, офис 1",
+            "factAddress": null,
+            "workTime": "c 8:00 до 21:00",
+            "phone": "+73452699992",
+            "site": "https://praktik72.ru",
+            "logo": "/content/upload/24.01.2020/mvfile_299a27efd4106a39221d22f3cc5fda50.jpg",
+            "yamap": null,
+            "coordinates": null,
+            "yamapToken": null,
+            "is_hidden": false,
+            "mobileAddress": "ул. 8 Марта, д. 1",
+            "mobileFlat": "цокольный этаж, офис 1"
+          }
+        }
+      }
+    },
+    {
+      "method": "mobile/client/actions",
+      "description": "Акции и новости",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/mobile/client/actions?token=<redacted>&secret=<redacted>"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": true,
+          "error_field": null,
+          "method_field": "mobile/client/actions",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 0
+        }
+      }
+    },
+    {
+      "method": "mobile/client/files",
+      "description": "[Deprecated] Прикрепленные файлы пациента",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "skip_unknown",
+        "reason": "no_safe_signal"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": false,
+      "skipReason": "no_safe_signal"
+    },
+    {
+      "method": "mobile/client/info",
+      "description": "Информация о пациенте",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/mobile/client/info?token=<redacted>&secret=<redacted>"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": false,
+          "error_field": "this token does not contain client_id data",
+          "method_field": "mobile/client/info",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 0
+        }
+      }
+    },
+    {
+      "method": "mobile/client/mediafiles",
+      "description": "Файлы пациента",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "skip_unknown",
+        "reason": "no_safe_signal"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": false,
+      "skipReason": "no_safe_signal"
+    },
+    {
+      "method": "mobile/client/records",
+      "description": "Записи пациента",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/mobile/client/records?token=<redacted>&secret=<redacted>"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": false,
+          "error_field": "this token does not contain client_id data",
+          "method_field": "mobile/client/records",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 0
+        }
+      }
+    },
+    {
+      "method": "mobile/client/rentgens",
+      "description": "Снимки рентгена и КТ",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "skip_unknown",
+        "reason": "no_safe_signal"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": false,
+      "skipReason": "no_safe_signal"
+    },
+    {
+      "method": "mobile/client/variants",
+      "description": "Зубная формула и варианты лечения",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/mobile/client/variants?token=<redacted>&secret=<redacted>"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": false,
+          "error_field": "this token does not contain client_id data",
+          "method_field": "mobile/client/variants",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 0
+        }
+      }
+    },
+    {
+      "method": "mobile/messages/client/dialog",
+      "description": "Сообщения: Получить диалог с куратором",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "skip_unknown",
+        "reason": "no_safe_signal"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "last_id[]"
+      ],
+      "paramsPreview": {},
+      "executed": false,
+      "skipReason": "no_safe_signal"
+    },
+    {
+      "method": "mobile/messages/client/send",
+      "description": "Сообщения: Отправка сообщения",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "skip_unsafe",
+        "reason": "method_name_write_hint"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "message"
+      ],
+      "paramsPreview": {},
+      "executed": false,
+      "skipReason": "method_name_write_hint"
+    },
+    {
+      "method": "mobile/user/current",
+      "description": "Данные текущего пользователя",
+      "scope": "MobileApp: Пациент",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/mobile/user/current?token=<redacted>&secret=<redacted>"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": true,
+          "error_field": null,
+          "method_field": "mobile/user/current",
+          "total_field": 0,
+          "data_container_type": "object",
+          "data_object_keys": [
+            "id",
+            "doctor_id",
+            "manager_id",
+            "fio",
+            "type",
+            "permitted"
+          ],
+          "data_object_preview": {
+            "id": 71,
+            "doctor_id": null,
+            "manager_id": null,
+            "fio": "Корытников Р.В.",
+            "type": "director",
+            "permitted": true
+          }
+        }
+      }
+    }
+  ]
+}

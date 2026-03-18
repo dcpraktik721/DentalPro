@@ -1,0 +1,353 @@
+[
+  {
+    "asset_id": "doc_dentalpro_crm_page_observations_2026_03_09",
+    "title": "DentalPRO CRM page observations 2026-03-09",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/dentalpro-crm-page-observations-2026-03-09.md",
+    "repo_path": "docs/dentalpro-crm-page-observations-2026-03-09.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "tab_routes",
+    "related_tabs": [
+      "comments",
+      "files",
+      "documents",
+      "family",
+      "schedule_history",
+      "medical_history"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_route_map",
+    "reason": "Primary observed inventory of remaining patient tabs",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_dentalpro_screen_map_2026_03_09",
+    "title": "DentalPRO screen map 2026-03-09",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/dentalpro-screen-map-2026-03-09.md",
+    "repo_path": "docs/dentalpro-screen-map-2026-03-09.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "tab_routes",
+    "related_tabs": [
+      "patient_hub",
+      "medcards",
+      "xrays"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_route_map",
+    "reason": "Primary route map linking patient hub to related dossier screens",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_dentalpro_empty_cards_report_2026_03_16",
+    "title": "DentalPRO empty cards report 2026-03-16",
+    "source_path": "/Users/macbook15/Downloads/MacAi/docs/dentalpro_empty_cards_report_2026_03_16.md",
+    "repo_path": "docs/dentalpro_empty_cards_report_2026_03_16.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "medcards",
+    "related_tabs": [
+      "medcards"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_verified_library",
+    "reason": "Current summary of verified medcards empty-cards registry path",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_dentalpro_empty_cards_forensic_disclosure_2026_03_16",
+    "title": "DentalPRO empty cards forensic disclosure 2026-03-16",
+    "source_path": "/Users/macbook15/Downloads/MacAi/docs/dentalpro_empty_cards_forensic_disclosure_2026_03_16.md",
+    "repo_path": "docs/dentalpro_empty_cards_forensic_disclosure_2026_03_16.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "medcards",
+    "related_tabs": [
+      "medcards"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_forensic_asset",
+    "reason": "Detailed medcards empty-cards forensic disclosure",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_dentalpro_runtime_extraction_empty_cards_2026_03_16",
+    "title": "DentalPRO runtime extraction empty cards 2026-03-16",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_runtime_extraction_empty_cards_2026_03_16.json",
+    "repo_path": "artifacts/dentalpro_runtime_extraction_empty_cards_2026_03_16.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "medcards",
+    "related_tabs": [
+      "medcards"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_output",
+    "reason": "Primary structured medcards output in current repo",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_dentalpro_network_capture_report_empty_cards_2026_03_16",
+    "title": "DentalPRO network capture empty cards 2026-03-16",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_network_capture_report_empty_cards_2026_03_16.json",
+    "repo_path": "artifacts/dentalpro_network_capture_report_empty_cards_2026_03_16.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "medcards",
+    "related_tabs": [
+      "medcards"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_forensic_asset",
+    "reason": "Primary request chain for medcards empty-cards registry",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_dentalpro_export_empty_cards_2026_03_16",
+    "title": "DentalPRO export empty cards 2026-03-16",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_export_empty_cards_2026_03_16.json",
+    "repo_path": "artifacts/dentalpro_export_empty_cards_2026_03_16.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "medcards",
+    "related_tabs": [
+      "medcards"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_forensic_asset",
+    "reason": "Export boundary for medcards empty-cards family",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_scope_insurance_verified_library_2026_01_15",
+    "title": "Scope insurance verified library 2026-01-15",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/scope-insurance-verified-library-2026-01-15.md",
+    "repo_path": "docs/scope-insurance-verified-library-2026-01-15.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "dms_insurance",
+    "related_tabs": [
+      "dms",
+      "insurance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_verified_library",
+    "reason": "Primary verified library for insurance patient linkage scope",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_insurance_2026_01_15_json",
+    "title": "Insurance scope artifact 2026-01-15",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/scope-runner/insurance-2026-01-15.json",
+    "repo_path": "patients/insurance-2026-01-15.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "dms_insurance",
+    "related_tabs": [
+      "dms",
+      "insurance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_output",
+    "reason": "Supporting patient-linked insurance output already in repo",
+    "notes": ""
+  },
+  {
+    "asset_id": "patient_cashbox_18910_document_model_json",
+    "title": "Patient cashbox 18910 document model",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_18910_document_model_2026-03-18.json",
+    "repo_path": "finance/patient_cashbox_18910_document_model_2026-03-18.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "payments_bills",
+    "related_tabs": [
+      "cashbox",
+      "bills",
+      "payments"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_output",
+    "reason": "Primary reference patient cashbox tab document model",
+    "notes": ""
+  },
+  {
+    "asset_id": "patient_cashbox_19095_document_model_json",
+    "title": "Patient cashbox 19095 document model",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_19095_document_model_2026-03-18.json",
+    "repo_path": "finance/patient_cashbox_19095_document_model_2026-03-18.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "payments_bills",
+    "related_tabs": [
+      "cashbox",
+      "bills",
+      "payments"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_output",
+    "reason": "Second current reference patient cashbox tab model",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_scope_xray_verification_2026_01_15",
+    "title": "Scope xray verification 2026-01-15",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/scope-xray-verification-2026-01-15.md",
+    "repo_path": "docs/scope-xray-verification-2026-01-15.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "xrays",
+    "related_tabs": [
+      "xrays"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_verified_library",
+    "reason": "Current xray tab boundary doc",
+    "notes": "Boundary-only; proves lack of read-payload promotion"
+  },
+  {
+    "asset_id": "artifact_scope_xray_json",
+    "title": "Scope xray verified responses JSON",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/scope-runner/xray-2026-01-15.json",
+    "repo_path": "artifacts/xray-2026-01-15.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "xrays",
+    "related_tabs": [
+      "xrays"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_forensic_asset",
+    "reason": "Supporting xray scope artifact",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_task_graph_blueprint_ultimate_patient_dossier",
+    "title": "Task Graph Blueprint Ultimate Patient Dossier",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md",
+    "repo_path": "docs/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "mixed",
+    "related_tabs": [
+      "comments",
+      "files",
+      "documents",
+      "family",
+      "schedule_history",
+      "medical_history"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_route_map",
+    "reason": "Current curated blueprint covering remaining dossier families end-to-end",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_ultimate_patient_dossier_live_15900",
+    "title": "Ultimate patient dossier live 15900",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/ultimate_patient_dossier_live_15900.json",
+    "repo_path": "patients/ultimate_patient_dossier_live_15900.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "mixed",
+    "related_tabs": [
+      "comments",
+      "files",
+      "documents",
+      "family",
+      "schedule_history",
+      "medical_history"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_output",
+    "reason": "Primary sample patient dossier bundle for remaining tabs",
+    "notes": "Patient-specific reference case"
+  },
+  {
+    "asset_id": "artifact_base_profile_and_tabs",
+    "title": "Base profile and tabs network pack",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part3/network_trace_pack/base_profile_and_tabs.json",
+    "repo_path": "artifacts/base_profile_and_tabs.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "mixed",
+    "related_tabs": [
+      "comments",
+      "family",
+      "schedule_history",
+      "medical_history"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_verified_library",
+    "reason": "Machine-readable route and ready-state evidence for remaining tabs",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_files_and_documents_pack",
+    "title": "Files and documents network pack",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part3/network_trace_pack/files_and_documents.json",
+    "repo_path": "artifacts/files_and_documents.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "mixed",
+    "related_tabs": [
+      "files",
+      "documents"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_verified_library",
+    "reason": "Machine-readable routes and modal/download contracts for files/documents",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_documents_state_machine",
+    "title": "Documents state machine",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part3/state_machines/documents_state_machine.md",
+    "repo_path": "docs/documents_state_machine.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "documents",
+    "related_tabs": [
+      "documents"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_verified_library",
+    "reason": "Current operational state machine for documents read path and create boundary",
+    "notes": ""
+  }
+]

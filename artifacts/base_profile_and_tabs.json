@@ -1,0 +1,149 @@
+{
+  "pack": "base_profile_and_tabs",
+  "evidence_sources": [
+    "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md",
+    "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/ultimate_patient_dossier_live_15900.json",
+    "/Users/macbook15/Downloads/MacAi/output/puppeteer/patient-dossier-blueprint/Task_Graph_Blueprint_Patient_Dossier.md"
+  ],
+  "entries": [
+    {
+      "section": "base_profile",
+      "entry_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=<client_id>",
+      "page_load_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/cbase/detail.html?id=<client_id>",
+          "response_type": "text/html",
+          "purpose": "bootstrap patient profile page",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "background_requests": [
+        {
+          "type": "static assets",
+          "content_types": [
+            "text/css",
+            "application/javascript",
+            "image/*"
+          ],
+          "timing_notes": "Base page loads ERP assets, but patient data needed for dossier is already present in rendered HTML.",
+          "evidence_status": "inferred"
+        }
+      ],
+      "silent_xhr_fetch_calls": [],
+      "ready_state_observation": "Safe to parse once accordion blocks and #client-comments are present in DOM.",
+      "evidence_status": "confirmed"
+    },
+    {
+      "section": "comments_pane",
+      "entry_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=<client_id>#client-comments",
+      "page_load_requests": [],
+      "background_requests": [],
+      "silent_xhr_fetch_calls": [],
+      "ready_state_observation": "Comments pane is rendered inside the base profile DOM; no separate tab GET was required.",
+      "evidence_status": "confirmed"
+    },
+    {
+      "section": "schedule_history",
+      "entry_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=<client_id>&tab=schedule2%5Ccbase%5Chistory",
+      "page_load_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/cbase/detail.html?id=<client_id>&tab=schedule2%5Ccbase%5Chistory",
+          "response_type": "text/html",
+          "purpose": "server-rendered schedule history grid",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "background_requests": [],
+      "silent_xhr_fetch_calls": [],
+      "ready_state_observation": "Safe when the table containing headers 'Тип записи' and 'Квитанция' is present.",
+      "evidence_status": "confirmed"
+    },
+    {
+      "section": "medical_history",
+      "entry_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=<client_id>&tab=medical%5Ccbase%5Chistory",
+      "page_load_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/cbase/detail.html?id=<client_id>&tab=medical%5Ccbase%5Chistory",
+          "response_type": "text/html",
+          "purpose": "server-rendered medical history grid",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "background_requests": [],
+      "silent_xhr_fetch_calls": [],
+      "ready_state_observation": "Safe when a table with headers 'Прием' and 'Решение' is present.",
+      "evidence_status": "confirmed"
+    },
+    {
+      "section": "cashbox_pays",
+      "entry_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=<client_id>&tab=cashbox%5Ccbase%5Cpays",
+      "page_load_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/cbase/detail.html?id=<client_id>&tab=cashbox%5Ccbase%5Cpays",
+          "response_type": "text/html",
+          "purpose": "payments summary and payment rows/cards",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "background_requests": [],
+      "silent_xhr_fetch_calls": [],
+      "ready_state_observation": "Safe when payment row/card containers are present or explicit empty state text is visible.",
+      "evidence_status": "confirmed"
+    },
+    {
+      "section": "cashbox_bills",
+      "entry_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=<client_id>&tab=cashbox%5Ccbase%5Cbills",
+      "page_load_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/cbase/detail.html?id=<client_id>&tab=cashbox%5Ccbase%5Cbills",
+          "response_type": "text/html",
+          "purpose": "account state / debt state pane",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "background_requests": [],
+      "silent_xhr_fetch_calls": [],
+      "ready_state_observation": "Safe when bill state cards or the 'Счет еще не открыт' empty state is visible.",
+      "evidence_status": "confirmed"
+    },
+    {
+      "section": "dms",
+      "entry_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=<client_id>&tab=insurance%5Ctabs%5CDmsDocs",
+      "page_load_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/cbase/detail.html?id=<client_id>&tab=insurance%5Ctabs%5CDmsDocs",
+          "response_type": "text/html",
+          "purpose": "DMS tab",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "background_requests": [],
+      "silent_xhr_fetch_calls": [],
+      "ready_state_observation": "Safe when either policy rows or 'Записей нет' empty state is visible.",
+      "evidence_status": "confirmed"
+    },
+    {
+      "section": "family",
+      "entry_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=<client_id>&tab=addons%5Cfamily%5Cmodels%5CfamilyCbaseTab",
+      "page_load_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/cbase/detail.html?id=<client_id>&tab=addons%5Cfamily%5Cmodels%5CfamilyCbaseTab",
+          "response_type": "text/html",
+          "purpose": "family relationships tab",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "background_requests": [],
+      "silent_xhr_fetch_calls": [],
+      "ready_state_observation": "Safe when relation rows are present or 'Нет данных о семье пациента.' empty state is visible.",
+      "evidence_status": "confirmed"
+    }
+  ]
+}

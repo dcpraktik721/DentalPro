@@ -1,0 +1,212 @@
+[
+  {
+    "asset_id": "schedule_ticket_registry_v1_json",
+    "title": "Schedule ticket registry v1 JSON",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v1.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "tickets"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "reason": "Superseded by ticket_registry_v2",
+    "notes": ""
+  },
+  {
+    "asset_id": "schedule_ticket_registry_v1_xlsx",
+    "title": "Schedule ticket registry v1 workbook",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v1.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "tickets"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "reason": "Superseded by ticket_registry_v2",
+    "notes": ""
+  },
+  {
+    "asset_id": "schedule_popup_linkage_v2",
+    "title": "Schedule popup linkage v2",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_popup_linkage_v2.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "schedule"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "reason": "Superseded by popup_linkage_v3",
+    "notes": ""
+  },
+  {
+    "asset_id": "schedule_patient_full_report_v4_json",
+    "title": "Schedule patient full report v4 JSON",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v4.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "schedule",
+      "patients"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "reason": "Superseded by patient_full_report_v5",
+    "notes": ""
+  },
+  {
+    "asset_id": "schedule_patient_full_report_v4_xlsx",
+    "title": "Schedule patient full report v4 workbook",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v4.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "schedule",
+      "patients"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "reason": "Superseded by patient_full_report_v5",
+    "notes": ""
+  },
+  {
+    "asset_id": "patients_old_hygiene_no_followup_v1_json",
+    "title": "Patients old hygiene no followup v1 JSON",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "patients"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "reason": "Superseded by normalized v2 output",
+    "notes": ""
+  },
+  {
+    "asset_id": "patients_old_hygiene_no_followup_v1_xlsx",
+    "title": "Patients old hygiene no followup v1 workbook",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "patients"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "reason": "Superseded by normalized v2 output",
+    "notes": ""
+  },
+  {
+    "asset_id": "script_build_schedule_patient_full_report_v4",
+    "title": "Build schedule patient full report v4",
+    "source_path": "/Users/macbook15/Downloads/MacAi/scripts/build_schedule_patient_full_report_v4.py",
+    "asset_type": "script",
+    "domain": [
+      "patients"
+    ],
+    "patient_subdomain": "dossier_bundle",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "source_of_truth_role": "superseded",
+    "reason": "Superseded by v5 patient full report builder",
+    "notes": ""
+  },
+  {
+    "asset_id": "script_run_schedule_patient_identity_probe_v4",
+    "title": "Run schedule patient identity probe v4",
+    "source_path": "/Users/macbook15/Downloads/MacAi/scripts/run_schedule_patient_identity_probe_v4.js",
+    "asset_type": "script",
+    "domain": [
+      "patients"
+    ],
+    "patient_subdomain": "identity_lookup",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "source_of_truth_role": "superseded",
+    "reason": "Superseded by focused v5 identity probe",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_patient_cashbox_18910_dataset_json",
+    "title": "Patient cashbox 18910 dataset JSON",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_18910_dataset_2026-03-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "patients",
+      "finance"
+    ],
+    "patient_subdomain": "payments_bills",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "source_of_truth_role": "superseded",
+    "reason": "Superseded by document-level cashbox model",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_patient_cashbox_18910_dataset_xlsx",
+    "title": "Patient cashbox 18910 dataset workbook",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_18910_dataset_2026-03-18.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "patients",
+      "finance"
+    ],
+    "patient_subdomain": "payments_bills",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "source_of_truth_role": "superseded",
+    "reason": "Superseded by document-level cashbox model workbook",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_patients_old_hygiene_before_json_precursor",
+    "title": "Patients old hygiene precursor list",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/patients_old_hygiene_live_2026-03-01_to_2026-03-31.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "patients"
+    ],
+    "patient_subdomain": "mixed",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "source_of_truth_role": "superseded",
+    "reason": "Precursor asset superseded by no-followup v2 operational list",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_task_graph_blueprint_patient_dossier",
+    "title": "Task Graph Blueprint Patient Dossier",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/patient-dossier-blueprint/Task_Graph_Blueprint_Patient_Dossier.md",
+    "asset_type": "doc",
+    "domain": [
+      "patients"
+    ],
+    "dossier_subdomain": "mixed",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "superseded",
+    "migration_decision": "superseded_do_not_migrate",
+    "reason": "Superseded by the ultimate patient dossier blueprint and derived network packs",
+    "notes": ""
+  }
+]

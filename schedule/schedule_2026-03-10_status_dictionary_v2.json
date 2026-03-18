@@ -1,0 +1,2423 @@
+[
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация гигиениста"
+    ],
+    "example_visit_ids": [
+      "130410",
+      "129619"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130410,129619",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-9  | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Продолжение лечения гигиенист"
+    ],
+    "example_visit_ids": [
+      "129458",
+      "129459",
+      "129982"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-9 ",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129458,129459,129982",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация гигиениста"
+    ],
+    "example_visit_ids": [
+      "130382",
+      "130323",
+      "129728"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130382,130323,129728",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-6 text-danger | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Продолжение лечения врача ортопеда"
+    ],
+    "example_visit_ids": [
+      "130119"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-6 text-danger",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "structurally_observed",
+    "evidence": "status_dictionary_v2:130119",
+    "notes": [
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-13 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "| Снятие диагностического оттиска"
+    ],
+    "example_visit_ids": [
+      "130483"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-13",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130483",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторный прием со сплинтом"
+    ],
+    "example_visit_ids": [
+      "129591",
+      "130214"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129591,130214",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false task-mini | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "Неявка",
+    "visit_type_examples": [
+      "Неявка"
+    ],
+    "example_visit_ids": [
+      "129734"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "no_show",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "mini_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": true,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129734",
+    "notes": [
+      "explicit status label Неявка",
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class",
+      "task-mini CSS class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false task-mini | schi schi-1 | schi schi-13 | schi schi-5 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация врача ортодонта"
+    ],
+    "example_visit_ids": [
+      "130053"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "mini_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-5",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": true,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130053",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class",
+      "task-mini CSS class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-3 | schi schi-1 | schi schi-4 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "Онлайн запись",
+    "visit_type_examples": [
+      "Онлайн запись"
+    ],
+    "example_visit_ids": [
+      "130231"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "online_booking",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-3",
+        "schi schi-1",
+        "schi schi-4",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130231",
+    "notes": [
+      "explicit status label Онлайн запись",
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-3 | schi schi-1 | schi schi-9  | schi schi-4 | schi schi-14 | schi schi-6 text-danger | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "Онлайн запись",
+    "visit_type_examples": [
+      "Онлайн запись"
+    ],
+    "example_visit_ids": [
+      "130329"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "online_booking",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "inferred",
+      "booking_origin": "proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-3",
+        "schi schi-1",
+        "schi schi-9 ",
+        "schi schi-4",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130329",
+    "notes": [
+      "explicit status label Онлайн запись",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-3 | schi schi-1 | schi schi-4 | schi schi-10 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Первичная консультация ортодонта"
+    ],
+    "example_visit_ids": [
+      "129677"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-3",
+        "schi schi-1",
+        "schi schi-4",
+        "schi schi-10",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129677",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false",
+    "status_label_raw": "",
+    "visit_type_examples": [],
+    "example_visit_ids": [
+      "129505",
+      "129254"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "not_proven",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [],
+      "has_task_mini": false,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": false
+    },
+    "status": "structurally_observed",
+    "evidence": "status_dictionary_v2:129505,129254",
+    "notes": []
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-9  | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Продолжение лечения ортодонт"
+    ],
+    "example_visit_ids": [
+      "129458",
+      "129459",
+      "129982"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-9 ",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129458,129459,129982",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false task-mini | schi schi-1 | schi schi-9  | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-reversal | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация врача-ортодонта"
+    ],
+    "example_visit_ids": [
+      "130087"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "reversal",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "mini_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-9 ",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-reversal",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": true,
+      "has_status_paid": false,
+      "has_status_reversal": true,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130087",
+    "notes": [
+      "cashbox-icon status-reversal class present",
+      "callcentr-ticket-dontCreated raw class",
+      "task-mini CSS class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-5 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Прямая реставрация зуба жевательной зоны"
+    ],
+    "example_visit_ids": [
+      "130215",
+      "129986"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-5",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130215,129986",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Прямая реставрация зуба жевательной зоны"
+    ],
+    "example_visit_ids": [
+      "130382",
+      "130323",
+      "129728"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130382,130323,129728",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторное эндолечение 2 кан. - 1-е посещение"
+    ],
+    "example_visit_ids": [
+      "130410",
+      "129619"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130410,129619",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-13 text-danger | schi schi-9  | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Лечение пульпита 1 кан-1 посещение"
+    ],
+    "example_visit_ids": [
+      "130475"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-13 text-danger",
+        "schi schi-9 ",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130475",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-10 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Прямая реставрация зуба жевательной зоны"
+    ],
+    "example_visit_ids": [
+      "129956"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-10",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129956",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Восстановление зуба пломбой II на молярах"
+    ],
+    "example_visit_ids": [
+      "130430"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130430",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-4 | schi schi-5 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Прямая реставрация зуба жевательной зоны"
+    ],
+    "example_visit_ids": [
+      "130344"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-4",
+        "schi schi-5",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130344",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-13 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Прямая реставрация зуба жевательной зоны"
+    ],
+    "example_visit_ids": [
+      "129869"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-13",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129869",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "лечение кариеса зубов 11,12,13"
+    ],
+    "example_visit_ids": [
+      "129591",
+      "130214"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129591,130214",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 text-danger | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-open | schi schi-11 text-danger | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Прямая реставрация зуба жевательной зоны"
+    ],
+    "example_visit_ids": [
+      "130422"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13 text-danger",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-open",
+        "schi schi-11 text-danger",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "structurally_observed",
+    "evidence": "status_dictionary_v2:130422",
+    "notes": [
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Лечение периодонтита 3 канала -2 посещение"
+    ],
+    "example_visit_ids": [
+      "129487",
+      "130488"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129487,130488",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-9  | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Прямая реставрация зуба жевательной зоны"
+    ],
+    "example_visit_ids": [
+      "129458",
+      "129459",
+      "129982"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-9 ",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129458,129459,129982",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false task-mini | schi schi-1 | schi schi-4 | schi schi-10 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "первичная консультация врача-терапевта"
+    ],
+    "example_visit_ids": [
+      "130195"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "mini_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-4",
+        "schi schi-10",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": true,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130195",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class",
+      "task-mini CSS class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-10 | schi schi-14 | schi schi-6 text-danger | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация врача-терапевта"
+    ],
+    "example_visit_ids": [
+      "130457"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-10",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "structurally_observed",
+    "evidence": "status_dictionary_v2:130457",
+    "notes": [
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Прямая реставрация зуба жевательной зоны"
+    ],
+    "example_visit_ids": [
+      "130184"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130184",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-3 | schi schi-1 | schi schi-13 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Прямая реставрация зуба жевательной зоны"
+    ],
+    "example_visit_ids": [
+      "130369"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-3",
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130369",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-10 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Удаление"
+    ],
+    "example_visit_ids": [
+      "130240"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-10",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130240",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false task-mini | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-11 text-danger | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Снятие швов."
+    ],
+    "example_visit_ids": [
+      "130265"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "mini_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-11 text-danger",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": true,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130265",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class",
+      "task-mini CSS class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Продолжение лечения хирург"
+    ],
+    "example_visit_ids": [
+      "129183"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129183",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false task-mini | schi schi-5 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Удаление постоянного зуба"
+    ],
+    "example_visit_ids": [
+      "130504"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "mini_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-5",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": true,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130504",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class",
+      "task-mini CSS class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация хирурга"
+    ],
+    "example_visit_ids": [
+      "129244"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129244",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-4 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Первичная консультация стоматолога по имплантации"
+    ],
+    "example_visit_ids": [
+      "130451",
+      "130309"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-4",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130451,130309",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 text-danger | schi schi-9  | schi schi-5 | schi schi-14 | schi schi-6 text-danger | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Удаление"
+    ],
+    "example_visit_ids": [
+      "129821"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13 text-danger",
+        "schi schi-9 ",
+        "schi schi-5",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "structurally_observed",
+    "evidence": "status_dictionary_v2:129821",
+    "notes": [
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false task-mini | schi schi-1 | schi schi-13 text-danger | schi schi-5 | schi schi-14 | schi schi-6 text-danger | schi schi-11 text-danger | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Имплантация Dentium."
+    ],
+    "example_visit_ids": [
+      "129822"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "mini_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13 text-danger",
+        "schi schi-5",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-11 text-danger",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": true,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "structurally_observed",
+    "evidence": "status_dictionary_v2:129822",
+    "notes": [
+      "callcentr-ticket-outdated raw class",
+      "task-mini CSS class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false task-mini | schi schi-13 | schi schi-10 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Удаление"
+    ],
+    "example_visit_ids": [
+      "129965"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "mini_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-13",
+        "schi schi-10",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": true,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129965",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class",
+      "task-mini CSS class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-10 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Удаление постоянного зуба"
+    ],
+    "example_visit_ids": [
+      "130244"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-10",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130244",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Имплантация Straumann + формирователь"
+    ],
+    "example_visit_ids": [
+      "130382",
+      "130323",
+      "129728"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130382,130323,129728",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-14 | schi schi-6 text-danger | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация врача-ортопеда"
+    ],
+    "example_visit_ids": [
+      "130102"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "structurally_observed",
+    "evidence": "status_dictionary_v2:130102",
+    "notes": [
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-10 | schi schi-14 | schi schi-6 text-danger | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Продолжение лечения врача ортопеда"
+    ],
+    "example_visit_ids": [
+      "129670"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-10",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "structurally_observed",
+    "evidence": "status_dictionary_v2:129670",
+    "notes": [
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false task-mini | schi schi-13 | schi schi-10 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-11 text-danger | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Продолжение лечения врача ортопеда"
+    ],
+    "example_visit_ids": [
+      "130496"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "mini_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-13",
+        "schi schi-10",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-11 text-danger",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": true,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130496",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class",
+      "task-mini CSS class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-14 | schi schi-6 text-danger | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Продолжение лечения врача ортопеда"
+    ],
+    "example_visit_ids": [
+      "130125"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "structurally_observed",
+    "evidence": "status_dictionary_v2:130125",
+    "notes": [
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-5 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация врача-ортопеда"
+    ],
+    "example_visit_ids": [
+      "130425"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-5",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130425",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация врача-ортопеда"
+    ],
+    "example_visit_ids": [
+      "129487",
+      "130488"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129487,130488",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 | schi schi-14 | schi schi-6 text-danger | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация врача-ортопеда"
+    ],
+    "example_visit_ids": [
+      "129195"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "not_proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": false,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "structurally_observed",
+    "evidence": "status_dictionary_v2:129195",
+    "notes": [
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-13 text-danger | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация врача-ортопеда"
+    ],
+    "example_visit_ids": [
+      "130433"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-13 text-danger",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130433",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-10 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Повторная консультация врача-ортопеда"
+    ],
+    "example_visit_ids": [
+      "130442"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-10",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130442",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Продолжение лечения врача ортопеда"
+    ],
+    "example_visit_ids": [
+      "130487"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130487",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-3 | schi schi-1 | schi schi-10 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Имплантация Straumann + покрывной винт - 1 прием, Имплантация Straumann формирователь - 2 прием"
+    ],
+    "example_visit_ids": [
+      "129467"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-3",
+        "schi schi-1",
+        "schi schi-10",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129467",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-dontCreated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Удаление 1 степени"
+    ],
+    "example_visit_ids": [
+      "129671"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_not_created",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-dontCreated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": true,
+      "has_ticket_outdated": false
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:129671",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-dontCreated raw class"
+    ]
+  },
+  {
+    "raw_icon_class_pattern": "task false false | schi schi-1 | schi schi-4 | schi schi-14 | schi schi-6 text-danger | schi schi-12 cashbox-icon status-paid | schi schi-7 callcentr-ticket-outdated",
+    "status_label_raw": "",
+    "visit_type_examples": [
+      "Удаление 1 степени"
+    ],
+    "example_visit_ids": [
+      "130451",
+      "130309"
+    ],
+    "normalized_fields": {
+      "visit_presence_state": "",
+      "payment_state": "paid",
+      "ticket_state": "ticket_outdated",
+      "booking_origin": "",
+      "task_size_class": "normal_task"
+    },
+    "proof_levels": {
+      "visit_presence_state": "not_proven",
+      "payment_state": "proven",
+      "ticket_state": "inferred",
+      "booking_origin": "not_proven",
+      "task_size_class": "structurally_observed"
+    },
+    "raw_markers": {
+      "icon_classes": [
+        "schi schi-1",
+        "schi schi-4",
+        "schi schi-14",
+        "schi schi-6 text-danger",
+        "schi schi-12 cashbox-icon status-paid",
+        "schi schi-7 callcentr-ticket-outdated"
+      ],
+      "has_task_mini": false,
+      "has_status_paid": true,
+      "has_status_reversal": false,
+      "has_ticket_dont_created": false,
+      "has_ticket_outdated": true
+    },
+    "status": "proven",
+    "evidence": "status_dictionary_v2:130451,130309",
+    "notes": [
+      "cashbox-icon status-paid class present",
+      "callcentr-ticket-outdated raw class"
+    ]
+  }
+]

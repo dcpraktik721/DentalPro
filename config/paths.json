@@ -1,0 +1,22 @@
+{
+  "repo_root": "/Users/macbook15/Downloads/MacAi/DentalPro",
+  "docs_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/docs",
+  "artifacts_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/artifacts",
+  "scripts_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/scripts",
+  "logs_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/logs",
+  "registry_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/registry",
+  "data_raw_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/data/raw",
+  "data_normalized_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/data/normalized",
+  "data_exports_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/data/exports",
+  "excel_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/excel",
+  "reports_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/reports",
+  "schedule_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/schedule",
+  "patients_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/patients",
+  "tickets_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/tickets",
+  "reporting_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting",
+  "finance_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/finance",
+  "runtime_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/runtime",
+  "tools_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/tools",
+  "config_dir": "/Users/macbook15/Downloads/MacAi/DentalPro/config"
+}
+

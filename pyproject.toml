@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dentalpro-workspace"
+version = "0.1.0"
+description = "Bootstrap workspace for DentalPRO forensic extraction and reporting"
+requires-python = ">=3.11"
+dependencies = [
+  "openpyxl",
+  "pandas",
+  "requests",
+  "pydantic",
+  "python-dotenv"
+]
+
+[tool.setuptools]
+py-modules = []
+

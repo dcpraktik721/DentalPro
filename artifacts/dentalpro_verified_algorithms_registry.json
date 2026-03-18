@@ -1,0 +1,137 @@
+[
+  {
+    "algorithm": "schedule_forensic_operational_dump",
+    "steps": "open date route -> capture full DOM -> map doctors/cabinets/timeslots/visits -> capture network -> normalize entities",
+    "inputs": "schedule date + storageState",
+    "outputs": "DOM/entity/network artifact pack",
+    "domains": "schedule",
+    "reusability": "reusable_with_constraints",
+    "notes": "HTML-first day schedule proven"
+  },
+  {
+    "algorithm": "schedule_popup_hardening",
+    "steps": "baseline subset -> hard reload or clean layer -> one-card-at-a-time popup probe -> linkage classification",
+    "inputs": "visit subset",
+    "outputs": "popup_linkage_v2/v3",
+    "domains": "schedule interaction",
+    "reusability": "reusable_with_constraints",
+    "notes": "acceptance-grade for subset only"
+  },
+  {
+    "algorithm": "ticket_registry_build",
+    "steps": "enumerate task icons -> clean icon probe -> capture rc-tooltip -> classify exact text -> aggregate per visit",
+    "inputs": "schedule visit subset",
+    "outputs": "ticket registry json/xlsx + dictionary",
+    "domains": "schedule ticket layer",
+    "reusability": "reusable_with_constraints",
+    "notes": "current main registry = v2"
+  },
+  {
+    "algorithm": "ticket_semantic_closure",
+    "steps": "select unresolved families -> focused runtime probe -> exact tooltip capture -> assign proven/inferred/not_proven -> update dictionary",
+    "inputs": "existing ticket registry",
+    "outputs": "semantic closure + updated dictionary",
+    "domains": "ticket semantics",
+    "reusability": "case_specific",
+    "notes": "used for schi-10 and schi-3 split"
+  },
+  {
+    "algorithm": "patient_full_schedule_report",
+    "steps": "runtime schedule extract -> popup identity -> focused unresolved probes -> normalize proof-aware fields -> optional cash enrichment sheet",
+    "inputs": "schedule runtime artifacts",
+    "outputs": "patient_full_report_v4/v5",
+    "domains": "schedule patient-ready reporting",
+    "reusability": "reusable_with_constraints",
+    "notes": "cash kept separate by guardrail"
+  },
+  {
+    "algorithm": "old_hygiene_no_followup",
+    "steps": "live mobile/schedule over window -> detect hygiene ticket older than threshold -> scan later hygienist visits -> enrich via i/client",
+    "inputs": "threshold date + schedule window",
+    "outputs": "patient list xlsx/json",
+    "domains": "schedule custom reporting",
+    "reusability": "reusable_with_constraints",
+    "notes": "window-bound patient universe only"
+  },
+  {
+    "algorithm": "cashbox_document_model_build",
+    "steps": "open patient cashbox tab -> enumerate row links -> open each detail page -> separate position totals from shared payment block -> assign act_reference",
+    "inputs": "patient_id",
+    "outputs": "cashbox document model",
+    "domains": "patient cashbox",
+    "reusability": "reusable_with_constraints",
+    "notes": "proven on two patients"
+  },
+  {
+    "algorithm": "doctor_roster_with_revenue_enrichment",
+    "steps": "resolve doctor id -> fetch mobile/schedule roster -> fetch RPT_24 rows -> join on patient-day doctor grain -> output xlsx",
+    "inputs": "doctor name + period",
+    "outputs": "doctor patient roster xlsx/json",
+    "domains": "custom reporting",
+    "reusability": "reusable_with_constraints",
+    "notes": "patient-day finance signal only"
+  },
+  {
+    "algorithm": "targeted_live_report_pass",
+    "steps": "open report -> apply date -> capture runtime -> capture export -> parse file -> classify family -> compare -> write verdict",
+    "inputs": "REPORT_ID/CODE/TARGET_DATE",
+    "outputs": "runtime/export/file/verdict artifacts",
+    "domains": "reports",
+    "reusability": "reusable_with_constraints",
+    "notes": "implemented in dentalpro-playwright"
+  },
+  {
+    "algorithm": "runtime_table_export_compare",
+    "steps": "validate headers -> validate row boundary -> compare content -> classify mismatches -> apply explicit normalization if evidenced",
+    "inputs": "runtime and file structured datasets",
+    "outputs": "parity verdict",
+    "domains": "report families",
+    "reusability": "reusable_with_constraints",
+    "notes": "RPT_23 reference pattern"
+  },
+  {
+    "algorithm": "grouped_header_report_compare",
+    "steps": "extract leaf headers -> project business columns -> compare normalized rows to export -> confirm parity",
+    "inputs": "runtime grouped table + file",
+    "outputs": "normalized parity verdict",
+    "domains": "reports",
+    "reusability": "reusable_with_constraints",
+    "notes": "RPT_18 reference pattern"
+  },
+  {
+    "algorithm": "file_first_async_compare",
+    "steps": "treat file as truth -> parse workbook -> define row boundary and schema -> ignore runtime shell for parity",
+    "inputs": "async export file",
+    "outputs": "file-first canonicalization verdict",
+    "domains": "reports",
+    "reusability": "reusable_with_constraints",
+    "notes": "RPT_24/48 pattern"
+  },
+  {
+    "algorithm": "report_shape_reconciliation",
+    "steps": "classify runtime shape -> classify export shape -> forbid direct row parity -> set dual-layer decision",
+    "inputs": "runtime + export artifacts",
+    "outputs": "shape reconciliation verdict",
+    "domains": "reports",
+    "reusability": "case_specific",
+    "notes": "RPT_34/35 pattern"
+  },
+  {
+    "algorithm": "empty_medcards_state_machine_probe",
+    "steps": "open card runtime -> call save(confirm) -> approve/decline/cancelApprove -> inspect returned card/activity",
+    "inputs": "card_id under browser auth",
+    "outputs": "state transition evidence",
+    "domains": "medical history / empty cards",
+    "reusability": "reusable_with_constraints",
+    "notes": "internal runtime API only"
+  },
+  {
+    "algorithm": "report_export_mechanics_audit",
+    "steps": "trace export buttons -> identify direct vs async -> collect completion callback/file path -> parse resulting xlsx",
+    "inputs": "report route",
+    "outputs": "transport audit and export verdict",
+    "domains": "reports/export",
+    "reusability": "reusable_with_constraints",
+    "notes": "used on broad report export fix work"
+  }
+]

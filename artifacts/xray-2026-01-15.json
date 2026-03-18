@@ -1,0 +1,74 @@
+{
+  "scopeId": "scope-xray",
+  "scopeName": "(new) Утилита для загрузки рентгенограмм и снимков КТ",
+  "mode": "generic_probe",
+  "targetDate": "2026-01-15",
+  "processedAt": "2026-03-08T12:53:50.774Z",
+  "summary": {
+    "methodsInScope": 3,
+    "safeReadCandidates": 0,
+    "skippedUnsafe": 3,
+    "skippedUnknown": 0,
+    "executed": 0,
+    "ok": 0,
+    "failed": 0
+  },
+  "methods": [
+    {
+      "method": "xray/upload",
+      "description": "Загрузка снимка из рентген утилиты",
+      "scope": "(new) Утилита для загрузки рентгенограмм и снимков КТ",
+      "classification": {
+        "mode": "skip_unsafe",
+        "reason": "method_name_write_hint"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "key",
+        "image"
+      ],
+      "paramsPreview": {},
+      "executed": false,
+      "skipReason": "method_name_write_hint"
+    },
+    {
+      "method": "xray/upload/clientid",
+      "description": "Загружает в систему снимки рентгенов по ID пациента",
+      "scope": "(new) Утилита для загрузки рентгенограмм и снимков КТ",
+      "classification": {
+        "mode": "skip_unsafe",
+        "reason": "method_name_write_hint"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "clientID",
+        "image"
+      ],
+      "paramsPreview": {
+        "clientID": "13338"
+      },
+      "executed": false,
+      "skipReason": "method_name_write_hint"
+    },
+    {
+      "method": "xray/uploadexternal",
+      "description": "Загружает в систему снимки рентгенов из внешней системы",
+      "scope": "(new) Утилита для загрузки рентгенограмм и снимков КТ",
+      "classification": {
+        "mode": "skip_unsafe",
+        "reason": "method_name_write_hint"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "externalID",
+        "image"
+      ],
+      "paramsPreview": {},
+      "executed": false,
+      "skipReason": "method_name_write_hint"
+    }
+  ]
+}

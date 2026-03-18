@@ -1,0 +1,129 @@
+[
+  {
+    "asset_id": "doc_dentalpro_crm_page_observations_2026_03_09",
+    "title": "DentalPRO CRM page observations 2026-03-09",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/dentalpro-crm-page-observations-2026-03-09.md",
+    "repo_path": "docs/dentalpro-crm-page-observations-2026-03-09.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "tab_routes",
+    "related_tabs": [
+      "comments",
+      "files",
+      "documents",
+      "family",
+      "schedule_history",
+      "medical_history"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_route_map",
+    "reason": "Primary observed inventory of remaining patient tabs",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_task_graph_blueprint_ultimate_patient_dossier",
+    "title": "Task Graph Blueprint Ultimate Patient Dossier",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md",
+    "repo_path": "docs/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "mixed",
+    "related_tabs": [
+      "comments",
+      "files",
+      "documents",
+      "family",
+      "schedule_history",
+      "medical_history"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_route_map",
+    "reason": "Current curated blueprint covering remaining dossier families end-to-end",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_ultimate_patient_dossier_live_15900",
+    "title": "Ultimate patient dossier live 15900",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/ultimate_patient_dossier_live_15900.json",
+    "repo_path": "patients/ultimate_patient_dossier_live_15900.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "mixed",
+    "related_tabs": [
+      "comments",
+      "files",
+      "documents",
+      "family",
+      "schedule_history",
+      "medical_history"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "primary_tab_output",
+    "reason": "Primary sample patient dossier bundle for remaining tabs",
+    "notes": "Patient-specific reference case"
+  },
+  {
+    "asset_id": "artifact_base_profile_and_tabs",
+    "title": "Base profile and tabs network pack",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part3/network_trace_pack/base_profile_and_tabs.json",
+    "repo_path": "artifacts/base_profile_and_tabs.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "mixed",
+    "related_tabs": [
+      "comments",
+      "family",
+      "schedule_history",
+      "medical_history"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_verified_library",
+    "reason": "Machine-readable route and ready-state evidence for remaining tabs",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_files_and_documents_pack",
+    "title": "Files and documents network pack",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part3/network_trace_pack/files_and_documents.json",
+    "repo_path": "artifacts/files_and_documents.json",
+    "asset_type": "artifact_json",
+    "dossier_subdomain": "mixed",
+    "related_tabs": [
+      "files",
+      "documents"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_verified_library",
+    "reason": "Machine-readable routes and modal/download contracts for files/documents",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_documents_state_machine",
+    "title": "Documents state machine",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part3/state_machines/documents_state_machine.md",
+    "repo_path": "docs/documents_state_machine.md",
+    "asset_type": "doc",
+    "dossier_subdomain": "documents",
+    "related_tabs": [
+      "documents"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "source_of_truth_role": "supporting_verified_library",
+    "reason": "Current operational state machine for documents read path and create boundary",
+    "notes": ""
+  }
+]

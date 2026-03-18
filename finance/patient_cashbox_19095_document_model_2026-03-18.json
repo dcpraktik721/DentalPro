@@ -1,0 +1,288 @@
+{
+  "generated_at": "2026-03-18T08:47:47.354513",
+  "patient_id": 19095,
+  "patient_name": "ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ",
+  "list_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=19095&tab=cashbox%5Ccbase%5Cpays",
+  "page_totals_observed": {
+    "total_amount": "550.00 ₽",
+    "paid_amount": "550.00 ₽",
+    "unpaid_amount": "0.00 ₽",
+    "items": 2,
+    "pages": 1
+  },
+  "cashbox_tab_contract": {
+    "family_class": "patient_card_tab / backend_rendered_html_list",
+    "primary_truth_layer": "runtime HTML list + cashbox detail pages",
+    "filter_method": "GET",
+    "document_level_extension": "act_reference + document_scope + payment_block_scope"
+  },
+  "list_cards": [
+    {
+      "payment_id": "86156",
+      "detail_href": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=86156",
+      "service_label_list": "86156 - Зуб(ы):0 Первичная консультация врача-ортопеда (2)",
+      "created_meta": "20.02.2026 в 12:42:45 создал Оленев А.О.",
+      "badges": [
+        "ООО НЬЮ ЛАЙФ ( СК ПRАКТИК )",
+        "Оплачена",
+        "Банковская карта, ФР"
+      ],
+      "comment": "-",
+      "cash_text": "20.02.2026 550.00 ₽ 2 600.00 ₽ Скидка 2 050.00 ₽",
+      "full_text": "86156 - Зуб(ы):0 Первичная консультация врача-ортопеда (2) 20.02.2026 в 12:42:45 создал Оленев А.О. ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) Оплачена Банковская карта, ФР Комментарий - 20.02.2026 550.00 ₽ 2 600.00 ₽ Скидка 2 050.00 ₽"
+    },
+    {
+      "payment_id": "86149",
+      "detail_href": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=86149",
+      "service_label_list": "86149 - Рентген №: 29441 Ортопантомография (1)",
+      "created_meta": "20.02.2026 в 12:18:17 создал Желудкова М.В.",
+      "badges": [
+        "ООО НЬЮ ЛАЙФ ( СК ПRАКТИК )",
+        "Оплачена",
+        "Банковская карта, ФР"
+      ],
+      "comment": "-",
+      "cash_text": "20.02.2026 0.00 ₽ 3 520.00 ₽ Скидка 3 520.00 ₽",
+      "full_text": "86149 - Рентген №: 29441 Ортопантомография (1) 20.02.2026 в 12:18:17 создал Желудкова М.В. ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) Оплачена Банковская карта, ФР Комментарий - 20.02.2026 0.00 ₽ 3 520.00 ₽ Скидка 3 520.00 ₽"
+    }
+  ],
+  "detail_pages": {
+    "86156": {
+      "detail_url": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=86156",
+      "header_excerpt": "Зуб(ы):0 Первичная консультация врача-ортопеда Оленев А.О. 20.02.2026 в 12:42:45 ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ Физическое лицо - ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ 20.02.2026 Оплачена / Оплачена Акт 106296/19095 Договор 106289",
+      "positions": [
+        {
+          "code": "101.6",
+          "name": "Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный",
+          "tooth": "",
+          "created": "Оленев А.О. 20.02.2026 в 12:42:45",
+          "price": "1 100.00 ₽",
+          "qty": "1",
+          "sum": "1 100.00 ₽",
+          "discount": "550.00 ₽",
+          "sum_with_discount": "550.00 ₽"
+        },
+        {
+          "code": "B01.065.0013",
+          "name": "Фотопротокол стандартный",
+          "tooth": "",
+          "created": "Оленев А.О. 20.02.2026 в 12:42:45",
+          "price": "1 500.00 ₽",
+          "qty": "1",
+          "sum": "1 500.00 ₽",
+          "discount": "1 500.00 ₽",
+          "sum_with_discount": "0.00 ₽"
+        }
+      ],
+      "position_totals": {
+        "gross_amount": "2 600.00 ₽",
+        "discount_amount": "2 050.00 ₽",
+        "paid_amount": "550.00 ₽"
+      },
+      "history": [
+        {
+          "event": "Создан акт",
+          "info": "106296/19095",
+          "initiated": "20.02.2026 12:50",
+          "initiator": "Поняева Н.Н."
+        },
+        {
+          "event": "Установлена скидка",
+          "info": "",
+          "initiated": "20.02.2026 12:50",
+          "initiator": "Поняева Н.Н."
+        },
+        {
+          "event": "Установлена скидка",
+          "info": "",
+          "initiated": "20.02.2026 12:50",
+          "initiator": "Поняева Н.Н."
+        }
+      ],
+      "payments": [
+        {
+          "payment_method": "Банковская карта",
+          "amount": "550.00 ₽",
+          "accepted_from_patient": "550.00 ₽",
+          "accepted_by": "Поняева Н.Н.",
+          "accepted_at": "20.02.2026 12:51",
+          "fiscal_registrar": "Атол ( Рабочий )"
+        }
+      ]
+    },
+    "86149": {
+      "detail_url": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=86149",
+      "header_excerpt": "Рентген №: 29441 Ортопантомография Желудкова М.В. 20.02.2026 в 12:18:17 ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ Физическое лицо - ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ 20.02.2026 Оплачена / Оплачена Акт 106296/19095 Договор 106289",
+      "positions": [
+        {
+          "code": "102.3",
+          "name": "Компьютерная томография челюстно-лицевой области 8*15 (верхняя и нижняя челюсть)",
+          "tooth": "",
+          "created": "Желудкова М.В. 20.02.2026 в 12:18:17",
+          "price": "3 520.00 ₽",
+          "qty": "1",
+          "sum": "3 520.00 ₽",
+          "discount": "3 520.00 ₽",
+          "sum_with_discount": "0.00 ₽"
+        }
+      ],
+      "position_totals": {
+        "gross_amount": "3 520.00 ₽",
+        "discount_amount": "3 520.00 ₽",
+        "paid_amount": "0.00 ₽"
+      },
+      "history": [
+        {
+          "event": "Создан акт",
+          "info": "106296/19095",
+          "initiated": "20.02.2026 12:50",
+          "initiator": "Поняева Н.Н."
+        },
+        {
+          "event": "Установлена скидка",
+          "info": "",
+          "initiated": "20.02.2026 12:50",
+          "initiator": "Поняева Н.Н."
+        }
+      ],
+      "payments": [
+        {
+          "payment_method": "Банковская карта",
+          "amount": "550.00 ₽",
+          "accepted_from_patient": "550.00 ₽",
+          "accepted_by": "Поняева Н.Н.",
+          "accepted_at": "20.02.2026 12:51",
+          "fiscal_registrar": "Атол ( Рабочий )"
+        }
+      ]
+    }
+  },
+  "canonical_dataset_document_level": [
+    {
+      "payment_id": "86156",
+      "patient_id": 19095,
+      "document_datetime": "2026-02-20 12:42:45",
+      "service_label": "Зуб(ы):0 Первичная консультация врача-ортопеда",
+      "status": "Оплачена",
+      "payment_method": "Банковская карта",
+      "gross_amount": "2 600.00 ₽",
+      "discount_amount": "2 050.00 ₽",
+      "paid_amount": "550.00 ₽",
+      "payer": "Физическое лицо - ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ",
+      "created_by": "Оленев А.О",
+      "reversal_state": "not_reversed_observed",
+      "act_reference": "106296/19095",
+      "document_scope": "shared_payment_document",
+      "payment_block_scope": "document_grain_shared",
+      "payment_block_amount": "550.00 ₽"
+    },
+    {
+      "payment_id": "86149",
+      "patient_id": 19095,
+      "document_datetime": "2026-02-20 12:18:17",
+      "service_label": "Рентген №: 29441 Ортопантомография",
+      "status": "Оплачена",
+      "payment_method": "Банковская карта",
+      "gross_amount": "3 520.00 ₽",
+      "discount_amount": "3 520.00 ₽",
+      "paid_amount": "0.00 ₽",
+      "payer": "Физическое лицо - ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ",
+      "created_by": "Желудкова М.В",
+      "reversal_state": "not_reversed_observed",
+      "act_reference": "106296/19095",
+      "document_scope": "shared_payment_document",
+      "payment_block_scope": "document_grain_shared",
+      "payment_block_amount": "550.00 ₽"
+    }
+  ],
+  "document_groups": {
+    "106296/19095": {
+      "row_count": 2,
+      "payment_ids": [
+        "86156",
+        "86149"
+      ],
+      "document_scope": "shared_payment_document",
+      "document_payment_block_amounts": [
+        "550.00 ₽"
+      ]
+    }
+  },
+  "forensic_focus": {
+    "payment_id": "86156",
+    "detail_url": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=86156",
+    "act_reference": "106296/19095",
+    "header_excerpt": "Зуб(ы):0 Первичная консультация врача-ортопеда Оленев А.О. 20.02.2026 в 12:42:45 ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ Физическое лицо - ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ 20.02.2026 Оплачена / Оплачена Акт 106296/19095 Договор 106289",
+    "positions": [
+      {
+        "code": "101.6",
+        "name": "Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный",
+        "tooth": "",
+        "created": "Оленев А.О. 20.02.2026 в 12:42:45",
+        "price": "1 100.00 ₽",
+        "qty": "1",
+        "sum": "1 100.00 ₽",
+        "discount": "550.00 ₽",
+        "sum_with_discount": "550.00 ₽"
+      },
+      {
+        "code": "B01.065.0013",
+        "name": "Фотопротокол стандартный",
+        "tooth": "",
+        "created": "Оленев А.О. 20.02.2026 в 12:42:45",
+        "price": "1 500.00 ₽",
+        "qty": "1",
+        "sum": "1 500.00 ₽",
+        "discount": "1 500.00 ₽",
+        "sum_with_discount": "0.00 ₽"
+      }
+    ],
+    "position_totals": {
+      "gross_amount": "2 600.00 ₽",
+      "discount_amount": "2 050.00 ₽",
+      "paid_amount": "550.00 ₽"
+    },
+    "history": [
+      {
+        "event": "Создан акт",
+        "info": "106296/19095",
+        "initiated": "20.02.2026 12:50",
+        "initiator": "Поняева Н.Н."
+      },
+      {
+        "event": "Установлена скидка",
+        "info": "",
+        "initiated": "20.02.2026 12:50",
+        "initiator": "Поняева Н.Н."
+      },
+      {
+        "event": "Установлена скидка",
+        "info": "",
+        "initiated": "20.02.2026 12:50",
+        "initiator": "Поняева Н.Н."
+      }
+    ],
+    "payments": [
+      {
+        "payment_method": "Банковская карта",
+        "amount": "550.00 ₽",
+        "accepted_from_patient": "550.00 ₽",
+        "accepted_by": "Поняева Н.Н.",
+        "accepted_at": "20.02.2026 12:51",
+        "fiscal_registrar": "Атол ( Рабочий )"
+      }
+    ]
+  },
+  "algorithm": [
+    "1. Open patient cashbox tab in authenticated browser session.",
+    "2. Extract one visible .cashbox_card per row.",
+    "3. Open each cashbox/forms/detail?id=<payment_id> page.",
+    "4. Extract header shell, positions, history, payments.",
+    "5. Recover act_reference from detail header shell (Акт <value>).",
+    "6. Group rows by act_reference to distinguish row-grain from shared-payment document-grain.",
+    "7. Build row-grain gross/discount/net from positions totals.",
+    "8. Build payment_method from payments table, but classify payment-block amount as document_grain_shared when repeated across multiple rows of one act.",
+    "9. Set document_scope=single_row_document when one act maps to one visible row; otherwise shared_payment_document.",
+    "10. Use canonical row values only from evidence-backed fields; keep unresolved badge/company semantics outside canonical payer field."
+  ]
+}

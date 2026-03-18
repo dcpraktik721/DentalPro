@@ -1,0 +1,619 @@
+{
+  "generatedAt": "2026-03-06T15:16:22.775Z",
+  "targetDate": "2026-03-06",
+  "api": {
+    "auth": {
+      "tokenPresent": true,
+      "secretPresent": true,
+      "tokenLength": 36,
+      "secretLength": 32
+    },
+    "pages": {
+      "pays": [
+        {
+          "page": 0,
+          "len": 44,
+          "total": 86661,
+          "limit": 50,
+          "paginated": true
+        }
+      ]
+    },
+    "fetched": {
+      "scheduleDoctors": 8,
+      "scheduleVisitsOnDate": 35,
+      "paysRows": 44,
+      "paysOnDateAll": 44,
+      "paysOnDatePaid": 44,
+      "paidPayoutsLinkedToVisits": 25,
+      "doctorsRows": 21
+    }
+  },
+  "metrics": {
+    "patientsWithVisit": 33,
+    "visitsOnDate": 35,
+    "totalPaidRaw": 15356000,
+    "totalPaidRub": 153560
+  },
+  "rows": [
+    {
+      "date": "2026-03-06",
+      "patient_id": "10766",
+      "patient_fio": "АРИСТОВА НАТАЛЬЯ АЛЕКСАНДРОВНА",
+      "doctors": [
+        "Зотов В.Д."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 0,
+      "visit_ids": [
+        "129893"
+      ],
+      "pay_ids": []
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "11974",
+      "patient_fio": "БАЛАШОВА ЛЮДМИЛА НИКОЛАЕВНА",
+      "doctors": [
+        "Оленев А.О."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 0,
+      "visit_ids": [
+        "129892"
+      ],
+      "pay_ids": []
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "19048",
+      "patient_fio": "БЕРДЫШЕВ ДЕНИС АЛЕКСАНДРОВИЧ",
+      "doctors": [
+        "Жихар З.К."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 1,
+      "visit_ids": [
+        "130253"
+      ],
+      "pay_ids": [
+        "86934"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "19160",
+      "patient_fio": "ГЕРТ АЛЕКСЕЙ ВЛАДИМИРОВИЧ",
+      "doctors": [
+        "Геюшова Я.Н.",
+        "Зотов В.Д."
+      ],
+      "visits_count": 2,
+      "paid_total_raw": 1795000,
+      "paid_total_rub": 17950,
+      "payment_count": 1,
+      "visit_ids": [
+        "130116",
+        "130099"
+      ],
+      "pay_ids": [
+        "86931"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "19046",
+      "patient_fio": "ГОБУЗОВА СВЕТЛАНА НИКОЛАЕВНА",
+      "doctors": [
+        "Буряк Л.А."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 922000,
+      "paid_total_rub": 9220,
+      "payment_count": 1,
+      "visit_ids": [
+        "130024"
+      ],
+      "pay_ids": [
+        "86962"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "17652",
+      "patient_fio": "ГРИБЕЛЮК ТАТЬЯНА ВЛАДИМИРОВНА",
+      "doctors": [
+        "Гулямхайдаров А.А."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 1,
+      "visit_ids": [
+        "129888"
+      ],
+      "pay_ids": [
+        "86943"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "16228",
+      "patient_fio": "ДОЛГАЯ АЛЁНА ИГОРЕВНА",
+      "doctors": [
+        "Зотов В.Д."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 0,
+      "visit_ids": [
+        "130262"
+      ],
+      "pay_ids": []
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "13481",
+      "patient_fio": "ЖИДЕЛЕВА ЕЛЕНА МИХАЙЛОВНА",
+      "doctors": [
+        "Геюшова Я.Н."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 1,
+      "visit_ids": [
+        "129851"
+      ],
+      "pay_ids": [
+        "86938"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "19116",
+      "patient_fio": "ЖУРАВЛЕВА ЕКАТЕРИНА ОЛЕГОВНА",
+      "doctors": [
+        "Зотов В.Д."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 1453200,
+      "paid_total_rub": 14532,
+      "payment_count": 1,
+      "visit_ids": [
+        "129807"
+      ],
+      "pay_ids": [
+        "86959"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "19172",
+      "patient_fio": "ЗАВЬЯЛОВ ИВАН АЛЕКСАНДРОВИЧ",
+      "doctors": [
+        "Жихар З.К."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 110000,
+      "paid_total_rub": 1100,
+      "payment_count": 1,
+      "visit_ids": [
+        "130031"
+      ],
+      "pay_ids": [
+        "86932"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "3075",
+      "patient_fio": "ЗАРУБА НИНА ОЛЕГОВНА",
+      "doctors": [
+        "Гулямхайдаров А.А."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 0,
+      "visit_ids": [
+        "129663"
+      ],
+      "pay_ids": []
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "10064",
+      "patient_fio": "ЗАРУБИНА СВЕТЛАНА ВЛАДИМИРОВНА",
+      "doctors": [
+        "Жихар З.К."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 55000,
+      "paid_total_rub": 550,
+      "payment_count": 1,
+      "visit_ids": [
+        "129915"
+      ],
+      "pay_ids": [
+        "86923"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "3341",
+      "patient_fio": "КАРПОВА НИНА НИКОЛАЕВНА",
+      "doctors": [
+        "Жихар З.К."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 55000,
+      "paid_total_rub": 550,
+      "payment_count": 1,
+      "visit_ids": [
+        "130207"
+      ],
+      "pay_ids": [
+        "86961"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "3367",
+      "patient_fio": "КВИЛИЧ МАРИНА ВИТАЛЬЕВНА",
+      "doctors": [
+        "Гулямхайдаров А.А."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 1,
+      "visit_ids": [
+        "129620"
+      ],
+      "pay_ids": [
+        "86944"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "8721",
+      "patient_fio": "КИРЕЕВА АНАСТАСИЯ МИХАЙЛОВНА",
+      "doctors": [
+        "Храпонова Н.А."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 0,
+      "visit_ids": [
+        "130230"
+      ],
+      "pay_ids": []
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "18984",
+      "patient_fio": "КОННОВА ЕЛЕНА АЛЕКСАНДРОВНА",
+      "doctors": [
+        "Логвинчук Д.Н."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 835200,
+      "paid_total_rub": 8352,
+      "payment_count": 1,
+      "visit_ids": [
+        "130254"
+      ],
+      "pay_ids": [
+        "86930"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "15410",
+      "patient_fio": "КУЗНЕЦОВА ЮЛИЯ МИХАЙЛОВНА",
+      "doctors": [
+        "Жихар З.К."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 2308600,
+      "paid_total_rub": 23086,
+      "payment_count": 1,
+      "visit_ids": [
+        "130045"
+      ],
+      "pay_ids": [
+        "86958"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "19182",
+      "patient_fio": "КУЧУМОВ АРТЁМ ПАВЛОВИЧ",
+      "doctors": [
+        "Зотов В.Д."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 110000,
+      "paid_total_rub": 1100,
+      "payment_count": 1,
+      "visit_ids": [
+        "130179"
+      ],
+      "pay_ids": [
+        "86928"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "19183",
+      "patient_fio": "КУЧУМОВА ОКСАНА ВЛАДИМИРОВНА",
+      "doctors": [
+        "Буряк Л.А."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 110000,
+      "paid_total_rub": 1100,
+      "payment_count": 1,
+      "visit_ids": [
+        "130180"
+      ],
+      "pay_ids": [
+        "86954"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "18881",
+      "patient_fio": "ЛАПЫКИНА МАРИНА МИХАЙЛОВНА",
+      "doctors": [
+        "Зотов В.Д."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 0,
+      "visit_ids": [
+        "129942"
+      ],
+      "pay_ids": []
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "19049",
+      "patient_fio": "МОРЖЕВСКАЯ ОЛЬГА ВЛАДИМИРОВНА",
+      "doctors": [
+        "Геюшова Я.Н."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 0,
+      "visit_ids": [
+        "130093"
+      ],
+      "pay_ids": []
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "12044",
+      "patient_fio": "НОСКЕВИЧ АЛЕКСАНДР БОРИСОВИЧ",
+      "doctors": [
+        "Оленев А.О."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 690000,
+      "paid_total_rub": 6900,
+      "payment_count": 1,
+      "visit_ids": [
+        "129332"
+      ],
+      "pay_ids": [
+        "86937"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "133",
+      "patient_fio": "ПОРЯДИНА НИНА НИКОЛАЕВНА",
+      "doctors": [
+        "Геюшова Я.Н."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 1,
+      "visit_ids": [
+        "129727"
+      ],
+      "pay_ids": [
+        "86920"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "4631",
+      "patient_fio": "САБИРОВА ГУЛЬНОЗА АЗАМДЖОНОВНА",
+      "doctors": [
+        "Храпонова Н.А."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 671500,
+      "paid_total_rub": 6715,
+      "payment_count": 1,
+      "visit_ids": [
+        "130055"
+      ],
+      "pay_ids": [
+        "86921"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "19199",
+      "patient_fio": "САВИНОВ АЛЕКСЕЙ ВЛАДИМИРОВИЧ",
+      "doctors": [
+        "Оленев А.О."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 55000,
+      "paid_total_rub": 550,
+      "payment_count": 1,
+      "visit_ids": [
+        "130276"
+      ],
+      "pay_ids": [
+        "86935"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "19081",
+      "patient_fio": "СОТНИКОВА ИРИНА БОРИСОВНА",
+      "doctors": [
+        "Жихар З.К."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 0,
+      "visit_ids": [
+        "129916"
+      ],
+      "pay_ids": []
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "7617",
+      "patient_fio": "СЭРОТЭТТО ЕЛЕНА АНДРЕЕВНА",
+      "doctors": [
+        "Оленев А.О."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 1,
+      "visit_ids": [
+        "130082"
+      ],
+      "pay_ids": [
+        "86927"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "18061",
+      "patient_fio": "ФАРАДЖАЕВ РАШИД ГУСЕЙНОВИЧ",
+      "doctors": [
+        "Геюшова Я.Н."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 0,
+      "visit_ids": [
+        "130269"
+      ],
+      "pay_ids": []
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "4837",
+      "patient_fio": "ЦАРАПКИНА ОЛЬГА АЛЕКСАНДРОВНА",
+      "doctors": [
+        "Буряк Л.А.",
+        "Храпонова Н.А."
+      ],
+      "visits_count": 2,
+      "paid_total_raw": 726500,
+      "paid_total_rub": 7265,
+      "payment_count": 2,
+      "visit_ids": [
+        "129932",
+        "129933"
+      ],
+      "pay_ids": [
+        "86950",
+        "86957"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "18156",
+      "patient_fio": "ЧЕМАКИН АНТОН АЛЕКСЕЕВИЧ",
+      "doctors": [
+        "Логвинчук Д.Н."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 1287500,
+      "paid_total_rub": 12875,
+      "payment_count": 1,
+      "visit_ids": [
+        "130225"
+      ],
+      "pay_ids": [
+        "86940"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "12584",
+      "patient_fio": "ШАМАЕВ НИКОЛАЙ АДИКОВИЧ",
+      "doctors": [
+        "Гулямхайдаров А.А."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 3500000,
+      "paid_total_rub": 35000,
+      "payment_count": 1,
+      "visit_ids": [
+        "130018"
+      ],
+      "pay_ids": [
+        "86926"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "9036",
+      "patient_fio": "ШИШКИНА ЯНА АНАТОЛЬЕВНА",
+      "doctors": [
+        "Храпонова Н.А."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 671500,
+      "paid_total_rub": 6715,
+      "payment_count": 1,
+      "visit_ids": [
+        "129437"
+      ],
+      "pay_ids": [
+        "86939"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "patient_id": "12336",
+      "patient_fio": "ШМАКОВ МИХАИЛ ВЛАДИМИРОВИЧ",
+      "doctors": [
+        "Геюшова Я.Н."
+      ],
+      "visits_count": 1,
+      "paid_total_raw": 0,
+      "paid_total_rub": 0,
+      "payment_count": 0,
+      "visit_ids": [
+        "130100"
+      ],
+      "pay_ids": []
+    }
+  ]
+}

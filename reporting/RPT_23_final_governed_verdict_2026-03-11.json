@@ -1,0 +1,41 @@
+{
+  "report_id": 23,
+  "report_code": "RPT_23",
+  "target_date": "2026-03-11",
+  "family_class": "runtime_table_export_table",
+  "primary_data_bearing_layer": "runtime",
+  "raw_parity_status": "failed",
+  "normalized_business_parity_status": "partial",
+  "canonicalization_status": "still_not_canonical",
+  "safe_for_future_reporting": "conditional",
+  "required_guardrails": [
+    "footer_exclusion",
+    "do_not_claim_full_parity_from_row_count_only",
+    "do_not_treat_runtime_service_label_prefixes_as_resolved_business-normalization-without-explicit-policy"
+  ],
+  "forbidden_claims": [
+    "full_content_parity_confirmed_without_first_column_policy",
+    "canonicalized_now",
+    "silent_runtime_label_normalization"
+  ],
+  "allowed_claims": [
+    "live_browser_backed_run_completed",
+    "date_constrained_runtime_and_export_evidence_captured",
+    "runtime_and_file_structured_datasets_observed",
+    "header_and_row_boundary_compare_executed"
+  ],
+  "evidence_reference": [
+    "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_runtime_live_2026-03-11.json",
+    "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_export_live_2026-03-11.json",
+    "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_file_parse_2026-03-11.json",
+    "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_family_classification_2026-03-11.json",
+    "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_extraction_policy_2026-03-11.json",
+    "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_comparison_policy_2026-03-11.json"
+  ],
+  "notes": [
+    "storage_state=/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/auth/dentalpro.storage.json",
+    "saved_file_path=/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/downloads/dpfile_1773773018_BhRcFcdtal.xlsx",
+    "runtime_rows=49",
+    "file_rows=49"
+  ]
+}

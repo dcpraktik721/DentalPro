@@ -1,0 +1,15 @@
+{
+  "name": "dentalpro-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local DentalPRO browser/runtime analysis workspace",
+  "scripts": {
+    "bootstrap": "npm run lint:paths",
+    "lint:paths": "node -e \"const fs=require('fs'); ['docs','artifacts','scripts','registry','config'].forEach(p=>{if(!fs.existsSync(p)){throw new Error('Missing path: '+p)}}); console.log('Path check passed');\"",
+    "run:example": "node -e \"console.log('No default runtime script is bundled in bootstrap repo. Migrate or add a specific script first.')\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

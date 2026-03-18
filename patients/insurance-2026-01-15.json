@@ -1,0 +1,403 @@
+{
+  "scopeId": "scope-insurance",
+  "scopeName": "Страховые",
+  "mode": "generic_probe",
+  "targetDate": "2026-01-15",
+  "processedAt": "2026-03-08T12:52:43.892Z",
+  "summary": {
+    "methodsInScope": 9,
+    "safeReadCandidates": 5,
+    "skippedUnsafe": 4,
+    "skippedUnknown": 0,
+    "executed": 5,
+    "ok": 5,
+    "failed": 0
+  },
+  "methods": [
+    {
+      "method": "insurance/addDMS",
+      "description": "Прикрпляет пациента к страховой",
+      "scope": "Страховые",
+      "classification": {
+        "mode": "skip_unsafe",
+        "reason": "method_name_write_hint"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "id_company",
+        "id_client",
+        "branch_ids[]",
+        "id_program",
+        "firm",
+        "uniq_number",
+        "date_add",
+        "date_end",
+        "date_detach",
+        "comment"
+      ],
+      "paramsPreview": {
+        "id_company": "2",
+        "date_end": "2026-01-15"
+      },
+      "executed": false,
+      "skipReason": "method_name_write_hint"
+    },
+    {
+      "method": "insurance/addInsuranceCompany",
+      "description": "Добавление страховой компании",
+      "scope": "Страховые",
+      "classification": {
+        "mode": "skip_unsafe",
+        "reason": "method_name_write_hint"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "name",
+        "contract_id",
+        "amount_spent",
+        "inn",
+        "kpp",
+        "ogrn",
+        "okpo",
+        "bank_account",
+        "bank_name",
+        "bank_bik",
+        "bank_correspondent",
+        "address_index",
+        "address_country",
+        "address_state",
+        "address_city",
+        "address_street",
+        "address_flat",
+        "boss_fio",
+        "boss_position",
+        "boss_position_and_name_string"
+      ],
+      "paramsPreview": {
+        "name": "Иван"
+      },
+      "executed": false,
+      "skipReason": "method_name_write_hint"
+    },
+    {
+      "method": "insurance/addInsuranceProgram",
+      "description": "Прикрепляет программу к страховой компании",
+      "scope": "Страховые",
+      "classification": {
+        "mode": "skip_unsafe",
+        "reason": "method_name_write_hint"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "id_company",
+        "name",
+        "type_program",
+        "date_assign",
+        "id_price",
+        "appointment_ids",
+        "description"
+      ],
+      "paramsPreview": {
+        "id_company": "2",
+        "name": "Иван"
+      },
+      "executed": false,
+      "skipReason": "method_name_write_hint"
+    },
+    {
+      "method": "insurance/getClients",
+      "description": "Возвращает список клиентов с активными программами",
+      "scope": "Страховые",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/insurance/getClients?token=<redacted>&secret=<redacted>"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": true,
+          "error_field": null,
+          "method_field": "insurance/getClients",
+          "total_field": 599,
+          "data_container_type": "array",
+          "data_length": 50,
+          "data_item_keys": [
+            "client_id",
+            "date_end",
+            "id_company",
+            "date_add"
+          ],
+          "data_item_preview": {
+            "client_id": "1155",
+            "date_end": "2021-03-10",
+            "id_company": "6",
+            "date_add": "2020-03-11"
+          }
+        }
+      }
+    },
+    {
+      "method": "insurance/getClientsByCompanyID",
+      "description": "Возвращает список клиентов и их страховые программы",
+      "scope": "Страховые",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "id_company"
+      ],
+      "paramsPreview": {
+        "id_company": "2"
+      },
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/insurance/getClientsByCompanyID?token=<redacted>&secret=<redacted>&id_company=2"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": false,
+          "error_field": "Не найдено прикрепленных клиентов к страховой компании",
+          "method_field": "insurance/getClientsByCompanyID",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 0
+        }
+      }
+    },
+    {
+      "method": "insurance/getInsuranceCompanies",
+      "description": "Возвращает список страховых компаний",
+      "scope": "Страховые",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/insurance/getInsuranceCompanies?token=<redacted>&secret=<redacted>"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": true,
+          "error_field": null,
+          "method_field": "insurance/getInsuranceCompanies",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 9,
+          "data_item_keys": [
+            "id",
+            "name",
+            "createdAt"
+          ],
+          "data_item_preview": {
+            "id": 6,
+            "name": "СПАО Ресо-Гарантия",
+            "createdAt": {
+              "date": "2026-03-08 17:52:43.083072",
+              "timezone_type": 3,
+              "timezone": "Asia/Yekaterinburg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "method": "insurance/getPrices",
+      "description": "Возвращает список прайс листов",
+      "scope": "Страховые",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret"
+      ],
+      "paramsPreview": {},
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/insurance/getPrices?token=<redacted>&secret=<redacted>"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": true,
+          "error_field": null,
+          "method_field": "insurance/getPrices",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 32,
+          "data_item_keys": [
+            "id",
+            "name",
+            "createdAt"
+          ],
+          "data_item_preview": {
+            "id": 45,
+            "name": "Новый прайс 2026, 21.01.2026 г.",
+            "createdAt": {
+              "date": "2026-03-08 17:52:43.449373",
+              "timezone_type": 3,
+              "timezone": "Asia/Yekaterinburg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "method": "insurance/getProgramsByCompany",
+      "description": "Возвращает список программ по страховой",
+      "scope": "Страховые",
+      "classification": {
+        "mode": "safe_read",
+        "reason": "allowlist"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "id_company"
+      ],
+      "paramsPreview": {
+        "id_company": "2"
+      },
+      "executed": true,
+      "response": {
+        "httpStatus": 200,
+        "ok": true,
+        "methodType": "GET",
+        "requestPreview": {
+          "url": "https://dcpraktik.dental-pro.online/api/insurance/getProgramsByCompany?token=<redacted>&secret=<redacted>&id_company=2"
+        },
+        "contentType": "application/json; charset=utf-8",
+        "summary": {
+          "json_type": "object",
+          "object_keys": [
+            "method",
+            "data",
+            "status",
+            "error",
+            "page",
+            "total",
+            "paginated",
+            "limit",
+            "api_version",
+            "version"
+          ],
+          "status_field": true,
+          "error_field": null,
+          "method_field": "insurance/getProgramsByCompany",
+          "total_field": 0,
+          "data_container_type": "array",
+          "data_length": 0
+        }
+      }
+    },
+    {
+      "method": "insurance/removeClientDMS",
+      "description": "Открепляет активные полисы у страховой компании",
+      "scope": "Страховые",
+      "classification": {
+        "mode": "skip_unsafe",
+        "reason": "method_name_write_hint"
+      },
+      "fields": [
+        "token",
+        "secret",
+        "id_company",
+        "id_client",
+        "date_detach"
+      ],
+      "paramsPreview": {
+        "id_company": "2"
+      },
+      "executed": false,
+      "skipReason": "method_name_write_hint"
+    }
+  ]
+}

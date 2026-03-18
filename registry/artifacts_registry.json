@@ -1,0 +1,1194 @@
+{
+  "registry_name": "artifacts_registry",
+  "version": "0.4.0",
+  "status": "phase5_remaining_dossier_tabs_curated_assets",
+  "entry_schema": {
+    "artifact_id": "",
+    "path": "",
+    "artifact_type": "",
+    "domain": "",
+    "asset_role": "source_of_truth|secondary_enrichment|forensic_only|deprecated_or_superseded",
+    "proof_status": "proven|artifact_proven|structurally_observed|inferred|not_proven",
+    "readiness": "ready|ready_with_limits|validation_required|blocked",
+    "what_is_proven": [],
+    "limitations": [],
+    "current_status": "current|superseded|template",
+    "notes": ""
+  },
+  "entries": [
+    {
+      "artifact_id": "report_verified_capability_master_map",
+      "path": "reports/dentalpro_verified_capability_master_map.md",
+      "artifact_type": "report",
+      "domain": "mixed",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current consolidated architecture and capability package"
+      ],
+      "limitations": [
+        "Top-level curated knowledge report"
+      ],
+      "current_status": "current",
+      "notes": "Verified capability master map"
+    },
+    {
+      "artifact_id": "report_known_limits_gaps",
+      "path": "reports/dentalpro_known_limits_and_gaps.md",
+      "artifact_type": "report",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current explicit limits registry for safe claim boundary"
+      ],
+      "limitations": [
+        "Companion to verified capability pack"
+      ],
+      "current_status": "current",
+      "notes": "Known limits and gaps"
+    },
+    {
+      "artifact_id": "artifact_verified_data_capabilities",
+      "path": "artifacts/dentalpro_verified_data_capabilities.json",
+      "artifact_type": "artifact_json",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current machine-readable capability registry"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Verified data capabilities registry"
+    },
+    {
+      "artifact_id": "artifact_verified_methods_registry",
+      "path": "artifacts/dentalpro_verified_methods_registry.json",
+      "artifact_type": "artifact_json",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current machine-readable methods registry"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Verified methods registry"
+    },
+    {
+      "artifact_id": "artifact_verified_algorithms_registry",
+      "path": "artifacts/dentalpro_verified_algorithms_registry.json",
+      "artifact_type": "artifact_json",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current machine-readable algorithms registry"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Verified algorithms registry"
+    },
+    {
+      "artifact_id": "artifact_verified_reports_registry",
+      "path": "artifacts/dentalpro_verified_reports_registry.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current report and report-family map"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Verified reports registry"
+    },
+    {
+      "artifact_id": "artifact_verified_scripts_registry",
+      "path": "artifacts/dentalpro_verified_scripts_registry.json",
+      "artifact_type": "artifact_json",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current scripts capability registry"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Verified scripts registry"
+    },
+    {
+      "artifact_id": "artifact_verified_artifacts_registry",
+      "path": "artifacts/dentalpro_verified_artifacts_registry.json",
+      "artifact_type": "artifact_json",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current artifacts capability registry"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Verified artifacts registry"
+    },
+    {
+      "artifact_id": "artifact_verified_tooling_skills_registry",
+      "path": "artifacts/dentalpro_verified_tooling_and_skills_registry.json",
+      "artifact_type": "artifact_json",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current tooling and skill registry"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Verified tooling and skills registry"
+    },
+    {
+      "artifact_id": "artifact_productization_readiness_master",
+      "path": "artifacts/dentalpro_productization_readiness_master.json",
+      "artifact_type": "artifact_json",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current readiness map for productization decisions"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Productization readiness master"
+    },
+    {
+      "artifact_id": "artifact_source_of_truth_map",
+      "path": "artifacts/dentalpro_source_of_truth_map.json",
+      "artifact_type": "artifact_json",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current source-of-truth mapping"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Source of truth map"
+    },
+    {
+      "artifact_id": "artifact_validation_backlog_current",
+      "path": "artifacts/dentalpro_validation_backlog_current.json",
+      "artifact_type": "artifact_json",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current backlog of unresolved validated gaps"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Validation backlog current"
+    },
+    {
+      "artifact_id": "artifact_superseded_current_map",
+      "path": "artifacts/dentalpro_superseded_vs_current_map.json",
+      "artifact_type": "artifact_json",
+      "domain": "mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current lineage map for current vs superseded assets"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Superseded vs current map"
+    },
+    {
+      "artifact_id": "schedule_operational_dump_master",
+      "path": "schedule/schedule_2026-03-10_operational_dump_master.md",
+      "artifact_type": "artifact_md",
+      "domain": "schedule, runtime",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current baseline forensic schedule dump for proven date-targeted day schedule"
+      ],
+      "limitations": [
+        "HTML-first schedule runtime baseline"
+      ],
+      "current_status": "current",
+      "notes": "Schedule operational dump master 2026-03-10"
+    },
+    {
+      "artifact_id": "schedule_popup_linkage_v3",
+      "path": "schedule/schedule_2026-03-10_popup_linkage_v3.json",
+      "artifact_type": "artifact_json",
+      "domain": "schedule, runtime",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current subset-validated popup linkage layer"
+      ],
+      "limitations": [
+        "Not global popup proof for every visit card"
+      ],
+      "current_status": "current",
+      "notes": "Schedule popup linkage v3"
+    },
+    {
+      "artifact_id": "schedule_status_dictionary_v2",
+      "path": "schedule/schedule_2026-03-10_status_dictionary_v2.json",
+      "artifact_type": "artifact_json",
+      "domain": "schedule, tickets",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current proof-aware schedule status normalization map"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Schedule status dictionary v2"
+    },
+    {
+      "artifact_id": "schedule_patient_full_report_v5_json",
+      "path": "schedule/schedule_2026-03-10_patient_full_report_v5.json",
+      "artifact_type": "artifact_json",
+      "domain": "schedule, patients, tickets",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current patient-ready normalized schedule dataset"
+      ],
+      "limitations": [
+        "Cash kept separate by design"
+      ],
+      "current_status": "current",
+      "notes": "Schedule patient full report v5 JSON"
+    },
+    {
+      "artifact_id": "schedule_patient_full_report_v5_xlsx",
+      "path": "excel/schedule_2026-03-10_patient_full_report_v5.xlsx",
+      "artifact_type": "artifact_xlsx",
+      "domain": "schedule, patients, tickets",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current business-ready patient schedule workbook"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Schedule patient full report v5 workbook"
+    },
+    {
+      "artifact_id": "schedule_patient_full_report_v5_md",
+      "path": "reports/schedule_2026-03-10_patient_full_report_v5.md",
+      "artifact_type": "artifact_md",
+      "domain": "schedule, patients",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current disclosure for patient-ready schedule workbook"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Schedule patient full report v5 disclosure"
+    },
+    {
+      "artifact_id": "schedule_patient_identity_probe_v5",
+      "path": "patients/schedule_2026-03-10_patient_identity_probe_v5.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients, schedule",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current focused patient identity closure for schedule rows"
+      ],
+      "limitations": [
+        "Closes remaining patient_id gap in v5 schedule pack"
+      ],
+      "current_status": "current",
+      "notes": "Schedule patient identity probe v5"
+    },
+    {
+      "artifact_id": "schedule_cash_enrichment_v5",
+      "path": "finance/schedule_2026-03-10_cash_enrichment_v5.json",
+      "artifact_type": "artifact_json",
+      "domain": "finance, schedule, patients",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current conditional patient-day cash enrichment for schedule rows"
+      ],
+      "limitations": [
+        "Not direct visit-to-cash proof"
+      ],
+      "current_status": "current",
+      "notes": "Schedule cash enrichment v5"
+    },
+    {
+      "artifact_id": "ticket_registry_v2_json",
+      "path": "tickets/schedule_2026-03-10_ticket_registry_v2.json",
+      "artifact_type": "artifact_json",
+      "domain": "tickets, schedule",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current normalized ticket registry across ticketed visits"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Ticket registry v2 JSON"
+    },
+    {
+      "artifact_id": "ticket_registry_v2_xlsx",
+      "path": "excel/schedule_2026-03-10_ticket_registry_v2.xlsx",
+      "artifact_type": "artifact_xlsx",
+      "domain": "tickets, schedule",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current workbook for ticket registry"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Ticket registry v2 workbook"
+    },
+    {
+      "artifact_id": "ticket_registry_v2_md",
+      "path": "tickets/schedule_2026-03-10_ticket_registry_v2.md",
+      "artifact_type": "artifact_md",
+      "domain": "tickets, schedule",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current report for ticket registry pack"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Ticket registry v2 report"
+    },
+    {
+      "artifact_id": "ticket_dictionary_v2",
+      "path": "tickets/ticket_dictionary_v2.json",
+      "artifact_type": "artifact_json",
+      "domain": "tickets",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current proof-aware ticket semantic dictionary"
+      ],
+      "limitations": [
+        "schi-10 remains inferred"
+      ],
+      "current_status": "current",
+      "notes": "Ticket dictionary v2"
+    },
+    {
+      "artifact_id": "ticket_semantic_closure_v2_json",
+      "path": "tickets/ticket_semantic_closure_v2.json",
+      "artifact_type": "artifact_json",
+      "domain": "tickets",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current closure artifact for schi-10 and schi-3 residual semantics"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Ticket semantic closure v2 JSON"
+    },
+    {
+      "artifact_id": "ticket_semantic_closure_v2_md",
+      "path": "tickets/ticket_semantic_closure_v2.md",
+      "artifact_type": "artifact_md",
+      "domain": "tickets",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current narrative disclosure for semantic closure"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Ticket semantic closure v2 report"
+    },
+    {
+      "artifact_id": "ticket_extraction_algorithm",
+      "path": "tickets/schedule_ticket_extraction_algorithm.md",
+      "artifact_type": "artifact_md",
+      "domain": "tickets, runtime",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current operational SOP for ticket extraction"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Schedule ticket extraction algorithm"
+    },
+    {
+      "artifact_id": "ticket_extraction_schema",
+      "path": "tickets/schedule_ticket_extraction_schema.json",
+      "artifact_type": "artifact_json",
+      "domain": "tickets, runtime",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current JSON schema for ticket extraction"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Schedule ticket extraction schema"
+    },
+    {
+      "artifact_id": "ticket_runtime_reference",
+      "path": "tickets/schedule_ticket_runtime_reference.json",
+      "artifact_type": "artifact_json",
+      "domain": "tickets, runtime",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current runtime selectors/handlers reference for ticket extraction"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Schedule ticket runtime reference"
+    },
+    {
+      "artifact_id": "patient_cashbox_18910_document_model_json",
+      "path": "finance/patient_cashbox_18910_document_model_2026-03-18.json",
+      "artifact_type": "artifact_json",
+      "domain": "finance, patients",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current document-level patient cashbox model reference case"
+      ],
+      "limitations": [
+        "Row/document grain split reference"
+      ],
+      "current_status": "current",
+      "notes": "Patient cashbox 18910 document model"
+    },
+    {
+      "artifact_id": "patient_cashbox_18910_document_model_xlsx",
+      "path": "excel/patient_cashbox_18910_document_model_2026-03-18.xlsx",
+      "artifact_type": "artifact_xlsx",
+      "domain": "finance, patients",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Workbook for reference cashbox model"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Patient cashbox 18910 document model workbook"
+    },
+    {
+      "artifact_id": "patient_cashbox_18910_document_model_md",
+      "path": "reports/patient_cashbox_18910_document_model_2026-03-18.md",
+      "artifact_type": "artifact_md",
+      "domain": "finance, patients",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Disclosure for reference cashbox model"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Patient cashbox 18910 document model report"
+    },
+    {
+      "artifact_id": "patient_cashbox_19095_document_model_json",
+      "path": "finance/patient_cashbox_19095_document_model_2026-03-18.json",
+      "artifact_type": "artifact_json",
+      "domain": "finance, patients",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Second reference patient cashbox model case"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Patient cashbox 19095 document model"
+    },
+    {
+      "artifact_id": "patient_cashbox_19095_document_model_xlsx",
+      "path": "excel/patient_cashbox_19095_document_model_2026-03-18.xlsx",
+      "artifact_type": "artifact_xlsx",
+      "domain": "finance, patients",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Workbook for second reference cashbox model"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Patient cashbox 19095 document model workbook"
+    },
+    {
+      "artifact_id": "patient_cashbox_19095_document_model_md",
+      "path": "reports/patient_cashbox_19095_document_model_2026-03-18.md",
+      "artifact_type": "artifact_md",
+      "domain": "finance, patients",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Disclosure for second reference cashbox model"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Patient cashbox 19095 document model report"
+    },
+    {
+      "artifact_id": "patients_old_hygiene_no_followup_v2_json",
+      "path": "patients/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18_v2.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients, tickets, schedule",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current normalized operational call list for old hygiene patients without follow-up hygiene visit"
+      ],
+      "limitations": [
+        "Scope limited to proven live schedule window"
+      ],
+      "current_status": "current",
+      "notes": "Patients old hygiene no followup v2 JSON"
+    },
+    {
+      "artifact_id": "patients_old_hygiene_no_followup_v2_xlsx",
+      "path": "excel/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18_v2.xlsx",
+      "artifact_type": "artifact_xlsx",
+      "domain": "patients, tickets, schedule",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current workbook for hygiene campaign operational list"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Patients old hygiene no followup v2 workbook"
+    },
+    {
+      "artifact_id": "patients_old_hygiene_no_followup_v2_md",
+      "path": "reports/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18_v2.md",
+      "artifact_type": "artifact_md",
+      "domain": "patients, tickets, schedule",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Disclosure for hygiene campaign report v2"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Patients old hygiene no followup v2 report"
+    },
+    {
+      "artifact_id": "doctor_patients_geyushova_enriched_rpt24_json",
+      "path": "patients/doctor_patients_Geyushova_2026-02_enriched_rpt24.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients, reporting",
+      "asset_role": "secondary_enrichment",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current two-source operational patient roster + revenue enrichment example"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Doctor patients Geyushova enriched by RPT24 JSON"
+    },
+    {
+      "artifact_id": "doctor_patients_geyushova_enriched_rpt24_xlsx",
+      "path": "excel/doctor_patients_Geyushova_2026-02_enriched_rpt24.xlsx",
+      "artifact_type": "artifact_xlsx",
+      "domain": "patients, reporting",
+      "asset_role": "secondary_enrichment",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Workbook for doctor roster enriched by report data"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Doctor patients Geyushova enriched by RPT24 workbook"
+    },
+    {
+      "artifact_id": "manager_report_2026_03_06_json",
+      "path": "reports/manager_report_2026-03-06.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting, schedule, patients",
+      "asset_role": "secondary_enrichment",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current verified clinic manager report example"
+      ],
+      "limitations": [
+        "Operational daily management slice"
+      ],
+      "current_status": "current",
+      "notes": "Manager report 2026-03-06 JSON"
+    },
+    {
+      "artifact_id": "manager_report_2026_03_06_md",
+      "path": "reports/manager-report-2026-03-06.md",
+      "artifact_type": "artifact_md",
+      "domain": "reporting, schedule, patients",
+      "asset_role": "secondary_enrichment",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Markdown disclosure for manager report example"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Manager report 2026-03-06 markdown"
+    },
+    {
+      "artifact_id": "report_universe_2026_03_16_json",
+      "path": "reporting/report_universe_2026_03_16.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current report universe registry"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Report universe 2026-03-16 JSON"
+    },
+    {
+      "artifact_id": "reports_scan_json",
+      "path": "reporting/reports_scan.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current reports module structural scan"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Reports scan JSON"
+    },
+    {
+      "artifact_id": "reports_structured_catalog_json",
+      "path": "reporting/dentalpro-reports-structured-catalog-2026-03-09.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current structured catalog of reports universe"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "DentalPRO structured reports catalog JSON"
+    },
+    {
+      "artifact_id": "reports_structured_catalog_md",
+      "path": "reports/dentalpro-reports-structured-catalog-2026-03-09.md",
+      "artifact_type": "artifact_md",
+      "domain": "reporting",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Markdown catalog for reports universe"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "DentalPRO structured reports catalog markdown"
+    },
+    {
+      "artifact_id": "report_24_api_analysis_march_json",
+      "path": "reporting/report-24-api-analysis-2026-03-01-2026-03-31.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting, finance",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current verified analysis for RPT24 monthly API reconstruction"
+      ],
+      "limitations": [
+        "xray performer caveat remains"
+      ],
+      "current_status": "current",
+      "notes": "RPT24 API analysis March 2026 JSON"
+    },
+    {
+      "artifact_id": "report_29_composite_unpaid_json",
+      "path": "reporting/report-29-composite-unpaid-2026.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting, finance",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current composite unpaid family reconstruction"
+      ],
+      "limitations": [
+        "Partial due hidden history/update semantics"
+      ],
+      "current_status": "current",
+      "notes": "RPT29 composite unpaid JSON"
+    },
+    {
+      "artifact_id": "rpt_24_48_file_first_canonicalization_json",
+      "path": "reporting/rpt_24_48_file_first_canonicalization_2026_03_10.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current file-first reference pattern for async export family"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "RPT24/48 file-first canonicalization JSON"
+    },
+    {
+      "artifact_id": "rpt_34_35_shape_reconciliation_json",
+      "path": "reporting/rpt_34_35_shape_reconciliation_2026_03_10.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current dual-layer detail-vs-summary reference pattern"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "RPT34/35 shape reconciliation JSON"
+    },
+    {
+      "artifact_id": "rpt_23_final_governed_verdict_json",
+      "path": "reporting/RPT_23_final_governed_verdict_2026-03-11.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current reference runtime-table-export-table verdict"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "RPT23 final governed verdict"
+    },
+    {
+      "artifact_id": "rpt_18_final_governed_verdict_json",
+      "path": "reporting/RPT_18_final_governed_verdict_2026-03-18.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current grouped-header reference verdict"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "RPT18 final governed verdict"
+    },
+    {
+      "artifact_id": "rpt_33_final_governed_verdict_json",
+      "path": "reporting/RPT_33_final_governed_verdict_2026-03-15.json",
+      "artifact_type": "artifact_json",
+      "domain": "reporting",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready",
+      "what_is_proven": [
+        "Current canonical business field boundary reference verdict"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "RPT33 final governed verdict"
+    },
+    {
+      "artifact_id": "doc_patient_layer_access_hub_observations",
+      "path": "docs/dentalpro-crm-page-observations-2026-03-09.md",
+      "artifact_type": "doc",
+      "domain": "patients, mixed",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current structural proof that cbase/detail is patient hub and that patient card links connect key operational domains"
+      ],
+      "limitations": [
+        "Mixed-domain doc but patient hub conclusions are current and useful"
+      ],
+      "current_status": "current",
+      "notes": "DentalPRO CRM page observations patient hubs"
+    },
+    {
+      "artifact_id": "doc_scope_mobile_client_verified_library",
+      "path": "docs/scope-mobile-client-verified-library-2026-01-15.md",
+      "artifact_type": "doc",
+      "domain": "patients",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current verified boundary for mobile-client token scope and patient-specific limitations"
+      ],
+      "limitations": [
+        "Important for honest token-based patient access claims"
+      ],
+      "current_status": "current",
+      "notes": "Scope mobile client verified library"
+    },
+    {
+      "artifact_id": "artifact_scope_mobile_client_json",
+      "path": "patients/mobile_client-2026-01-15.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Machine-readable proof basis for mobile-client scope boundary"
+      ],
+      "limitations": [
+        "Shows branch/user payloads and lack of patient-specific fields under this token context"
+      ],
+      "current_status": "current",
+      "notes": "Scope mobile client verified responses JSON"
+    },
+    {
+      "artifact_id": "doc_scope_insurance_verified_library",
+      "path": "docs/scope-insurance-verified-library-2026-01-15.md",
+      "artifact_type": "doc",
+      "domain": "patients, finance",
+      "asset_role": "secondary_enrichment",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current verified insurance/DMS patient relation library"
+      ],
+      "limitations": [
+        "Useful for DMS/insurance patient subdomain"
+      ],
+      "current_status": "current",
+      "notes": "Scope insurance verified library"
+    },
+    {
+      "artifact_id": "artifact_scope_insurance_json",
+      "path": "patients/insurance-2026-01-15.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients, finance",
+      "asset_role": "secondary_enrichment",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Machine-readable insurance/DMS proof for patient-company linkage"
+      ],
+      "limitations": [],
+      "current_status": "current",
+      "notes": "Scope insurance verified responses JSON"
+    },
+    {
+      "artifact_id": "doc_patient_appointment_data_flow",
+      "path": "docs/patient-appointment-data-flow.md",
+      "artifact_type": "doc",
+      "domain": "patients, schedule",
+      "asset_role": "forensic_only",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current patient->appointment routing and form mechanics document"
+      ],
+      "limitations": [
+        "Useful for patient access path and schedule linkage"
+      ],
+      "current_status": "current",
+      "notes": "Patient appointment data flow"
+    },
+    {
+      "artifact_id": "doc_patient_cashbox_18910_forensic",
+      "path": "patients/patient_cashbox_18910_forensic_2026-03-18.md",
+      "artifact_type": "artifact_md",
+      "domain": "patients, finance",
+      "asset_role": "secondary_enrichment",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Current patient-card cashbox tab forensic explanation for exact extraction algorithm and safe claim boundary"
+      ],
+      "limitations": [
+        "Complements document-model JSON currently in finance"
+      ],
+      "current_status": "current",
+      "notes": "Patient cashbox 18910 forensic report"
+    },
+    {
+      "artifact_id": "doc_dentalpro_screen_map_2026_03_09",
+      "path": "docs/dentalpro-screen-map-2026-03-09.md",
+      "artifact_type": "doc",
+      "domain": "patients",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Patient hub route and related dossier-adjacent screen families"
+      ],
+      "limitations": [
+        "Screen map, not a tab-by-tab payload extractor"
+      ],
+      "current_status": "current",
+      "notes": "Phase 4 route map for dossier tabs"
+    },
+    {
+      "artifact_id": "doc_dentalpro_empty_cards_report_2026_03_16",
+      "path": "docs/dentalpro_empty_cards_report_2026_03_16.md",
+      "artifact_type": "doc",
+      "domain": "patients",
+      "asset_role": "secondary_enrichment",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Live medcards empty-cards registry path and GET filter contract"
+      ],
+      "limitations": [
+        "Summary layer; detailed proof chain lives in forensic disclosure and JSON artifacts"
+      ],
+      "current_status": "current",
+      "notes": "Phase 4 medcards registry summary"
+    },
+    {
+      "artifact_id": "doc_dentalpro_empty_cards_forensic_disclosure_2026_03_16",
+      "path": "docs/dentalpro_empty_cards_forensic_disclosure_2026_03_16.md",
+      "artifact_type": "doc",
+      "domain": "patients",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Auth path, request chain and HTML-first extraction for medcards empty-cards registry"
+      ],
+      "limitations": [
+        "Does not prove transport-only auth or export availability beyond this pass"
+      ],
+      "current_status": "current",
+      "notes": "Phase 4 medcards forensic disclosure"
+    },
+    {
+      "artifact_id": "artifact_dentalpro_runtime_extraction_empty_cards_2026_03_16",
+      "path": "artifacts/dentalpro_runtime_extraction_empty_cards_2026_03_16.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Structured medcards empty-cards rows and headers"
+      ],
+      "limitations": [
+        "Single proven pass on 2026-03-16; no export parity"
+      ],
+      "current_status": "current",
+      "notes": "Phase 4 primary medcards output"
+    },
+    {
+      "artifact_id": "artifact_dentalpro_network_capture_report_empty_cards_2026_03_16",
+      "path": "artifacts/dentalpro_network_capture_report_empty_cards_2026_03_16.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients",
+      "asset_role": "supporting_forensic_asset",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Filtered HTML response is the data-bearing endpoint for empty-cards registry"
+      ],
+      "limitations": [
+        "No dedicated API closure from this asset alone"
+      ],
+      "current_status": "current",
+      "notes": "Phase 4 request-chain evidence"
+    },
+    {
+      "artifact_id": "artifact_dentalpro_export_empty_cards_2026_03_16",
+      "path": "artifacts/dentalpro_export_empty_cards_2026_03_16.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients",
+      "asset_role": "supporting_forensic_asset",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Export was not observed or used in the proven empty-cards pass"
+      ],
+      "limitations": [
+        "Does not prove export absence globally"
+      ],
+      "current_status": "current",
+      "notes": "Phase 4 export boundary artifact"
+    },
+    {
+      "artifact_id": "doc_scope_xray_verification_2026_01_15",
+      "path": "docs/scope-xray-verification-2026-01-15.md",
+      "artifact_type": "doc",
+      "domain": "patients",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "validation_required",
+      "what_is_proven": [
+        "Xray scope currently proves upload/write methods only; no promoted read payload methods"
+      ],
+      "limitations": [
+        "Boundary doc only; not an xray read-model pack"
+      ],
+      "current_status": "current",
+      "notes": "Phase 4 xray boundary doc"
+    },
+    {
+      "artifact_id": "artifact_scope_xray_json",
+      "path": "artifacts/xray-2026-01-15.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients",
+      "asset_role": "supporting_forensic_asset",
+      "proof_status": "artifact_proven",
+      "readiness": "validation_required",
+      "what_is_proven": [
+        "Supporting response inventory for xray scope boundary"
+      ],
+      "limitations": [
+        "Supports write-only boundary, not a usable patient xray extraction model"
+      ],
+      "current_status": "current",
+      "notes": "Phase 4 xray scope evidence"
+    },
+    {
+      "artifact_id": "doc_task_graph_blueprint_ultimate_patient_dossier",
+      "path": "docs/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md",
+      "artifact_type": "doc",
+      "domain": "patients",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Direct routes and extraction patterns for comments/files/documents/family/history tabs"
+      ],
+      "limitations": [
+        "Single verified patient case; not every write path is closed"
+      ],
+      "current_status": "current",
+      "notes": "Phase 5 primary dossier blueprint"
+    },
+    {
+      "artifact_id": "artifact_ultimate_patient_dossier_live_15900",
+      "path": "patients/ultimate_patient_dossier_live_15900.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Sample patient dossier payload for comments/files/documents/family/history tabs"
+      ],
+      "limitations": [
+        "Patient-specific reference bundle, not a universal patient export"
+      ],
+      "current_status": "current",
+      "notes": "Phase 5 primary sample output"
+    },
+    {
+      "artifact_id": "artifact_base_profile_and_tabs",
+      "path": "artifacts/base_profile_and_tabs.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Comments/family/history routes, ready-state rules and direct tab mechanics"
+      ],
+      "limitations": [
+        "Route/method pack, not a standalone patient payload"
+      ],
+      "current_status": "current",
+      "notes": "Phase 5 method pack"
+    },
+    {
+      "artifact_id": "artifact_files_and_documents_pack",
+      "path": "artifacts/files_and_documents.json",
+      "artifact_type": "artifact_json",
+      "domain": "patients",
+      "asset_role": "source_of_truth",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Files/documents routes, modal loads and download contracts"
+      ],
+      "limitations": [
+        "Create/submit contracts remain partial where explicitly marked"
+      ],
+      "current_status": "current",
+      "notes": "Phase 5 files/documents method pack"
+    },
+    {
+      "artifact_id": "doc_documents_state_machine",
+      "path": "docs/documents_state_machine.md",
+      "artifact_type": "doc",
+      "domain": "patients",
+      "asset_role": "secondary_enrichment",
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "what_is_proven": [
+        "Documents tab load and download path are safe; submit remains validation-required"
+      ],
+      "limitations": [
+        "Documents create flow not yet promoted to proven"
+      ],
+      "current_status": "current",
+      "notes": "Phase 5 documents workflow summary"
+    }
+  ]
+}

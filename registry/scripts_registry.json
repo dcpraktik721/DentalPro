@@ -1,0 +1,165 @@
+{
+  "registry_name": "scripts_registry",
+  "version": "0.4.0",
+  "status": "phase5_remaining_dossier_tabs_curated_assets",
+  "entry_schema": {
+    "script_id": "",
+    "path": "",
+    "language": "python|node|shell|other",
+    "purpose": "",
+    "domain": "",
+    "inputs": [],
+    "outputs": [],
+    "artifacts_produced": [],
+    "proof_scope": "",
+    "current_status": "current|superseded|template",
+    "limitations": [],
+    "notes": ""
+  },
+  "entries": [
+    {
+      "script_id": "script_build_verified_capability_package",
+      "path": "scripts/build_dentalpro_verified_capability_package.py",
+      "language": "python",
+      "purpose": "Build verified capability package",
+      "domain": "mixed",
+      "inputs": [],
+      "outputs": [
+        "scripts/build_dentalpro_verified_capability_package.py"
+      ],
+      "artifacts_produced": [],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Python builder used to regenerate consolidated knowledge pack"
+      ],
+      "notes": "Current curated builder for repository-wide verified knowledge package"
+    },
+    {
+      "script_id": "script_build_schedule_ticket_registry_v2",
+      "path": "scripts/build_schedule_ticket_registry_v2.py",
+      "language": "python",
+      "purpose": "Build schedule ticket registry v2",
+      "domain": "tickets, schedule",
+      "inputs": [],
+      "outputs": [
+        "scripts/build_schedule_ticket_registry_v2.py"
+      ],
+      "artifacts_produced": [],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Depends on existing ticket probe artifacts"
+      ],
+      "notes": "Current builder for normalized ticket registry workbook/json layer"
+    },
+    {
+      "script_id": "script_run_schedule_ticket_registry_probe_v1",
+      "path": "scripts/run_schedule_ticket_registry_probe_v1.js",
+      "language": "node",
+      "purpose": "Run schedule ticket registry probe v1",
+      "domain": "tickets, schedule, runtime",
+      "inputs": [],
+      "outputs": [
+        "scripts/run_schedule_ticket_registry_probe_v1.js"
+      ],
+      "artifacts_produced": [],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Browser/runtime script with subset-based proof scope"
+      ],
+      "notes": "Current focused runtime probe for ticket-bearing visits"
+    },
+    {
+      "script_id": "script_run_schedule_interaction_probe_v3",
+      "path": "scripts/run_schedule_interaction_probe_v3.js",
+      "language": "node",
+      "purpose": "Run schedule interaction probe v3",
+      "domain": "schedule, runtime",
+      "inputs": [],
+      "outputs": [
+        "scripts/run_schedule_interaction_probe_v3.js"
+      ],
+      "artifacts_produced": [],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Not a broad rerun tool; subset/family-oriented"
+      ],
+      "notes": "Current hardened interaction subset probe for schedule cards/popups"
+    },
+    {
+      "script_id": "script_find_hygiene_ticket_patients_live",
+      "path": "scripts/find_hygiene_ticket_patients_live.js",
+      "language": "node",
+      "purpose": "Find old hygiene ticket patients live",
+      "domain": "patients, tickets, schedule",
+      "inputs": [],
+      "outputs": [
+        "scripts/find_hygiene_ticket_patients_live.js"
+      ],
+      "artifacts_produced": [],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Scope limited to proven live schedule window, not full CRM universe"
+      ],
+      "notes": "Current live operational script for old hygiene ticket campaign slice"
+    },
+    {
+      "script_id": "script_build_schedule_patient_full_report_v5",
+      "path": "scripts/build_schedule_patient_full_report_v5.py",
+      "language": "python",
+      "purpose": "Build schedule patient full report v5",
+      "domain": "patients, schedule",
+      "inputs": [],
+      "outputs": [
+        "scripts/build_schedule_patient_full_report_v5.py"
+      ],
+      "artifacts_produced": [],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Builds current v5 layer, unlike v4 builder in review queue"
+      ],
+      "notes": "Current builder for patient-ready schedule workbook and normalized patient schedule dataset"
+    },
+    {
+      "script_id": "script_run_schedule_patient_identity_focused_probe_v5",
+      "path": "scripts/run_schedule_patient_identity_focused_probe_v5.js",
+      "language": "node",
+      "purpose": "Run schedule patient identity focused probe v5",
+      "domain": "patients, schedule, runtime",
+      "inputs": [],
+      "outputs": [
+        "scripts/run_schedule_patient_identity_focused_probe_v5.js"
+      ],
+      "artifacts_produced": [],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Relies on browser/runtime project root but reflects current v5 patient identity method"
+      ],
+      "notes": "Current focused patient identity closure script for unresolved schedule rows"
+    },
+    {
+      "script_id": "script_find_patients_old_hygiene_no_followup_live",
+      "path": "scripts/find_patients_old_hygiene_no_followup_live.js",
+      "language": "node",
+      "purpose": "Find patients old hygiene no followup live",
+      "domain": "patients, tickets, schedule",
+      "inputs": [],
+      "outputs": [
+        "scripts/find_patients_old_hygiene_no_followup_live.js"
+      ],
+      "artifacts_produced": [],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Scope stays within observed live schedule window"
+      ],
+      "notes": "Current normalized operational script for patients with outdated hygiene ticket and no later hygienist visit"
+    }
+  ]
+}

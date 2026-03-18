@@ -1,0 +1,44 @@
+[
+  {
+    "area": "schedule tickets",
+    "gap": "schi-10 direct role label not found",
+    "proof_status": "inferred",
+    "recommended_next_step": "focused icon-local search if new role surface appears"
+  },
+  {
+    "area": "schedule popup coverage",
+    "gap": "not every family has clean popup linkage",
+    "proof_status": "structurally_observed",
+    "recommended_next_step": "subset-focused hardening only"
+  },
+  {
+    "area": "cashbox domain",
+    "gap": "full source closure absent",
+    "proof_status": "not_proven",
+    "recommended_next_step": "only if finance blocker requires it"
+  },
+  {
+    "area": "RPT_21",
+    "gap": "hidden statement family",
+    "proof_status": "not_proven",
+    "recommended_next_step": "narrow source access or hidden family probe"
+  },
+  {
+    "area": "RPT_24",
+    "gap": "xray performer key",
+    "proof_status": "not_proven",
+    "recommended_next_step": "prove row-level key or freeze heuristic with warning"
+  },
+  {
+    "area": "RPT_4",
+    "gap": "residual replay semantics",
+    "proof_status": "not_proven",
+    "recommended_next_step": "keep narrow residual set only"
+  },
+  {
+    "area": "patient universe",
+    "gap": "full CRM-wide patient source for some schedule-derived campaigns",
+    "proof_status": "not_proven",
+    "recommended_next_step": "find stronger global patient source if business case requires it"
+  }
+]

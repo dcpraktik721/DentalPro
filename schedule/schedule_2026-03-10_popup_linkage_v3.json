@@ -1,0 +1,742 @@
+[
+  {
+    "visit_id": "130410",
+    "family": "standard_paid_followup",
+    "task_selector": "#task-record-130410",
+    "task_patient_name": "САВИНОВ А. В.",
+    "task_text": "САВИНОВ А. В. 09:00 - 10:45 Повторная консультация гигиениста",
+    "task_attributes": {
+      "id": "task-record-130410",
+      "role": "presentation",
+      "class": "task false false",
+      "style": "top: 0px; height: 105px; min-height: 105px;"
+    },
+    "task_icon_classes": [
+      "schi schi-1",
+      "schi schi-13",
+      "schi schi-6 text-danger",
+      "schi schi-12 cashbox-icon status-paid",
+      "schi schi-7 callcentr-ticket-dontCreated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click",
+    "popup_count": 1,
+    "visible_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "САВИНОВ АЛЕКСЕЙ ВЛАДИМИРОВИЧ 09:00 - 10:45 Тел.: 79519937613 Возраст: 36 лет (15.09.1989) Повторная консультация гигиениста Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 23 (Л), Гигиенисты Врач: Храпонова Н.А. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79519937613",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"bottom\" style=\"top: 164px; left: -27px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">САВИНОВ АЛЕКСЕЙ ВЛАДИМИРОВИЧ</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">09:00 - 10:45 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79519937613\">79519937613</a><br>Возраст: 36 лет (15.09.1989)<hr>Повторная консультация гигиениста<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 23 (Л), Гигиенисты<br>Врач: Храпонова Н.А.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-po"
+      }
+    ],
+    "matched_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "САВИНОВ АЛЕКСЕЙ ВЛАДИМИРОВИЧ 09:00 - 10:45 Тел.: 79519937613 Возраст: 36 лет (15.09.1989) Повторная консультация гигиениста Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 23 (Л), Гигиенисты Врач: Храпонова Н.А. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79519937613",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"bottom\" style=\"top: 164px; left: -27px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">САВИНОВ АЛЕКСЕЙ ВЛАДИМИРОВИЧ</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">09:00 - 10:45 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79519937613\">79519937613</a><br>Возраст: 36 лет (15.09.1989)<hr>Повторная консультация гигиениста<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 23 (Л), Гигиенисты<br>Врач: Храпонова Н.А.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-po"
+      }
+    ],
+    "linkage_state": "proven_popup_linkage",
+    "layer_type": "click_popup",
+    "status": "proven",
+    "evidence": "live_interaction_probe_v3:130410"
+  },
+  {
+    "visit_id": "129734",
+    "family": "no_show_mini",
+    "task_selector": "#task-record-129734",
+    "task_patient_name": "ПРИСЯЖНЮК Е. А.",
+    "task_text": "ПРИСЯЖНЮК Е. А. 10:45 - 11:00 Неявка",
+    "task_attributes": {
+      "id": "task-record-129734",
+      "role": "presentation",
+      "class": "task false task-mini",
+      "style": "top: 105px; height: 15px; min-height: 15px;"
+    },
+    "task_icon_classes": [
+      "schi schi-14",
+      "schi schi-6 text-danger",
+      "schi schi-12 cashbox-icon status-paid",
+      "schi schi-7 callcentr-ticket-dontCreated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click_then_hover",
+    "popup_count": 0,
+    "visible_layers": [],
+    "matched_layers": [],
+    "linkage_state": "no_layer_observed",
+    "layer_type": "none",
+    "status": "not_proven",
+    "evidence": "live_interaction_probe_v3:129734"
+  },
+  {
+    "visit_id": "130231",
+    "family": "online_booking_variant_paid",
+    "task_selector": "#task-record-130231",
+    "task_patient_name": "ХУТ-ОГЛЫ Д. И.",
+    "task_text": "ХУТ-ОГЛЫ Д. И. 12:00 - 13:00 Онлайн запись",
+    "task_attributes": {
+      "id": "task-record-130231",
+      "role": "presentation",
+      "class": "task false false",
+      "style": "top: 180px; height: 60px; min-height: 60px;"
+    },
+    "task_icon_classes": [
+      "schi schi-3",
+      "schi schi-1",
+      "schi schi-4",
+      "schi schi-14",
+      "schi schi-6 text-danger",
+      "schi schi-12 cashbox-icon status-paid",
+      "schi schi-7 callcentr-ticket-outdated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click",
+    "popup_count": 1,
+    "visible_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "ХУТ-ОГЛЫ ДАРЬЯ ИЛЬИНИЧНА 12:00 - 13:00 Тел.: 79133642047 Возраст: 35 лет (12.12.1990) Онлайн запись Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 26, Ортодонты Врач: Гулямхайдаров А.А. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79133642047",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"bottom\" style=\"top: 299px; left: 473px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">ХУТ-ОГЛЫ ДАРЬЯ ИЛЬИНИЧНА</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">12:00 - 13:00 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79133642047\">79133642047</a><br>Возраст: 35 лет (12.12.1990)<hr>Онлайн запись<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 26, Ортодонты<br>Врач: Гулямхайдаров А.А.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\""
+      }
+    ],
+    "matched_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "ХУТ-ОГЛЫ ДАРЬЯ ИЛЬИНИЧНА 12:00 - 13:00 Тел.: 79133642047 Возраст: 35 лет (12.12.1990) Онлайн запись Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 26, Ортодонты Врач: Гулямхайдаров А.А. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79133642047",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"bottom\" style=\"top: 299px; left: 473px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">ХУТ-ОГЛЫ ДАРЬЯ ИЛЬИНИЧНА</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">12:00 - 13:00 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79133642047\">79133642047</a><br>Возраст: 35 лет (12.12.1990)<hr>Онлайн запись<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 26, Ортодонты<br>Врач: Гулямхайдаров А.А.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\""
+      }
+    ],
+    "linkage_state": "proven_popup_linkage",
+    "layer_type": "click_popup",
+    "status": "proven",
+    "evidence": "live_interaction_probe_v3:130231"
+  },
+  {
+    "visit_id": "130329",
+    "family": "online_booking_variant_unpaid",
+    "task_selector": "#task-record-130329",
+    "task_patient_name": "ТЮТЮНОВА С. Р.",
+    "task_text": "ТЮТЮНОВА С. Р. 13:00 - 14:00 Онлайн запись",
+    "task_attributes": {
+      "id": "task-record-130329",
+      "role": "presentation",
+      "class": "task false false",
+      "style": "top: 240px; height: 60px; min-height: 60px;"
+    },
+    "task_icon_classes": [
+      "schi schi-3",
+      "schi schi-1",
+      "schi schi-9 ",
+      "schi schi-4",
+      "schi schi-14",
+      "schi schi-6 text-danger",
+      "schi schi-7 callcentr-ticket-outdated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click",
+    "popup_count": 1,
+    "visible_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "ТЮТЮНОВА СОФИЯ РОМАНОВНА 13:00 - 14:00 Тел.: 79220721192 Возраст: 8 лет (27.06.2017) Онлайн запись Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 26, Ортодонты Врач: Гулямхайдаров А.А. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79220721192",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"top\" style=\"top: -139px; left: 473px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(241, 244, 47);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(241, 244, 47);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">ТЮТЮНОВА СОФИЯ РОМАНОВНА</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">13:00 - 14:00 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79220721192\">79220721192</a><br>Возраст: 8 лет (27.06.2017)<hr>Онлайн запись<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 26, Ортодонты<br>Врач: Гулямхайдаров А.А.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Реда"
+      }
+    ],
+    "matched_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "ТЮТЮНОВА СОФИЯ РОМАНОВНА 13:00 - 14:00 Тел.: 79220721192 Возраст: 8 лет (27.06.2017) Онлайн запись Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 26, Ортодонты Врач: Гулямхайдаров А.А. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79220721192",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"top\" style=\"top: -139px; left: 473px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(241, 244, 47);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(241, 244, 47);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">ТЮТЮНОВА СОФИЯ РОМАНОВНА</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">13:00 - 14:00 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79220721192\">79220721192</a><br>Возраст: 8 лет (27.06.2017)<hr>Онлайн запись<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 26, Ортодонты<br>Врач: Гулямхайдаров А.А.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Реда"
+      }
+    ],
+    "linkage_state": "proven_popup_linkage",
+    "layer_type": "click_popup",
+    "status": "proven",
+    "evidence": "live_interaction_probe_v3:130329"
+  },
+  {
+    "visit_id": "129505",
+    "family": "reserve_slot",
+    "task_selector": "#task-record-129505",
+    "task_patient_name": "Резерв для пациента",
+    "task_text": "Резерв для пациента 15:30:00 - 16:00:00",
+    "task_attributes": {
+      "id": "task-record-129505",
+      "role": "presentation",
+      "class": "task false false",
+      "style": "top: 390px; height: 30px; min-height: 30px;"
+    },
+    "task_icon_classes": [],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click",
+    "popup_count": 1,
+    "visible_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "Резерв для пациента Служебная запись Комментарии Удалить запись",
+        "buttons": [
+          "Комментарии",
+          "Удалить запись"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"top\" style=\"top: 355px; left: 473px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(179, 0, 131);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(179, 0, 131);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">Резерв для пациента</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">Служебная запись</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Комментарии</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить запись</button></li></ul></div></div>"
+      }
+    ],
+    "matched_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "Резерв для пациента Служебная запись Комментарии Удалить запись",
+        "buttons": [
+          "Комментарии",
+          "Удалить запись"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"top\" style=\"top: 355px; left: 473px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(179, 0, 131);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(179, 0, 131);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">Резерв для пациента</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">Служебная запись</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Комментарии</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить запись</button></li></ul></div></div>"
+      }
+    ],
+    "linkage_state": "proven_popup_linkage",
+    "layer_type": "click_popup",
+    "status": "proven",
+    "evidence": "live_interaction_probe_v3:129505"
+  },
+  {
+    "visit_id": "130215",
+    "family": "treatment_ticket_outdated",
+    "task_selector": "#task-record-130215",
+    "task_patient_name": "ФОМЕНКО А. Ю.",
+    "task_text": "ФОМЕНКО А. Ю. 14:00 - 15:00 Прямая реставрация зуба жевательной зоны",
+    "task_attributes": {
+      "id": "task-record-130215",
+      "role": "presentation",
+      "class": "task false false",
+      "style": "top: 300px; height: 60px; min-height: 60px;"
+    },
+    "task_icon_classes": [
+      "schi schi-1",
+      "schi schi-13",
+      "schi schi-5",
+      "schi schi-14",
+      "schi schi-6 text-danger",
+      "schi schi-12 cashbox-icon status-paid",
+      "schi schi-7 callcentr-ticket-outdated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click",
+    "popup_count": 1,
+    "visible_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "ФОМЕНКО АЛЕКСАНДР ЮРЬЕВИЧ 14:00 - 15:00 Тел.: 79222625468 Возраст: 44 года (13.07.1981) Страховой. Компания: СПАО Ингосстрах . Несколько активных документов, необходимо уточнение Прямая реставрация зуба жевательной зоны Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 19, Ортопеды Врач: Буряк Л.А. Информация о пациенте Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79222625468",
+          "Информация о пациенте",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"top\" style=\"top: -88px; left: 856px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">ФОМЕНКО АЛЕКСАНДР ЮРЬЕВИЧ</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">14:00 - 15:00 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79222625468\">79222625468</a><br>Возраст: 44 года (13.07.1981)<br>Страховой. Компания: СПАО  Ингосстрах . Несколько активных документов, необходимо уточнение<hr>Прямая реставрация зуба жевательной зоны<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 19, Ортопеды<br>Врач: Буряк Л.А.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-"
+      }
+    ],
+    "matched_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "ФОМЕНКО АЛЕКСАНДР ЮРЬЕВИЧ 14:00 - 15:00 Тел.: 79222625468 Возраст: 44 года (13.07.1981) Страховой. Компания: СПАО Ингосстрах . Несколько активных документов, необходимо уточнение Прямая реставрация зуба жевательной зоны Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 19, Ортопеды Врач: Буряк Л.А. Информация о пациенте Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79222625468",
+          "Информация о пациенте",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"top\" style=\"top: -88px; left: 856px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(255, 255, 255);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">ФОМЕНКО АЛЕКСАНДР ЮРЬЕВИЧ</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">14:00 - 15:00 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79222625468\">79222625468</a><br>Возраст: 44 года (13.07.1981)<br>Страховой. Компания: СПАО  Ингосстрах . Несколько активных документов, необходимо уточнение<hr>Прямая реставрация зуба жевательной зоны<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 19, Ортопеды<br>Врач: Буряк Л.А.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-"
+      }
+    ],
+    "linkage_state": "proven_popup_linkage",
+    "layer_type": "click_popup",
+    "status": "proven",
+    "evidence": "live_interaction_probe_v3:130215"
+  },
+  {
+    "visit_id": "130119",
+    "family": "ortho_without_paid_icon",
+    "task_selector": "#task-record-130119",
+    "task_patient_name": "ХЕХЛЕР Ю. М.",
+    "task_text": "ХЕХЛЕР Ю. М. 10:00 - 11:00 Продолжение лечения врача ортопеда",
+    "task_attributes": {
+      "id": "task-record-130119",
+      "role": "presentation",
+      "class": "task false false",
+      "style": "top: 60px; height: 60px; min-height: 60px;"
+    },
+    "task_icon_classes": [
+      "schi schi-1",
+      "schi schi-6 text-danger",
+      "schi schi-7 callcentr-ticket-dontCreated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click",
+    "popup_count": 1,
+    "visible_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ 10:00 - 11:00 Тел.: 79123832751 Возраст: 65 лет (09.01.1961) Продолжение лечения врача ортопеда Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 19, Ортопеды Врач: Оленев А.О. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79123832751",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"bottom\" style=\"top: 179px; left: 223px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(241, 244, 47);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(241, 244, 47);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">10:00 - 11:00 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79123832751\">79123832751</a><br>Возраст: 65 лет (09.01.1961)<hr>Продолжение лечения врача ортопеда<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 19, Ортопеды<br>Врач: Оленев А.О.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type="
+      }
+    ],
+    "matched_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ 10:00 - 11:00 Тел.: 79123832751 Возраст: 65 лет (09.01.1961) Продолжение лечения врача ортопеда Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 19, Ортопеды Врач: Оленев А.О. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79123832751",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"bottom\" style=\"top: 179px; left: 223px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(241, 244, 47);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(241, 244, 47);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">ХЕХЛЕР ЮРИ МИХАЙЛОВИЧ</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">10:00 - 11:00 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79123832751\">79123832751</a><br>Возраст: 65 лет (09.01.1961)<hr>Продолжение лечения врача ортопеда<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 19, Ортопеды<br>Врач: Оленев А.О.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type="
+      }
+    ],
+    "linkage_state": "proven_popup_linkage",
+    "layer_type": "click_popup",
+    "status": "proven",
+    "evidence": "live_interaction_probe_v3:130119"
+  },
+  {
+    "visit_id": "130087",
+    "family": "reversal_mini",
+    "task_selector": "#task-record-130087",
+    "task_patient_name": "ЧИЖОВА Е. А.",
+    "task_text": "ЧИЖОВА Е. А. 17:30 - 17:45 Повторная консультация врача-ортодонта",
+    "task_attributes": {
+      "id": "task-record-130087",
+      "role": "presentation",
+      "class": "task false task-mini",
+      "style": "top: 510px; height: 15px; min-height: 15px;"
+    },
+    "task_icon_classes": [
+      "schi schi-1",
+      "schi schi-9 ",
+      "schi schi-14",
+      "schi schi-6 text-danger",
+      "schi schi-12 cashbox-icon status-reversal",
+      "schi schi-7 callcentr-ticket-dontCreated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click_then_hover",
+    "popup_count": 0,
+    "visible_layers": [],
+    "matched_layers": [],
+    "linkage_state": "no_layer_observed",
+    "layer_type": "none",
+    "status": "not_proven",
+    "evidence": "live_interaction_probe_v3:130087"
+  },
+  {
+    "visit_id": "130053",
+    "family": "mini_paid_orthodontic",
+    "task_selector": "#task-record-130053",
+    "task_patient_name": "ФЕДОРОВА Н. В.",
+    "task_text": "ФЕДОРОВА Н. В. 11:15 - 11:30 Повторная консультация врача ортодонта",
+    "task_attributes": {
+      "id": "task-record-130053",
+      "role": "presentation",
+      "class": "task false task-mini",
+      "style": "top: 135px; height: 15px; min-height: 15px;"
+    },
+    "task_icon_classes": [
+      "schi schi-1",
+      "schi schi-13",
+      "schi schi-5",
+      "schi schi-14",
+      "schi schi-6 text-danger",
+      "schi schi-12 cashbox-icon status-paid",
+      "schi schi-7 callcentr-ticket-dontCreated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click_then_hover",
+    "popup_count": 0,
+    "visible_layers": [],
+    "matched_layers": [],
+    "linkage_state": "no_layer_observed",
+    "layer_type": "none",
+    "status": "not_proven",
+    "evidence": "live_interaction_probe_v3:130053"
+  },
+  {
+    "visit_id": "130195",
+    "family": "mini_primary_consultation",
+    "task_selector": "#task-record-130195",
+    "task_patient_name": "ЗАГВАЗДИН А. Н.",
+    "task_text": "ЗАГВАЗДИН А. Н. 11:00 - 11:15 первичная консультация врача-терапевта",
+    "task_attributes": {
+      "id": "task-record-130195",
+      "role": "presentation",
+      "class": "task false task-mini",
+      "style": "top: 120px; height: 15px; min-height: 15px;"
+    },
+    "task_icon_classes": [
+      "schi schi-1",
+      "schi schi-4",
+      "schi schi-10",
+      "schi schi-14",
+      "schi schi-6 text-danger",
+      "schi schi-12 cashbox-icon status-paid",
+      "schi schi-7 callcentr-ticket-dontCreated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click_then_hover",
+    "popup_count": 0,
+    "visible_layers": [],
+    "matched_layers": [],
+    "linkage_state": "no_layer_observed",
+    "layer_type": "none",
+    "status": "not_proven",
+    "evidence": "live_interaction_probe_v3:130195"
+  },
+  {
+    "visit_id": "129821",
+    "family": "stress_error_family",
+    "task_selector": "#task-record-129821",
+    "task_patient_name": "СОЗОНОВ Л. О.",
+    "task_text": "СОЗОНОВ Л. О. 16:00 - 17:00 Удаление",
+    "task_attributes": {
+      "id": "task-record-129821",
+      "role": "presentation",
+      "class": "task false false",
+      "style": "top: 420px; height: 60px; min-height: 60px;"
+    },
+    "task_icon_classes": [
+      "schi schi-1",
+      "schi schi-13 text-danger",
+      "schi schi-9 ",
+      "schi schi-5",
+      "schi schi-14",
+      "schi schi-6 text-danger",
+      "schi schi-7 callcentr-ticket-outdated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click",
+    "popup_count": 1,
+    "visible_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "СОЗОНОВ ЛЕВ ОЛЕГОВИЧ 16:00 - 17:00 Тел.: 79829821771 Возраст: 12 лет (19.01.2014) Страховой. Указано несколько компаний, необходимо уточнение Удаление Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 11, Хирурги Врач: Геюшова Я.Н. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79829821771",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"top\" style=\"top: 41px; left: 414px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(23, 36, 222);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(23, 36, 222);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">СОЗОНОВ ЛЕВ ОЛЕГОВИЧ</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">16:00 - 17:00 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79829821771\">79829821771</a><br>Возраст: 12 лет (19.01.2014)<br>Страховой. Указано несколько компаний, необходимо уточнение<hr>Удаление<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 11, Хирурги<br>Врач: Геюшова Я.Н.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn"
+      }
+    ],
+    "matched_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "СОЗОНОВ ЛЕВ ОЛЕГОВИЧ 16:00 - 17:00 Тел.: 79829821771 Возраст: 12 лет (19.01.2014) Страховой. Указано несколько компаний, необходимо уточнение Удаление Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 11, Хирурги Врач: Геюшова Я.Н. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79829821771",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"top\" style=\"top: 41px; left: 414px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(23, 36, 222);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(23, 36, 222);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">СОЗОНОВ ЛЕВ ОЛЕГОВИЧ</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">16:00 - 17:00 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79829821771\">79829821771</a><br>Возраст: 12 лет (19.01.2014)<br>Страховой. Указано несколько компаний, необходимо уточнение<hr>Удаление<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 11, Хирурги<br>Врач: Геюшова Я.Н.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn"
+      }
+    ],
+    "linkage_state": "proven_popup_linkage",
+    "layer_type": "click_popup",
+    "status": "proven",
+    "evidence": "live_interaction_probe_v3:129821"
+  },
+  {
+    "visit_id": "130422",
+    "family": "status_open_family",
+    "task_selector": "#task-record-130422",
+    "task_patient_name": "МИХАЙЛОВА Л. В.",
+    "task_text": "МИХАЙЛОВА Л. В. 13:30 - 14:30 Прямая реставрация зуба жевательной зоны",
+    "task_attributes": {
+      "id": "task-record-130422",
+      "role": "presentation",
+      "class": "task false false",
+      "style": "top: 270px; height: 60px; min-height: 60px;"
+    },
+    "task_icon_classes": [
+      "schi schi-1",
+      "schi schi-13 text-danger",
+      "schi schi-14",
+      "schi schi-6 text-danger",
+      "schi schi-12 cashbox-icon status-open",
+      "schi schi-11 text-danger",
+      "schi schi-7 callcentr-ticket-outdated"
+    ],
+    "stale_prevention": "hard_reload_per_case + escape/body-click close policy",
+    "trigger_method": "click",
+    "popup_count": 1,
+    "visible_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "МИХАЙЛОВА ЛАРИСА ВЛАДИМИРОВНА 13:30 - 14:30 Тел.: 79123914098 Возраст: 51 год (31.01.1975) Прямая реставрация зуба жевательной зоны Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 15, Терапевты Врач: Зотов В.Д. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79123914098",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"top\" style=\"top: -109px; left: 414px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(0, 255, 89);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(0, 255, 89);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">МИХАЙЛОВА ЛАРИСА ВЛАДИМИРОВНА</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">13:30 - 14:30 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79123914098\">79123914098</a><br>Возраст: 51 год (31.01.1975)<hr>Прямая реставрация зуба жевательной зоны<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 15, Терапевты<br>Врач: Зотов В.Д.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-popup btn-x"
+      }
+    ],
+    "matched_layers": [
+      {
+        "selector": ".popover.show",
+        "index": 0,
+        "class_name": "popover sheduler_popover bs-popover-auto fade in show",
+        "text": "МИХАЙЛОВА ЛАРИСА ВЛАДИМИРОВНА 13:30 - 14:30 Тел.: 79123914098 Возраст: 51 год (31.01.1975) Прямая реставрация зуба жевательной зоны Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 15, Терапевты Врач: Зотов В.Д. Информация о пациенте Копировать Амбулаторная карта План лечения Заполнить анкету Пациент пришёл Отметить результат посещения Пациент не пришёл Перенести запись Удалить или отложить запись Редактировать примечание Запланировать посещение Отправить СМС Оплатить Отменить подтверждение",
+        "buttons": [
+          "79123914098",
+          "Информация о пациенте",
+          "Копировать",
+          "Амбулаторная карта",
+          "План лечения",
+          "Заполнить анкету",
+          "Пациент пришёл",
+          "Отметить результат посещения",
+          "Пациент не пришёл",
+          "Перенести запись",
+          "Удалить или отложить запись",
+          "Редактировать примечание",
+          "Запланировать посещение",
+          "Отправить СМС",
+          "Оплатить",
+          "Отменить подтверждение"
+        ],
+        "html_preview": "<div class=\"popover sheduler_popover bs-popover-auto fade in show\" data-popper-placement=\"top\" style=\"top: -109px; left: 414px;\"><div class=\"sheduler_popover_border\" style=\"border-color: rgb(0, 255, 89);\"></div><div class=\"sheduler_popover_bg\" style=\"background-color: rgb(0, 255, 89);\"></div><div class=\"sheduler_popover_header\"><div class=\"sheduler_popover_header_name\">МИХАЙЛОВА ЛАРИСА ВЛАДИМИРОВНА</div><div class=\"sheduler_popover_header_card\"></div><div class=\"sheduler_popover_header_info\">13:30 - 14:30 <small></small><br>Тел.: <a class=\"telephony-call-button\" data-phone=\"79123914098\">79123914098</a><br>Возраст: 51 год (31.01.1975)<hr>Прямая реставрация зуба жевательной зоны<hr>Филиал: ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) / Кресло: Кабинет 15, Терапевты<br>Врач: Зотов В.Д.</div></div><div class=\"sheduler_popover_data\"><ul><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Информация о пациенте</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Копировать</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Амбулаторная карта</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">План лечения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Заполнить анкету</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Отметить результат посещения</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Пациент не пришёл</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Перенести запись</button></li><li><button class=\"btn-scheduler-popup btn-xs\" type=\"button\">Удалить или отложить запись</button></li><li><button class=\"btn-scheduler-popup btn-x"
+      }
+    ],
+    "linkage_state": "proven_popup_linkage",
+    "layer_type": "click_popup",
+    "status": "proven",
+    "evidence": "live_interaction_probe_v3:130422"
+  }
+]

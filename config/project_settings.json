@@ -1,0 +1,30 @@
+{
+  "project_name": "DentalPro",
+  "repo_root": "/Users/macbook15/Downloads/MacAi/DentalPro",
+  "artifact_naming_policy": {
+    "date_format": "YYYY-MM-DD",
+    "use_domain_prefix": true,
+    "use_version_suffix_when_revised": true,
+    "forbid_silent_overwrite_of_baseline": true
+  },
+  "proof_statuses": [
+    "proven",
+    "artifact_proven",
+    "structurally_observed",
+    "inferred",
+    "not_proven"
+  ],
+  "readiness_statuses": [
+    "ready",
+    "ready_with_limits",
+    "validation_required",
+    "blocked"
+  ],
+  "asset_lifecycle_classes": [
+    "baseline",
+    "continuation",
+    "derived",
+    "superseded"
+  ],
+  "notes": "Bootstrap config. Update after first migration pass."
+}

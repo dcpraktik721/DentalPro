@@ -1,0 +1,179 @@
+[
+  {
+    "domain": "patient_card_tab",
+    "data_we_can_extract": "patient card tabs, direct tab URLs, patient cashbox detail, patient full name, phone, card-linked sections",
+    "source_layer": "patient_card_tab + internal authenticated runtime pages",
+    "grain": "patient / payment_document / payment_row",
+    "proof_level": "proven",
+    "readiness": "ready_with_limits",
+    "method": "browser-first direct tab URL access + DOM extraction + detail-page drilldown",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_18910_document_model_2026-03-18.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_19095_document_model_2026-03-18.json",
+      "/Users/macbook15/Downloads/MacAi/docs/patient_cashbox_18910_forensic_2026-03-18.md"
+    ],
+    "safe_claim_boundary": "Patient cashbox can be modeled at row/document grain for proven patients; not a global cashbox source closure."
+  },
+  {
+    "domain": "patient_identity_and_profile",
+    "data_we_can_extract": "patient_id, full name, phone, patient_card_url, appointment-linked identity enrichment",
+    "source_layer": "schedule popup + i/client + mobile/client/getByID",
+    "grain": "patient / visit-enriched patient row",
+    "proof_level": "proven",
+    "readiness": "ready_with_limits",
+    "method": "schedule popup clean click + API fallback identity probe",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v5.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_identity_probe_v5.json"
+    ],
+    "safe_claim_boundary": "Patient enrichment is proven for observed schedule rows, not as a full CRM-wide patient inventory."
+  },
+  {
+    "domain": "schedule_day_runtime",
+    "data_we_can_extract": "day schedule, doctors, cabinets, timeslots, visits, root config, date mechanics, DOM/runtime layout",
+    "source_layer": "HTML-first schedule runtime",
+    "grain": "doctor/day, cabinet/day, visit row, timeslot",
+    "proof_level": "proven",
+    "readiness": "ready",
+    "method": "browser-backed schedule forensic pass + DOM/network extraction",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_operational_dump_master.md",
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_visits.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_doctors.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_cabinets.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_timeslots.json"
+    ],
+    "safe_claim_boundary": "Schedule page is operationally usable as runtime HTML source for observed day state."
+  },
+  {
+    "domain": "schedule_ticket_layer",
+    "data_we_can_extract": "ticket icon order, exact tooltip text, ticket family, normalized category, proof-aware semantics",
+    "source_layer": "live rendered rc-tooltip on exact icon node",
+    "grain": "ticket on visit card",
+    "proof_level": "proven",
+    "readiness": "ready_with_limits",
+    "method": "focused icon-level React onMouseEnter probe with stale tooltip prevention",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v2.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/ticket_dictionary_v2.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_ticket_extraction_algorithm.md"
+    ],
+    "safe_claim_boundary": "Proven for live-rendered tooltip families; some semantics like schi-10 remain inferred."
+  },
+  {
+    "domain": "schedule_patient_ready_extract",
+    "data_we_can_extract": "patient-ready visit workbook with full name, phone, patient_id, doctor, cabinet, proof-aware status fields",
+    "source_layer": "schedule runtime + popup + identity probes + conditional cash enrichment",
+    "grain": "one schedule visit row",
+    "proof_level": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "method": "full report builder v5 on top of schedule normalized dataset",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v5.xlsx",
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v5.json"
+    ],
+    "safe_claim_boundary": "Visit-level identity is strong; cash remains secondary conditional enrichment only."
+  },
+  {
+    "domain": "report_universe_and_routes",
+    "data_we_can_extract": "report groups, template codes, saved report ids, route patterns, mechanics classes",
+    "source_layer": "reports index + report route/runtime probes",
+    "grain": "report template / saved report",
+    "proof_level": "proven",
+    "readiness": "ready",
+    "method": "reports index extraction + architecture cataloging",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/reports/reports_scan.json",
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/dentalpro-reports-structured-catalog-2026-03-09.md",
+      "/Users/macbook15/Downloads/MacAi/artifacts/report_universe_2026_03_16.json"
+    ],
+    "safe_claim_boundary": "Universe discovery is strong; not every report is source-closed."
+  },
+  {
+    "domain": "runtime_table_export_table_reports",
+    "data_we_can_extract": "runtime table, export file, parsed workbook, parity verdict, explicit normalization policy",
+    "source_layer": "report runtime + export xlsx + parsed workbook",
+    "grain": "report row / header contract / footer",
+    "proof_level": "proven",
+    "readiness": "ready_with_limits",
+    "method": "date-constrained targeted report pass with family-aware compare",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_final_governed_verdict_2026-03-11.json",
+      "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_33_final_governed_verdict_2026-03-15.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/rpt_23_36_runtime_vs_file_parity_2026_03_10.json"
+    ],
+    "safe_claim_boundary": "Canonicalization depends on content compare and explicit normalization; row count equality is never enough."
+  },
+  {
+    "domain": "grouped_headers_reports",
+    "data_we_can_extract": "runtime grouped-header table, leaf business headers, normalized parity to export",
+    "source_layer": "report runtime + export file",
+    "grain": "report business row",
+    "proof_level": "proven",
+    "readiness": "ready_with_limits",
+    "method": "leaf-header extraction + header projection + normalization",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_18_final_governed_verdict_2026-03-17.json",
+      "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_18_final_governed_verdict_2026-03-18.json"
+    ],
+    "safe_claim_boundary": "Pattern proven for RPT_18 family; portability to all grouped-header reports is not automatic."
+  },
+  {
+    "domain": "file_first_async_reports",
+    "data_we_can_extract": "file as primary truth, runtime shell, parsed schema and row boundaries",
+    "source_layer": "async export file",
+    "grain": "file row / workbook schema",
+    "proof_level": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "method": "async export tracing + file parse",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/rpt_24_48_file_first_canonicalization_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/async_export_reports_2026_03_16.json"
+    ],
+    "safe_claim_boundary": "File-first families are usable only as file-truth datasets, not as runtime-table parity families."
+  },
+  {
+    "domain": "finance_operational_layer",
+    "data_we_can_extract": "paid service/payment rows, patient/day revenue, manager daily report, unpaid families partial, cash detail overlap",
+    "source_layer": "z/pays + enrichments + cashbox detail HTML + invoice/detail",
+    "grain": "pay position / payment header / manager-day aggregate",
+    "proof_level": "proven",
+    "readiness": "ready_with_limits",
+    "method": "accepted API usage + composite joins + HTML detail supplement",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/report-24-api-analysis-2026-03-01-2026-03-31.json",
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/manager_report_2026-03-06.json",
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/cashbox-source-mapping-2026-03-09.md"
+    ],
+    "safe_claim_boundary": "Operational finance extraction is strong for z/pays families; cashbox and DDS hidden logic remain only partially closed."
+  },
+  {
+    "domain": "empty_medcards_internal_runtime",
+    "data_we_can_extract": "internal card workflow endpoints, save/approve/decline/cancelApprove state machine",
+    "source_layer": "authenticated internal web runtime",
+    "grain": "medcard status transition",
+    "proof_level": "proven",
+    "readiness": "ready_with_limits",
+    "method": "runtime component inspection + live internal POST probes",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/MacAi/docs/dentalpro_empty_cards_forensic_disclosure_2026_03_16.md",
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/empty-cards-api-candidate-plan-2026-03-14.md",
+      "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_runtime_extraction_empty_cards_2026_03_16.json"
+    ],
+    "safe_claim_boundary": "Usable for browser-authenticated automation; not a published token/secret API family."
+  },
+  {
+    "domain": "doctor_roster_custom_reporting",
+    "data_we_can_extract": "patients by doctor over period, patient/day roster, optional financial enrichment",
+    "source_layer": "z/doctor/all + mobile/schedule + optional RPT_24",
+    "grain": "appointment row / patient-day enrichment",
+    "proof_level": "proven",
+    "readiness": "ready_with_limits",
+    "method": "accepted API roster extraction + optional report-based enrichment",
+    "evidence_basis": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/doctor_patients_Geyushova_2026-02.json",
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/doctor_patients_Geyushova_2026-02_enriched_rpt24.json"
+    ],
+    "safe_claim_boundary": "Patient-day financial enrichment is not visit-level cash proof."
+  }
+]

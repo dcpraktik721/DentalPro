@@ -1,0 +1,458 @@
+{
+  "generated_at": "2026-03-18T08:47:47.337882",
+  "patient_id": 18910,
+  "patient_name": "АЗАНОВ ЗАУР ХАКИМОВИЧ",
+  "list_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=18910&tab=cashbox%5Ccbase%5Cpays",
+  "page_totals_observed": {
+    "total_amount": "6 985.00 ₽",
+    "paid_amount": "6 985.00 ₽",
+    "unpaid_amount": "0.00 ₽",
+    "items": 4,
+    "pages": 1
+  },
+  "cashbox_tab_contract": {
+    "family_class": "patient_card_tab / backend_rendered_html_list",
+    "primary_truth_layer": "runtime HTML list + cashbox detail pages",
+    "filter_method": "GET",
+    "document_level_extension": "act_reference + document_scope + payment_block_scope"
+  },
+  "list_cards": [
+    {
+      "payment_id": "86370",
+      "detail_href": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=86370",
+      "service_label_list": "86370 - Зуб(ы):18 Удаление постоянного зуба (3)",
+      "created_meta": "24.02.2026 в 15:47:41 создал Геюшова Я.Н.",
+      "badges": [
+        "ООО НЬЮ ЛАЙФ ( СК ПRАКТИК )",
+        "Оплачена",
+        "Банковская карта, ФР"
+      ],
+      "comment": "-",
+      "cash_text": "24.02.2026 2 455.00 ₽",
+      "full_text": "86370 - Зуб(ы):18 Удаление постоянного зуба (3) 24.02.2026 в 15:47:41 создал Геюшова Я.Н. ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) Оплачена Банковская карта, ФР Комментарий - 24.02.2026 2 455.00 ₽"
+    },
+    {
+      "payment_id": "85523",
+      "detail_href": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=85523",
+      "service_label_list": "85523 - Рентген №: 29190 Ортопантомография (1)",
+      "created_meta": "09.02.2026 в 16:17:57 создал Желудкова М.В.",
+      "badges": [
+        "ООО НЬЮ ЛАЙФ ( СК ПRАКТИК )",
+        "Оплачена",
+        "Банковская карта, ФР"
+      ],
+      "comment": "-",
+      "cash_text": "09.02.2026 0.00 ₽ 1 500.00 ₽ Скидка 1 500.00 ₽",
+      "full_text": "85523 - Рентген №: 29190 Ортопантомография (1) 09.02.2026 в 16:17:57 создал Желудкова М.В. ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) Оплачена Банковская карта, ФР Комментарий - 09.02.2026 0.00 ₽ 1 500.00 ₽ Скидка 1 500.00 ₽"
+    },
+    {
+      "payment_id": "85520",
+      "detail_href": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=85520",
+      "service_label_list": "85520 - Зуб(ы):28 Удаление постоянного зуба (2)",
+      "created_meta": "09.02.2026 в 16:10:50 создал Логвинчук Д.Н.",
+      "badges": [
+        "ООО НЬЮ ЛАЙФ ( СК ПRАКТИК )",
+        "Оплачена",
+        "Банковская карта, ФР"
+      ],
+      "comment": "-",
+      "cash_text": "09.02.2026 4 530.00 ₽",
+      "full_text": "85520 - Зуб(ы):28 Удаление постоянного зуба (2) 09.02.2026 в 16:10:50 создал Логвинчук Д.Н. ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) Оплачена Банковская карта, ФР Комментарий - 09.02.2026 4 530.00 ₽"
+    },
+    {
+      "payment_id": "85516",
+      "detail_href": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=85516",
+      "service_label_list": "85516 - Рентген №: 29187 Ортопантомография (1)",
+      "created_meta": "09.02.2026 в 15:54:22 создал Желудкова М.В.",
+      "badges": [
+        "ООО НЬЮ ЛАЙФ ( СК ПRАКТИК )",
+        "Оплачена",
+        "Банковская карта, ФР"
+      ],
+      "comment": "-",
+      "cash_text": "09.02.2026 0.00 ₽ 1 500.00 ₽ Скидка 1 500.00 ₽",
+      "full_text": "85516 - Рентген №: 29187 Ортопантомография (1) 09.02.2026 в 15:54:22 создал Желудкова М.В. ООО НЬЮ ЛАЙФ ( СК ПRАКТИК ) Оплачена Банковская карта, ФР Комментарий - 09.02.2026 0.00 ₽ 1 500.00 ₽ Скидка 1 500.00 ₽"
+    }
+  ],
+  "detail_pages": {
+    "86370": {
+      "detail_url": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=86370",
+      "header_excerpt": "Зуб(ы):18 Удаление постоянного зуба Геюшова Я.Н. 24.02.2026 в 15:47:41 АЗАНОВ ЗАУР ХАКИМОВИЧ Физическое лицо - АЗАНОВ ЗАУР ХАКИМОВИЧ 24.02.2026 Оплачена / Оплачена Акт 106549/18910 Договор 105568",
+      "positions": [
+        {
+          "code": "103.2",
+          "name": "Инфильтрационная анестезия Ультракаин",
+          "tooth": "Зуб(ы): №18",
+          "created": "Геюшова Я.Н. 24.02.2026 в 15:47:41",
+          "price": "640.00 ₽",
+          "qty": "1",
+          "sum": "640.00 ₽",
+          "discount": "0.00 ₽",
+          "sum_with_discount": "640.00 ₽"
+        },
+        {
+          "code": "108.31",
+          "name": "Удаление постоянного зуба с 2-3 степенью подвижности",
+          "tooth": "Зуб(ы): №18",
+          "created": "Геюшова Я.Н. 24.02.2026 в 15:47:41",
+          "price": "1 815.00 ₽",
+          "qty": "1",
+          "sum": "1 815.00 ₽",
+          "discount": "0.00 ₽",
+          "sum_with_discount": "1 815.00 ₽"
+        },
+        {
+          "code": "101.16.1",
+          "name": "Прием (осмотр, консультация) врача - стоматолога",
+          "tooth": "Зуб(ы): №18",
+          "created": "Геюшова Я.Н. 24.02.2026 в 15:47:41",
+          "price": "0.00 ₽",
+          "qty": "1",
+          "sum": "0.00 ₽",
+          "discount": "0.00 ₽",
+          "sum_with_discount": "0.00 ₽"
+        }
+      ],
+      "position_totals": {
+        "gross_amount": "2 455.00 ₽",
+        "discount_amount": "0.00 ₽",
+        "paid_amount": "2 455.00 ₽"
+      },
+      "history": [
+        {
+          "event": "Создан акт",
+          "info": "106549/18910",
+          "initiated": "24.02.2026 15:48",
+          "initiator": "Поняева Н.Н."
+        }
+      ],
+      "payments": [
+        {
+          "payment_method": "Банковская карта",
+          "amount": "2 455.00 ₽",
+          "accepted_from_patient": "2 455.00 ₽",
+          "accepted_by": "Поняева Н.Н.",
+          "accepted_at": "24.02.2026 15:49",
+          "fiscal_registrar": "Атол ( Рабочий )"
+        }
+      ]
+    },
+    "85523": {
+      "detail_url": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=85523",
+      "header_excerpt": "Рентген №: 29190 Ортопантомография Желудкова М.В. 09.02.2026 в 16:17:57 АЗАНОВ ЗАУР ХАКИМОВИЧ Физическое лицо - АЗАНОВ ЗАУР ХАКИМОВИЧ 09.02.2026 Оплачена / Оплачена Акт 105575/18910 Договор 105568",
+      "positions": [
+        {
+          "code": "102.2",
+          "name": "Ортопантомография цифровая (панорамный снимок)",
+          "tooth": "",
+          "created": "Желудкова М.В. 09.02.2026 в 16:17:57",
+          "price": "1 500.00 ₽",
+          "qty": "1",
+          "sum": "1 500.00 ₽",
+          "discount": "1 500.00 ₽",
+          "sum_with_discount": "0.00 ₽"
+        }
+      ],
+      "position_totals": {
+        "gross_amount": "1 500.00 ₽",
+        "discount_amount": "1 500.00 ₽",
+        "paid_amount": "0.00 ₽"
+      },
+      "history": [
+        {
+          "event": "Создан акт",
+          "info": "105575/18910",
+          "initiated": "09.02.2026 16:19",
+          "initiator": "Аристова Ю.А."
+        },
+        {
+          "event": "Установлена скидка",
+          "info": "",
+          "initiated": "09.02.2026 16:18",
+          "initiator": "Аристова Ю.А."
+        }
+      ],
+      "payments": [
+        {
+          "payment_method": "Банковская карта",
+          "amount": "4 530.00 ₽",
+          "accepted_from_patient": "4 530.00 ₽",
+          "accepted_by": "Аристова Ю.А.",
+          "accepted_at": "09.02.2026 16:23",
+          "fiscal_registrar": "Атол ( Рабочий )"
+        }
+      ]
+    },
+    "85520": {
+      "detail_url": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=85520",
+      "header_excerpt": "Зуб(ы):28 Удаление постоянного зуба Логвинчук Д.Н. 09.02.2026 в 16:10:50 АЗАНОВ ЗАУР ХАКИМОВИЧ Физическое лицо - АЗАНОВ ЗАУР ХАКИМОВИЧ 09.02.2026 Оплачена / Оплачена Акт 105575/18910 Договор 105568",
+      "positions": [
+        {
+          "code": "103.2",
+          "name": "Инфильтрационная анестезия Ультракаин",
+          "tooth": "Зуб(ы): №28",
+          "created": "Логвинчук Д.Н. 09.02.2026 в 16:10:50",
+          "price": "640.00 ₽",
+          "qty": "1",
+          "sum": "640.00 ₽",
+          "discount": "0.00 ₽",
+          "sum_with_discount": "640.00 ₽"
+        },
+        {
+          "code": "108.6",
+          "name": "Сложное удаление постоянного зуба с разъединением корней",
+          "tooth": "Зуб(ы): №28",
+          "created": "Логвинчук Д.Н. 09.02.2026 в 16:10:50",
+          "price": "3 890.00 ₽",
+          "qty": "1",
+          "sum": "3 890.00 ₽",
+          "discount": "0.00 ₽",
+          "sum_with_discount": "3 890.00 ₽"
+        }
+      ],
+      "position_totals": {
+        "gross_amount": "4 530.00 ₽",
+        "discount_amount": "0.00 ₽",
+        "paid_amount": "4 530.00 ₽"
+      },
+      "history": [
+        {
+          "event": "Создан акт",
+          "info": "105575/18910",
+          "initiated": "09.02.2026 16:19",
+          "initiator": "Аристова Ю.А."
+        }
+      ],
+      "payments": [
+        {
+          "payment_method": "Банковская карта",
+          "amount": "4 530.00 ₽",
+          "accepted_from_patient": "4 530.00 ₽",
+          "accepted_by": "Аристова Ю.А.",
+          "accepted_at": "09.02.2026 16:23",
+          "fiscal_registrar": "Атол ( Рабочий )"
+        }
+      ]
+    },
+    "85516": {
+      "detail_url": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=85516",
+      "header_excerpt": "Рентген №: 29187 Ортопантомография Желудкова М.В. 09.02.2026 в 15:54:22 АЗАНОВ ЗАУР ХАКИМОВИЧ Физическое лицо - АЗАНОВ ЗАУР ХАКИМОВИЧ 09.02.2026 Оплачена / Оплачена Акт 105575/18910 Договор 105568",
+      "positions": [
+        {
+          "code": "102.2",
+          "name": "Ортопантомография цифровая (панорамный снимок)",
+          "tooth": "",
+          "created": "Желудкова М.В. 09.02.2026 в 15:54:22",
+          "price": "1 500.00 ₽",
+          "qty": "1",
+          "sum": "1 500.00 ₽",
+          "discount": "1 500.00 ₽",
+          "sum_with_discount": "0.00 ₽"
+        }
+      ],
+      "position_totals": {
+        "gross_amount": "1 500.00 ₽",
+        "discount_amount": "1 500.00 ₽",
+        "paid_amount": "0.00 ₽"
+      },
+      "history": [
+        {
+          "event": "Создан акт",
+          "info": "105575/18910",
+          "initiated": "09.02.2026 16:19",
+          "initiator": "Аристова Ю.А."
+        },
+        {
+          "event": "Установлена скидка",
+          "info": "",
+          "initiated": "09.02.2026 16:09",
+          "initiator": "Аристова Ю.А."
+        }
+      ],
+      "payments": [
+        {
+          "payment_method": "Банковская карта",
+          "amount": "4 530.00 ₽",
+          "accepted_from_patient": "4 530.00 ₽",
+          "accepted_by": "Аристова Ю.А.",
+          "accepted_at": "09.02.2026 16:23",
+          "fiscal_registrar": "Атол ( Рабочий )"
+        }
+      ]
+    }
+  },
+  "canonical_dataset_document_level": [
+    {
+      "payment_id": "86370",
+      "patient_id": 18910,
+      "document_datetime": "2026-02-24 15:47:41",
+      "service_label": "Зуб(ы):18 Удаление постоянного зуба",
+      "status": "Оплачена",
+      "payment_method": "Банковская карта",
+      "gross_amount": "2 455.00 ₽",
+      "discount_amount": "0.00 ₽",
+      "paid_amount": "2 455.00 ₽",
+      "payer": "Физическое лицо - АЗАНОВ ЗАУР ХАКИМОВИЧ 24.02.2026 Оплачена / Оплачена Акт 106549/18910 Договор 105568",
+      "created_by": "Геюшова Я.Н",
+      "reversal_state": "not_reversed_observed",
+      "act_reference": "106549/18910",
+      "document_scope": "single_row_document",
+      "payment_block_scope": "row_grain_observed",
+      "payment_block_amount": "2 455.00 ₽"
+    },
+    {
+      "payment_id": "85523",
+      "patient_id": 18910,
+      "document_datetime": "2026-02-09 16:17:57",
+      "service_label": "Рентген №: 29190 Ортопантомография",
+      "status": "Оплачена",
+      "payment_method": "Банковская карта",
+      "gross_amount": "1 500.00 ₽",
+      "discount_amount": "1 500.00 ₽",
+      "paid_amount": "0.00 ₽",
+      "payer": "Физическое лицо - АЗАНОВ ЗАУР ХАКИМОВИЧ 09.02.2026 Оплачена / Оплачена Акт 105575/18910 Договор 105568",
+      "created_by": "Желудкова М.В",
+      "reversal_state": "not_reversed_observed",
+      "act_reference": "105575/18910",
+      "document_scope": "shared_payment_document",
+      "payment_block_scope": "document_grain_shared",
+      "payment_block_amount": "4 530.00 ₽"
+    },
+    {
+      "payment_id": "85520",
+      "patient_id": 18910,
+      "document_datetime": "2026-02-09 16:10:50",
+      "service_label": "Зуб(ы):28 Удаление постоянного зуба",
+      "status": "Оплачена",
+      "payment_method": "Банковская карта",
+      "gross_amount": "4 530.00 ₽",
+      "discount_amount": "0.00 ₽",
+      "paid_amount": "4 530.00 ₽",
+      "payer": "Физическое лицо - АЗАНОВ ЗАУР ХАКИМОВИЧ 09.02.2026 Оплачена / Оплачена Акт 105575/18910 Договор 105568",
+      "created_by": "Логвинчук Д.Н",
+      "reversal_state": "not_reversed_observed",
+      "act_reference": "105575/18910",
+      "document_scope": "shared_payment_document",
+      "payment_block_scope": "document_grain_shared",
+      "payment_block_amount": "4 530.00 ₽"
+    },
+    {
+      "payment_id": "85516",
+      "patient_id": 18910,
+      "document_datetime": "2026-02-09 15:54:22",
+      "service_label": "Рентген №: 29187 Ортопантомография",
+      "status": "Оплачена",
+      "payment_method": "Банковская карта",
+      "gross_amount": "1 500.00 ₽",
+      "discount_amount": "1 500.00 ₽",
+      "paid_amount": "0.00 ₽",
+      "payer": "Физическое лицо - АЗАНОВ ЗАУР ХАКИМОВИЧ 09.02.2026 Оплачена / Оплачена Акт 105575/18910 Договор 105568",
+      "created_by": "Желудкова М.В",
+      "reversal_state": "not_reversed_observed",
+      "act_reference": "105575/18910",
+      "document_scope": "shared_payment_document",
+      "payment_block_scope": "document_grain_shared",
+      "payment_block_amount": "4 530.00 ₽"
+    }
+  ],
+  "document_groups": {
+    "105575/18910": {
+      "row_count": 3,
+      "payment_ids": [
+        "85523",
+        "85520",
+        "85516"
+      ],
+      "document_scope": "shared_payment_document",
+      "document_payment_block_amounts": [
+        "4 530.00 ₽"
+      ]
+    },
+    "106549/18910": {
+      "row_count": 1,
+      "payment_ids": [
+        "86370"
+      ],
+      "document_scope": "single_row_document",
+      "document_payment_block_amounts": [
+        "2 455.00 ₽"
+      ]
+    }
+  },
+  "forensic_focus": {
+    "payment_id": "86370",
+    "detail_url": "https://dcpraktik.dental-pro.online/cashbox/forms/detail?id=86370",
+    "act_reference": "106549/18910",
+    "header_excerpt": "Зуб(ы):18 Удаление постоянного зуба Геюшова Я.Н. 24.02.2026 в 15:47:41 АЗАНОВ ЗАУР ХАКИМОВИЧ Физическое лицо - АЗАНОВ ЗАУР ХАКИМОВИЧ 24.02.2026 Оплачена / Оплачена Акт 106549/18910 Договор 105568",
+    "positions": [
+      {
+        "code": "103.2",
+        "name": "Инфильтрационная анестезия Ультракаин",
+        "tooth": "Зуб(ы): №18",
+        "created": "Геюшова Я.Н. 24.02.2026 в 15:47:41",
+        "price": "640.00 ₽",
+        "qty": "1",
+        "sum": "640.00 ₽",
+        "discount": "0.00 ₽",
+        "sum_with_discount": "640.00 ₽"
+      },
+      {
+        "code": "108.31",
+        "name": "Удаление постоянного зуба с 2-3 степенью подвижности",
+        "tooth": "Зуб(ы): №18",
+        "created": "Геюшова Я.Н. 24.02.2026 в 15:47:41",
+        "price": "1 815.00 ₽",
+        "qty": "1",
+        "sum": "1 815.00 ₽",
+        "discount": "0.00 ₽",
+        "sum_with_discount": "1 815.00 ₽"
+      },
+      {
+        "code": "101.16.1",
+        "name": "Прием (осмотр, консультация) врача - стоматолога",
+        "tooth": "Зуб(ы): №18",
+        "created": "Геюшова Я.Н. 24.02.2026 в 15:47:41",
+        "price": "0.00 ₽",
+        "qty": "1",
+        "sum": "0.00 ₽",
+        "discount": "0.00 ₽",
+        "sum_with_discount": "0.00 ₽"
+      }
+    ],
+    "position_totals": {
+      "gross_amount": "2 455.00 ₽",
+      "discount_amount": "0.00 ₽",
+      "paid_amount": "2 455.00 ₽"
+    },
+    "history": [
+      {
+        "event": "Создан акт",
+        "info": "106549/18910",
+        "initiated": "24.02.2026 15:48",
+        "initiator": "Поняева Н.Н."
+      }
+    ],
+    "payments": [
+      {
+        "payment_method": "Банковская карта",
+        "amount": "2 455.00 ₽",
+        "accepted_from_patient": "2 455.00 ₽",
+        "accepted_by": "Поняева Н.Н.",
+        "accepted_at": "24.02.2026 15:49",
+        "fiscal_registrar": "Атол ( Рабочий )"
+      }
+    ]
+  },
+  "algorithm": [
+    "1. Open patient cashbox tab in authenticated browser session.",
+    "2. Extract one visible .cashbox_card per row.",
+    "3. Open each cashbox/forms/detail?id=<payment_id> page.",
+    "4. Extract header shell, positions, history, payments.",
+    "5. Recover act_reference from detail header shell (Акт <value>).",
+    "6. Group rows by act_reference to distinguish row-grain from shared-payment document-grain.",
+    "7. Build row-grain gross/discount/net from positions totals.",
+    "8. Build payment_method from payments table, but classify payment-block amount as document_grain_shared when repeated across multiple rows of one act.",
+    "9. Set document_scope=single_row_document when one act maps to one visible row; otherwise shared_payment_document.",
+    "10. Use canonical row values only from evidence-backed fields; keep unresolved badge/company semantics outside canonical payer field."
+  ]
+}

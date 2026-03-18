@@ -1,0 +1,20 @@
+{
+  "registry_name": "methods_registry",
+  "version": "0.1.0",
+  "status": "bootstrap_template",
+  "entry_schema": {
+    "method_id": "",
+    "method_name": "",
+    "domain": "",
+    "purpose": "",
+    "inputs": [],
+    "outputs": [],
+    "proof_status": "proven|artifact_proven|structurally_observed|inferred|not_proven",
+    "readiness": "ready|ready_with_limits|validation_required|blocked",
+    "limitations": [],
+    "current_status": "current|superseded|template",
+    "notes": ""
+  },
+  "entries": []
+}
+

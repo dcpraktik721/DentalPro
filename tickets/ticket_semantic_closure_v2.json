@@ -1,0 +1,431 @@
+{
+  "target_date": "2026-03-10",
+  "baseline_registry": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v1.json",
+  "focus_families": [
+    "schi-10",
+    "schi-3_non_external_booking"
+  ],
+  "schi_10_family": {
+    "icon_class": "schi schi-10",
+    "case_count": 11,
+    "unique_tooltip_values": [
+      "Летаева К.К.",
+      "Ольховская С.В."
+    ],
+    "supporting_name_evidence": [
+      {
+        "person_name": "Летаева К.К.",
+        "supporting_runtime_evidence": [
+          "schedule_full_dom:ЦОЗ координатора",
+          "schedule_full_dom:Список VIP-пациентов",
+          "schedule_full_dom:Записи VIP-пациентов"
+        ]
+      },
+      {
+        "person_name": "Ольховская С.В.",
+        "supporting_runtime_evidence": [
+          "schedule_full_dom:ЦОЗ координатора",
+          "schedule_full_dom:Список VIP-пациентов",
+          "schedule_full_dom:Записи VIP-пациентов"
+        ]
+      }
+    ],
+    "final_normalization_decision": "coordinator_person_reference_marker",
+    "decision_proof_level": "inferred",
+    "what_is_proven": [
+      "live rendered tooltip text on schi-10 is a person name",
+      "the only observed names are Ольховская С.В. and Летаева К.К.",
+      "both names are present in schedule runtime DOM as coordinator-linked entities via ЦОЗ координатора links"
+    ],
+    "what_is_not_proven": [
+      "the schi-10 icon explicitly means coordinator in icon-local tooltip text",
+      "the schi-10 person always equals booking owner or a single canonical business role across all visits"
+    ],
+    "verdict": "family_remains_not_fully_proven_but_can_be_normalized_as_inferred_coordinator_reference",
+    "cases": [
+      {
+        "visit_id": "129677",
+        "patient_id": "19131",
+        "patient_name_full": "САВИНКОВА ВИКТОРИЯ СЕРГЕЕВНА",
+        "doctor_name": "Гулямхайдаров А.А.",
+        "cabinet_name": "Кабинет 26",
+        "start_time": "14:00",
+        "visit_type": "Первичная консультация ортодонта",
+        "ticket_order": 4,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Летаева К.К.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 59.25px; --arrow-y: 53px; inset: 534px auto auto 966px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 59.25px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Летаева К.К.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      },
+      {
+        "visit_id": "129956",
+        "patient_id": "18592",
+        "patient_name_full": "РУКИНА ОЛЬГА МОИСЕЕВНА",
+        "doctor_name": "Жихар З.К.",
+        "cabinet_name": "Кабинет 17",
+        "start_time": "14:00",
+        "visit_type": "Прямая реставрация зуба жевательной зоны",
+        "ticket_order": 1,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Ольховская С.В.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 71.9140625px; --arrow-y: 53px; inset: 534px auto auto 894px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 71.9141px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Ольховская С.В.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      },
+      {
+        "visit_id": "130195",
+        "patient_id": "19188",
+        "patient_name_full": "ЗАГВАЗДИН АЛЕКСЕЙ НИКОЛАЕВИЧ",
+        "doctor_name": "Аушева М.А.",
+        "cabinet_name": "Кабинет 9",
+        "start_time": "11:00",
+        "visit_type": "первичная консультация врача-терапевта",
+        "ticket_order": 3,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Ольховская С.В.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 71.9140625px; --arrow-y: 53px; inset: 349px auto auto 1345px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 71.9141px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Ольховская С.В.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      },
+      {
+        "visit_id": "130457",
+        "patient_id": "19220",
+        "patient_name_full": "КОЛЧЕНКО ОЛЬГА КОНСТАНТИНОВНА",
+        "doctor_name": "Аушева М.А.",
+        "cabinet_name": "Кабинет 9",
+        "start_time": "11:30",
+        "visit_type": "Повторная консультация врача-терапевта",
+        "ticket_order": 1,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Летаева К.К.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 59.25px; --arrow-y: 53px; inset: 384px auto auto 1367px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 59.25px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Летаева К.К.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      },
+      {
+        "visit_id": "130240",
+        "patient_id": "17235",
+        "patient_name_full": "МЕЛЬНИКОВА НАТАЛЬЯ НИКОЛАЕВНА",
+        "doctor_name": "Геюшова Я.Н.",
+        "cabinet_name": "Кабинет 11",
+        "start_time": "13:00",
+        "visit_type": "Удаление",
+        "ticket_order": 2,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Ольховская С.В.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 71.9140625px; --arrow-y: 53px; inset: 474px auto auto 894px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 71.9141px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Ольховская С.В.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      },
+      {
+        "visit_id": "129965",
+        "patient_id": "2272",
+        "patient_name_full": "БЕЛОСЛУДЦЕВ ПАВЕЛ ЮРЬЕВИЧ",
+        "doctor_name": "Геюшова Я.Н.",
+        "cabinet_name": "Кабинет 11",
+        "start_time": "17:15",
+        "visit_type": "Удаление",
+        "ticket_order": 2,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Летаева К.К.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 59.25px; --arrow-y: 53px; inset: 724px auto auto 916px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 59.25px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Летаева К.К.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      },
+      {
+        "visit_id": "130244",
+        "patient_id": "18544",
+        "patient_name_full": "АННИНА СВЕТЛАНА ПАВЛОВНА",
+        "doctor_name": "Геюшова Я.Н.",
+        "cabinet_name": "Кабинет 11",
+        "start_time": "17:30",
+        "visit_type": "Удаление постоянного зуба",
+        "ticket_order": 3,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Летаева К.К.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 59.25px; --arrow-y: 53px; inset: 744px auto auto 907px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 59.25px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Летаева К.К.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      },
+      {
+        "visit_id": "129670",
+        "patient_id": "12204",
+        "patient_name_full": "ШАПОШНИКОВ АЛЕКСАНДР ВАЛЕРИЕВИЧ",
+        "doctor_name": "Иващенко А.Н.",
+        "cabinet_name": "Кабинет 25",
+        "start_time": "12:00",
+        "visit_type": "Продолжение лечения врача ортопеда",
+        "ticket_order": 3,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Ольховская С.В.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 71.9140625px; --arrow-y: 53px; inset: 414px auto auto 1162px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 71.9141px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Ольховская С.В.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      },
+      {
+        "visit_id": "130496",
+        "patient_id": "13431",
+        "patient_name_full": "ШАРУХО ГАЛИНА ВАСИЛЬЕВНА",
+        "doctor_name": "Иващенко А.Н.",
+        "cabinet_name": "Кабинет 25",
+        "start_time": "12:45",
+        "visit_type": "Продолжение лечения врача ортопеда",
+        "ticket_order": 2,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Ольховская С.В.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 71.9140625px; --arrow-y: 53px; inset: 454px auto auto 1137px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 71.9141px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Ольховская С.В.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      },
+      {
+        "visit_id": "130442",
+        "patient_id": "19160",
+        "patient_name_full": "ГЕРТ АЛЕКСЕЙ ВЛАДИМИРОВИЧ",
+        "doctor_name": "Иващенко А.Н.",
+        "cabinet_name": "Кабинет 25",
+        "start_time": "17:30",
+        "visit_type": "Повторная консультация врача-ортопеда",
+        "ticket_order": 2,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Ольховская С.В.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 71.9140625px; --arrow-y: 53px; inset: 744px auto auto 1162px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 71.9141px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Ольховская С.В.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      },
+      {
+        "visit_id": "129467",
+        "patient_id": "16792",
+        "patient_name_full": "СЕНЧЕНКО ЛАРИСА ВИКТОРОВНА",
+        "doctor_name": "Логвинчук Д.Н.",
+        "cabinet_name": "Кабинет 8 (седация)",
+        "start_time": "09:00",
+        "visit_type": "Имплантация Straumann + покрывной винт - 1 прием, Имплантация Straumann формирователь - 2 прием",
+        "ticket_order": 3,
+        "icon_class": "schi schi-10",
+        "icon_attrs": {
+          "class": "schi schi-10",
+          "style": "color: rgb(0, 0, 0);"
+        },
+        "tooltip_text": "Ольховская С.В.",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 71.9140625px; --arrow-y: 53px; inset: 234px auto auto 1336px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 71.9141px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>Ольховская С.В.</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "secondary_flag_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip text captured, but business semantics need separate proof beyond current pass.",
+        "normalized_category_v2": "person_reference_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip contains a person name, but role semantics are not proven in this pass."
+      }
+    ]
+  },
+  "schi_3_non_external_family": {
+    "icon_class": "schi schi-3",
+    "case_count": 2,
+    "final_normalization_decision": "free_text_note_marker",
+    "decision_proof_level": "proven",
+    "what_is_proven": [
+      "live rendered tooltip text is plain free text note content in both observed non-external cases",
+      "the two observed texts are not source-brand labels like ПроДокторов and not structured status labels"
+    ],
+    "what_is_not_proven": [
+      "the upstream author/owner of the note",
+      "whether every future schi-3 case outside this date will stay in the same semantic family"
+    ],
+    "verdict": "family_can_be_normalized_now_as_free_text_note_marker_for_observed_non_external_cases",
+    "cases": [
+      {
+        "visit_id": "130369",
+        "patient_id": "16428",
+        "patient_name_full": "БИННАТОВ ФАРРУХ МУСА ОГЛЫ",
+        "doctor_name": "Аушева М.А.",
+        "cabinet_name": "Кабинет 9",
+        "start_time": "16:30",
+        "visit_type": "Прямая реставрация зуба жевательной зоны",
+        "ticket_order": 1,
+        "icon_class": "schi schi-3",
+        "icon_attrs": {
+          "class": "schi schi-3"
+        },
+        "tooltip_text": "раньше не может",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 76.625px; --arrow-y: 53px; inset: 684px auto auto 1295px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 76.625px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>раньше не может</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "unclassified_ticket_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip captured, but no stronger exact-text rule exists yet.",
+        "normalized_category_v2": "free_text_note_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip text is captured, but business meaning beyond note/free text is not proven."
+      },
+      {
+        "visit_id": "129467",
+        "patient_id": "16792",
+        "patient_name_full": "СЕНЧЕНКО ЛАРИСА ВИКТОРОВНА",
+        "doctor_name": "Логвинчук Д.Н.",
+        "cabinet_name": "Кабинет 8 (седация)",
+        "start_time": "09:00",
+        "visit_type": "Имплантация Straumann + покрывной винт - 1 прием, Имплантация Straumann формирователь - 2 прием",
+        "ticket_order": 1,
+        "icon_class": "schi schi-3",
+        "icon_attrs": {
+          "class": "schi schi-3"
+        },
+        "tooltip_text": "имплантация медентика 2.5 ,2.6 ,3.6 ,3.7",
+        "tooltip_html": "<div class=\"rc-tooltip width-max-content rc-tooltip-placement-top\" style=\"--arrow-x: 155.109375px; --arrow-y: 53px; inset: 234px auto auto 1217px; box-sizing: border-box;\"><div class=\"rc-tooltip-arrow\" style=\"position: absolute; bottom: 0px; left: 155.109px;\"></div><div class=\"rc-tooltip-content\"><div class=\"rc-tooltip-inner\" role=\"tooltip\"><div>имплантация медентика 2.5 ,2.6 ,3.6 ,3.7</div></div></div></div>",
+        "source_layer": "rendered_rc_tooltip",
+        "linkage_method": "live_react_onMouseEnter_on_icon_node",
+        "tooltip_proof": "proven_rendered_rc_tooltip",
+        "normalized_category": "unclassified_ticket_marker",
+        "proof_level": "structurally_observed",
+        "notes": "Tooltip captured, but no stronger exact-text rule exists yet.",
+        "normalized_category_v2": "free_text_note_marker",
+        "normalized_category_proof_v2": "structurally_observed",
+        "ticket_status_value": "",
+        "cashbox_status_value": "",
+        "semantic_note_v2": "Tooltip text is captured, but business meaning beyond note/free text is not proven."
+      }
+    ]
+  },
+  "final_answer": {
+    "schi-10": "not fully proven; keep as inferred coordinator_person_reference_marker",
+    "schi-3_non_external": "proven enough to normalize as free_text_note_marker for observed cases"
+  }
+}

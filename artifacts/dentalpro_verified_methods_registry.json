@@ -1,0 +1,202 @@
+[
+  {
+    "method": "browser_first_route_access",
+    "what_it_does": "Opens CRM/runtime/report routes in authenticated browser state",
+    "where_used": "schedule, reports, cashbox, empty cards",
+    "what_it_yields": "live UI/runtime state",
+    "proven_scope": "broad project-wide",
+    "limitations": "UI-first only; not an API proof by itself",
+    "proof_status": "proven",
+    "readiness": "ready"
+  },
+  {
+    "method": "direct_tab_url_access",
+    "what_it_does": "Opens patient/report sub-tabs directly by URL",
+    "where_used": "patient cashbox, patient tabs, reports",
+    "what_it_yields": "hidden deep pages without menu navigation",
+    "proven_scope": "patient card and report shells",
+    "limitations": "requires known route contract",
+    "proof_status": "proven",
+    "readiness": "ready"
+  },
+  {
+    "method": "storageState_auth_reuse",
+    "what_it_does": "Reuses authenticated browser session",
+    "where_used": "playwright regression layer",
+    "what_it_yields": "stable repeated live probes",
+    "proven_scope": "dentalpro-playwright and schedule probes",
+    "limitations": "expires over time",
+    "proof_status": "proven",
+    "readiness": "ready"
+  },
+  {
+    "method": "accepted_api_path_usage",
+    "what_it_does": "Calls token/secret API methods from proved candidates",
+    "where_used": "manager report, report verification, roster extraction",
+    "what_it_yields": "JSON data rows",
+    "proven_scope": "157-method catalog subset; strongest around patient/schedule/pay",
+    "limitations": "not all UI domains have published API source",
+    "proof_status": "proven",
+    "readiness": "ready"
+  },
+  {
+    "method": "dom_extraction",
+    "what_it_does": "Reads post-load runtime DOM and key containers",
+    "where_used": "schedule forensic, cashbox, reports",
+    "what_it_yields": "HTML/runtime field inventory",
+    "proven_scope": "HTML-first pages",
+    "limitations": "DOM presence does not equal source closure",
+    "proof_status": "proven",
+    "readiness": "ready"
+  },
+  {
+    "method": "hidden_attribute_harvesting",
+    "what_it_does": "Extracts data-* and hidden attrs from live nodes",
+    "where_used": "schedule, reports, runtime configs",
+    "what_it_yields": "selectors, ids, config metadata",
+    "proven_scope": "schedule root and report shells",
+    "limitations": "structural only if semantics are not explicit",
+    "proof_status": "proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "popup_clean_click_probe",
+    "what_it_does": "Opens patient popup by exact card click",
+    "where_used": "schedule patient enrichment",
+    "what_it_yields": "full name, phone, popup actions",
+    "proven_scope": "majority subset on 2026-03-10 schedule",
+    "limitations": "not guaranteed for every family without focused probe",
+    "proof_status": "proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "focused_rc_tooltip_extraction",
+    "what_it_does": "Opens exact ticket tooltip by React onMouseEnter on icon node",
+    "where_used": "schedule ticket registry",
+    "what_it_yields": "live rendered ticket semantics",
+    "proven_scope": "ticket-bearing visit subset and ticket registry v1/v2",
+    "limitations": "must avoid stale tooltip contamination",
+    "proof_status": "proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "stale_layer_prevention",
+    "what_it_does": "Closes/deletes old tooltips/popups before each probe",
+    "where_used": "schedule interaction and ticket probes",
+    "what_it_yields": "clean trigger->layer linkage",
+    "proven_scope": "schedule popup/tooltip hardening",
+    "limitations": "subset-validated, not perfect globally",
+    "proof_status": "proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "chair_view_cross_map",
+    "what_it_does": "Maps visit ids between doctor view and chair view",
+    "where_used": "schedule cabinet attribution",
+    "what_it_yields": "visit->cabinet mapping",
+    "proven_scope": "2026-03-10 schedule forensic pass",
+    "limitations": "cross-map method remains canonical because direct field not found",
+    "proof_status": "proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "report_formation_probe",
+    "what_it_does": "Opens report, applies date/filter, captures runtime and export behavior",
+    "where_used": "RPT_18, 23, 33, 36, 4",
+    "what_it_yields": "runtime/export/file evidence",
+    "proven_scope": "single-report live passes",
+    "limitations": "report-family specific",
+    "proof_status": "proven",
+    "readiness": "ready"
+  },
+  {
+    "method": "export_tracking_direct_vs_async",
+    "what_it_does": "Distinguishes direct download, async shell, callback/file_url completion",
+    "where_used": "report export validation, RPT_21, RPT_24/48",
+    "what_it_yields": "export mechanics contract",
+    "proven_scope": "multiple report families",
+    "limitations": "not every report family closed",
+    "proof_status": "proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "parsed_xlsx_extraction",
+    "what_it_does": "Parses workbook sheets, headers, rows, boundaries",
+    "where_used": "report parity and file-first families",
+    "what_it_yields": "structured file dataset",
+    "proven_scope": "RPT_18/23/33/36 and file-first families",
+    "limitations": "header recovery can remain unresolved",
+    "proof_status": "proven",
+    "readiness": "ready"
+  },
+  {
+    "method": "grouped_header_leaf_extraction",
+    "what_it_does": "Resolves business headers from grouped thead structure",
+    "where_used": "RPT_18",
+    "what_it_yields": "canonical business columns",
+    "proven_scope": "grouped_headers report family",
+    "limitations": "pattern portability not automatic",
+    "proof_status": "proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "explicit_normalization_policy",
+    "what_it_does": "Formalizes narrow local normalization after mismatch classification",
+    "where_used": "RPT_23, RPT_18, RPT_33",
+    "what_it_yields": "governed normalized parity",
+    "proven_scope": "specific report families",
+    "limitations": "must not be transferred without evidence",
+    "proof_status": "proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "family_aware_canonicalization",
+    "what_it_does": "Classifies reports by mechanics family and chooses compare path",
+    "where_used": "family program for reports 23/24/34/35/36/48",
+    "what_it_yields": "extraction/comparison/guardrail policy",
+    "proven_scope": "priority report families",
+    "limitations": "not a universal closure for all reports",
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "detail_vs_summary_reconciliation",
+    "what_it_does": "Distinguishes runtime detail vs export summary mismatch families",
+    "where_used": "RPT_34/RPT_35",
+    "what_it_yields": "dual-layer guardrail model",
+    "proven_scope": "shape mismatch families",
+    "limitations": "no direct row parity",
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "file_first_dataset_modeling",
+    "what_it_does": "Treats file as primary truth and runtime as launch shell",
+    "where_used": "RPT_24/48 async families",
+    "what_it_yields": "file-first canonical dataset",
+    "proven_scope": "async export families",
+    "limitations": "runtime table claims forbidden",
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "row_document_split_by_act_reference",
+    "what_it_does": "Separates row-grain and shared-payment document-grain",
+    "where_used": "patient cashbox model",
+    "what_it_yields": "document model with act_reference",
+    "proven_scope": "patients 18910 and 19095",
+    "limitations": "cashbox domain still not globally source-closed",
+    "proof_status": "proven",
+    "readiness": "ready_with_limits"
+  },
+  {
+    "method": "delta_pass_strategy",
+    "what_it_does": "Runs targeted follow-up passes instead of broad reruns",
+    "where_used": "schedule continuation, ticket semantics, report next-step passes",
+    "what_it_yields": "gap closure without resetting baseline",
+    "proven_scope": "project-wide operating method",
+    "limitations": "depends on strong baseline artifacts",
+    "proof_status": "proven",
+    "readiness": "ready"
+  }
+]

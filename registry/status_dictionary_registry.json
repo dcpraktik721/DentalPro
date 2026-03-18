@@ -1,0 +1,17 @@
+{
+  "registry_name": "status_dictionary_registry",
+  "version": "0.1.0",
+  "status": "bootstrap_template",
+  "entry_schema": {
+    "dictionary_id": "",
+    "domain": "",
+    "raw_marker": "",
+    "normalized_value": "",
+    "proof_status": "proven|artifact_proven|structurally_observed|inferred|not_proven",
+    "proof_scope": "",
+    "safe_for_global_reuse": "yes|no|conditional",
+    "notes": ""
+  },
+  "entries": []
+}
+

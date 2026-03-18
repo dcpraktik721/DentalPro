@@ -1,0 +1,110 @@
+{
+  "stable_selectors": [
+    {
+      "name": "schedule_route",
+      "value": "/visits/schedule/index?date=YYYY-MM-DD",
+      "purpose": "Open exact schedule day"
+    },
+    {
+      "name": "visit_card",
+      "value": "#task-record-<visit_id>",
+      "purpose": "Resolve exact visit card"
+    },
+    {
+      "name": "task_icons_container",
+      "value": "#task-record-<visit_id> .task-icons",
+      "purpose": "Resolve ticket icon container"
+    },
+    {
+      "name": "ticket_icon_nodes",
+      "value": "#task-record-<visit_id> .task-icons i",
+      "purpose": "Enumerate ticket icons in stable order"
+    },
+    {
+      "name": "ticket_tooltip_root",
+      "value": ".rc-tooltip",
+      "purpose": "Rendered ticket tooltip"
+    },
+    {
+      "name": "patient_popup_root",
+      "value": ".popover.show",
+      "purpose": "Patient popup after clean click"
+    },
+    {
+      "name": "patient_popup_name",
+      "value": ".sheduler_popover_header_name",
+      "purpose": "Patient full name inside popup"
+    },
+    {
+      "name": "patient_popup_info",
+      "value": ".sheduler_popover_header_info",
+      "purpose": "Visit time/cabinet/doctor text inside popup"
+    },
+    {
+      "name": "patient_popup_phone",
+      "value": ".telephony-call-button[data-phone]",
+      "purpose": "Phone source inside popup"
+    }
+  ],
+  "handler_reference": [
+    {
+      "handler": "__reactProps$*.onMouseEnter",
+      "target": "exact icon node",
+      "purpose": "Open clean ticket tooltip without broad hover sweep",
+      "proof_status": "proven"
+    },
+    {
+      "handler": "__reactProps$*.onMouseLeave",
+      "target": "exact icon node",
+      "purpose": "Close tooltip after capture",
+      "proof_status": "proven"
+    }
+  ],
+  "runtime_steps": [
+    "open exact schedule date route",
+    "wait for domcontentloaded and stable page state",
+    "resolve exact visit card by #task-record-<visit_id>",
+    "enumerate .task-icons i nodes and keep 1-based order",
+    "remove stale .rc-tooltip nodes before each icon probe",
+    "invoke exact icon onMouseEnter handler",
+    "wait ~220ms for live rendered .rc-tooltip",
+    "capture tooltip text/html",
+    "invoke onMouseLeave when available",
+    "close layers with Escape + safe body click + short wait",
+    "probe patient popup separately by card click only if needed"
+  ],
+  "typical_errors_and_recovery": [
+    {
+      "error": "stale_tooltip",
+      "cause": "previous tooltip remained in DOM",
+      "recovery": "delete .rc-tooltip, then rerun exact icon probe"
+    },
+    {
+      "error": "tooltip_not_opened",
+      "cause": "wrong node or missing handler",
+      "recovery": "re-query exact icon node, inspect __reactProps$"
+    },
+    {
+      "error": "patient_popup_confused_with_ticket",
+      "cause": "card click performed before tooltip capture completed",
+      "recovery": "strictly separate tooltip probe and popup probe"
+    },
+    {
+      "error": "semantic_collision_same_icon",
+      "cause": "same icon class used for multiple families",
+      "recovery": "classify by exact tooltip text first"
+    }
+  ],
+  "critical_distinction": {
+    "ticket_tooltip": {
+      "trigger": "icon node onMouseEnter",
+      "selector": ".rc-tooltip",
+      "use": "primary source of ticket semantics"
+    },
+    "patient_popup": {
+      "trigger": "clean click on visit card",
+      "selector": ".popover.show",
+      "use": "secondary source for patient/card/actions only"
+    }
+  }
+}

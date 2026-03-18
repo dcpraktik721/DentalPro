@@ -1,0 +1,116 @@
+{
+  "pack": "files_and_documents",
+  "evidence_sources": [
+    "/Users/macbook15/Downloads/MacAi/output/puppeteer/ultimate-patient-dossier/Task_Graph_Blueprint_Ultimate_Patient_Dossier.md",
+    "/Users/macbook15/Downloads/MacAi/output/puppeteer/patient-dossier-blueprint/trackb_extension_evidence_2026-03-14.json"
+  ],
+  "entries": [
+    {
+      "section": "files_tab",
+      "entry_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=<client_id>&tab=addons%5Cfiles%5Cmodels%5Ccbase",
+      "page_load_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/cbase/detail.html?id=<client_id>&tab=addons%5Cfiles%5Cmodels%5Ccbase",
+          "response_type": "text/html",
+          "purpose": "server-rendered file cards/list",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "modal_loads": [
+        {
+          "method": "GET",
+          "url_pattern": "/files/collection/find?collectionID=<collection_id>",
+          "response_type": "text/html",
+          "purpose": "file search modal",
+          "evidence_status": "confirmed"
+        },
+        {
+          "method": "GET",
+          "url_pattern": "/files/form/upload?collectionID=<collection_id>&clientID=<client_id>",
+          "response_type": "text/html",
+          "purpose": "file upload modal",
+          "evidence_status": "confirmed"
+        },
+        {
+          "method": "GET",
+          "url_pattern": "/files/form/createFolder?collectionID=<collection_id>&clientID=<client_id>",
+          "response_type": "text/html",
+          "purpose": "create-folder modal",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "file_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/files/form/download?fileID=<file_id>&filename=<filename>",
+          "response_type": "application/octet-stream | image/* | application/pdf",
+          "purpose": "binary file download",
+          "evidence_status": "confirmed"
+        },
+        {
+          "method": "GET",
+          "url_pattern": "/files/form/text?id=<file_id>&filename=<filename>",
+          "response_type": "text/html",
+          "purpose": "text/pdf preview wrapper",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "background_requests": [],
+      "silent_xhr_fetch_calls": [
+        {
+          "method": "POST",
+          "url_pattern": "/files/collection/find",
+          "response_type": "text/html",
+          "purpose": "search submit inside modal",
+          "evidence_status": "requires_live_validation"
+        }
+      ],
+      "timing_notes": "Tab itself is parseable immediately after server-render. Modal submit/update contracts are not yet captured live.",
+      "evidence_status": "confirmed"
+    },
+    {
+      "section": "documents_tab",
+      "entry_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=<client_id>&tab=addons%5Cdocstorage%5Cmodels%5CdocstorageCbaseTab",
+      "page_load_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/cbase/detail.html?id=<client_id>&tab=addons%5Cdocstorage%5Cmodels%5CdocstorageCbaseTab",
+          "response_type": "text/html",
+          "purpose": "documents table/tab",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "modal_loads": [
+        {
+          "method": "GET",
+          "url_pattern": "/docstorage/forms/create_doc?package_code=docs_private_person&our_company_id=<company_id>&party2_person_id=<client_id>",
+          "response_type": "text/html",
+          "purpose": "document generation form",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "file_requests": [
+        {
+          "method": "GET",
+          "url_pattern": "/docstorage/pages/get_doc_file?id=<doc_id>",
+          "response_type": "application/pdf | application/octet-stream",
+          "purpose": "download generated document",
+          "evidence_status": "confirmed"
+        }
+      ],
+      "background_requests": [],
+      "silent_xhr_fetch_calls": [
+        {
+          "method": "POST",
+          "url_pattern": "/docstorage/forms/create_doc",
+          "response_type": "unknown",
+          "purpose": "document generation submit",
+          "evidence_status": "requires_live_validation"
+        }
+      ],
+      "timing_notes": "Read-only document listing and download are proven. Create-doc submit path remains unprobed.",
+      "evidence_status": "confirmed"
+    }
+  ]
+}

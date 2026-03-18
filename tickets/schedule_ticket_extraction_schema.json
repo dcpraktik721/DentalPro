@@ -1,0 +1,183 @@
+{
+  "schema_name": "schedule_ticket_extraction",
+  "schema_version": "2026-03-18",
+  "source_boundary": "DentalPRO schedule runtime via live rendered rc-tooltip on exact icon node",
+  "ticket_record_fields": [
+    {
+      "field": "visit_id",
+      "type": "string",
+      "required": true,
+      "meaning": "Stable visit card identifier from #task-record-<visit_id>"
+    },
+    {
+      "field": "patient_id",
+      "type": "string",
+      "required": false,
+      "meaning": "Patient identifier if already proven from linked schedule/popup layer"
+    },
+    {
+      "field": "patient_name",
+      "type": "string",
+      "required": true,
+      "meaning": "Patient name from linked schedule/popup layer"
+    },
+    {
+      "field": "doctor_name",
+      "type": "string",
+      "required": false,
+      "meaning": "Doctor name from linked schedule runtime layer"
+    },
+    {
+      "field": "ticket_order",
+      "type": "integer",
+      "required": true,
+      "meaning": "1-based order of icon node inside .task-icons"
+    },
+    {
+      "field": "icon_class",
+      "type": "string",
+      "required": true,
+      "meaning": "CSS class string of icon node"
+    },
+    {
+      "field": "icon_attrs",
+      "type": "object",
+      "required": true,
+      "meaning": "Full captured DOM attributes of icon node"
+    },
+    {
+      "field": "tooltip_text",
+      "type": "string",
+      "required": false,
+      "meaning": "Exact live rendered rc-tooltip text"
+    },
+    {
+      "field": "tooltip_html",
+      "type": "string",
+      "required": false,
+      "meaning": "Rendered rc-tooltip outerHTML excerpt"
+    },
+    {
+      "field": "source_layer",
+      "type": "string",
+      "required": true,
+      "allowed_values": [
+        "rendered_rc_tooltip"
+      ]
+    },
+    {
+      "field": "linkage_method",
+      "type": "string",
+      "required": true,
+      "allowed_values": [
+        "live_react_onMouseEnter_on_icon_node"
+      ]
+    },
+    {
+      "field": "tooltip_proof",
+      "type": "string",
+      "required": true,
+      "allowed_values": [
+        "proven_rendered_rc_tooltip",
+        "not_proven"
+      ]
+    },
+    {
+      "field": "normalized_category",
+      "type": "string",
+      "required": true,
+      "meaning": "Current normalized semantic family for the ticket"
+    },
+    {
+      "field": "proof_level",
+      "type": "string",
+      "required": true,
+      "allowed_values": [
+        "proven",
+        "inferred",
+        "not_proven"
+      ]
+    },
+    {
+      "field": "notes",
+      "type": "string",
+      "required": false,
+      "meaning": "Short evidence note or limitation"
+    }
+  ],
+  "stable_selectors": {
+    "schedule_route_pattern": "/visits/schedule/index?date=YYYY-MM-DD",
+    "visit_card_selector_pattern": "#task-record-<visit_id>",
+    "ticket_icons_container": ".task-icons",
+    "ticket_icon_nodes": ".task-icons i",
+    "tooltip_root": ".rc-tooltip",
+    "patient_popup_root": ".popover.show",
+    "popup_patient_name": ".sheduler_popover_header_name",
+    "popup_info": ".sheduler_popover_header_info",
+    "popup_phone_button": ".telephony-call-button[data-phone]"
+  },
+  "runtime_steps": [
+    {
+      "step": 1,
+      "name": "open_schedule_date",
+      "action": "Open date-specific schedule route and wait for runtime stability"
+    },
+    {
+      "step": 2,
+      "name": "resolve_visit_card",
+      "action": "Find #task-record-<visit_id> and scroll into view"
+    },
+    {
+      "step": 3,
+      "name": "enumerate_ticket_icons",
+      "action": "Enumerate exact .task-icons i nodes and preserve order"
+    },
+    {
+      "step": 4,
+      "name": "clean_probe_icon",
+      "action": "Clear stale layers, invoke exact icon node React onMouseEnter handler, wait ~220ms"
+    },
+    {
+      "step": 5,
+      "name": "capture_rendered_tooltip",
+      "action": "Read .rc-tooltip text/html and classify only from live rendered layer"
+    },
+    {
+      "step": 6,
+      "name": "close_layers",
+      "action": "Send Escape, body click, short wait"
+    },
+    {
+      "step": 7,
+      "name": "optional_popup_probe",
+      "action": "Click card separately and read .popover.show only as secondary patient layer"
+    },
+    {
+      "step": 8,
+      "name": "normalize_semantics",
+      "action": "Map exact tooltip text to normalized category, then assign proof level"
+    }
+  ],
+  "typical_failures": [
+    {
+      "failure": "stale_tooltip_contamination",
+      "symptom": "Tooltip text belongs to previous icon",
+      "recovery": "Remove .rc-tooltip, close layers, rerun exact icon probe"
+    },
+    {
+      "failure": "missing_react_handler",
+      "symptom": "Icon does not open tooltip",
+      "recovery": "Re-query exact icon node and inspect __reactProps$"
+    },
+    {
+      "failure": "popup_tooltip_mixing",
+      "symptom": "Patient popup content interpreted as ticket semantics",
+      "recovery": "Separate icon tooltip probe from card click popup probe"
+    },
+    {
+      "failure": "semantic_overload_same_icon",
+      "symptom": "Same icon class maps to more than one business meaning",
+      "recovery": "Classify by exact tooltip text first, icon class second"
+    }
+  ]
+}

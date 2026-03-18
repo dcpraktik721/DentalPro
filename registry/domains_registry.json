@@ -1,0 +1,144 @@
+{
+  "registry_name": "domains_registry",
+  "version": "0.4.0",
+  "status": "phase5_remaining_dossier_tabs_curated_assets",
+  "entry_schema": {
+    "domain_id": "",
+    "domain_name": "",
+    "description": "",
+    "typical_sources": [],
+    "typical_outputs": [],
+    "proof_boundary": "",
+    "readiness": "ready|ready_with_limits|validation_required|blocked",
+    "notes": ""
+  },
+  "entries": [
+    {
+      "domain_id": "schedule",
+      "domain_name": "schedule",
+      "description": "Day schedule runtime, doctors/cabinets/timeslots/visits, popup linkage and patient-ready schedule packs",
+      "typical_sources": [
+        "HTML-first schedule runtime",
+        "popup subsets",
+        "chair-view cross-map"
+      ],
+      "typical_outputs": [
+        "schedule operational dump",
+        "patient full report v5",
+        "popup linkage v3"
+      ],
+      "proof_boundary": "Ready for date-specific schedule extraction and patient-ready workbook with explicit limits",
+      "readiness": "ready_with_limits",
+      "notes": "Cash linkage remains separate"
+    },
+    {
+      "domain_id": "patients",
+      "domain_name": "patients",
+      "description": "Patient identity, patient hub, dossier tab route maps, comments/files/documents/family/history closures, medcards/xray/insurance boundaries, patient-ready schedule rows and finance-linked models",
+      "typical_sources": [
+        "cbase/detail patient hub",
+        "patient card tab route maps",
+        "dossier blueprint bundles",
+        "files/documents/history network packs",
+        "medcards registry runtime",
+        "patient-card cashbox tab",
+        "insurance and xray verified boundary docs"
+      ],
+      "typical_outputs": [
+        "patient full report v5",
+        "patient identity probe v5",
+        "ultimate patient dossier bundle",
+        "old hygiene no-followup v2",
+        "patient cashbox document models",
+        "medcards empty-cards artifacts"
+      ],
+      "proof_boundary": "Current curated repo now closes patient access path plus comments/files/documents/family/schedule history/medical history methods through verified blueprint and sample bundle; some write paths and broad global coverage remain limited",
+      "readiness": "ready_with_limits",
+      "notes": "Phase 5 adds remaining dossier-tab family closure through route/method packs and a sample dossier bundle"
+    },
+    {
+      "domain_id": "tickets",
+      "domain_name": "tickets",
+      "description": "Schedule ticket extraction, tooltip semantics and normalized dictionary",
+      "typical_sources": [
+        "icon-level runtime probes",
+        "live rendered rc-tooltip"
+      ],
+      "typical_outputs": [
+        "ticket registry v2",
+        "ticket dictionary v2",
+        "semantic closure v2"
+      ],
+      "proof_boundary": "Most ticket families closed; schi-10 remains inferred",
+      "readiness": "ready_with_limits",
+      "notes": "Do not confuse ticket tooltip with patient popup"
+    },
+    {
+      "domain_id": "reporting",
+      "domain_name": "reporting",
+      "description": "Report universe, report families, governed verdicts, file-first and dual-layer reference patterns",
+      "typical_sources": [
+        "report runtime",
+        "exports",
+        "governed verdict artifacts"
+      ],
+      "typical_outputs": [
+        "report universe",
+        "structured catalog",
+        "governed verdicts"
+      ],
+      "proof_boundary": "Strong current batch coverage, not every report family closed",
+      "readiness": "ready_with_limits",
+      "notes": "RPT_4 and some finance families still validation_required"
+    },
+    {
+      "domain_id": "finance",
+      "domain_name": "finance",
+      "description": "Patient cashbox document models and finance enrichment layers",
+      "typical_sources": [
+        "cashbox detail pages",
+        "patient-level document models",
+        "conditional report enrichment"
+      ],
+      "typical_outputs": [
+        "cashbox document-model packs",
+        "schedule cash enrichment"
+      ],
+      "proof_boundary": "Patient/document-level finance modeling proven in reference cases; direct visit-to-cash remains unproven",
+      "readiness": "ready_with_limits",
+      "notes": "Do not overclaim visit-level payment fact"
+    },
+    {
+      "domain_id": "runtime",
+      "domain_name": "runtime",
+      "description": "Browser/runtime extraction patterns, popup and tooltip probing, HTML-first interpretation",
+      "typical_sources": [
+        "live browser session",
+        "DOM/runtime handlers"
+      ],
+      "typical_outputs": [
+        "operational dumps",
+        "runtime references",
+        "interaction probes"
+      ],
+      "proof_boundary": "Reusable for proven page families only",
+      "readiness": "ready_with_limits",
+      "notes": "Not a substitute for dedicated API source closure"
+    },
+    {
+      "domain_id": "mixed",
+      "domain_name": "mixed",
+      "description": "Cross-domain knowledge packs and registries",
+      "typical_sources": [
+        "consolidated artifacts and registries"
+      ],
+      "typical_outputs": [
+        "verified capability package",
+        "readiness maps"
+      ],
+      "proof_boundary": "Curated package, not new source discovery",
+      "readiness": "ready",
+      "notes": "Knowledge-layer assets"
+    }
+  ]
+}

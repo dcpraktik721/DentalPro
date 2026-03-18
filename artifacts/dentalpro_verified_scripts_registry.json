@@ -1,0 +1,352 @@
+[
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/explore_crm.js",
+    "purpose": "read-only CRM crawl and route discovery",
+    "domain": "crm/ui inventory",
+    "inputs": "DP_LOGIN, DP_PASSWORD",
+    "outputs": "crm_scan_report.json",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/playwright/crm_scan_report.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "not deep interaction closure",
+    "practical_value": "baseline CRM structure map"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/extract_reports.js",
+    "purpose": "extract report universe",
+    "domain": "reporting",
+    "inputs": "browser auth",
+    "outputs": "reports_scan.json",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/reports/reports_scan.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "catalog only",
+    "practical_value": "report universe discovery"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/analyze_report_24_api.js",
+    "purpose": "live API reconstruction for RPT_24",
+    "domain": "reporting/finance",
+    "inputs": "DP_LOGIN, DP_PASSWORD, dates",
+    "outputs": "report-24-api-analysis-*.json",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/report-24-api-analysis-2026-03-01-2026-03-31.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "xray performer key unresolved",
+    "practical_value": "primary finance composite source proof"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/verify_efficiency_report.js",
+    "purpose": "RPT_18 verifier",
+    "domain": "reporting/KPI",
+    "inputs": "dates",
+    "outputs": "efficiency report verification artifacts",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/efficiency-report-verification-2026-03-07.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "report family specific",
+    "practical_value": "reference verified report path"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/analyze_report_4_api.js",
+    "purpose": "RPT_4 API replay",
+    "domain": "reporting/appointments",
+    "inputs": "dates",
+    "outputs": "report-4-api-copy-*.json",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/report-4-api-copy-2026-03-06-2026-03-07.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "residual replay gaps",
+    "practical_value": "partial reproducibility of primary patients family"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/analyze_report_9_api.js",
+    "purpose": "RPT_9 unpaid family API analysis",
+    "domain": "reporting/finance",
+    "inputs": "dates",
+    "outputs": "report-9-api-analysis json",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/report-9-api-analysis-2026-03-01-2026-03-31.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "hidden history semantics remain",
+    "practical_value": "partial unpaid report family closure"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/build_report_29_unpaid_composite.js",
+    "purpose": "RPT_29 composite unpaid build",
+    "domain": "reporting/finance",
+    "inputs": "API extracts",
+    "outputs": "report-29-composite-unpaid json",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/report-29-composite-unpaid-2026.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "still partial",
+    "practical_value": "saved variant unpaid family proof"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/clinic_manager_agent.js",
+    "purpose": "daily manager report",
+    "domain": "schedule + payments",
+    "inputs": "date",
+    "outputs": "manager daily report csv/json/md",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/manager_report_2026-03-06.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "daily operational slice, not full reporting layer",
+    "practical_value": "production-usable operational report"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/inspect_cashbox_detail.js",
+    "purpose": "cashbox detail probe",
+    "domain": "cashbox",
+    "inputs": "payment/detail id",
+    "outputs": "detail JSON/HTML evidence",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/cashbox/cashbox-detail-86644.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "specific objects only",
+    "practical_value": "detail shell narrowing"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/probe_cashbox_payments.js",
+    "purpose": "cashbox payments list/domain probe",
+    "domain": "cashbox",
+    "inputs": "browser auth",
+    "outputs": "cashbox payment list probe",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/cashbox-payments/cashbox-payments-live-probe.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "HTML-first shell",
+    "practical_value": "source family narrowing"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/probe_rpt4_selector.js",
+    "purpose": "RPT_4 selector investigation",
+    "domain": "reporting/appointments",
+    "inputs": "date windows",
+    "outputs": "selector probe json",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/rpt4-selector-probe-2026-02.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "case-specific",
+    "practical_value": "current-primary selector rule"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/inspect_schedule_day_api.js",
+    "purpose": "schedule API day inspection",
+    "domain": "schedule",
+    "inputs": "target date",
+    "outputs": "schedule-api-day json",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/schedule-api-day-2026-03-09.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "API layer only",
+    "practical_value": "accepted schedule API contract"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/run_schedule_forensic_pass.js",
+    "purpose": "full schedule forensic runtime dump",
+    "domain": "schedule runtime",
+    "inputs": "target date + storageState",
+    "outputs": "schedule forensic artifact pack",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_operational_dump_master.md"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "date-specific forensic snapshot",
+    "practical_value": "canonical schedule baseline"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/scripts/run_schedule_interaction_probe_v2.js",
+    "purpose": "schedule popup hardening pass",
+    "domain": "schedule interaction",
+    "inputs": "baseline visit subset",
+    "outputs": "popup_linkage_v2",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_popup_linkage_v2.json"
+    ],
+    "current_status": "superseded",
+    "superseded_or_current": "deprecated_or_superseded",
+    "limitations": "v3 extends subset families",
+    "practical_value": "method hardening history"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/scripts/run_schedule_interaction_probe_v3.js",
+    "purpose": "expanded schedule popup subset probe",
+    "domain": "schedule interaction",
+    "inputs": "schedule subset families",
+    "outputs": "popup_linkage_v3",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_popup_linkage_v3.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "subset only",
+    "practical_value": "best current popup subset proof"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/scripts/run_schedule_status_normalizer_v2.js",
+    "purpose": "status normalization for schedule",
+    "domain": "schedule/status",
+    "inputs": "baseline visit data",
+    "outputs": "status_dictionary_v2",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_status_dictionary_v2.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "mixed proof levels",
+    "practical_value": "usable custom schedule status schema"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/scripts/run_schedule_ticket_registry_probe_v1.js",
+    "purpose": "build live ticket registry",
+    "domain": "schedule/tickets",
+    "inputs": "patient_full_report_v5 subset + storageState",
+    "outputs": "ticket registry v1",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v1.json"
+    ],
+    "current_status": "superseded",
+    "superseded_or_current": "deprecated_or_superseded",
+    "limitations": "main registry replaced by v2",
+    "practical_value": "foundational ticket capture"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/scripts/run_schedule_ticket_semantic_probe_v2.js",
+    "purpose": "focused unresolved ticket family probe",
+    "domain": "schedule/tickets",
+    "inputs": "ticket_registry_v1",
+    "outputs": "semantic probe v2",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_semantic_probe_v2.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "only unresolved families",
+    "practical_value": "semantic closure support"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/scripts/build_schedule_ticket_registry_v2.py",
+    "purpose": "build main ticket registry v2 with proof-aware semantics",
+    "domain": "schedule/tickets",
+    "inputs": "v1 registry + ticket_dictionary_v2 + semantic probe",
+    "outputs": "ticket_registry_v2 json/xlsx/md",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v2.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "depends on proven tooltip registry",
+    "practical_value": "current main ticket knowledge asset"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/scripts/build_schedule_patient_full_report_v4.py",
+    "purpose": "patient-ready schedule report v4",
+    "domain": "schedule/patient report",
+    "inputs": "normalized schedule + identity + cash enrichment",
+    "outputs": "patient_full_report_v4",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v4.json"
+    ],
+    "current_status": "superseded",
+    "superseded_or_current": "deprecated_or_superseded",
+    "limitations": "v5 closes patient_id gaps",
+    "practical_value": "intermediate patient-ready workbook"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/scripts/build_schedule_patient_full_report_v5.py",
+    "purpose": "patient-ready schedule report v5",
+    "domain": "schedule/patient report",
+    "inputs": "identity probe v5 + normalized schedule",
+    "outputs": "patient_full_report_v5",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v5.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "cash remains separate",
+    "practical_value": "current patient-ready schedule workbook"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/scripts/find_patients_old_hygiene_no_followup_live.js",
+    "purpose": "find patients with old hygiene ticket and no later hygienist visit",
+    "domain": "custom schedule reporting",
+    "inputs": "threshold and schedule window",
+    "outputs": "patients_old_hygiene_no_followup live json",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/patients_old_hygiene_no_followup_live_2025-10-10_to_2026-03-18_v2.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "schedule-window patient universe only",
+    "practical_value": "operational campaign list generation"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/scripts/build_reporting_architecture_map.py",
+    "purpose": "build reporting architecture package",
+    "domain": "architecture/knowledge",
+    "inputs": "existing artifacts and docs",
+    "outputs": "architecture map registries",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_source_landscape_map.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "reporting-focused, not full project capability pack",
+    "practical_value": "current architecture baseline"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/run_targeted_report_pass.ts",
+    "purpose": "single-report live governed pass",
+    "domain": "reports/runtime-export",
+    "inputs": "report code/id/date",
+    "outputs": "dated runtime/export/file/verdict artifacts",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_final_governed_verdict_2026-03-11.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "family-specific interpretation still required",
+    "practical_value": "core live report execution layer"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/extract_rpt_36_workbook.py",
+    "purpose": "technical workbook header recovery for RPT_36",
+    "domain": "reports/file parsing",
+    "inputs": "RPT_36 xlsx",
+    "outputs": "workbook header recovery json",
+    "artifacts_produced": [
+      "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_36_workbook_header_recovery_2026-03-11.json"
+    ],
+    "current_status": "current",
+    "superseded_or_current": "current",
+    "limitations": "semantic headers remain unresolved",
+    "practical_value": "technical contract recovery"
+  }
+]

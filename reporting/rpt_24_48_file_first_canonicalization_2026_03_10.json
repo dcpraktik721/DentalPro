@@ -1,0 +1,101 @@
+[
+  {
+    "report_code": "RPT_24",
+    "primary_truth_layer": "file",
+    "runtime_shell_only": "yes",
+    "file_headers_exact": [
+      "Дата",
+      "Исполнитель",
+      "Пациент",
+      "Номер телефона",
+      "Услуга",
+      "Кол-во услуг",
+      "Сумма скидки",
+      "Сумма оплачено с учетом скидки"
+    ],
+    "file_row_count": 170,
+    "file_schema_status": "proven",
+    "file_row_boundary_status": "proven",
+    "normalization_rules_needed": [
+      "footer_exclusion"
+    ],
+    "file_first_canonicalization_status": "file_first_with_limits",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": [
+      "Treat runtime page as async launch shell only.",
+      "Use resolved dpfile XLSX as the only data-bearing extraction layer.",
+      "Exclude the trailing aggregate footer row before dataset use or comparison."
+    ],
+    "forbidden_claims": [
+      "runtime_table_parity_confirmed",
+      "runtime_page_contains_canonical_detail_dataset",
+      "row_level_runtime_vs_file_compare_completed"
+    ],
+    "evidence_reference": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/date_constrained_xlsx_parsed_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/output/dentalpro-playwright-regression-run/dentalpro-playwright/artifacts/system_data_runtime_extraction_playwright_2026_03_17_date_2026_03_10_persisted.json",
+      "/Users/macbook15/Downloads/MacAi/output/dentalpro-playwright-regression-run/dentalpro-playwright/artifacts/system_data_export_files_playwright_2026_03_17_date_2026_03_10_persisted.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/date_constrained_runtime_vs_file_matrix_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/docs/date_constrained_runtime_vs_file_comparison_2026_03_10.md"
+    ],
+    "notes": [
+      "Async notification flow resolved to a concrete dpfile URL and produced a parseable XLSX.",
+      "No stable runtime table was observed in the date-constrained package run.",
+      "Future reporting may use this report as file-first only."
+    ]
+  },
+  {
+    "report_code": "RPT_48",
+    "primary_truth_layer": "file",
+    "runtime_shell_only": "yes",
+    "file_headers_exact": [
+      "Исполнитель (14)",
+      "Объект",
+      "Фискальный регистратор",
+      "Пациент",
+      "Плательщик",
+      "Услуга",
+      "Кол-во услуг",
+      "Сумма скидки",
+      "Сумма выполнено",
+      "Сумма оплачено с учетом скидки",
+      "Сумма оплачено картой",
+      "Сумма оплачено наличными",
+      "Сумма оплачено другими формами оплаты",
+      "Общее поступление",
+      "Тип оплаты"
+    ],
+    "file_row_count": 180,
+    "file_schema_status": "proven",
+    "file_row_boundary_status": "partial",
+    "normalization_rules_needed": [
+      "service_row_exclusion",
+      "footer_exclusion"
+    ],
+    "file_first_canonicalization_status": "file_first_with_limits",
+    "safe_for_future_reporting": "conditional",
+    "required_guardrails": [
+      "Treat runtime page as async launch shell only.",
+      "Use resolved dpfile XLSX as the primary extractable dataset.",
+      "Classify grouped/service-like rows before canonical dataset projection.",
+      "Exclude the trailing aggregate footer row before governed use."
+    ],
+    "forbidden_claims": [
+      "runtime_table_parity_confirmed",
+      "runtime_page_contains_canonical_detail_dataset",
+      "all_file_rows_are_homogeneous_business_rows"
+    ],
+    "evidence_reference": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/date_constrained_xlsx_parsed_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/output/dentalpro-playwright-regression-run/dentalpro-playwright/artifacts/system_data_runtime_extraction_playwright_2026_03_17_date_2026_03_10_persisted.json",
+      "/Users/macbook15/Downloads/MacAi/output/dentalpro-playwright-regression-run/dentalpro-playwright/artifacts/system_data_export_files_playwright_2026_03_17_date_2026_03_10_persisted.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/date_constrained_runtime_vs_file_matrix_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/docs/date_constrained_runtime_vs_file_comparison_2026_03_10.md"
+    ],
+    "notes": [
+      "Async notification flow resolved to a concrete dpfile URL and produced a parseable XLSX.",
+      "Header row is proven, but sample parsed rows show grouped/service-like row classes that require boundary policy before canonical promotion.",
+      "RPT_48 is file-first, not runtime-table-first."
+    ]
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/dentalpro-master-worklog.md",
+    "artifact_type": "master_doc",
+    "domain": "project state",
+    "what_is_proven_there": "current operational truth, strongest conclusions, workstreams, gaps",
+    "what_is_only_structurally_observed": "none; it is a control-plane summary",
+    "what_cannot_be_claimed": "raw evidence beyond linked docs",
+    "current_role": "source_of_truth",
+    "notes": "primary control-plane doc"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/report-api-verification-dossier-2026-03-09.md",
+    "artifact_type": "dossier",
+    "domain": "report verification",
+    "what_is_proven_there": "priority report reproducibility positions and blockers",
+    "what_is_only_structurally_observed": "candidate source overlaps for blocked reports",
+    "what_cannot_be_claimed": "full closure of blocked families",
+    "current_role": "source_of_truth",
+    "notes": "main report verification dossier"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_operational_dump_master.md",
+    "artifact_type": "forensic_dump",
+    "domain": "schedule runtime",
+    "what_is_proven_there": "HTML-first schedule runtime, entities, mechanics, transport findings",
+    "what_is_only_structurally_observed": "some popup/detail layers",
+    "what_cannot_be_claimed": "global API-first schedule source",
+    "current_role": "source_of_truth",
+    "notes": "canonical schedule forensic baseline"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v2.json",
+    "artifact_type": "registry",
+    "domain": "schedule tickets",
+    "what_is_proven_there": "ticket tooltip capture and normalized semantics with proof levels",
+    "what_is_only_structurally_observed": "none for proven families; schi-10 remains inferred",
+    "what_cannot_be_claimed": "global proof for all icon families",
+    "current_role": "source_of_truth",
+    "notes": "main ticket registry"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/ticket_dictionary_v2.json",
+    "artifact_type": "dictionary",
+    "domain": "ticket semantics",
+    "what_is_proven_there": "normalized categories, proof_level, scope, evidence basis",
+    "what_is_only_structurally_observed": "families left as inferred",
+    "what_cannot_be_claimed": "global safe reuse for inferred families",
+    "current_role": "source_of_truth",
+    "notes": "current semantic dictionary"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v5.json",
+    "artifact_type": "normalized_dataset",
+    "domain": "schedule patient report",
+    "what_is_proven_there": "patient-ready schedule rows with proven IDs/phones where available",
+    "what_is_only_structurally_observed": "none material in current rows",
+    "what_cannot_be_claimed": "visit-level cash truth",
+    "current_role": "source_of_truth",
+    "notes": "current patient-ready schedule dataset"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_cash_enrichment_v5.json",
+    "artifact_type": "enrichment",
+    "domain": "schedule cash",
+    "what_is_proven_there": "patient-day conditional financial linkage",
+    "what_is_only_structurally_observed": "heuristic joins",
+    "what_cannot_be_claimed": "direct visit->cash linkage",
+    "current_role": "secondary_enrichment",
+    "notes": "keep separate from primary visit sheet"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_18910_document_model_2026-03-18.json",
+    "artifact_type": "document_model",
+    "domain": "patient cashbox",
+    "what_is_proven_there": "row/document split with act_reference",
+    "what_is_only_structurally_observed": "none in tested patient",
+    "what_cannot_be_claimed": "global patient cashbox model for all patients",
+    "current_role": "source_of_truth",
+    "notes": "reference patient cashbox model"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/patient_cashbox_19095_document_model_2026-03-18.json",
+    "artifact_type": "document_model",
+    "domain": "patient cashbox",
+    "what_is_proven_there": "shared payment document pattern on second patient",
+    "what_is_only_structurally_observed": "none in tested patient",
+    "what_cannot_be_claimed": "full clinic-wide cashbox source closure",
+    "current_role": "source_of_truth",
+    "notes": "second patient confirmation"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/doctor_patients_Geyushova_2026-02.json",
+    "artifact_type": "custom_report_artifact",
+    "domain": "doctor roster",
+    "what_is_proven_there": "accepted API patient roster by doctor",
+    "what_is_only_structurally_observed": "none",
+    "what_cannot_be_claimed": "visit-level service price",
+    "current_role": "source_of_truth",
+    "notes": "operational roster baseline"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/doctor_patients_Geyushova_2026-02_enriched_rpt24.json",
+    "artifact_type": "custom_report_artifact",
+    "domain": "doctor roster",
+    "what_is_proven_there": "patient-day revenue enrichment",
+    "what_is_only_structurally_observed": "service-level exact mapping",
+    "what_cannot_be_claimed": "exact appointment line-item price",
+    "current_role": "secondary_enrichment",
+    "notes": "patient-day enrichment only"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/manager_report_2026-03-06.json",
+    "artifact_type": "operational_report",
+    "domain": "daily manager report",
+    "what_is_proven_there": "daily appointments/payments composite algorithm",
+    "what_is_only_structurally_observed": "none in proven daily slice",
+    "what_cannot_be_claimed": "multi-day or arbitrary historic full-lake reporting",
+    "current_role": "source_of_truth",
+    "notes": "production-usable daily operational report"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/report-24-api-analysis-2026-03-01-2026-03-31.json",
+    "artifact_type": "analysis_artifact",
+    "domain": "RPT_24 / finance",
+    "what_is_proven_there": "z/pays-based row reconstruction and rules",
+    "what_is_only_structurally_observed": "xray executor mapping candidate",
+    "what_cannot_be_claimed": "fully closed performer key",
+    "current_role": "source_of_truth",
+    "notes": "main finance analysis asset"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/report-9-api-analysis-2026-03-01-2026-03-31.json",
+    "artifact_type": "analysis_artifact",
+    "domain": "RPT_9",
+    "what_is_proven_there": "core unpaid family API coverage",
+    "what_is_only_structurally_observed": "history/update source",
+    "what_cannot_be_claimed": "full report closure",
+    "current_role": "source_of_truth",
+    "notes": "partial unpaid family"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/report-29-composite-unpaid-2026.json",
+    "artifact_type": "analysis_artifact",
+    "domain": "RPT_29",
+    "what_is_proven_there": "saved unpaid family composite build",
+    "what_is_only_structurally_observed": "hidden history semantics",
+    "what_cannot_be_claimed": "full report closure",
+    "current_role": "source_of_truth",
+    "notes": "saved variant unpaid family"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/report-4-api-copy-2026-03-06-2026-03-07.json",
+    "artifact_type": "analysis_artifact",
+    "domain": "RPT_4",
+    "what_is_proven_there": "anchored API copy and partial parity",
+    "what_is_only_structurally_observed": "residual selector semantics",
+    "what_cannot_be_claimed": "global closure of RPT_4",
+    "current_role": "source_of_truth",
+    "notes": "best anchored window"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/rpt4-selector-probe-2026-02.json",
+    "artifact_type": "probe_artifact",
+    "domain": "RPT_4",
+    "what_is_proven_there": "visit-centered selector/tie-break behavior",
+    "what_is_only_structurally_observed": "none material",
+    "what_cannot_be_claimed": "complete report closure",
+    "current_role": "source_of_truth",
+    "notes": "selector rule asset"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/efficiency-report-verification-2026-03-07.json",
+    "artifact_type": "verification_artifact",
+    "domain": "RPT_18",
+    "what_is_proven_there": "API/UI parity for KPI report",
+    "what_is_only_structurally_observed": "none material",
+    "what_cannot_be_claimed": "all grouped-header reports automatically closed",
+    "current_role": "source_of_truth",
+    "notes": "reference verified report"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/cashbox-payments/cashbox-payments-live-probe.json",
+    "artifact_type": "forensic_probe",
+    "domain": "cashbox payments",
+    "what_is_proven_there": "HTML-first payments shell and row opening behavior",
+    "what_is_only_structurally_observed": "direct API source candidate",
+    "what_cannot_be_claimed": "cashbox source closure",
+    "current_role": "source_of_truth",
+    "notes": "cashbox shell baseline"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/cashbox/cashbox-detail-86644.json",
+    "artifact_type": "forensic_probe",
+    "domain": "cashbox detail",
+    "what_is_proven_there": "detail tabs/history/payment shell",
+    "what_is_only_structurally_observed": "comment internals in some cases",
+    "what_cannot_be_claimed": "generic comment source model",
+    "current_role": "secondary_enrichment",
+    "notes": "detail object evidence"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/docs/dentalpro_empty_cards_forensic_disclosure_2026_03_16.md",
+    "artifact_type": "forensic_report",
+    "domain": "empty medcards",
+    "what_is_proven_there": "internal runtime API path and browser-authenticated flow",
+    "what_is_only_structurally_observed": "none for tested state machine",
+    "what_cannot_be_claimed": "published token/secret medcard API",
+    "current_role": "source_of_truth",
+    "notes": "empty cards closure artifact"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_final_governed_verdict_2026-03-11.json",
+    "artifact_type": "governed_verdict",
+    "domain": "reporting",
+    "what_is_proven_there": "runtime_table_export_table with explicit normalization",
+    "what_is_only_structurally_observed": "none for current pass",
+    "what_cannot_be_claimed": "global portability of normalization",
+    "current_role": "source_of_truth",
+    "notes": "RPT_23 reference pattern"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_18_final_governed_verdict_2026-03-18.json",
+    "artifact_type": "governed_verdict",
+    "domain": "reporting",
+    "what_is_proven_there": "grouped_headers canonicalized with explicit normalization",
+    "what_is_only_structurally_observed": "none for current pass",
+    "what_cannot_be_claimed": "all grouped-header reports behave alike",
+    "current_role": "source_of_truth",
+    "notes": "RPT_18 reference pattern"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_33_final_governed_verdict_2026-03-15.json",
+    "artifact_type": "governed_verdict",
+    "domain": "reporting",
+    "what_is_proven_there": "runtime/file parity with explicit normalization on business fields",
+    "what_is_only_structurally_observed": "none for current pass",
+    "what_cannot_be_claimed": "all runtime/file families share same field policy",
+    "current_role": "source_of_truth",
+    "notes": "RPT_33 boundary reference"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/rpt_24_48_file_first_canonicalization_2026_03_10.json",
+    "artifact_type": "family_artifact",
+    "domain": "reporting",
+    "what_is_proven_there": "file-first family model",
+    "what_is_only_structurally_observed": "runtime shell",
+    "what_cannot_be_claimed": "runtime parity",
+    "current_role": "source_of_truth",
+    "notes": "async file-first pattern"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/rpt_34_35_shape_reconciliation_2026_03_10.json",
+    "artifact_type": "family_artifact",
+    "domain": "reporting",
+    "what_is_proven_there": "detail-vs-summary dual-layer status",
+    "what_is_only_structurally_observed": "aggregate relation specifics",
+    "what_cannot_be_claimed": "direct row parity",
+    "current_role": "source_of_truth",
+    "notes": "shape mismatch pattern"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_reporting_architecture_map.md",
+    "artifact_type": "knowledge_package",
+    "domain": "architecture",
+    "what_is_proven_there": "source/family/entity/join architecture summary",
+    "what_is_only_structurally_observed": "future opportunities",
+    "what_cannot_be_claimed": "new evidence beyond source files",
+    "current_role": "secondary_enrichment",
+    "notes": "reporting-focused map"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_ticket_registry_v1.json",
+    "artifact_type": "registry",
+    "domain": "schedule tickets",
+    "what_is_proven_there": "first live ticket registry build",
+    "what_is_only_structurally_observed": "some semantics before closure",
+    "what_cannot_be_claimed": "current final ticket dictionary",
+    "current_role": "deprecated_or_superseded",
+    "notes": "superseded by v2"
+  },
+  {
+    "path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_patient_full_report_v4.json",
+    "artifact_type": "normalized_dataset",
+    "domain": "schedule patient report",
+    "what_is_proven_there": "v4 patient-ready report prior to v5 focused closure",
+    "what_is_only_structurally_observed": "remaining missing patient ids at that time",
+    "what_cannot_be_claimed": "current best patient-ready workbook",
+    "current_role": "deprecated_or_superseded",
+    "notes": "superseded by v5"
+  }
+]

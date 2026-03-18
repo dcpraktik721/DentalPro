@@ -1,0 +1,100 @@
+[
+  {
+    "report_or_family_or_path": "reports/index universe",
+    "what_is_known": "7 report groups, 41 template codes and 41 saved reports cataloged",
+    "status": "proven",
+    "readiness": "ready",
+    "notes": "catalog/route discovery only"
+  },
+  {
+    "report_or_family_or_path": "runtime_table_export_table family",
+    "what_is_known": "runtime and export can be compared after header/row boundary validation; explicit normalization allowed only when narrow and evidenced",
+    "status": "proven",
+    "readiness": "ready_with_limits",
+    "notes": "RPT_23 reference pattern"
+  },
+  {
+    "report_or_family_or_path": "grouped_headers family",
+    "what_is_known": "leaf-header extraction and business header projection can close parity",
+    "status": "proven",
+    "readiness": "ready_with_limits",
+    "notes": "RPT_18 reference pattern"
+  },
+  {
+    "report_or_family_or_path": "file_first_async family",
+    "what_is_known": "file is primary truth and runtime is launch shell",
+    "status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "notes": "RPT_24/48 pattern"
+  },
+  {
+    "report_or_family_or_path": "detail-vs-summary dual-layer family",
+    "what_is_known": "runtime detail and export summary must not be compared row-by-row",
+    "status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "notes": "RPT_34/35"
+  },
+  {
+    "report_or_family_or_path": "RPT_18",
+    "what_is_known": "reproducible now via mobile/owner/efficiency + mobile/schedule",
+    "status": "proven",
+    "readiness": "ready",
+    "notes": "current strongest report reference"
+  },
+  {
+    "report_or_family_or_path": "RPT_23",
+    "what_is_known": "canonicalized with explicit first-column normalization",
+    "status": "proven",
+    "readiness": "ready_with_limits",
+    "notes": "normalization not portable"
+  },
+  {
+    "report_or_family_or_path": "RPT_33",
+    "what_is_known": "runtime/file business parity confirmed with explicit normalization",
+    "status": "proven",
+    "readiness": "ready_with_limits",
+    "notes": "canonical field boundary reference"
+  },
+  {
+    "report_or_family_or_path": "RPT_24",
+    "what_is_known": "partially reproducible from z/pays and enrichments; also file-first family for certain governed use",
+    "status": "proven",
+    "readiness": "ready_with_limits",
+    "notes": "xray performer unresolved"
+  },
+  {
+    "report_or_family_or_path": "RPT_4",
+    "what_is_known": "partially reproducible; row identity closed, field semantics narrowed",
+    "status": "proven",
+    "readiness": "validation_required",
+    "notes": "still not canonicalized"
+  },
+  {
+    "report_or_family_or_path": "RPT_9 / RPT_29",
+    "what_is_known": "core unpaid family reconstructable, but hidden history/update semantics remain",
+    "status": "proven",
+    "readiness": "validation_required",
+    "notes": "partial unpaid family"
+  },
+  {
+    "report_or_family_or_path": "RPT_21",
+    "what_is_known": "render/export/edit contract opened; blocked by hidden cashbox statement source",
+    "status": "proven",
+    "readiness": "blocked",
+    "notes": "do not overclaim DDS overlap"
+  },
+  {
+    "report_or_family_or_path": "RPT_36",
+    "what_is_known": "runtime/file reference-pattern hypothesis rejected for current evidence; workbook technical recovery only",
+    "status": "proven",
+    "readiness": "validation_required",
+    "notes": "semantic header contract unresolved"
+  },
+  {
+    "report_or_family_or_path": "report export transport",
+    "what_is_known": "direct and async export behaviors mapped; some reports use 3-step exporter flow",
+    "status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "notes": "export mechanics family useful for custom reporting"
+  }
+]

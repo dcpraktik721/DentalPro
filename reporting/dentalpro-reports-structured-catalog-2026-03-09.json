@@ -1,0 +1,3480 @@
+{
+  "generated_at": "2026-03-09T18:44:46.099Z",
+  "source_note": {
+    "collection_mode": "Structured from previously captured puppeteer-mcp-server artifact because live puppeteer session was stale during this pass.",
+    "primary_browser_artifact": "artifacts/reports/reports_scan.json",
+    "catalog_json": "docs/reports-catalog.json",
+    "architecture_doc": "docs/reports-architecture-deep-dive-2026-03-09.md",
+    "report_registry": "registry/reports.json"
+  },
+  "counts": {
+    "groups": 7,
+    "template_reports": 41,
+    "saved_reports": 41,
+    "total_entries": 82
+  },
+  "groups": [
+    {
+      "group": "all",
+      "name": "Все отчёты",
+      "url": "https://dcpraktik.dental-pro.online/reports/reports/index?group=all"
+    },
+    {
+      "group": "appointments",
+      "name": "Приёмы",
+      "url": "https://dcpraktik.dental-pro.online/reports/reports/index?group=appointments"
+    },
+    {
+      "group": "callcenter",
+      "name": "Call-центр",
+      "url": "https://dcpraktik.dental-pro.online/reports/reports/index?group=callcenter"
+    },
+    {
+      "group": "dms",
+      "name": "ДМС",
+      "url": "https://dcpraktik.dental-pro.online/reports/reports/index?group=dms"
+    },
+    {
+      "group": "financial",
+      "name": "Финансы",
+      "url": "https://dcpraktik.dental-pro.online/reports/reports/index?group=financial"
+    },
+    {
+      "group": "warehouse",
+      "name": "Склад",
+      "url": "https://dcpraktik.dental-pro.online/reports/reports/index?group=warehouse"
+    },
+    {
+      "group": "workload",
+      "name": "Загруженность",
+      "url": "https://dcpraktik.dental-pro.online/reports/reports/index?group=workload"
+    }
+  ],
+  "verification_summary": {
+    "not started": 75,
+    "partially closed": 4,
+    "closed": 1,
+    "blocked": 1,
+    "in progress": 1
+  },
+  "relation_rows": [
+    {
+      "template_code": "efficiency",
+      "saved_report_code": "RPT_18",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "unpaid_pays",
+      "saved_report_code": "RPT_9",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "unpaid_pays",
+      "saved_report_code": "RPT_29",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "mediline_primary_records",
+      "saved_report_code": "RPT_4",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "cashbox_debts",
+      "saved_report_code": "RPT_3",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "cashbox_debts",
+      "saved_report_code": "RPT_45",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "cashbox_dds",
+      "saved_report_code": "RPT_21",
+      "relation_type": "candidate_family_match",
+      "confidence": "medium"
+    },
+    {
+      "template_code": "cashbox_dds",
+      "saved_report_code": "RPT_5",
+      "relation_type": "candidate_family_match",
+      "confidence": "medium"
+    },
+    {
+      "template_code": "cashbox_dds",
+      "saved_report_code": "RPT_33",
+      "relation_type": "candidate_family_match",
+      "confidence": "medium"
+    },
+    {
+      "template_code": "cashbox_income_expenses",
+      "saved_report_code": "RPT_46",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "cashbox_pays_positions",
+      "saved_report_code": "RPT_39",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "insurance_attachments",
+      "saved_report_code": "RPT_34",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "insurance_attachments",
+      "saved_report_code": "RPT_35",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "market_items",
+      "saved_report_code": "RPT_2",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "records_registry",
+      "saved_report_code": "RPT_7",
+      "relation_type": "variant_saved_report",
+      "confidence": "medium"
+    },
+    {
+      "template_code": "records_registry",
+      "saved_report_code": "RPT_8",
+      "relation_type": "variant_saved_report",
+      "confidence": "medium"
+    },
+    {
+      "template_code": "schedule_out",
+      "saved_report_code": "RPT_13",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "doctor_visits",
+      "saved_report_code": "RPT_42",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "admin_conversion",
+      "saved_report_code": "RPT_40",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "callcentr_tickets_table",
+      "saved_report_code": "RPT_10",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "callcentr_tickets_table",
+      "saved_report_code": "RPT_49",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "callcentr_ratings",
+      "saved_report_code": "RPT_11",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "callcentr_tickets",
+      "saved_report_code": "RPT_12",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "callcenter_calls",
+      "saved_report_code": "RPT_25",
+      "relation_type": "exact_name_match",
+      "confidence": "medium"
+    },
+    {
+      "template_code": "appointments_services",
+      "saved_report_code": "RPT_23",
+      "relation_type": "candidate_family_match",
+      "confidence": "medium"
+    },
+    {
+      "template_code": "discounts",
+      "saved_report_code": "RPT_6",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "warehouse_history",
+      "saved_report_code": "RPT_36",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "warehouse_history",
+      "saved_report_code": "RPT_38",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "wage_doctors_updated",
+      "saved_report_code": "RPT_48",
+      "relation_type": "exact_name_match",
+      "confidence": "high"
+    },
+    {
+      "template_code": "pay_debt",
+      "saved_report_code": "RPT_28",
+      "relation_type": "candidate_family_match",
+      "confidence": "medium"
+    }
+  ],
+  "reports": [
+    {
+      "report_code": "TPL_basic_statistics",
+      "report_id": null,
+      "template_code": "basic_statistics",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Базовые показатели статистики",
+      "category": "all",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=basic_statistics",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_waybill_list",
+      "report_id": null,
+      "template_code": "waybill_list",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Бегунки",
+      "category": "all",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=waybill_list",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_waybill_visit",
+      "report_id": null,
+      "template_code": "waybill_visit",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Бегунки: визиты",
+      "category": "appointments",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=waybill_visit",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_doctors",
+      "report_id": null,
+      "template_code": "doctors",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Врачи: сводный отчёт",
+      "category": "workload",
+      "report_type": "workload report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=doctors",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per doctor-period",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_doctor_hours",
+      "report_id": null,
+      "template_code": "doctor_hours",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Врачи: часы работы",
+      "category": "workload",
+      "report_type": "workload report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=doctor_hours",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per doctor-period",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_pay_debt",
+      "report_id": null,
+      "template_code": "pay_debt",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_28",
+          "relation_type": "candidate_family_match",
+          "confidence": "medium"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Должники",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=pay_debt",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per patient or invoice balance row",
+      "likely_dimensions": "patient/invoice, branch, date",
+      "likely_measures": "debt, advance",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_caredoc_stats",
+      "report_id": null,
+      "template_code": "caredoc_stats",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Заботливый доктор",
+      "category": "all",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=caredoc_stats",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_cashbox_debts",
+      "report_id": null,
+      "template_code": "cashbox_debts",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_3",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        },
+        {
+          "related_code": "RPT_45",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Задолженности и авансы",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=cashbox_debts",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per patient or invoice balance row",
+      "likely_dimensions": "patient/invoice, branch, date",
+      "likely_measures": "debt, advance",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_workorders",
+      "report_id": null,
+      "template_code": "workorders",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Заказ-наряды",
+      "category": "all",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=workorders",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_chair_doctors",
+      "report_id": null,
+      "template_code": "chair_doctors",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Занятость кресел",
+      "category": "workload",
+      "report_type": "workload report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=chair_doctors",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per chair-period or doctor-period",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_wage",
+      "report_id": null,
+      "template_code": "wage",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Заработные платы",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=wage",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "mobile/owner/recordCosts",
+        "z/pays"
+      ],
+      "accepted_source_overlap": [
+        "mobile/owner/recordCosts",
+        "z/pays"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "mobile/owner/recordCosts",
+        "z/pays"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_wage_doctors",
+      "report_id": null,
+      "template_code": "wage_doctors",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Заработные платы врачей",
+      "category": "workload",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=wage_doctors",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_wage_doctors_updated",
+      "report_id": null,
+      "template_code": "wage_doctors_updated",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_48",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Заработные платы врачей, обновленный",
+      "category": "workload",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=wage_doctors_updated",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_cashbox_dds",
+      "report_id": null,
+      "template_code": "cashbox_dds",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_21",
+          "relation_type": "candidate_family_match",
+          "confidence": "medium"
+        },
+        {
+          "related_code": "RPT_5",
+          "relation_type": "candidate_family_match",
+          "confidence": "medium"
+        },
+        {
+          "related_code": "RPT_33",
+          "relation_type": "candidate_family_match",
+          "confidence": "medium"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Касса: движение денежных средств",
+      "category": "financial",
+      "report_type": "financial statement",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=cashbox_dds",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per branch-period or branch-article-period",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_cashbox_pays",
+      "report_id": null,
+      "template_code": "cashbox_pays",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Касса: платежи",
+      "category": "financial",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=cashbox_pays",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_cashbox_pays_positions",
+      "report_id": null,
+      "template_code": "cashbox_pays_positions",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_39",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Касса: товары и услуги",
+      "category": "warehouse",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=cashbox_pays_positions",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail",
+        "z/services"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail",
+        "z/services"
+      ],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail",
+        "z/services"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_unpaid_pays",
+      "report_id": null,
+      "template_code": "unpaid_pays",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_9",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        },
+        {
+          "related_code": "RPT_29",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Квитанции без оплаты",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=unpaid_pays",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per invoice/payment header",
+      "likely_dimensions": "status, branch, patient, created/updated dates",
+      "likely_measures": "amount_due",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_efficiency",
+      "report_id": null,
+      "template_code": "efficiency",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_18",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Ключевые показатели эффективности",
+      "category": "all",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=efficiency",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per doctor-period",
+      "likely_dimensions": "doctor, period, branch(optional)",
+      "likely_measures": "cashPlan, cashTotal, countPrimaryRecords, countRecords, countClients",
+      "candidate_sources": [
+        "mobile/owner/efficiency",
+        "mobile/schedule"
+      ],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "mobile/owner/efficiency",
+        "mobile/schedule"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_insurance_attachments",
+      "report_id": null,
+      "template_code": "insurance_attachments",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_34",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        },
+        {
+          "related_code": "RPT_35",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Количество прикреплений пациентов к страховым",
+      "category": "dms",
+      "report_type": "DMS report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=insurance_attachments",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per insurance attachment or insurer-period aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "insurance/*"
+      ],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "insurance/*"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_callcentr_tickets_table",
+      "report_id": null,
+      "template_code": "callcentr_tickets_table",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_10",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        },
+        {
+          "related_code": "RPT_49",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Колл-центр: Cтатистика по тикетам",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=callcentr_tickets_table",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_callcenter_calls",
+      "report_id": null,
+      "template_code": "callcenter_calls",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_25",
+          "relation_type": "exact_name_match",
+          "confidence": "medium"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Колл-центр: входящие и исходящие звонки",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=callcenter_calls",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per call or call aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_callcentr_history",
+      "report_id": null,
+      "template_code": "callcentr_history",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Колл-центр: История звонков",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=callcentr_history",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per call or call aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_admin_conversion",
+      "report_id": null,
+      "template_code": "admin_conversion",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_40",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Колл-центр: Отчет по конверсии администраторов",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=admin_conversion",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_advertising_source",
+      "report_id": null,
+      "template_code": "advertising_source",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Колл-центр: Отчет по рекламным источникам",
+      "category": "callcenter",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=advertising_source",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_callcentr_ratings",
+      "report_id": null,
+      "template_code": "callcentr_ratings",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_11",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Колл-центр: Рейтинг операторов",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=callcentr_ratings",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_callcentr_tickets",
+      "report_id": null,
+      "template_code": "callcentr_tickets",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_12",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Колл-центр: Тикеты",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=callcentr_tickets",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per ticket or ticket aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_appointments_records",
+      "report_id": null,
+      "template_code": "appointments_records",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Мед.блок: приёмы пациентов",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=appointments_records",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per appointment/visit",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_appointments_services",
+      "report_id": null,
+      "template_code": "appointments_services",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_23",
+          "relation_type": "candidate_family_match",
+          "confidence": "medium"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Мед.блок: услуги в приёмах",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=appointments_services",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per service-in-appointment",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/services"
+      ],
+      "accepted_source_overlap": [
+        "z/services"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/services"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_prepaid_certificate",
+      "report_id": null,
+      "template_code": "prepaid_certificate",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Отчет по сертификатам",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=prepaid_certificate",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_cashbox_income_expenses",
+      "report_id": null,
+      "template_code": "cashbox_income_expenses",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_46",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Отчёт по кассе (доходы и расходы)",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=cashbox_income_expenses",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_mediline_primary_records",
+      "report_id": null,
+      "template_code": "mediline_primary_records",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_4",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Первичные пациенты",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=mediline_primary_records",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per patient",
+      "likely_dimensions": "patient, branch, source, doctor, coordinator, date",
+      "likely_measures": "primary counts, spent total, balances",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_wage_doctors_updated_check",
+      "report_id": null,
+      "template_code": "wage_doctors_updated_check",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Проверка расчета ЗП для бухгалтера",
+      "category": "workload",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=wage_doctors_updated_check",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_market_items",
+      "report_id": null,
+      "template_code": "market_items",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_2",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Проданные товары",
+      "category": "warehouse",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=market_items",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per sold item row",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_mediline_records",
+      "report_id": null,
+      "template_code": "mediline_records",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Расписание: записи пациентов",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=mediline_records",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per schedule record",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_records_registry",
+      "report_id": null,
+      "template_code": "records_registry",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_7",
+          "relation_type": "variant_saved_report",
+          "confidence": "medium"
+        },
+        {
+          "related_code": "RPT_8",
+          "relation_type": "variant_saved_report",
+          "confidence": "medium"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Расписание: работа регистратуры",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=records_registry",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per registry action / schedule row",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_schedule_out",
+      "report_id": null,
+      "template_code": "schedule_out",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_13",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Расписание: удалённые записи",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=schedule_out",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per deleted schedule record",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_warehouse_overs",
+      "report_id": null,
+      "template_code": "warehouse_overs",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "Склад: остатки",
+      "category": "warehouse",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=warehouse_overs",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per stock item",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_warehouse_history",
+      "report_id": null,
+      "template_code": "warehouse_history",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_36",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        },
+        {
+          "related_code": "RPT_38",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Склад: статистика по документам",
+      "category": "warehouse",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=warehouse_history",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per warehouse document or document aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_sms_tasks",
+      "report_id": null,
+      "template_code": "sms_tasks",
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "template",
+      "report_name": "СМС",
+      "category": "all",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=sms_tasks",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_discounts",
+      "report_id": null,
+      "template_code": "discounts",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_6",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Списания / Акции / Скидки",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=discounts",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per pay / discount event or day aggregate (unknown exact output)",
+      "likely_dimensions": "date/period, branch, doctor? promotion?",
+      "likely_measures": "discount amount, count",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "TPL_doctor_visits",
+      "report_id": null,
+      "template_code": "doctor_visits",
+      "related_template": null,
+      "related_saved_reports": [
+        {
+          "related_code": "RPT_42",
+          "relation_type": "exact_name_match",
+          "confidence": "high"
+        }
+      ],
+      "report_kind": "template",
+      "report_name": "Статистика посещения врача",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX template row",
+      "route": "/reports/reports/add?code=doctor_visits",
+      "params_form": "yes (template builder, not opened)",
+      "output_type": "unknown",
+      "grain": "per doctor-period or doctor-day",
+      "likely_dimensions": "doctor, date/period",
+      "likely_measures": "visits count, patients count maybe",
+      "candidate_sources": [
+        "z/visits",
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "z/visits",
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route)+inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits",
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_1",
+      "report_id": 1,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Заботливый доктор",
+      "category": "all",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=1",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_2",
+      "report_id": 2,
+      "template_code": null,
+      "related_template": {
+        "template_code": "market_items",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Проданные товары",
+      "category": "warehouse",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=2",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per sold item row",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_3",
+      "report_id": 3,
+      "template_code": null,
+      "related_template": {
+        "template_code": "cashbox_debts",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Задолженности и авансы",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=3",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per patient or invoice balance row",
+      "likely_dimensions": "patient/invoice, branch, date",
+      "likely_measures": "debt, advance",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_4",
+      "report_id": 4,
+      "template_code": null,
+      "related_template": {
+        "template_code": "mediline_primary_records",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Первичные пациенты",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=4",
+      "params_form": "yes (GET filters: date range, patient, ad source, doctors)",
+      "output_type": "table",
+      "grain": "per patient",
+      "likely_dimensions": "patient, branch, source, doctor, coordinator, date",
+      "likely_measures": "primary counts, spent total, balances",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "high",
+      "notes": "registry-backed partial",
+      "current_project_status": "partially closed",
+      "current_api_mapping_status": "partial",
+      "current_source_bundle": [
+        "i/client",
+        "z/pays",
+        "z/visits",
+        "z/patients",
+        "z/doctor/all",
+        "mobile/owner/advSourcesList"
+      ],
+      "main_gap": "hidden backend predicate and incomplete field closure for Филиал/Координатор",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md",
+        "docs/report-4-api-copy-2026-03-06-2026-03-07.md",
+        "docs/rpt4-selector-probe-2026-03-09.md",
+        "docs/report-api-verification-dossier-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_5",
+      "report_id": 5,
+      "template_code": null,
+      "related_template": {
+        "template_code": "cashbox_dds",
+        "relation_type": "candidate_family_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Движение денежных средств",
+      "category": "financial",
+      "report_type": "financial statement",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=5",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per branch-period or branch-article-period",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_6",
+      "report_id": 6,
+      "template_code": null,
+      "related_template": {
+        "template_code": "discounts",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Списания/Акции/Скидки",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=6",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per pay / discount event or day aggregate (unknown exact output)",
+      "likely_dimensions": "date/period, branch, doctor? promotion?",
+      "likely_measures": "discount amount, count",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_7",
+      "report_id": 7,
+      "template_code": null,
+      "related_template": {
+        "template_code": "records_registry",
+        "relation_type": "variant_saved_report"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Работа регистратуры по дате приема",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=7",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per registry action / schedule row",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_8",
+      "report_id": 8,
+      "template_code": null,
+      "related_template": {
+        "template_code": "records_registry",
+        "relation_type": "variant_saved_report"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Работа регистратуры по дате записи в расписании",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=8",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per registry action / schedule row",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_9",
+      "report_id": 9,
+      "template_code": null,
+      "related_template": {
+        "template_code": "unpaid_pays",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Квитанции без оплаты",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=9",
+      "params_form": "yes (GET date_range)",
+      "output_type": "grouped table",
+      "grain": "per invoice/payment header",
+      "likely_dimensions": "status, branch, patient, created/updated dates",
+      "likely_measures": "amount_due",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "medium",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "partially closed",
+      "current_api_mapping_status": "partial",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail",
+        "cashbox/forms/detail (server-side history)"
+      ],
+      "main_gap": "missing published updater/reason/history semantics",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md",
+        "docs/report-9-api-feasibility-2026-03-08.md",
+        "docs/report-api-verification-dossier-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_10",
+      "report_id": 10,
+      "template_code": null,
+      "related_template": {
+        "template_code": "callcentr_tickets_table",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Статистика по тикетам",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=10",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_11",
+      "report_id": 11,
+      "template_code": null,
+      "related_template": {
+        "template_code": "callcentr_ratings",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Рейтинг операторов",
+      "category": "all",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=11",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_12",
+      "report_id": 12,
+      "template_code": null,
+      "related_template": {
+        "template_code": "callcentr_tickets",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Тикеты",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=12",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per ticket or ticket aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_13",
+      "report_id": 13,
+      "template_code": null,
+      "related_template": {
+        "template_code": "schedule_out",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Удаленные записи",
+      "category": "appointments",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=13",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per deleted schedule record",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_14",
+      "report_id": 14,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Мотивация врачей по дате приема",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=14",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_15",
+      "report_id": 15,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Мотивация врачей по дате оплаты",
+      "category": "all",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=15",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_16",
+      "report_id": 16,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Мотивация VIP-менеджеров по дате приема",
+      "category": "appointments",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=16",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_17",
+      "report_id": 17,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Мотивация VIP-менеджеров по дате оплаты",
+      "category": "all",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=17",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_18",
+      "report_id": 18,
+      "template_code": null,
+      "related_template": {
+        "template_code": "efficiency",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Ключевые показатели эффективности",
+      "category": "all",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=18",
+      "params_form": "yes (date_range in URL; mvgen wrapper)",
+      "output_type": "management KPI table",
+      "grain": "per doctor-period",
+      "likely_dimensions": "doctor, period, branch(optional)",
+      "likely_measures": "cashPlan, cashTotal, countPrimaryRecords, countRecords, countClients",
+      "candidate_sources": [
+        "mobile/owner/efficiency",
+        "mobile/schedule"
+      ],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "high",
+      "notes": "registry-backed verified",
+      "current_project_status": "closed",
+      "current_api_mapping_status": "verified",
+      "current_source_bundle": [
+        "mobile/owner/efficiency",
+        "mobile/schedule"
+      ],
+      "main_gap": "none",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md",
+        "docs/report-18-direct-data-api-proof-2026-03-08.md",
+        "docs/report-api-verification-dossier-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_19",
+      "report_id": 19,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Занятость кресел врачами",
+      "category": "workload",
+      "report_type": "workload report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=19",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per chair-period or doctor-period",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/visits",
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "z/visits",
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits",
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_20",
+      "report_id": 20,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Занятость кресел пациентами",
+      "category": "workload",
+      "report_type": "workload report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=20",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per chair-period or doctor-period",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/visits"
+      ],
+      "accepted_source_overlap": [
+        "z/visits"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_21",
+      "report_id": 21,
+      "template_code": null,
+      "related_template": {
+        "template_code": "cashbox_dds",
+        "relation_type": "candidate_family_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "ДДС",
+      "category": "financial",
+      "report_type": "financial statement",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=21",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per branch-period or branch-article-period",
+      "likely_dimensions": "date/period, branch, DDS article, possibly patient for patient DDS",
+      "likely_measures": "amount",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail",
+        "mobile/owner/dds"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail",
+        "mobile/owner/dds"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "blocked",
+      "current_api_mapping_status": "blocked",
+      "current_source_bundle": [
+        "mobile/owner/dds",
+        "z/pays",
+        "invoice/detail",
+        "hidden cashbox statement family"
+      ],
+      "main_gap": "hidden cashbox statement / balance / channel logic",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md",
+        "docs/report-api-verification-dossier-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_23",
+      "report_id": 23,
+      "template_code": null,
+      "related_template": {
+        "template_code": "appointments_services",
+        "relation_type": "candidate_family_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Отчет по выполненным услугам",
+      "category": "appointments",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=23",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per service-in-appointment",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/services"
+      ],
+      "accepted_source_overlap": [
+        "z/services"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/services"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_24",
+      "report_id": 24,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Выручка по отделениям",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=24",
+      "params_form": "yes (GET date[start], date[end], display mode)",
+      "output_type": "flex table",
+      "grain": "per service-payment row",
+      "likely_dimensions": "date, branch/department, performer, patient, service",
+      "likely_measures": "quantity, discount, paid_after_discount",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "high",
+      "notes": "registry-backed partial",
+      "current_project_status": "partially closed",
+      "current_api_mapping_status": "partial",
+      "current_source_bundle": [
+        "z/pays",
+        "mobile/client/getByID",
+        "z/doctor/all",
+        "insurance/getClients",
+        "mobile/schedule"
+      ],
+      "main_gap": "xray performer row-level key remains unproven",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md",
+        "docs/report-24-api-library-2026-03-08.md",
+        "docs/report-24-march-verifier-2026-03-08.md",
+        "docs/report-api-verification-dossier-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_25",
+      "report_id": 25,
+      "template_code": null,
+      "related_template": {
+        "template_code": "callcenter_calls",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Количество звонков",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=25",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per call or call aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_27",
+      "report_id": 27,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Колл-центр. Тикеты. Отчет по звонкам за текущий год.",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=27",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per ticket or ticket aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_28",
+      "report_id": 28,
+      "template_code": null,
+      "related_template": {
+        "template_code": "pay_debt",
+        "relation_type": "candidate_family_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Задолженности пациентов",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=28",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per patient or invoice balance row",
+      "likely_dimensions": "patient/invoice, branch, date",
+      "likely_measures": "debt, advance",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_29",
+      "report_id": 29,
+      "template_code": null,
+      "related_template": {
+        "template_code": "unpaid_pays",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Квитанции без оплаты",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=29",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per invoice/payment header",
+      "likely_dimensions": "status, branch, patient, created/updated dates",
+      "likely_measures": "amount_due",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "partially closed",
+      "current_api_mapping_status": "partial",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail",
+        "cashbox/forms/detail (server-side history)"
+      ],
+      "main_gap": "missing published updater/reason/history semantics",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md",
+        "docs/report-29-composite-unpaid-2026.md",
+        "docs/report-api-verification-dossier-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_32",
+      "report_id": 32,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Отчет пациентов, записанных на след день.",
+      "category": "all",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=32",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_33",
+      "report_id": 33,
+      "template_code": null,
+      "related_template": {
+        "template_code": "cashbox_dds",
+        "relation_type": "candidate_family_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "ДДС пациента",
+      "category": "financial",
+      "report_type": "financial statement",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=33",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per patient-period or payment-context (unknown exact output)",
+      "likely_dimensions": "date/period, branch, DDS article, possibly patient for patient DDS",
+      "likely_measures": "amount",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail",
+        "mobile/owner/dds"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail",
+        "mobile/owner/dds"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail",
+        "mobile/owner/dds"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_34",
+      "report_id": 34,
+      "template_code": null,
+      "related_template": {
+        "template_code": "insurance_attachments",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Количество прикреплений пациентов к страховым",
+      "category": "dms",
+      "report_type": "DMS report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=34",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per insurance attachment or insurer-period aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "insurance/*"
+      ],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "insurance/*"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_35",
+      "report_id": 35,
+      "template_code": null,
+      "related_template": {
+        "template_code": "insurance_attachments",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "КОЛИЧЕСТВО ПРИКРЕПЛЕНИЙ ПАЦИЕНТОВ К СТРАХОВЫМ",
+      "category": "dms",
+      "report_type": "DMS report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=35",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per insurance attachment or insurer-period aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "insurance/*"
+      ],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "insurance/*"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_36",
+      "report_id": 36,
+      "template_code": null,
+      "related_template": {
+        "template_code": "warehouse_history",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Склад: статистика по документам",
+      "category": "warehouse",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=36",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per warehouse document or document aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_38",
+      "report_id": 38,
+      "template_code": null,
+      "related_template": {
+        "template_code": "warehouse_history",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Склад: статистика по документам",
+      "category": "warehouse",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=38",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per warehouse document or document aggregate",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_39",
+      "report_id": 39,
+      "template_code": null,
+      "related_template": {
+        "template_code": "cashbox_pays_positions",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Касса: товары и услуги",
+      "category": "warehouse",
+      "report_type": "warehouse report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=39",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail",
+        "z/services"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail",
+        "z/services"
+      ],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail",
+        "z/services"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_40",
+      "report_id": 40,
+      "template_code": null,
+      "related_template": {
+        "template_code": "admin_conversion",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Отчет по конверсии администраторов",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=40",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_41",
+      "report_id": 41,
+      "template_code": null,
+      "related_template": null,
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Количественные показатели",
+      "category": "all",
+      "report_type": "parameterized generated report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=41",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_42",
+      "report_id": 42,
+      "template_code": null,
+      "related_template": {
+        "template_code": "doctor_visits",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Статистика посещения врача",
+      "category": "all",
+      "report_type": "appointment report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=42",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per doctor-period or doctor-day",
+      "likely_dimensions": "doctor, date/period",
+      "likely_measures": "visits count, patients count maybe",
+      "candidate_sources": [
+        "z/visits",
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "z/visits",
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "partially reproducible",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/visits",
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_45",
+      "report_id": 45,
+      "template_code": null,
+      "related_template": {
+        "template_code": "cashbox_debts",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Задолженности и авансы",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=45",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "per patient or invoice balance row",
+      "likely_dimensions": "patient/invoice, branch, date",
+      "likely_measures": "debt, advance",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "in progress",
+      "current_api_mapping_status": "partial",
+      "current_source_bundle": [
+        "mobile/client/getByID",
+        "invoice/detail",
+        "cbase cashbox bills ledger (server-side)"
+      ],
+      "main_gap": "full row-level finance bundle not yet generalized",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md",
+        "docs/report-45-first-row-finance-linkage-2026-03-08.md",
+        "docs/dentalpro-verified-findings-registry.md"
+      ]
+    },
+    {
+      "report_code": "RPT_46",
+      "report_id": 46,
+      "template_code": null,
+      "related_template": {
+        "template_code": "cashbox_income_expenses",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Отчёт по кассе (доходы и расходы)",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=46",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "accepted_source_overlap": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "architecture_reproducibility_status": "reproducible with mart",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "z/pays",
+        "invoice/detail"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_48",
+      "report_id": 48,
+      "template_code": null,
+      "related_template": {
+        "template_code": "wage_doctors_updated",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Заработные платы врачей, обновленный",
+      "category": "financial",
+      "report_type": "management summary",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=48",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "accepted_source_overlap": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "architecture_reproducibility_status": "unknown",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [
+        "mobile/owner/recordCosts",
+        "z/pays",
+        "z/doctor/all"
+      ],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    },
+    {
+      "report_code": "RPT_49",
+      "report_id": 49,
+      "template_code": null,
+      "related_template": {
+        "template_code": "callcentr_tickets_table",
+        "relation_type": "exact_name_match"
+      },
+      "related_saved_reports": [],
+      "report_kind": "saved",
+      "report_name": "Cтатистика по тикетам",
+      "category": "callcenter",
+      "report_type": "call-center report",
+      "entry_point": "REPORTS_INDEX saved row",
+      "route": "/reports/reports/view?id=49",
+      "params_form": "unknown",
+      "output_type": "unknown",
+      "grain": "unknown",
+      "likely_dimensions": "unknown",
+      "likely_measures": "unknown",
+      "candidate_sources": [],
+      "accepted_source_overlap": [],
+      "architecture_reproducibility_status": "not reproducible yet",
+      "architecture_confidence": "low",
+      "notes": "observed(route) + inferred(category)",
+      "current_project_status": "not started",
+      "current_api_mapping_status": "candidate",
+      "current_source_bundle": [],
+      "main_gap": "not yet investigated beyond catalog-level family mapping",
+      "evidence": [
+        "artifacts/reports/reports_scan.json",
+        "docs/reports-architecture-deep-dive-2026-03-09.md"
+      ]
+    }
+  ]
+}

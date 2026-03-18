@@ -1,0 +1,46 @@
+[
+  {
+    "report_code": "RPT_34",
+    "runtime_shape_role": "user_facing_detail_layer_with_grouped_patient_subtables",
+    "export_shape_role": "summary_rollup_by_company_program",
+    "same_dataset_different_projection": "conditional",
+    "detail_vs_summary_relation": "runtime_detail_grouped_under_company_program_vs_export_summary_rollup",
+    "direct_row_parity_allowed": "no",
+    "aggregate_reconciliation_possible": "conditional",
+    "canonical_layer_decision": "dual_layer_model",
+    "canonicalization_status": "dual_layer_with_guardrails",
+    "evidence_reference": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/targeted_runtime_table_probe_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/date_constrained_xlsx_parsed_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/date_constrained_runtime_vs_file_matrix_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/docs/date_constrained_runtime_vs_file_comparison_2026_03_10.md"
+    ],
+    "notes": [
+      "Runtime probe found nested patient detail subtables repeated under company/program group headers.",
+      "Parsed XLSX contains only seven summary rows with company/program aggregate columns.",
+      "The family should be modeled as detail-vs-summary, not as direct row-level parity."
+    ]
+  },
+  {
+    "report_code": "RPT_35",
+    "runtime_shape_role": "user_facing_detail_layer_with_grouped_patient_subtables",
+    "export_shape_role": "summary_rollup_by_company_program",
+    "same_dataset_different_projection": "conditional",
+    "detail_vs_summary_relation": "runtime_detail_grouped_under_company_program_vs_export_summary_rollup",
+    "direct_row_parity_allowed": "no",
+    "aggregate_reconciliation_possible": "conditional",
+    "canonical_layer_decision": "dual_layer_model",
+    "canonicalization_status": "dual_layer_with_guardrails",
+    "evidence_reference": [
+      "/Users/macbook15/Downloads/MacAi/artifacts/targeted_runtime_table_probe_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/date_constrained_xlsx_parsed_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/artifacts/date_constrained_runtime_vs_file_matrix_2026_03_10.json",
+      "/Users/macbook15/Downloads/MacAi/docs/date_constrained_runtime_vs_file_comparison_2026_03_10.md"
+    ],
+    "notes": [
+      "Runtime probe found nested patient detail subtables repeated under company/program group headers.",
+      "Parsed XLSX contains only seven summary rows with company/program aggregate columns.",
+      "The family should be modeled as detail-vs-summary, not as direct row-level parity."
+    ]
+  }
+]

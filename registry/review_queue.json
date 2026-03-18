@@ -1,0 +1,499 @@
+[
+  {
+    "asset_id": "script_build_schedule_patient_full_report_v4",
+    "title": "Build schedule patient full report v4 script",
+    "source_path": "/Users/macbook15/Downloads/MacAi/scripts/build_schedule_patient_full_report_v4.py",
+    "asset_type": "script",
+    "domain": [
+      "schedule",
+      "patients"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Script name and generated assets lag behind current v5 output lineage",
+    "notes": "Migrate only after current v5 builder path is clarified"
+  },
+  {
+    "asset_id": "script_run_schedule_patient_identity_probe_v4",
+    "title": "Run schedule patient identity probe v4 script",
+    "source_path": "/Users/macbook15/Downloads/MacAi/scripts/run_schedule_patient_identity_probe_v4.js",
+    "asset_type": "script",
+    "domain": [
+      "schedule",
+      "patients"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Produces pre-v5 lineage and may not reflect final current workflow",
+    "notes": ""
+  },
+  {
+    "asset_id": "script_run_targeted_report_pass_ts",
+    "title": "Run targeted report pass TypeScript script",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/run_targeted_report_pass.ts",
+    "asset_type": "script",
+    "domain": [
+      "reporting"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "current",
+    "migration_decision": "review_before_migrate",
+    "reason": "Useful current runner but depends on external project runtime and ts/playwright environment",
+    "notes": "Needs packaging review before migration"
+  },
+  {
+    "asset_id": "schedule_full_schedule_report_v3",
+    "title": "Schedule full schedule report v3",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_full_schedule_report_v3.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "schedule"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Still useful forensic baseline but superseded for patient-ready output by v5",
+    "notes": ""
+  },
+  {
+    "asset_id": "schedule_custom_schema_v3",
+    "title": "Schedule custom schedule schema v3",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_custom_schedule_schema_v3.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "schedule"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Schema still useful as baseline but not final patient-ready package",
+    "notes": ""
+  },
+  {
+    "asset_id": "ticket_example_visit_130329",
+    "title": "Single visit ticket report 130329",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/schedule_2026-03-10_visit_130329_ticket_report.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "tickets",
+      "schedule"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Strong single-case example, but not a general current asset for daily workspace root",
+    "notes": ""
+  },
+  {
+    "asset_id": "cashbox_payments_live_probe",
+    "title": "Cashbox payments live probe",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/cashbox-payments/cashbox-payments-live-probe.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "current",
+    "migration_decision": "review_before_migrate",
+    "reason": "Potentially important current asset, but placement and relation to newer patient cashbox models should be reviewed first",
+    "notes": ""
+  },
+  {
+    "asset_id": "cashbox_detail_86644",
+    "title": "Cashbox detail 86644",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/cashbox/cashbox-detail-86644.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "current",
+    "migration_decision": "review_before_migrate",
+    "reason": "Useful finance detail reference, but narrower than patient cashbox document-model assets",
+    "notes": ""
+  },
+  {
+    "asset_id": "patient_cashbox_18910_forensic_md",
+    "title": "Patient cashbox 18910 forensic report",
+    "source_path": "/Users/macbook15/Downloads/MacAi/docs/patient_cashbox_18910_forensic_2026-03-18.md",
+    "asset_type": "artifact_md",
+    "domain": [
+      "finance",
+      "patients"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Detailed forensic explanation, but secondary to the document model current pack",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_scope_xray_json",
+    "title": "Scope xray verified responses JSON",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/artifacts/api/scope-runner/xray-2026-01-15.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "patients"
+    ],
+    "patient_subdomain": "medcards_xrays",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "source_of_truth_role": "review_only",
+    "reason": "Useful patient xray boundary artifact, but only proves upload/write-only scope and needs packaging choice before migration",
+    "notes": "Potentially migrate later into docs/artifacts as xray limit reference"
+  },
+  {
+    "asset_id": "doc_scope_xray_verification",
+    "title": "Scope xray verification",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/scope-xray-verification-2026-01-15.md",
+    "asset_type": "doc",
+    "domain": [
+      "patients"
+    ],
+    "patient_subdomain": "medcards_xrays",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "source_of_truth_role": "review_only",
+    "reason": "Useful patient xray scope limit doc, but not yet clearly placed as current patient-layer source-of-truth asset",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_xray_api_mapping",
+    "title": "Xray API mapping 2026-03-08",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/xray-api-mapping-2026-03-08.md",
+    "asset_type": "doc",
+    "domain": [
+      "patients",
+      "finance"
+    ],
+    "dossier_subdomain": "xrays",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Valuable but mixed xray/finance semantics; needs explicit placement decision before becoming curated dossier asset",
+    "notes": ""
+  },
+  {
+    "asset_id": "script_clinic_manager_agent",
+    "title": "Clinic manager agent script",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/clinic_manager_agent.js",
+    "asset_type": "script",
+    "domain": [
+      "patients",
+      "schedule",
+      "reporting"
+    ],
+    "patient_subdomain": "mixed",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "current",
+    "migration_decision": "review_before_migrate",
+    "source_of_truth_role": "review_only",
+    "reason": "Operationally useful but broader than patient layer and needs packaging review before moving into curated repo",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_api_endpoints_data_table",
+    "title": "API endpoints data table 2026-03-02",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/api-endpoints-data-table-2026-03-02.md",
+    "asset_type": "doc",
+    "domain": [
+      "patients",
+      "mixed"
+    ],
+    "patient_subdomain": "identity_lookup",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "source_of_truth_role": "review_only",
+    "reason": "Contains useful patient endpoint rows but is a broad mixed API table, not a clean patient-layer curated doc",
+    "notes": ""
+  },
+  {
+    "asset_id": "doc_xray_orthopantomography_api_mapping",
+    "title": "Xray orthopantomography API mapping 2026-03-08",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/docs/xray-orthopantomography-api-mapping-2026-03-08.md",
+    "asset_type": "doc",
+    "domain": [
+      "patients",
+      "finance"
+    ],
+    "dossier_subdomain": "xrays",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Strong single-modality mapping but still mixed and not yet packaged as current curated xray method",
+    "notes": ""
+  },
+  {
+    "asset_id": "script_inspect_cashbox_detail",
+    "title": "Inspect cashbox detail script",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/inspect_cashbox_detail.js",
+    "asset_type": "script",
+    "domain": [
+      "patients",
+      "finance"
+    ],
+    "dossier_subdomain": "payments_bills",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "current",
+    "migration_decision": "review_before_migrate",
+    "reason": "Potentially reusable dossier finance script, but depends on external integration runtime libraries",
+    "notes": ""
+  },
+  {
+    "asset_id": "script_probe_cashbox_payments",
+    "title": "Probe cashbox payments script",
+    "source_path": "/Users/macbook15/Downloads/YDIREKT code/projects/dentalpro-integration/scripts/probe_cashbox_payments.js",
+    "asset_type": "script",
+    "domain": [
+      "patients",
+      "finance"
+    ],
+    "dossier_subdomain": "payments_bills",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "current",
+    "migration_decision": "review_before_migrate",
+    "reason": "Useful cashbox tab probe but packaging is not standalone inside new repo yet",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_dentalpro_empty_cards_login_page_html",
+    "title": "DentalPRO empty cards login page HTML",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_empty_cards_login_page_2026_03_16.html",
+    "asset_type": "other",
+    "domain": [
+      "runtime",
+      "patients"
+    ],
+    "dossier_subdomain": "tab_routes",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Useful forensic auth evidence, but too raw for current curated dossier package",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_dentalpro_empty_cards_runtime_page_html",
+    "title": "DentalPRO empty cards runtime page HTML",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_empty_cards_runtime_page_2026_03_16.html",
+    "asset_type": "other",
+    "domain": [
+      "runtime",
+      "patients"
+    ],
+    "dossier_subdomain": "medcards",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Raw runtime HTML is useful for deep forensic continuation, not daily curated workspace by default",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_dentalpro_browser_access_2026_03_16",
+    "title": "DentalPRO browser access 2026-03-16",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_browser_access_2026_03_16.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "runtime",
+      "patients"
+    ],
+    "dossier_subdomain": "tab_routes",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Supports auth/access proof chain, but not yet necessary as a front-line curated dossier asset",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_dentalpro_js_auth_flow_analysis_2026_03_16",
+    "title": "DentalPRO JS auth flow analysis 2026-03-16",
+    "source_path": "/Users/macbook15/Downloads/MacAi/artifacts/dentalpro_js_auth_flow_analysis_2026_03_16.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "runtime",
+      "patients"
+    ],
+    "dossier_subdomain": "tab_routes",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Useful for deep auth investigation, but outside normal dossier-tab daily usage",
+    "notes": ""
+  },
+  {
+    "asset_id": "artifact_trackb_extension_evidence_2026_03_14",
+    "title": "Track B extension evidence 2026-03-14",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/patient-dossier-blueprint/trackb_extension_evidence_2026-03-14.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "patients",
+      "mixed"
+    ],
+    "dossier_subdomain": "mixed",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Useful precursor evidence but largely subsumed by ultimate dossier bundle and network packs",
+    "notes": ""
+  },
+  {
+    "asset_id": "fixture_files_html",
+    "title": "Files raw HTML fixture",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part4/fixtures/raw_html/files.html",
+    "asset_type": "other",
+    "domain": [
+      "patients",
+      "runtime"
+    ],
+    "dossier_subdomain": "files",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Raw fixture is useful for deep forensic continuation but too low-level for current curated layer",
+    "notes": ""
+  },
+  {
+    "asset_id": "fixture_documents_html",
+    "title": "Documents raw HTML fixture",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part4/fixtures/raw_html/documents.html",
+    "asset_type": "other",
+    "domain": [
+      "patients",
+      "runtime"
+    ],
+    "dossier_subdomain": "documents",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Raw fixture sample, not a curated daily-use asset",
+    "notes": ""
+  },
+  {
+    "asset_id": "fixture_family_html",
+    "title": "Family raw HTML fixture",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part4/fixtures/raw_html/family.html",
+    "asset_type": "other",
+    "domain": [
+      "patients",
+      "runtime"
+    ],
+    "dossier_subdomain": "family",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Empty-state raw fixture only",
+    "notes": ""
+  },
+  {
+    "asset_id": "fixture_comments_html",
+    "title": "Comments raw HTML fixture",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part4/fixtures/raw_html/comments.html",
+    "asset_type": "other",
+    "domain": [
+      "patients",
+      "runtime"
+    ],
+    "dossier_subdomain": "comments",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Raw HTML sample only; current repo should keep normalized bundle instead",
+    "notes": ""
+  },
+  {
+    "asset_id": "fixture_schedule_history_html",
+    "title": "Schedule history raw HTML fixture",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part4/fixtures/raw_html/schedule_history.html",
+    "asset_type": "other",
+    "domain": [
+      "patients",
+      "runtime"
+    ],
+    "dossier_subdomain": "schedule_history",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Raw fixture sample only",
+    "notes": ""
+  },
+  {
+    "asset_id": "fixture_medical_history_html",
+    "title": "Medical history raw HTML fixture",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part4/fixtures/raw_html/medical_history.html",
+    "asset_type": "other",
+    "domain": [
+      "patients",
+      "runtime"
+    ],
+    "dossier_subdomain": "medical_history",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Raw fixture sample only",
+    "notes": ""
+  },
+  {
+    "asset_id": "fixture_empty_family_json",
+    "title": "Empty family normalized fixture",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part4/fixtures/normalized/empty_family.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "patients"
+    ],
+    "dossier_subdomain": "family",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Useful normalized fixture, but too narrow to be a current primary family asset",
+    "notes": ""
+  },
+  {
+    "asset_id": "fixture_document_submit_unknown",
+    "title": "Document submit unknown fixture",
+    "source_path": "/Users/macbook15/Downloads/MacAi/output/puppeteer/macai_dentalpro_operational_package/part4/fixtures/failures/document_submit_unknown.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "patients"
+    ],
+    "dossier_subdomain": "documents",
+    "proof_status": "artifact_proven",
+    "readiness": "validation_required",
+    "lifecycle": "partial",
+    "migration_decision": "review_before_migrate",
+    "reason": "Failure fixture confirms create-doc submit gap, but belongs in review not current layer",
+    "notes": ""
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "skill_name": "live_browser_probe",
+    "what_this_skill_does": "opens DentalPRO routes in real authenticated browser and extracts runtime state",
+    "practical_use": "all UI forensics and report passes",
+    "input": "route/date/id + auth",
+    "output": "live runtime evidence",
+    "domain_coverage": "schedule, reports, patient tabs, cashbox",
+    "proof_basis": "multiple live probes and playwright artifacts",
+    "limitations": "browser-only, not source proof by itself",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "browser_auth_reuse_via_storageState",
+    "what_this_skill_does": "reuses authenticated browser state for deterministic passes",
+    "practical_use": "dentalpro-playwright regression layer",
+    "input": "storageState file",
+    "output": "repeated authenticated contexts",
+    "domain_coverage": "reports and schedule",
+    "proof_basis": "run_targeted_report_pass and schedule forensic scripts",
+    "limitations": "session expiry",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "direct_route_probing",
+    "what_this_skill_does": "opens deep routes directly with params",
+    "practical_use": "report, patient tab, schedule date probes",
+    "input": "route contract",
+    "output": "exact screen state",
+    "domain_coverage": "reports, schedule, patient tabs",
+    "proof_basis": "multiple route inventories",
+    "limitations": "needs known contract",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "direct_tab_url_opening",
+    "what_this_skill_does": "opens patient/report tabs without menu traversal",
+    "practical_use": "patient cashbox and report families",
+    "input": "patient_id or report params",
+    "output": "deep page access",
+    "domain_coverage": "patient dossier, reports",
+    "proof_basis": "patient cashbox and report probes",
+    "limitations": "not all tabs globally mapped",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "dom_harvesting",
+    "what_this_skill_does": "captures operational DOM and key containers",
+    "practical_use": "HTML-first runtime interpretation",
+    "input": "loaded page",
+    "output": "DOM maps and entity inventories",
+    "domain_coverage": "schedule, cashbox, reports",
+    "proof_basis": "schedule full DOM, cashbox HTML",
+    "limitations": "HTML alone is not full semantics",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "hidden_attribute_harvesting",
+    "what_this_skill_does": "reads data-* attrs, hidden fields, runtime config blobs",
+    "practical_use": "route/action/config discovery",
+    "input": "DOM nodes",
+    "output": "config metadata",
+    "domain_coverage": "schedule and reports",
+    "proof_basis": "schedule runtime maps",
+    "limitations": "structural only without further proof",
+    "current_value_for_productization": "medium"
+  },
+  {
+    "skill_name": "popup_clean_click_probe",
+    "what_this_skill_does": "opens patient popup with exact click and clean layer handling",
+    "practical_use": "patient enrichment from schedule",
+    "input": "visit card",
+    "output": "name, phone, actions",
+    "domain_coverage": "schedule",
+    "proof_basis": "patient_full_report_v5",
+    "limitations": "subset/family sensitivity",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "focused_rc_tooltip_extraction",
+    "what_this_skill_does": "extracts exact ticket tooltip from icon handler",
+    "practical_use": "ticket semantics",
+    "input": "icon node",
+    "output": "exact tooltip text/html",
+    "domain_coverage": "schedule ticket layer",
+    "proof_basis": "ticket_registry_v1/v2 and algorithm docs",
+    "limitations": "must prevent stale contamination",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "icon_level_ticket_probe",
+    "what_this_skill_does": "enumerates ticket order and icon classes per visit",
+    "practical_use": "ticket registry and campaign filters",
+    "input": "visit card",
+    "output": "ticket rows",
+    "domain_coverage": "schedule ticket layer",
+    "proof_basis": "ticket registry artifacts",
+    "limitations": "semantics vary by icon family",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "network_trace_capture",
+    "what_this_skill_does": "records request inventory and action-linked transport",
+    "practical_use": "report export and schedule transport discovery",
+    "input": "runtime page + actions",
+    "output": "request registry",
+    "domain_coverage": "schedule, cashbox, reports",
+    "proof_basis": "network artifacts",
+    "limitations": "absence of request does not prove absence of server logic",
+    "current_value_for_productization": "medium"
+  },
+  {
+    "skill_name": "html_first_runtime_interpretation",
+    "what_this_skill_does": "treats HTML screen as primary runtime truth where API is unproven",
+    "practical_use": "schedule and cashbox shell interpretation",
+    "input": "live HTML page",
+    "output": "usable runtime dataset",
+    "domain_coverage": "schedule, cashbox",
+    "proof_basis": "forensic passes",
+    "limitations": "still not transport/source closure",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "cross_view_reconciliation",
+    "what_this_skill_does": "links entities across two UI views",
+    "practical_use": "doctor->cabinet mapping",
+    "input": "doctor view + chair view",
+    "output": "reconciled relation",
+    "domain_coverage": "schedule",
+    "proof_basis": "schedule entity relationship artifacts",
+    "limitations": "indirect mapping",
+    "current_value_for_productization": "medium"
+  },
+  {
+    "skill_name": "status_normalization",
+    "what_this_skill_does": "converts raw classes/icons/text into normalized status fields",
+    "practical_use": "schedule and report semantic fields",
+    "input": "runtime markers",
+    "output": "proof-aware status dictionary",
+    "domain_coverage": "schedule, reports",
+    "proof_basis": "status_dictionary_v2, report policies",
+    "limitations": "some entries stay inferred",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "proof_aware_schema_design",
+    "what_this_skill_does": "adds proof level, scope and reuse boundaries to schemas",
+    "practical_use": "ticket dictionary, patient schedule report, reporting verdicts",
+    "input": "normalized fields",
+    "output": "safe downstream schema",
+    "domain_coverage": "project-wide",
+    "proof_basis": "ticket_dictionary_v2 and governed report artifacts",
+    "limitations": "requires discipline to maintain",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "excel_pack_building",
+    "what_this_skill_does": "builds manager-friendly and forensic Excel workbooks",
+    "practical_use": "schedule reports, cashbox model, report result packs",
+    "input": "normalized json data",
+    "output": "xlsx deliverables",
+    "domain_coverage": "schedule, reporting, cashbox",
+    "proof_basis": "multiple xlsx outputs",
+    "limitations": "presentation layer only",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "json_registry_building",
+    "what_this_skill_does": "builds machine-mergeable registries",
+    "practical_use": "ticket registry, architecture map, report family packs",
+    "input": "curated evidence",
+    "output": "json registries",
+    "domain_coverage": "project-wide",
+    "proof_basis": "registry artifacts",
+    "limitations": "curation quality matters",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "validation_backlog_tracking",
+    "what_this_skill_does": "keeps open gaps, current vs superseded, and next steps explicit",
+    "practical_use": "avoid reopening closed work",
+    "input": "project state",
+    "output": "control-plane docs",
+    "domain_coverage": "project-wide",
+    "proof_basis": "worklog and registries",
+    "limitations": "manual discipline required",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "semantic_closure_without_overclaiming",
+    "what_this_skill_does": "closes only the unresolved semantic families with focused probes",
+    "practical_use": "schi-10/schi-3, report normalizations",
+    "input": "targeted unresolved set",
+    "output": "proof-aware closure",
+    "domain_coverage": "tickets and reports",
+    "proof_basis": "semantic closure artifacts",
+    "limitations": "can still end in inferred",
+    "current_value_for_productization": "high"
+  },
+  {
+    "skill_name": "delta_rerun_strategy",
+    "what_this_skill_does": "runs only targeted continuation passes over gaps",
+    "practical_use": "schedule continuation, report next-step closures",
+    "input": "baseline artifacts + gap list",
+    "output": "v2/v3/v5 deltas",
+    "domain_coverage": "project-wide",
+    "proof_basis": "many continuation artifacts",
+    "limitations": "depends on strong baselines",
+    "current_value_for_productization": "high"
+  }
+]

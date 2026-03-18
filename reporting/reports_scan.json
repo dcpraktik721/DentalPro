@@ -1,0 +1,832 @@
+{
+  "startedAt": "2026-02-23T18:39:28.319Z",
+  "reportsUrl": "https://dcpraktik.dental-pro.online/reports/reports/index",
+  "login": {
+    "success": true,
+    "finalUrl": "https://dcpraktik.dental-pro.online/visits/schedule/week",
+    "finalTitle": "Расписание на неделю"
+  },
+  "page": {
+    "url": "https://dcpraktik.dental-pro.online/reports/reports/index",
+    "title": "Отчётный модуль",
+    "h1": ""
+  },
+  "links": [
+    {
+      "text": "Мой профиль",
+      "href": "https://dcpraktik.dental-pro.online/user.html",
+      "classes": ""
+    },
+    {
+      "text": "Информация о зарплате",
+      "href": "https://dcpraktik.dental-pro.online/salary/journal/my",
+      "classes": ""
+    },
+    {
+      "text": "Личный кабинет",
+      "href": "https://dcpraktik.dental-pro.online/dashboard/widgets/index",
+      "classes": ""
+    },
+    {
+      "text": "Расписание",
+      "href": "https://dcpraktik.dental-pro.online/visits/schedule/index",
+      "classes": ""
+    },
+    {
+      "text": "Сообщения 0",
+      "href": "https://dcpraktik.dental-pro.online/messages/pages/index",
+      "classes": ""
+    },
+    {
+      "text": "Записи VIP-пациентов: Комплексный П.П.",
+      "href": "https://dcpraktik.dental-pro.online/cbase/index.html?record_date[start]=2026-02-23&record_date[end]=2026-02-23&manager=176&columns[]=surname&columns[]=name&columns[]=second_name&columns[]=birthday&columns[]=records",
+      "classes": ""
+    },
+    {
+      "text": "Записи VIP-пациентов: Летаева К.К.",
+      "href": "https://dcpraktik.dental-pro.online/cbase/index.html?record_date[start]=2026-02-23&record_date[end]=2026-02-23&manager=219&columns[]=surname&columns[]=name&columns[]=second_name&columns[]=birthday&columns[]=records",
+      "classes": ""
+    },
+    {
+      "text": "Записи VIP-пациентов: Ольховская С.В.",
+      "href": "https://dcpraktik.dental-pro.online/cbase/index.html?record_date[start]=2026-02-23&record_date[end]=2026-02-23&manager=97&columns[]=surname&columns[]=name&columns[]=second_name&columns[]=birthday&columns[]=records",
+      "classes": ""
+    },
+    {
+      "text": "Записи страховых пациентов",
+      "href": "https://dcpraktik.dental-pro.online/insurance/schedule",
+      "classes": ""
+    },
+    {
+      "text": "VIP-пациенты без координатора",
+      "href": "https://dcpraktik.dental-pro.online/cbase/index.html?manager=-1",
+      "classes": ""
+    },
+    {
+      "text": "Список VIP-пациентов: Ольховская С.В.",
+      "href": "https://dcpraktik.dental-pro.online/vip/clients/index?id=97",
+      "classes": ""
+    },
+    {
+      "text": "Список VIP-пациентов: Комплексный П.П.",
+      "href": "https://dcpraktik.dental-pro.online/vip/clients/index?id=176",
+      "classes": ""
+    },
+    {
+      "text": "Список VIP-пациентов: Летаева К.К.",
+      "href": "https://dcpraktik.dental-pro.online/vip/clients/index?id=219",
+      "classes": ""
+    },
+    {
+      "text": "Список пациентов",
+      "href": "https://dcpraktik.dental-pro.online/cbase/index.html",
+      "classes": ""
+    },
+    {
+      "text": "Список VIP-пациентов",
+      "href": "https://dcpraktik.dental-pro.online/vip/clients/index?vm=any",
+      "classes": ""
+    },
+    {
+      "text": "Группы пациентов",
+      "href": "https://dcpraktik.dental-pro.online/cbase/groups",
+      "classes": ""
+    },
+    {
+      "text": "Заявки с сайта",
+      "href": "https://dcpraktik.dental-pro.online/mail/Inbox/bxforms",
+      "classes": ""
+    },
+    {
+      "text": "История вызовов",
+      "href": "https://dcpraktik.dental-pro.online/callcentr/history.html",
+      "classes": ""
+    },
+    {
+      "text": "СМС",
+      "href": "https://dcpraktik.dental-pro.online/sms/index.html",
+      "classes": ""
+    },
+    {
+      "text": "ЦОЗ координатора: Комплексный П.П.",
+      "href": "https://dcpraktik.dental-pro.online/callcentr/Tickets/index?managerUserID=176",
+      "classes": ""
+    },
+    {
+      "text": "ЦОЗ координатора: Летаева К.К.",
+      "href": "https://dcpraktik.dental-pro.online/callcentr/Tickets/index?managerUserID=219",
+      "classes": ""
+    },
+    {
+      "text": "ЦОЗ координатора: Ольховская С.В.",
+      "href": "https://dcpraktik.dental-pro.online/callcentr/Tickets/index?managerUserID=97",
+      "classes": ""
+    },
+    {
+      "text": "Центр обработки звонков",
+      "href": "https://dcpraktik.dental-pro.online/callcentr/Tickets/index",
+      "classes": ""
+    },
+    {
+      "text": "Карты пациентов",
+      "href": "https://dcpraktik.dental-pro.online/medblock/cards/index",
+      "classes": ""
+    },
+    {
+      "text": "Задачи 0",
+      "href": "https://dcpraktik.dental-pro.online/task/Task/open",
+      "classes": ""
+    },
+    {
+      "text": "Склад",
+      "href": "https://dcpraktik.dental-pro.online/warehouse/Requests/index",
+      "classes": ""
+    },
+    {
+      "text": "Отчёты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index",
+      "classes": "active"
+    },
+    {
+      "text": "Светофоры",
+      "href": "https://dcpraktik.dental-pro.online/semaphore/pages/index",
+      "classes": ""
+    },
+    {
+      "text": "Dental Store 0",
+      "href": "https://dcpraktik.dental-pro.online/billing/index",
+      "classes": ""
+    },
+    {
+      "text": "Касса",
+      "href": "https://dcpraktik.dental-pro.online/cashbox/index",
+      "classes": ""
+    },
+    {
+      "text": "Рентген кабинет",
+      "href": "https://dcpraktik.dental-pro.online/xray/Images/index",
+      "classes": ""
+    },
+    {
+      "text": "Журнал зарплат",
+      "href": "https://dcpraktik.dental-pro.online/salary/journal/index",
+      "classes": ""
+    },
+    {
+      "text": "Настройка расчета зарплат",
+      "href": "https://dcpraktik.dental-pro.online/salary/settings/index",
+      "classes": ""
+    },
+    {
+      "text": "Расчет зарплат",
+      "href": "https://dcpraktik.dental-pro.online/salary/calculation/index",
+      "classes": ""
+    },
+    {
+      "text": "Табель",
+      "href": "https://dcpraktik.dental-pro.online/timesheet/Timesheets/index",
+      "classes": ""
+    },
+    {
+      "text": "Магазин",
+      "href": "https://dcpraktik.dental-pro.online/iblock/Market/index?action=all&page=0",
+      "classes": ""
+    },
+    {
+      "text": "Каталог",
+      "href": "https://dcpraktik.dental-pro.online/iblock/Iblocks/iblockList",
+      "classes": ""
+    },
+    {
+      "text": "Настройки",
+      "href": "https://dcpraktik.dental-pro.online/iblock/Iblocks/index",
+      "classes": ""
+    },
+    {
+      "text": "Личный кабинет",
+      "href": "https://dcpraktik.dental-pro.online/dashboard/widgets/index",
+      "classes": ""
+    },
+    {
+      "text": "Отчётный модуль",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index",
+      "classes": ""
+    },
+    {
+      "text": "Поиск по пациентам",
+      "href": "javascript:void(0)",
+      "classes": "select2-choice select2-default"
+    },
+    {
+      "text": "Отложенная запись",
+      "href": "https://dcpraktik.dental-pro.online/holdrecord/ajax.json?action=add",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Все отчёты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index?group=all",
+      "classes": "nav-link active"
+    },
+    {
+      "text": "Финансы",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index?group=financial",
+      "classes": "nav-link"
+    },
+    {
+      "text": "Загруженность",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index?group=workload",
+      "classes": "nav-link"
+    },
+    {
+      "text": "Приёмы",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index?group=appointments",
+      "classes": "nav-link"
+    },
+    {
+      "text": "Call-центр",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index?group=callcenter",
+      "classes": "nav-link"
+    },
+    {
+      "text": "ДМС",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index?group=dms",
+      "classes": "nav-link"
+    },
+    {
+      "text": "Склад",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index?group=warehouse",
+      "classes": "nav-link"
+    },
+    {
+      "text": "Базовые показатели статистики",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=basic_statistics",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Должники",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=pay_debt",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Задолженности и авансы",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=cashbox_debts",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Заказ-наряды",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=workorders",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Заработные платы",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=wage",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Заработные платы врачей",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=wage_doctors",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Заработные платы врачей, обновленный",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=wage_doctors_updated",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Касса: движение денежных средств",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=cashbox_dds",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Касса: платежи",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=cashbox_pays",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Касса: товары и услуги",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=cashbox_pays_positions",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Квитанции без оплаты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=unpaid_pays",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Ключевые показатели эффективности",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=efficiency",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Мед.блок: услуги в приёмах",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=appointments_services",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Отчет по сертификатам",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=prepaid_certificate",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Отчёт по кассе (доходы и расходы)",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=cashbox_income_expenses",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Проверка расчета ЗП для бухгалтера",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=wage_doctors_updated_check",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Проданные товары",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=market_items",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Списания / Акции / Скидки",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=discounts",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Врачи: сводный отчёт",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=doctors",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Врачи: часы работы",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=doctor_hours",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Занятость кресел",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=chair_doctors",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Бегунки",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=waybill_list",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Бегунки: визиты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=waybill_visit",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Мед.блок: приёмы пациентов",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=appointments_records",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Первичные пациенты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=mediline_primary_records",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Расписание: записи пациентов",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=mediline_records",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Расписание: работа регистратуры",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=records_registry",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Расписание: удалённые записи",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=schedule_out",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Статистика посещения врача",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=doctor_visits",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Заботливый доктор",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=caredoc_stats",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Колл-центр: Cтатистика по тикетам",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=callcentr_tickets_table",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Колл-центр: История звонков",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=callcentr_history",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Колл-центр: Отчет по конверсии администраторов",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=admin_conversion",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Колл-центр: Отчет по рекламным источникам",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=advertising_source",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Колл-центр: Рейтинг операторов",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=callcentr_ratings",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Колл-центр: Тикеты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=callcentr_tickets",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Колл-центр: входящие и исходящие звонки",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=callcenter_calls",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "СМС",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=sms_tasks",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Количество прикреплений пациентов к страховым",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=insurance_attachments",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Склад: остатки",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=warehouse_overs",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Склад: статистика по документам",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/add?code=warehouse_history",
+      "classes": "dropdown-item"
+    },
+    {
+      "text": "Cтатистика по тикетам",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=49",
+      "classes": ""
+    },
+    {
+      "text": "Выручка по отделениям",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=24",
+      "classes": ""
+    },
+    {
+      "text": "Движение денежных средств",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=5",
+      "classes": ""
+    },
+    {
+      "text": "ДДС",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=21",
+      "classes": ""
+    },
+    {
+      "text": "ДДС пациента",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=33",
+      "classes": ""
+    },
+    {
+      "text": "Заботливый доктор",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=1",
+      "classes": ""
+    },
+    {
+      "text": "Задолженности и авансы",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=3",
+      "classes": ""
+    },
+    {
+      "text": "Задолженности и авансы",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=45",
+      "classes": ""
+    },
+    {
+      "text": "Задолженности пациентов",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=28",
+      "classes": ""
+    },
+    {
+      "text": "Занятость кресел врачами",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=19",
+      "classes": ""
+    },
+    {
+      "text": "Занятость кресел пациентами",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=20",
+      "classes": ""
+    },
+    {
+      "text": "Заработные платы врачей, обновленный",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=48",
+      "classes": ""
+    },
+    {
+      "text": "Касса: товары и услуги",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=39",
+      "classes": ""
+    },
+    {
+      "text": "Квитанции без оплаты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=9",
+      "classes": ""
+    },
+    {
+      "text": "Квитанции без оплаты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=29",
+      "classes": ""
+    },
+    {
+      "text": "Ключевые показатели эффективности",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=18",
+      "classes": ""
+    },
+    {
+      "text": "Количественные показатели",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=41",
+      "classes": ""
+    },
+    {
+      "text": "Количество звонков",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=25",
+      "classes": ""
+    },
+    {
+      "text": "Количество прикреплений пациентов к страховым",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=34",
+      "classes": ""
+    },
+    {
+      "text": "КОЛИЧЕСТВО ПРИКРЕПЛЕНИЙ ПАЦИЕНТОВ К СТРАХОВЫМ",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=35",
+      "classes": ""
+    },
+    {
+      "text": "Колл-центр. Тикеты. Отчет по звонкам за текущий год.",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=27",
+      "classes": ""
+    },
+    {
+      "text": "Мотивация VIP-менеджеров по дате оплаты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=17",
+      "classes": ""
+    },
+    {
+      "text": "Мотивация VIP-менеджеров по дате приема",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=16",
+      "classes": ""
+    },
+    {
+      "text": "Мотивация врачей по дате оплаты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=15",
+      "classes": ""
+    },
+    {
+      "text": "Мотивация врачей по дате приема",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=14",
+      "classes": ""
+    },
+    {
+      "text": "Отчет пациентов, записанных на след день.",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=32",
+      "classes": ""
+    },
+    {
+      "text": "Отчет по выполненным услугам",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=23",
+      "classes": ""
+    },
+    {
+      "text": "Отчёт по кассе (доходы и расходы)",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=46",
+      "classes": ""
+    },
+    {
+      "text": "Отчет по конверсии администраторов",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=40",
+      "classes": ""
+    },
+    {
+      "text": "Первичные пациенты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=4",
+      "classes": ""
+    },
+    {
+      "text": "Проданные товары",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=2",
+      "classes": ""
+    },
+    {
+      "text": "Работа регистратуры по дате записи в расписании",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=8",
+      "classes": ""
+    },
+    {
+      "text": "Работа регистратуры по дате приема",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=7",
+      "classes": ""
+    },
+    {
+      "text": "Рейтинг операторов",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=11",
+      "classes": ""
+    },
+    {
+      "text": "Склад: статистика по документам",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=36",
+      "classes": ""
+    },
+    {
+      "text": "Склад: статистика по документам",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=38",
+      "classes": ""
+    },
+    {
+      "text": "Списания/Акции/Скидки",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=6",
+      "classes": ""
+    },
+    {
+      "text": "Статистика по тикетам",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=10",
+      "classes": ""
+    },
+    {
+      "text": "Статистика посещения врача",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=42",
+      "classes": ""
+    },
+    {
+      "text": "Тикеты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=12",
+      "classes": ""
+    },
+    {
+      "text": "Удаленные записи",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=13",
+      "classes": ""
+    },
+    {
+      "text": "0",
+      "href": "https://dcpraktik.dental-pro.online/notification/notifications/sidebar",
+      "classes": "btn-aside position-relative "
+    },
+    {
+      "text": "",
+      "href": "https://dcpraktik.dental-pro.online/search/sidepage",
+      "classes": "btn-aside position-relative "
+    },
+    {
+      "text": "",
+      "href": "https://dcpraktik.dental-pro.online/dentalpro/settings/freeDoctors",
+      "classes": "btn-aside position-relative "
+    },
+    {
+      "text": "",
+      "href": "https://dcpraktik.dental-pro.online/support/sidebar/index",
+      "classes": "btn-aside position-relative "
+    },
+    {
+      "text": "",
+      "href": "https://dcpraktik.dental-pro.online/dentalpro/settings/menu",
+      "classes": "btn-aside position-relative "
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Подключиться",
+      "id": "",
+      "classes": "btn btn-alt-secondary",
+      "onclick": "",
+      "dataAttrs": {}
+    },
+    {
+      "text": "",
+      "id": "s2id_autogen1",
+      "classes": "select2-focusser select2-offscreen",
+      "onclick": "",
+      "dataAttrs": {}
+    },
+    {
+      "text": "",
+      "id": "",
+      "classes": "btn btn-alt-secondary btn-icon js-scan-barcode",
+      "onclick": "",
+      "dataAttrs": {}
+    },
+    {
+      "text": "",
+      "id": "",
+      "classes": "btn btn-alt-secondary btn-icon dropdown-toggle dropdown-without-arrow ms-3",
+      "onclick": "",
+      "dataAttrs": {
+        "data-bs-toggle": "dropdown"
+      }
+    },
+    {
+      "text": "Добавить новый тип отчёта",
+      "id": "",
+      "classes": "btn btn-alt-secondary dropdown-toggle dropdown-without-arrow",
+      "onclick": "",
+      "dataAttrs": {
+        "data-bs-toggle": "dropdown"
+      }
+    },
+    {
+      "text": "",
+      "id": "",
+      "classes": "btn-aside btn_up_wrapper",
+      "onclick": "",
+      "dataAttrs": {}
+    },
+    {
+      "text": "OK",
+      "id": "",
+      "classes": "sweet-confirm",
+      "onclick": "",
+      "dataAttrs": {}
+    },
+    {
+      "text": "Cancel",
+      "id": "",
+      "classes": "sweet-cancel",
+      "onclick": "",
+      "dataAttrs": {}
+    }
+  ],
+  "headings": [
+    "Title"
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "headers": [
+        "№",
+        "Название",
+        "Доступ",
+        "Тип",
+        "Добавлен"
+      ],
+      "rows": [
+        [
+          "1",
+          "Cтатистика по тикетам",
+          "Доступен всем",
+          "Колл-центр: Cтатистика по тикетам",
+          ""
+        ],
+        [
+          "2",
+          "Выручка по отделениям",
+          "Генеральный директор, Директор",
+          "Заработные платы врачей",
+          "28.11.2019 в 14:04:24"
+        ],
+        [
+          "3",
+          "Движение денежных средств",
+          "Генеральный директор, Директор, Главный бухгалтер",
+          "Касса: движение денежных средств",
+          "24.08.2019 в 15:25:38"
+        ],
+        [
+          "4",
+          "ДДС",
+          "Директор, Главный бухгалтер",
+          "Касса: движение денежных средств",
+          "27.11.2019 в 12:47:41"
+        ],
+        [
+          "5",
+          "ДДС пациента",
+          "Генеральный директор, Главный бухгалтер",
+          "Касса: платежи",
+          ""
+        ],
+        [
+          "6",
+          "Заботливый доктор",
+          "Генеральный директор, Администратор, Старший администратор, , Руководитель КЦ, Главный бухгалтер",
+          "Заботливый доктор",
+          "05.07.2019 в 10:46:51"
+        ],
+        [
+          "7",
+          "Задолженности и авансы",
+          "Генеральный директор, Директор, Главный бухгалтер",
+          "Задолженности и авансы",
+          "24.08.2019 в 15:22:38"
+        ],
+        [
+          "8",
+          "Задолженности и авансы",
+          "Генеральный директор, Главный бухгалтер",
+          "Задолженности и авансы",
+          ""
+        ]
+      ]
+    }
+  ],
+  "finishedAt": "2026-02-23T18:39:45.980Z"
+}

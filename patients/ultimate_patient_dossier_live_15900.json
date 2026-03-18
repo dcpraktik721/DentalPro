@@ -1,0 +1,71 @@
+{
+  "patient": {
+    "client_id": 15900,
+    "fio": "КАРАСЕВА КСЕНИЯ СЕРГЕЕВНА",
+    "profile_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=15900"
+  },
+  "profile": {
+    "mobile_phone": "79091905646",
+    "birth_date": "09.05.1985 (40 лет)",
+    "card_number": "№ В5905",
+    "total_spent": "31 455.00 ₽",
+    "last_operation": {
+      "amount": "30 905.00 ₽",
+      "date": "23.11.2024 11:23"
+    }
+  },
+  "comments": [
+    {"text": "осмотр", "author_meta": "Написал: Наталья Поняева 13.03.2026 12:08:00"},
+    {"text": "ПЛ Логвинчук 22.11.24", "author_meta": "Написал: Елизавета Столярова 23.11.2024 11:31:20"},
+    {"text": "забота 22.11.2024", "author_meta": "Написал: Светлана Брокерт 21.11.2024 13:10:24"},
+    {"text": "Скидка 50% Квиз", "author_meta": "Написал: Наталья Поняева 14.11.2024 18:59:34"}
+  ],
+  "files": [
+    {"file_id": "390894", "kind": "text-preview", "filename": "0000324662_00017_137810261_t_a_l___766628_199 (3)", "uploaded_at": "22.11.2024 в 09:48:43"},
+    {"file_id": "390895", "kind": "download", "filename": "IMG_0094.JPG", "uploaded_at": "22.11.2024 в 09:57:41"},
+    {"file_id": "390896", "kind": "download", "filename": "IMG_0095.JPG", "uploaded_at": "22.11.2024 в 09:57:41"},
+    {"file_id": "390897", "kind": "download", "filename": "IMG_0096.JPG", "uploaded_at": "22.11.2024 в 09:57:41"},
+    {"file_id": "390898", "kind": "download", "filename": "IMG_0097.JPG", "uploaded_at": "22.11.2024 в 09:57:42"},
+    {"file_id": "390899", "kind": "download", "filename": "IMG_0098.JPG", "uploaded_at": "22.11.2024 в 09:57:42"},
+    {"file_id": "390901", "kind": "download", "filename": "IMG_0100.JPG", "uploaded_at": "22.11.2024 в 09:57:42"},
+    {"file_id": "391050", "kind": "download", "filename": "заключ.терапевта.jpeg", "uploaded_at": "22.11.2024 в 19:26:03"},
+    {"file_id": "391093", "kind": "download", "filename": "image.jpg", "uploaded_at": "23.11.2024 в 11:30:56"}
+  ],
+  "schedule_history": [
+    {"record_id": "130676", "appointment": "Повторная консультация врача-терапевта", "datetime": "14.03.2026 12:30-13:00", "receipt": "Отсутствует"},
+    {"record_id": "99569", "appointment": "Удаление", "datetime": "23.11.2024 10:30-11:30", "receipt": "Отсутствует"},
+    {"record_id": "99570", "appointment": "Операция", "datetime": "23.11.2024 10:30-11:30", "receipt": "Оплачена"},
+    {"record_id": "98993", "appointment": "Первичная консультация хирурга", "datetime": "22.11.2024 10:00-10:30", "receipt": "Оплачена"}
+  ],
+  "medical_history_count": 9,
+  "payments_count": 4,
+  "bills": {
+    "personal": "Счет еще не открыт",
+    "debt": "Счет еще не открыт",
+    "loan": "Счет еще не открыт"
+  },
+  "dms": {
+    "is_empty": true,
+    "message": "Записей нет"
+  },
+  "documents": [
+    {"id": "82718", "type": "Акт выполненных работ", "date": "23.11.2024", "status": "Подписан"},
+    {"id": "82682", "type": "Акт выполненных работ", "date": "22.11.2024", "status": "Подписан"},
+    {"id": "82681", "type": "Акт выполненных работ", "date": "22.11.2024", "status": "Подписан"},
+    {"id": "82678", "type": "ПРОВЕДЕНИЕ МЕДИЦИНСКОГО РЕНТГЕНОЛОГИЧЕСКОГО ОБСЛЕДОВАНИЯ", "date": "22.11.2024", "status": "Подписан"},
+    {"id": "82677", "type": "Пакет документов НЬЮ ЛАЙФ", "date": "22.11.2024", "status": "Подписан"}
+  ],
+  "family": {
+    "is_empty": true,
+    "message": "Нет данных о семье пациента."
+  },
+  "medcards": [
+    {"card_id": "50611", "date": "23.11.2024", "status": "Подтверждена", "title": "Операция"},
+    {"card_id": "50610", "date": "23.11.2024", "status": "Подтверждена", "title": "Удаление 1 степени"},
+    {"card_id": "50585", "date": "22.11.2024", "status": "Подтверждена", "title": "Первичная консультация хирурга"}
+  ],
+  "xray_dates": [
+    "14.03.2026 12:47",
+    "22.11.2024 10:16"
+  ]
+}
