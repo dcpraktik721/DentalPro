@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-03-18T16:03:24.788Z",
+  "base_url": "https://dcpraktik.dental-pro.online",
+  "storage_state_path": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/auth/dentalpro.storage.json",
+  "login_page_url": "https://dcpraktik.dental-pro.online/user/login.html?backto=%2Fvisits%2Fschedule%2Findex%3Fdate%3D2026-03-10",
+  "login_selector_used": "input[name=\"login\"]",
+  "password_selector_used": "input[name=\"password\"]",
+  "submit_selector_used": "button[type=\"submit\"]",
+  "final_url": "https://dcpraktik.dental-pro.online/visits/schedule/index?date=2026-03-10",
+  "title": "Расписание на день",
+  "authenticated": true,
+  "schedule_root_present": true,
+  "status": "refreshed",
+  "notes": [
+    "storageState saved (1320 bytes)"
+  ]
+}

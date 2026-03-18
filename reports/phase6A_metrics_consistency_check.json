@@ -1,0 +1,82 @@
+[
+  {
+    "metric": "2026-02-15 total_rows",
+    "source_files": [
+      "schedule_2026-02-15_validation_summary.json",
+      "cross_date_validation_matrix.json"
+    ],
+    "result": "pass",
+    "notes": "summary=6 matrix=6"
+  },
+  {
+    "metric": "2026-02-15 patient_id_resolved",
+    "source_files": [
+      "schedule_2026-02-15_validation_summary.json",
+      "cross_date_validation_matrix.json"
+    ],
+    "result": "pass",
+    "notes": "summary=5 matrix=5"
+  },
+  {
+    "metric": "2026-02-16 total_rows",
+    "source_files": [
+      "schedule_2026-02-16_validation_summary.json",
+      "cross_date_validation_matrix.json"
+    ],
+    "result": "pass",
+    "notes": "summary=69 matrix=69"
+  },
+  {
+    "metric": "2026-02-16 patient_id_resolved_probed",
+    "source_files": [
+      "schedule_2026-02-16_validation_summary.json",
+      "cross_date_validation_matrix.json"
+    ],
+    "result": "pass",
+    "notes": "summary=24 matrix=24 (subset-based)"
+  },
+  {
+    "metric": "baseline total_rows",
+    "source_files": [
+      "schedule_2026-03-10_patient_full_report_v5.json",
+      "cross_date_validation_matrix.json"
+    ],
+    "result": "pass",
+    "notes": "baseline=56 matrix=56"
+  },
+  {
+    "metric": "baseline patient_id_resolved",
+    "source_files": [
+      "schedule_2026-03-10_patient_full_report_v5.json",
+      "cross_date_validation_matrix.json"
+    ],
+    "result": "pass",
+    "notes": "baseline=54 matrix=54"
+  },
+  {
+    "metric": "baseline tickets 304/293/11",
+    "source_files": [
+      "schedule_2026-03-10_ticket_registry_v2.json"
+    ],
+    "result": "pass",
+    "notes": "{'total_rows': 56, 'patient_id_resolved': 54, 'tickets_total': 304, 'tickets_proven': 293, 'tickets_inferred': 11, 'schi_10_count': 11, 'cash_match_count': 51}"
+  },
+  {
+    "metric": "baseline schi_10_count=11",
+    "source_files": [
+      "schedule_2026-03-10_ticket_registry_v2.json",
+      "cross_date_validation_matrix.json"
+    ],
+    "result": "pass",
+    "notes": "baseline=11 matrix=11"
+  },
+  {
+    "metric": "baseline cash matched rows",
+    "source_files": [
+      "schedule_2026-03-10_cash_enrichment_v5.json",
+      "cross_date_validation_matrix.json"
+    ],
+    "result": "pass",
+    "notes": "baseline=51 matrix=51"
+  }
+]

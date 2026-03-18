@@ -1,114 +1,90 @@
 {
-  "generated_at": "2026-03-18",
-  "baseline_date": "2026-03-10",
-  "validation_dates": ["2026-02-15", "2026-02-16"],
-  "auth_account": "Корытников Р.В. (Генеральный директор)",
-  "matrix": [
+  "generated_at": "2026-03-18T16:14:21.475Z",
+  "dates": [
+    "2026-02-15",
+    "2026-02-16",
+    "2026-03-10"
+  ],
+  "by_date": {
+    "2026-02-15": {
+      "total_rows": 6,
+      "patient_rows": 6,
+      "doctors_count": 2,
+      "patient_id_resolved": 5,
+      "ticket_icons_total": 36,
+      "tooltip_captures": 36,
+      "schi_10_count": 0,
+      "cash_matched_rows": 5
+    },
+    "2026-02-16": {
+      "total_rows": 69,
+      "patient_rows": 67,
+      "doctors_count": 12,
+      "patient_id_resolved": 24,
+      "ticket_icons_total": 372,
+      "tooltip_captures": 372,
+      "schi_10_count": 8,
+      "cash_matched_rows": 12
+    },
+    "2026-03-10": {
+      "date": "2026-03-10",
+      "total_rows": 56,
+      "patient_rows": 54,
+      "doctors_count": 11,
+      "patient_id_resolved": 54,
+      "ticket_icons_total": 304,
+      "tooltip_captures": 304,
+      "schi_10_count": 11,
+      "cash_matched_rows": 51,
+      "cash_boundary": "patient-day only"
+    }
+  },
+  "method_observations": [
     {
-      "method": "browser_first_route_access",
-      "baseline_10_03": "proven",
-      "feb_15": "proven",
-      "feb_16": "proven",
-      "verdict": "CROSS_DATE_STABLE",
-      "safe_claim": "Stable across all 3 dates"
+      "method_id": "browser_first_route_access",
+      "dates_validated": [
+        "2026-02-15",
+        "2026-02-16",
+        "2026-03-10"
+      ],
+      "cross_date_stable": false,
+      "note": "validated on three dates; not promoted to global stability claim"
     },
     {
-      "method": "direct_tab_url_access (date parameter)",
-      "baseline_10_03": "proven",
-      "feb_15": "proven — Sunday loads correctly",
-      "feb_16": "proven — Monday loads correctly",
-      "verdict": "CROSS_DATE_STABLE",
-      "safe_claim": "Date parameter routing stable including non-standard days (Sunday)"
+      "method_id": "popup_clean_click_probe",
+      "dates_validated": [
+        "2026-02-15",
+        "2026-02-16",
+        "2026-03-10"
+      ],
+      "cross_date_stable": false,
+      "note": "validated on three dates, but popup success remains subset-sensitive"
     },
     {
-      "method": "dom_extraction (schedule rows)",
-      "baseline_10_03": "56 rows extracted",
-      "feb_15": "6 rows extracted",
-      "feb_16": "67 rows extracted",
-      "verdict": "CROSS_DATE_STABLE",
-      "safe_claim": "DOM extraction method stable; row count varies by day load"
+      "method_id": "focused_rc_tooltip_extraction",
+      "dates_validated": [
+        "2026-02-15",
+        "2026-02-16",
+        "2026-03-10"
+      ],
+      "cross_date_stable": false,
+      "note": "validated on three dates; tooltip semantics still keep schi-10 inferred"
     },
     {
-      "method": "popup_clean_click_probe",
-      "baseline_10_03": "proven on representative subset",
-      "feb_15": "proven 6/6 (100%) — full day",
-      "feb_16": "proven 5/5 (100%) — subset",
-      "verdict": "CROSS_DATE_STABLE",
-      "safe_claim": "Popup probe stable on all 3 dates; route /cbase/detail.html?id=XXXXX unchanged"
-    },
-    {
-      "method": "patient_id resolution via popup",
-      "baseline_10_03": "54/56 (96.4%)",
-      "feb_15": "6/6 (100%)",
-      "feb_16": "5/5 probed (100% subset)",
-      "verdict": "CROSS_DATE_STABLE",
-      "safe_claim": "patient_id closure via popup stable across dates"
-    },
-    {
-      "method": "focused_rc_tooltip_extraction",
-      "baseline_10_03": "304 icons, 293 proven semantics",
-      "feb_15": "33 icons, 2 tooltip captures",
-      "feb_16": "~300 icons estimated, 3 tooltip captures",
-      "verdict": "CROSS_DATE_STABLE (limited)",
-      "safe_claim": "Tooltip extraction works on all dates; CSS class access blocked by accessibility tree limits"
-    },
-    {
-      "method": "chair_view_cross_map",
-      "baseline_10_03": "proven",
-      "feb_15": "proven — Кабинет 23 Л↔Гигиенисты, П↔Ортодонты",
-      "feb_16": "proven — Кабинет 23 Л + Кабинет 19 confirmed",
-      "verdict": "CROSS_DATE_STABLE",
-      "safe_claim": "Cabinet-specialization cross-map stable"
-    },
-    {
-      "method": "schi-10 ticket observation",
-      "baseline_10_03": "11 instances (all inferred, single-source)",
-      "feb_15": "0 instances",
-      "feb_16": "0 instances",
-      "verdict": "DATE_SENSITIVE",
-      "safe_claim": "schi-10 present on 10.03 only. Absence on Feb dates does not contradict baseline — different doctor mix. Still inferred-only on baseline."
-    },
-    {
-      "method": "patient-day cash enrichment (RPT_24 matching)",
-      "baseline_10_03": "91.1% match rate (49 conditional + 2 heuristic / 56)",
-      "feb_15": "BLOCKED — no RPT_24 Feb data",
-      "feb_16": "BLOCKED — no RPT_24 Feb data",
-      "verdict": "SINGLE_DATE_VALIDATED",
-      "safe_claim": "Cash enrichment proven on 10.03 only. Patient-day grain. Cannot claim cross-date stability without Feb RPT_24 data."
-    },
-    {
-      "method": "visit_id extraction via data-id",
-      "baseline_10_03": "proven via JS console",
-      "feb_15": "BLOCKED — data-id not exposed in accessibility tree",
-      "feb_16": "BLOCKED — data-id not exposed in accessibility tree",
-      "verdict": "METHOD_CONSTRAINT",
-      "safe_claim": "visit_id extraction requires JS execution (not accessibility tree). Blocked in browser agent mode."
-    },
-    {
-      "method": "storageState_auth_reuse",
-      "baseline_10_03": "proven (local Mac only)",
-      "feb_15": "N/A — used Корытников credentials login",
-      "feb_16": "N/A — used Корытников credentials login",
-      "verdict": "REPO_GAP_UNCHANGED",
-      "safe_claim": "storageState not in repo. Auth via credentials works but is not automated via storageState."
-    },
-    {
-      "method": "parsed_xlsx_extraction",
-      "baseline_10_03": "proven on RPT_18, RPT_24",
-      "feb_15": "NOT_TESTED",
-      "feb_16": "NOT_TESTED",
-      "verdict": "SINGLE_DATE_VALIDATED",
-      "safe_claim": "XLSX method proven on 10.03 artifacts only"
+      "method_id": "patient_day_cash_matching",
+      "dates_validated": [
+        "2026-02-15",
+        "2026-02-16",
+        "2026-03-10"
+      ],
+      "cross_date_stable": false,
+      "note": "validated on three dates at patient-day grain only"
     }
   ],
-  "summary": {
-    "cross_date_stable": ["browser_first_route_access", "direct_tab_url_access", "dom_extraction", "popup_clean_click_probe", "patient_id_resolution", "focused_rc_tooltip_extraction", "chair_view_cross_map"],
-    "date_sensitive": ["schi_10_observation", "doctor_roster"],
-    "single_date_validated": ["patient_day_cash_enrichment", "parsed_xlsx_extraction"],
-    "blocked_or_constrained": ["visit_id_via_data_id", "storageState_auth_reuse"],
-    "total_methods_cross_date_stable": 7,
-    "total_methods_date_sensitive": 2,
-    "total_methods_single_date": 2,
-    "total_methods_blocked": 2
+  "claim_boundaries": {
+    "cross_date_claim": "validated_on_three_dates_not_promoted_to_stable",
+    "schi_10": "inferred",
+    "cash": "patient-day only",
+    "auth": "ready_with_limits"
   }
 }

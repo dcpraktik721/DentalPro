@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-03-18T16:04:24.930Z",
+  "storage_state_path": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/auth/dentalpro.storage.json",
+  "route_results": [
+    {
+      "route_id": "schedule_day",
+      "requested_url": "https://dcpraktik.dental-pro.online/visits/schedule/index?date=2026-03-10",
+      "final_url": "https://dcpraktik.dental-pro.online/visits/schedule/index?date=2026-03-10",
+      "title": "Расписание на день",
+      "expected_selector": "#schedule-day-container",
+      "expected_selector_present": true,
+      "login_like": false,
+      "authenticated": true,
+      "visible_text_excerpt": "Корытников Р.В. Генеральный директор Личный кабинет Расписание Сообщения Записи пациентов Пациенты Call-центр Карты пациентов Задачи Склад Отчёты Светофоры Dental Store Касса Рентген кабинет Зарплаты Инфоблоки Избранные разделы Личный кабинет Отчётный модуль Свернуть Расписание на день Поиск по паци"
+    },
+    {
+      "route_id": "patient_card",
+      "requested_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=19199",
+      "final_url": "https://dcpraktik.dental-pro.online/cbase/detail.html?id=19199",
+      "title": "САВИНОВ АЛЕКСЕЙ ВЛАДИМИРОВИЧ",
+      "expected_selector": "body",
+      "expected_selector_present": true,
+      "login_like": false,
+      "authenticated": true,
+      "visible_text_excerpt": "Корытников Р.В. Генеральный директор Личный кабинет Расписание Сообщения Записи пациентов Пациенты Call-центр Карты пациентов Задачи Склад Отчёты Светофоры Dental Store Касса Рентген кабинет Зарплаты Инфоблоки Избранные разделы Личный кабинет Отчётный модуль Свернуть Пациент Поиск по пациентам САВИН"
+    },
+    {
+      "route_id": "api_test_mobile_schedule",
+      "requested_url": "https://dcpraktik.dental-pro.online/apisettings/api/test?method=mobile/schedule",
+      "final_url": "https://dcpraktik.dental-pro.online/apisettings/api/test?method=mobile/schedule",
+      "title": "",
+      "expected_selector": "input[name=\"token\"]",
+      "expected_selector_present": true,
+      "login_like": false,
+      "authenticated": true,
+      "visible_text_excerpt": "Протестировать метод можно в Postman, отправив POST запрос по указанной ссылке. Напрямую Через прокси, если есть ограничения по ip Параметры запроса и секрет передаются в JSON Не передавайте ваш персональный токен и секрет третим лицам. Для использования в интеграциях создайте новый токен с указание"
+    }
+  ],
+  "summary": {
+    "routes_checked": 3,
+    "authenticated_routes": 3,
+    "all_routes_authenticated": true,
+    "readiness": "ready_with_limits",
+    "limits": [
+      "storageState remains an external local dependency",
+      "auth session may expire and requires periodic refresh",
+      "repo is not self-contained for auth bootstrap without external login step"
+    ]
+  }
+}

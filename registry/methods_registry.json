@@ -1,8 +1,7 @@
 {
   "registry_name": "methods_registry",
   "version": "1.3.0",
-  "status": "v1_2_new_methods_added_2026_03_18",
-  "source": "artifacts/dentalpro_verified_methods_registry.json",
+  "status": "current_curated_registry",
   "entry_schema": {
     "method_id": "",
     "method_name": "",
@@ -12,805 +11,335 @@
     "outputs": [],
     "proof_status": "proven|artifact_proven|structurally_observed|inferred|not_proven",
     "readiness": "ready|ready_with_limits|validation_required|blocked",
-    "proven_scope": "",
+    "status": "current|partial|superseded|template",
     "limitations": [],
-    "current_status": "current|superseded|template",
+    "local_evidence": [],
+    "cross_date_validated": false,
+    "cross_date_stable": false,
+    "current_scope": "",
     "notes": ""
   },
   "entries": [
     {
       "method_id": "browser_first_route_access",
-      "method_name": "browser_first_route_access",
-      "domain": "schedule, reports, cashbox, empty cards",
-      "purpose": "Opens CRM/runtime/report routes in authenticated browser state",
-      "inputs": [],
-      "outputs": [
-        "live UI/runtime state"
-      ],
+      "method_name": "Browser-first route access",
+      "domain": "runtime",
+      "purpose": "Open authenticated DentalPRO routes directly and verify page-level runtime state.",
+      "inputs": ["route URL", "Playwright browser context", "storageState"],
+      "outputs": ["final URL", "page title", "route accessibility verdict", "runtime root presence"],
       "proof_status": "proven",
-      "readiness": "ready",
+      "readiness": "ready_with_limits",
+      "status": "current",
       "limitations": [
-        "UI-first only; not an API proof by itself",
-        "requires authenticated browser session"
+        "Depends on external storageState session",
+        "Validated on selected routes and dates, not a blanket proof for every screen"
       ],
-      "proven_scope": "broad project-wide",
-      "current_status": "current",
-      "notes": "",
       "local_evidence": [
-        "schedule/schedule_2026-03-10_operational_dump_master.md",
-        "docs/dentalpro-screen-map-2026-03-09.md"
+        "runtime/auth_smoke_check_result.json",
+        "schedule/schedule_2026-02-15_validation_summary.json",
+        "schedule/schedule_2026-02-16_validation_summary.json",
+        "schedule/schedule_2026-03-10_operational_dump_master.md"
       ],
-      "auth_dependency": true,
-      "editorial_note": "Broad project-wide ready; confirmed by multiple domain passes",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10",
-        "2026-02-15",
-        "2026-02-16"
-      ],
-      "cross_date_stable": true
+      "cross_date_validated": true,
+      "cross_date_stable": false,
+      "current_scope": "Validated on schedule day route for 2026-02-15, 2026-02-16, 2026-03-10 plus patient card and API test shell via auth smoke.",
+      "notes": "Cross-date wording must stay at validated_on_three_dates_not_promoted_to_stable."
     },
     {
       "method_id": "direct_tab_url_access",
-      "method_name": "direct_tab_url_access",
-      "domain": "patient cashbox, patient tabs, reports",
-      "purpose": "Opens patient/report sub-tabs directly by URL",
-      "inputs": [],
-      "outputs": [
-        "hidden deep pages without menu navigation"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready",
-      "limitations": [
-        "requires known route contract",
-        "route contracts may drift with DentalPRO updates"
-      ],
-      "proven_scope": "patient card and report shells",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "docs/dentalpro-screen-map-2026-03-09.md",
-        "docs/dentalpro-crm-page-observations-2026-03-09.md"
-      ],
-      "auth_dependency": true,
-      "editorial_note": "Confirmed via patient card and report shells; route contracts documented in screen-map",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10",
-        "2026-02-15",
-        "2026-02-16"
-      ],
-      "cross_date_stable": true
-    },
-    {
-      "method_id": "storagestate_auth_reuse",
-      "method_name": "storageState_auth_reuse",
-      "domain": "playwright regression layer",
-      "purpose": "Reuses authenticated browser session",
-      "inputs": [],
-      "outputs": [
-        "stable repeated live probes"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready",
-      "limitations": [
-        "storageState file NOT in repo — external dependency",
-        "expires over time without detection",
-        "no smoke-check script in repo",
-        "auth drift is silent failure mode"
-      ],
-      "proven_scope": "dentalpro-playwright and schedule probes",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [],
-      "auth_dependency": true,
-      "editorial_note": "CRITICAL: storageState missing from repo. Ready in method definition but has untracked external dep",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "blocked",
-      "date_validated": null,
-      "cross_date_validated": [],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "accepted_api_path_usage",
-      "method_name": "accepted_api_path_usage",
-      "domain": "manager report, report verification, roster extraction",
-      "purpose": "Calls token/secret API methods from proved candidates",
-      "inputs": [],
-      "outputs": [
-        "JSON data rows"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready",
-      "limitations": [
-        "depends on report-api-verification-dossier-2026-03-09.md which is EXTERNAL",
-        "not all UI domains have published API source",
-        "157-method catalog subset only; full catalog not in repo"
-      ],
-      "proven_scope": "157-method catalog subset; strongest around patient/schedule/pay",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "reporting/RPT_18_final_governed_verdict_2026-03-18.json",
-        "reporting/RPT_23_final_governed_verdict_2026-03-11.json",
-        "reporting/RPT_33_final_governed_verdict_2026-03-15.json"
-      ],
-      "auth_dependency": true,
-      "editorial_note": "API proof basis depends on external SoT; local evidence limited to governed verdicts",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": null,
-      "cross_date_validated": [],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "dom_extraction",
-      "method_name": "dom_extraction",
-      "domain": "schedule forensic, cashbox, reports",
-      "purpose": "Reads post-load runtime DOM and key containers",
-      "inputs": [],
-      "outputs": [
-        "HTML/runtime field inventory"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready",
-      "limitations": [
-        "DOM presence does not equal source closure",
-        "HTML-first pages only; SPA lazy-load not always captured"
-      ],
-      "proven_scope": "HTML-first pages",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "schedule/schedule_2026-03-10_operational_dump_master.md",
-        "finance/patient_cashbox_18910_document_model_2026-03-18.json"
-      ],
-      "auth_dependency": true,
-      "editorial_note": "Confirmed across schedule forensic and cashbox passes",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10",
-        "2026-02-15",
-        "2026-02-16"
-      ],
-      "cross_date_stable": true
-    },
-    {
-      "method_id": "hidden_attribute_harvesting",
-      "method_name": "hidden_attribute_harvesting",
-      "domain": "schedule, reports, runtime configs",
-      "purpose": "Extracts data-* and hidden attrs from live nodes",
-      "inputs": [],
-      "outputs": [
-        "selectors, ids, config metadata"
-      ],
+      "method_name": "Direct tab URL access",
+      "domain": "patients",
+      "purpose": "Open patient hub and known patient tabs directly by route contract without menu traversal.",
+      "inputs": ["patient_id", "tab route pattern", "browser context"],
+      "outputs": ["opened patient tab", "tab route proof", "HTML-first tab content"],
       "proof_status": "proven",
       "readiness": "ready_with_limits",
+      "status": "current",
       "limitations": [
-        "structural only if semantics are not explicit",
-        "data-* attrs may change without UI change",
-        "scope: schedule root and report shells only"
+        "Requires already known route contract",
+        "Does not prove write flows"
       ],
-      "proven_scope": "schedule root and report shells",
-      "current_status": "current",
-      "notes": "",
       "local_evidence": [
-        "schedule/schedule_2026-03-10_operational_dump_master.md"
+        "docs/patient_layer_overview.md",
+        "docs/patient_dossier_tabs_overview.md",
+        "docs/patient_dossier_remaining_tabs_overview.md",
+        "patients/ultimate_patient_dossier_live_15900.json"
       ],
-      "auth_dependency": true,
-      "editorial_note": "ready_with_limits: structural observation confirmed, semantic closure not guaranteed",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": null,
-      "cross_date_validated": [],
-      "cross_date_stable": false
+      "cross_date_validated": false,
+      "cross_date_stable": false,
+      "current_scope": "Patient hub and dossier read-path tabs only.",
+      "notes": "Read-path method only."
     },
     {
-      "method_id": "popup_clean_click_probe",
-      "method_name": "popup_clean_click_probe",
-      "domain": "schedule patient enrichment",
-      "purpose": "Opens patient popup by exact card click",
-      "inputs": [],
-      "outputs": [
-        "full name, phone, popup actions"
-      ],
+      "method_id": "storageState_auth_reuse",
+      "method_name": "storageState auth reuse",
+      "domain": "runtime",
+      "purpose": "Reuse existing authenticated browser state for deterministic DentalPRO passes.",
+      "inputs": ["external dentalpro.storage.json", "Playwright browser context"],
+      "outputs": ["authenticated session reuse", "repeatable browser passes"],
       "proof_status": "proven",
       "readiness": "ready_with_limits",
+      "status": "current",
       "limitations": [
-        "not guaranteed for every visit card family",
-        "subset-proven on 2026-03-10 only",
-        "no cross-date validation",
-        "stale popup can contaminate if stale_layer_prevention not applied first"
-      ],
-      "proven_scope": "majority subset on 2026-03-10 schedule",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "patients/schedule_2026-03-10_patient_identity_probe_v5.json",
-        "schedule/schedule_2026-03-10_popup_linkage_v3.json"
-      ],
-      "auth_dependency": true,
-      "editorial_note": "54/56 proven on 10.03.2026; subset-based, not global",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10",
-        "2026-02-15",
-        "2026-02-16"
-      ],
-      "cross_date_stable": true
-    },
-    {
-      "method_id": "focused_rc_tooltip_extraction",
-      "method_name": "focused_rc_tooltip_extraction",
-      "domain": "schedule ticket registry",
-      "purpose": "Opens exact ticket tooltip by React onMouseEnter on icon node",
-      "inputs": [],
-      "outputs": [
-        "live rendered ticket semantics"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready_with_limits",
-      "limitations": [
-        "must avoid stale tooltip contamination",
-        "requires stale_layer_prevention applied first",
-        "React onMouseEnter timing-sensitive",
-        "subset-validated on ticket-bearing visits only"
-      ],
-      "proven_scope": "ticket-bearing visit subset and ticket registry v1/v2",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "tickets/schedule_2026-03-10_ticket_registry_v2.json",
-        "tickets/ticket_dictionary_v2.json"
-      ],
-      "auth_dependency": true,
-      "editorial_note": "293/304 proven; schi-10 (11 tickets) remains inferred — must not be promoted",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10",
-        "2026-02-15",
-        "2026-02-16"
-      ],
-      "cross_date_stable": true
-    },
-    {
-      "method_id": "stale_layer_prevention",
-      "method_name": "stale_layer_prevention",
-      "domain": "schedule interaction and ticket probes",
-      "purpose": "Closes/deletes old tooltips/popups before each probe",
-      "inputs": [],
-      "outputs": [
-        "clean trigger->layer linkage"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready_with_limits",
-      "limitations": [
-        "subset-validated, not perfect globally",
-        "must be explicitly called before each probe",
-        "no automated check for stale state"
-      ],
-      "proven_scope": "schedule popup/tooltip hardening",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "tickets/schedule_2026-03-10_ticket_registry_v2.json"
-      ],
-      "auth_dependency": true,
-      "editorial_note": "Operational hygiene method; prerequisite for popup and tooltip probes",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": null,
-      "cross_date_validated": [],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "chair_view_cross_map",
-      "method_name": "chair_view_cross_map",
-      "domain": "schedule cabinet attribution",
-      "purpose": "Maps visit ids between doctor view and chair view",
-      "inputs": [],
-      "outputs": [
-        "visit->cabinet mapping"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready_with_limits",
-      "limitations": [
-        "cross-map method remains canonical because direct cabinet field not found in visit",
-        "2026-03-10 only — not cross-date validated",
-        "if direct field appears in future, this method becomes redundant"
-      ],
-      "proven_scope": "2026-03-10 schedule forensic pass",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "schedule/schedule_2026-03-10_patient_full_report_v5.json"
-      ],
-      "auth_dependency": true,
-      "editorial_note": "Workaround by design; canonical only until direct field is discovered",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10",
-        "2026-02-15",
-        "2026-02-16"
-      ],
-      "cross_date_stable": true
-    },
-    {
-      "method_id": "report_formation_probe",
-      "method_name": "report_formation_probe",
-      "domain": "RPT_18, 23, 33, 36, 4",
-      "purpose": "Opens report, applies date/filter, captures runtime and export behavior",
-      "inputs": [],
-      "outputs": [
-        "runtime/export/file evidence"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready",
-      "limitations": [
-        "report-family specific; mechanics differ per family",
-        "single-report live pass only; not batch"
-      ],
-      "proven_scope": "single-report live passes",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "reporting/RPT_18_final_governed_verdict_2026-03-18.json",
-        "reporting/RPT_23_final_governed_verdict_2026-03-11.json",
-        "reporting/RPT_33_final_governed_verdict_2026-03-15.json"
-      ],
-      "auth_dependency": true,
-      "editorial_note": "Confirmed for RPT_18, 23, 33; other families require separate passes",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": null,
-      "cross_date_validated": [],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "export_tracking_direct_vs_async",
-      "method_name": "export_tracking_direct_vs_async",
-      "domain": "report export validation, RPT_21, RPT_24/48",
-      "purpose": "Distinguishes direct download, async shell, callback/file_url completion",
-      "inputs": [],
-      "outputs": [
-        "export mechanics contract"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready_with_limits",
-      "limitations": [
-        "not every report family closed",
-        "async shell completion timing varies",
-        "file_url callback not universally observed"
-      ],
-      "proven_scope": "multiple report families",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "reporting/rpt_24_48_file_first_canonicalization_2026_03_10.json",
-        "reporting/rpt_34_35_shape_reconciliation_2026_03_10.json"
-      ],
-      "auth_dependency": false,
-      "editorial_note": "Mechanics contract proven for RPT_21, 24, 48; direct vs async distinction is stable",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": null,
-      "cross_date_validated": [],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "parsed_xlsx_extraction",
-      "method_name": "parsed_xlsx_extraction",
-      "domain": "report parity and file-first families",
-      "purpose": "Parses workbook sheets, headers, rows, boundaries",
-      "inputs": [],
-      "outputs": [
-        "structured file dataset"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready",
-      "limitations": [
-        "header recovery can remain unresolved for grouped headers",
-        "requires XLSX file present in data/exports or excel/ — data/exports currently empty"
-      ],
-      "proven_scope": "RPT_18/23/33/36 and file-first families",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "excel/schedule_2026-03-10_patient_full_report_v5.xlsx",
-        "excel/schedule_2026-03-10_ticket_registry_v2.xlsx"
-      ],
-      "auth_dependency": false,
-      "editorial_note": "ready; local XLSX artifacts exist in excel/ folder",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10"
-      ],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "grouped_header_leaf_extraction",
-      "method_name": "grouped_header_leaf_extraction",
-      "domain": "RPT_18",
-      "purpose": "Resolves business headers from grouped thead structure",
-      "inputs": [],
-      "outputs": [
-        "canonical business columns"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready_with_limits",
-      "limitations": [
-        "pattern portability not automatic — must not be transferred to other families without evidence",
-        "proven only for RPT_18 grouped_headers family"
-      ],
-      "proven_scope": "grouped_headers report family",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "reporting/RPT_18_final_governed_verdict_2026-03-18.json"
-      ],
-      "auth_dependency": false,
-      "editorial_note": "Narrow scope: RPT_18 only; do not apply to other reports without evidence",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10"
-      ],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "explicit_normalization_policy",
-      "method_name": "explicit_normalization_policy",
-      "domain": "RPT_23, RPT_18, RPT_33",
-      "purpose": "Formalizes narrow local normalization after mismatch classification",
-      "inputs": [],
-      "outputs": [
-        "governed normalized parity"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready_with_limits",
-      "limitations": [
-        "must not be transferred without new evidence from target family",
-        "narrow local normalization — not a global rule",
-        "report-family specific"
-      ],
-      "proven_scope": "specific report families",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "reporting/RPT_23_final_governed_verdict_2026-03-11.json",
-        "reporting/RPT_18_final_governed_verdict_2026-03-18.json",
-        "reporting/RPT_33_final_governed_verdict_2026-03-15.json"
-      ],
-      "auth_dependency": false,
-      "editorial_note": "Core operating principle; evidence exists in governed verdicts",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10"
-      ],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "family_aware_canonicalization",
-      "method_name": "family_aware_canonicalization",
-      "domain": "family program for reports 23/24/34/35/36/48",
-      "purpose": "Classifies reports by mechanics family and chooses compare path",
-      "inputs": [],
-      "outputs": [
-        "extraction/comparison/guardrail policy"
-      ],
-      "proof_status": "artifact_proven",
-      "readiness": "ready_with_limits",
-      "limitations": [
-        "not a universal closure for all reports",
-        "artifact_proven only — no live pass confirmation for all families"
-      ],
-      "proven_scope": "priority report families",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "reporting/rpt_24_48_file_first_canonicalization_2026_03_10.json",
-        "reporting/rpt_34_35_shape_reconciliation_2026_03_10.json"
-      ],
-      "auth_dependency": false,
-      "editorial_note": "Covers priority families 23/24/34/35/36/48; others require separate validation",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10"
-      ],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "detail_vs_summary_reconciliation",
-      "method_name": "detail_vs_summary_reconciliation",
-      "domain": "RPT_34/RPT_35",
-      "purpose": "Distinguishes runtime detail vs export summary mismatch families",
-      "inputs": [],
-      "outputs": [
-        "dual-layer guardrail model"
-      ],
-      "proof_status": "artifact_proven",
-      "readiness": "ready_with_limits",
-      "limitations": [
-        "no direct row parity between runtime detail and export summary",
-        "shape mismatch families only — not applicable to other families"
-      ],
-      "proven_scope": "shape mismatch families",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "reporting/rpt_34_35_shape_reconciliation_2026_03_10.json"
-      ],
-      "auth_dependency": false,
-      "editorial_note": "Dual-layer guardrail model confirmed for RPT_34/35",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10"
-      ],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "file_first_dataset_modeling",
-      "method_name": "file_first_dataset_modeling",
-      "domain": "RPT_24/48 async families",
-      "purpose": "Treats file as primary truth and runtime as launch shell",
-      "inputs": [],
-      "outputs": [
-        "file-first canonical dataset"
-      ],
-      "proof_status": "artifact_proven",
-      "readiness": "ready_with_limits",
-      "limitations": [
-        "runtime table claims forbidden — file is primary truth",
-        "async export families only — RPT_24/48",
-        "not applicable where runtime table is canonical"
-      ],
-      "proven_scope": "async export families",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "reporting/rpt_24_48_file_first_canonicalization_2026_03_10.json"
-      ],
-      "auth_dependency": false,
-      "editorial_note": "Canonical model for async export families; do not apply to sync families",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready",
-      "date_validated": "2026-03-10",
-      "cross_date_validated": [
-        "2026-03-10"
-      ],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "row_document_split_by_act_reference",
-      "method_name": "row_document_split_by_act_reference",
-      "domain": "patient cashbox model",
-      "purpose": "Separates row-grain and shared-payment document-grain",
-      "inputs": [],
-      "outputs": [
-        "document model with act_reference"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready_with_limits",
-      "limitations": [
-        "cashbox domain still not globally source-closed",
-        "proven only for patients 18910 and 19095",
-        "act_reference linkage is reference-based, not direct API join"
-      ],
-      "proven_scope": "patients 18910 and 19095",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "finance/patient_cashbox_18910_document_model_2026-03-18.json",
-        "finance/patient_cashbox_19095_document_model_2026-03-18.json"
-      ],
-      "auth_dependency": false,
-      "editorial_note": "Document-grain model confirmed for 2 reference cases; global closure pending",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": "2026-03-18",
-      "cross_date_validated": [
-        "2026-03-18"
-      ],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "delta_pass_strategy",
-      "method_name": "delta_pass_strategy",
-      "domain": "schedule continuation, ticket semantics, report next-step passes",
-      "purpose": "Runs targeted follow-up passes instead of broad reruns",
-      "inputs": [],
-      "outputs": [
-        "gap closure without resetting baseline"
-      ],
-      "proof_status": "proven",
-      "readiness": "ready",
-      "limitations": [
-        "depends on strong baseline artifacts being present and not overwritten",
-        "not useful if no baseline exists"
-      ],
-      "proven_scope": "project-wide operating method",
-      "current_status": "current",
-      "notes": "",
-      "local_evidence": [
-        "tickets/schedule_2026-03-10_ticket_registry_v2.json",
-        "schedule/schedule_2026-03-10_popup_linkage_v3.json",
-        "schedule/schedule_2026-03-10_patient_full_report_v5.json"
-      ],
-      "auth_dependency": false,
-      "editorial_note": "Project-wide operating discipline; confirmed by v1→v5 lineage",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": null,
-      "cross_date_validated": [],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "network_capture_analysis",
-      "method_name": "network_capture_analysis",
-      "domain": "runtime, empty_cards, reports",
-      "purpose": "Captures XHR/fetch/WS network requests during live session to identify hidden API calls and transport contracts",
-      "inputs": [
-        "authenticated_browser_session",
-        "target_route"
-      ],
-      "outputs": [
-        "network_request_log",
-        "api_endpoint_inventory",
-        "response_payload_samples"
-      ],
-      "proof_status": "artifact_proven",
-      "readiness": "ready_with_limits",
-      "proven_scope": "empty_cards forensic pass 2026-03-16",
-      "limitations": [
-        "dependent on live session timing — lazy-loaded requests may be missed",
-        "does not prove semantic meaning of captured endpoints",
-        "network capture artifacts currently in artifacts/ only, not in runtime/"
+        "External dependency outside repo",
+        "Session can expire",
+        "Does not make repo self-bootstrapping"
       ],
       "local_evidence": [
-        "artifacts/dentalpro_network_capture_report_empty_cards_2026_03_16.json",
-        "artifacts/dentalpro_export_empty_cards_2026_03_16.json"
+        "runtime/auth_smoke_check_result.json",
+        "runtime/auth_smoke_check.js",
+        "schedule/schedule_2026-02-15_validation_summary.json",
+        "schedule/schedule_2026-02-16_validation_summary.json"
       ],
-      "auth_dependency": true,
-      "current_status": "current",
-      "editorial_note": "Used in empty_cards forensic pass; not yet registered — adding now. Artifact-proven only.",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "ready_with_limits",
-      "date_validated": null,
-      "cross_date_validated": [],
-      "cross_date_stable": false
-    },
-    {
-      "method_id": "file_modal_search",
-      "method_name": "file_modal_search",
-      "domain": "patients, dossier, files_tab",
-      "purpose": "Opens patient files tab search modal, applies query, captures file list and download routes",
-      "inputs": [
-        "patient_card_url",
-        "authenticated_session"
-      ],
-      "outputs": [
-        "file_list",
-        "file_metadata",
-        "download_urls"
-      ],
-      "proof_status": "structurally_observed",
-      "readiness": "validation_required",
-      "proven_scope": "patient 15900 dossier pass — route confirmed, payload not fully closed",
-      "limitations": [
-        "structurally_observed only — full payload closure not confirmed",
-        "search parameters schema not documented",
-        "not confirmed across multiple patients",
-        "upload path not tested"
-      ],
-      "local_evidence": [
-        "artifacts/files_and_documents.json",
-        "patients/patient_dossier_live_15900_2026-03-14.json"
-      ],
-      "auth_dependency": true,
-      "current_status": "current",
-      "editorial_note": "Used in dossier files tab; structurally observed. Needs targeted pass to promote to proven.",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "validation_required",
-      "date_validated": null,
-      "cross_date_validated": [],
-      "cross_date_stable": false
+      "cross_date_validated": true,
+      "cross_date_stable": false,
+      "current_scope": "Reusable authenticated browsing for current local workstation where storageState exists.",
+      "notes": "Auth must stay ready_with_limits, not execution-ready."
     },
     {
       "method_id": "auth_smoke_check",
-      "method_name": "auth_smoke_check",
-      "domain": "auth, runtime, all",
-      "purpose": "Validates that storageState is still valid before any live probe — prevents silent auth drift failures",
-      "inputs": [
-        "storageState_file"
-      ],
-      "outputs": [
-        "auth_valid_boolean",
-        "session_age",
-        "smoke_check_log"
-      ],
-      "proof_status": "not_proven",
-      "readiness": "blocked",
-      "proven_scope": "not yet implemented — no script in repo",
+      "method_name": "Auth smoke check",
+      "domain": "runtime",
+      "purpose": "Verify whether current storageState still opens key runtime routes without login fallback.",
+      "inputs": ["storageState", "schedule route", "patient card route", "API test route"],
+      "outputs": ["authenticated route results", "auth readiness verdict"],
+      "proof_status": "proven",
+      "readiness": "ready_with_limits",
+      "status": "current",
       "limitations": [
-        "storageState file NOT in repo",
-        "no smoke-check script exists yet",
-        "without this, auth drift is a silent failure mode for all 11 auth_dependency=true methods"
+        "Confirms current local auth session only",
+        "Not a login/bootstrap implementation"
       ],
-      "local_evidence": [],
-      "auth_dependency": true,
-      "current_status": "template",
-      "editorial_note": "CRITICAL GAP: this method is blocked because storageState is missing from repo. Adding as placeholder to surface the gap explicitly.",
-      "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18",
-      "status": "blocked",
-      "date_validated": null,
-      "cross_date_validated": [],
-      "cross_date_stable": false
+      "local_evidence": [
+        "runtime/auth_smoke_check.js",
+        "runtime/auth_smoke_check_result.json",
+        "docs/auth_runtime_readiness.md"
+      ],
+      "cross_date_validated": false,
+      "cross_date_stable": false,
+      "current_scope": "Three-route smoke: schedule day, patient card, API test shell.",
+      "notes": "Primary auth readiness evidence for repo."
+    },
+    {
+      "method_id": "auth_refresh_via_login_form",
+      "method_name": "Auth refresh via login form",
+      "domain": "runtime",
+      "purpose": "Refresh external DentalPRO storageState by logging in through the current login form and re-saving browser state.",
+      "inputs": ["DP_LOGIN", "DP_PASSWORD", "login page route", "Playwright browser context"],
+      "outputs": ["refreshed storageState", "auth refresh result artifact"],
+      "proof_status": "proven",
+      "readiness": "ready_with_limits",
+      "status": "current",
+      "limitations": [
+        "Still depends on external credentials and external storageState location",
+        "Does not make auth self-contained inside repo",
+        "Refresh success must still be confirmed by auth smoke"
+      ],
+      "local_evidence": [
+        "runtime/auth_refresh.js",
+        "runtime/auth_refresh_result.json",
+        "runtime/auth_smoke_check_result.json"
+      ],
+      "cross_date_validated": false,
+      "cross_date_stable": false,
+      "current_scope": "Local workstation auth refresh path for current DentalPRO runtime work.",
+      "notes": "Use auth_refresh first, then auth_smoke_check; keep auth at ready_with_limits."
+    },
+    {
+      "method_id": "schedule_dom_row_extraction",
+      "method_name": "Schedule DOM row extraction",
+      "domain": "schedule",
+      "purpose": "Extract visit/task rows, doctor columns and row-level runtime structure from HTML-first day schedule.",
+      "inputs": ["schedule date route", "browser DOM"],
+      "outputs": ["rows", "doctor count", "service row split", "row metrics"],
+      "proof_status": "proven",
+      "readiness": "ready",
+      "status": "current",
+      "limitations": [
+        "HTML-first page proof, not a server-side source closure by itself"
+      ],
+      "local_evidence": [
+        "schedule/schedule_2026-02-15_validation_summary.json",
+        "schedule/schedule_2026-02-16_validation_summary.json",
+        "schedule/schedule_2026-03-10_operational_dump_master.md"
+      ],
+      "cross_date_validated": true,
+      "cross_date_stable": false,
+      "current_scope": "Validated on 2026-02-15, 2026-02-16 and baseline 2026-03-10.",
+      "notes": "Current evidence supports repeated extraction on three dates only."
+    },
+    {
+      "method_id": "focused_rc_tooltip_extraction",
+      "method_name": "Focused rc-tooltip extraction",
+      "domain": "tickets",
+      "purpose": "Trigger exact ticket tooltip on icon node and capture live rendered rc-tooltip text.",
+      "inputs": ["task icon node", "React onMouseEnter handler", "browser DOM"],
+      "outputs": ["ticket_order", "icon_class", "exact tooltip text", "normalized category"],
+      "proof_status": "proven",
+      "readiness": "ready_with_limits",
+      "status": "current",
+      "limitations": [
+        "Requires exact icon-level runtime probing",
+        "schi-10 semantics remain inferred",
+        "Must avoid stale tooltip contamination"
+      ],
+      "local_evidence": [
+        "tickets/schedule_2026-03-10_ticket_registry_v2.json",
+        "tickets/ticket_dictionary_v2.json",
+        "schedule/schedule_2026-02-15_ticket_validation.json",
+        "schedule/schedule_2026-02-16_ticket_validation.json"
+      ],
+      "cross_date_validated": true,
+      "cross_date_stable": false,
+      "current_scope": "Full-day tooltip capture validated on 2026-02-15 and 2026-02-16; baseline registry on 2026-03-10.",
+      "notes": "Only live rendered rc-tooltip is source of truth."
+    },
+    {
+      "method_id": "popup_clean_click_probe",
+      "method_name": "Popup clean click probe",
+      "domain": "schedule",
+      "purpose": "Open patient popup from schedule card and capture full name, phones and actions from the rendered popup.",
+      "inputs": ["task card selector", "browser DOM"],
+      "outputs": ["popup linkage verdict", "patient full name", "phones", "button inventory"],
+      "proof_status": "proven",
+      "readiness": "ready_with_limits",
+      "status": "current",
+      "limitations": [
+        "Subset-sensitive across families",
+        "Not every row yields clean popup",
+        "Must keep stale-layer prevention"
+      ],
+      "local_evidence": [
+        "schedule/schedule_2026-03-10_popup_linkage_v3.json",
+        "schedule/schedule_2026-02-15_patient_identity_validation.json",
+        "schedule/schedule_2026-02-16_patient_identity_validation.json"
+      ],
+      "cross_date_validated": true,
+      "cross_date_stable": false,
+      "current_scope": "Validated on three dates, but 2026-02-16 remains subset-based for identity probing.",
+      "notes": "Do not promote to 100% popup success."
+    },
+    {
+      "method_id": "patient_info_button_id_resolution",
+      "method_name": "Patient-info button ID resolution",
+      "domain": "patients",
+      "purpose": "Resolve patient_id by clicking popup action 'Информация о пациенте' and reading cbase/detail route.",
+      "inputs": ["clean popup", "patient-info button", "browser navigation"],
+      "outputs": ["patient_id", "patient card route proof"],
+      "proof_status": "proven",
+      "readiness": "ready_with_limits",
+      "status": "current",
+      "limitations": [
+        "Requires clean popup linkage",
+        "Subset-based on 2026-02-16",
+        "Not available for service rows"
+      ],
+      "local_evidence": [
+        "patients/schedule_2026-03-10_patient_identity_probe_v5.json",
+        "schedule/schedule_2026-02-15_patient_identity_validation.json",
+        "schedule/schedule_2026-02-16_patient_identity_validation.json"
+      ],
+      "cross_date_validated": true,
+      "cross_date_stable": false,
+      "current_scope": "Full-day identity closure on 2026-03-10, full on 2026-02-15, subset on 2026-02-16.",
+      "notes": "Keep date-specific and subset-specific boundaries explicit."
+    },
+    {
+      "method_id": "chair_view_cross_map",
+      "method_name": "Chair-view cross-map",
+      "domain": "schedule",
+      "purpose": "Recover cabinet attribution by reconciling the same task IDs across doctor view and chair view.",
+      "inputs": ["task-record IDs", "doctor view", "chair view"],
+      "outputs": ["visit-to-cabinet mapping"],
+      "proof_status": "proven",
+      "readiness": "ready_with_limits",
+      "status": "current",
+      "limitations": [
+        "Indirect method",
+        "Not replaced by direct canonical cabinet field"
+      ],
+      "local_evidence": [
+        "schedule/schedule_2026-03-10_operational_dump_master.md",
+        "schedule/schedule_2026-03-10_patient_full_report_v5.json"
+      ],
+      "cross_date_validated": false,
+      "cross_date_stable": false,
+      "current_scope": "Baseline 2026-03-10 closure method.",
+      "notes": "Still the accepted operational method for cabinet attribution."
+    },
+    {
+      "method_id": "patient_day_cash_matching",
+      "method_name": "Patient-day cash matching",
+      "domain": "finance",
+      "purpose": "Match schedule rows to RPT_24 at patient-day grain using exact full name, phone and date.",
+      "inputs": ["patient identity", "RPT_24 parsed rows", "schedule date"],
+      "outputs": ["cash_amount_total_candidate", "payment_event_count", "join_status"],
+      "proof_status": "proven",
+      "readiness": "ready_with_limits",
+      "status": "current",
+      "limitations": [
+        "Patient-day grain only",
+        "Not safe as direct visit-to-cash fact",
+        "Ambiguity remains when multiple doctors share the same patient-day"
+      ],
+      "local_evidence": [
+        "finance/schedule_2026-03-10_cash_enrichment_v5.json",
+        "schedule/schedule_2026-02-15_cash_enrichment_validation.json",
+        "schedule/schedule_2026-02-16_cash_enrichment_validation.json"
+      ],
+      "cross_date_validated": true,
+      "cross_date_stable": false,
+      "current_scope": "Validated on 2026-02-15, 2026-02-16 and 2026-03-10 at patient-day grain only.",
+      "notes": "Cash boundary must stay patient-day only."
+    },
+    {
+      "method_id": "proof_aware_schedule_workbook_build",
+      "method_name": "Proof-aware schedule workbook build",
+      "domain": "schedule",
+      "purpose": "Build patient-ready schedule workbook while preserving proof fields and enrichment boundaries.",
+      "inputs": ["normalized schedule rows", "ticket semantics", "cash enrichment layer"],
+      "outputs": ["JSON report", "XLSX workbook", "QC summary"],
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "status": "current",
+      "limitations": [
+        "Inherits source boundaries from input layers",
+        "Does not create stronger proof than inputs"
+      ],
+      "local_evidence": [
+        "schedule/schedule_2026-03-10_patient_full_report_v5.json",
+        "excel/schedule_2026-03-10_patient_full_report_v5.xlsx"
+      ],
+      "cross_date_validated": false,
+      "cross_date_stable": false,
+      "current_scope": "Current proven workbook build on 2026-03-10 baseline.",
+      "notes": "Keep cash blank in main sheet when direct visit-to-cash proof is absent."
+    },
+    {
+      "method_id": "phase6a_cross_date_validation",
+      "method_name": "Phase 6A cross-date validation",
+      "domain": "mixed",
+      "purpose": "Validate selected runtime methods on additional dates and publish raw date-specific summaries plus cross-date matrix.",
+      "inputs": ["selected validation dates", "storageState", "schedule runtime", "RPT_24 parsed file"],
+      "outputs": ["date-specific validation summaries", "cross-date matrix", "Phase 6A report"],
+      "proof_status": "artifact_proven",
+      "readiness": "ready_with_limits",
+      "status": "current",
+      "limitations": [
+        "Current evidence covers only 2026-02-15, 2026-02-16 and 2026-03-10",
+        "2026-02-16 patient identity is subset-based",
+        "Cross-date validated does not mean globally stable"
+      ],
+      "local_evidence": [
+        "schedule/schedule_2026-02-15_validation_summary.json",
+        "schedule/schedule_2026-02-16_validation_summary.json",
+        "reports/cross_date_validation_matrix.json",
+        "reports/phase6A_cross_date_and_repo_hardening_report.md"
+      ],
+      "cross_date_validated": true,
+      "cross_date_stable": false,
+      "current_scope": "Selected methods validated on three dates with explicit limits.",
+      "notes": "Keep wording at validated_on_three_dates_not_promoted_to_stable."
     }
-  ],
-  "editorial_notes": {
-    "auth_dependent_methods": 8,
-    "methods_with_external_deps": [
-      "storageState_auth_reuse",
-      "accepted_api_path_usage"
-    ],
-    "methods_single_date_only": [
-      "popup_clean_click_probe",
-      "chair_view_cross_map",
-      "focused_rc_tooltip_extraction"
-    ],
-    "critical_gap": "storageState not in repo — silent failure mode for all auth_dependency=true methods",
-    "total_methods": 23,
-    "blocked_methods": [
-      "auth_smoke_check"
-    ],
-    "validation_required_methods": [
-      "file_modal_search"
-    ]
-  },
-  "last_updated": "2026-03-18",
-  "cross_date_validation_added": "2026-03-18"
+  ]
 }
