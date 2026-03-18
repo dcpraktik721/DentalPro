@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-16",
+  "run_date": "2026-03-18",
+  "total_visit_rows": 67,
+  "total_icons_observed": "~300 estimated (4-6 per row)",
+  "schi_10_count": 0,
+  "tooltip_captures": 3,
+  "unique_icon_families": [
+    {"family": "green-check", "prevalence": "62/67 rows (~93%)", "interpretation": "confirmed/payment status"},
+    {"family": "orange-tooth", "prevalence": "~55/67 rows", "interpretation": "dental ticket type"},
+    {"family": "orange-circle", "prevalence": "~55/67 rows", "interpretation": "status indicator"},
+    {"family": "green-list", "prevalence": "~50/67 rows", "interpretation": "plan/notes"},
+    {"family": "phone", "prevalence": "~40/67 rows", "interpretation": "contact available"},
+    {"family": "lightning-bolt", "prevalence": "3/67 rows", "interpretation": "special flag — ХАМОШИНА, ОЛЬДТ, МЕЗЕЦ"},
+    {"family": "black-square", "prevalence": "2/67 rows", "interpretation": "flag — МАРЧЕНКО(гигиенист), ХАМОШИНА"},
+    {"family": "red-check", "prevalence": "1/67 rows", "interpretation": "alternate status — ЯЛОВАЯ Ю.Е."}
+  ],
+  "tooltip_captured_texts": [
+    "Первичная консультация врача-ортопеда (ХАМОШИНА)",
+    "Повторная консультация врача-ортопеда (ТКАЧЕНКО)",
+    "Примерка реставрации временной/постоянной на имплантате (ЗАБОЛОТНЫЙ)"
+  ],
+  "drift_vs_baseline_10_03": {
+    "drift_detected": false,
+    "new_families": ["black-square", "red-check"],
+    "note": "Core families stable. New variants may reflect different specializations (orthopedics vs baseline's mixed). schi-10 absent — consistent with non-therapeutic appointments on this day."
+  },
+  "schi_10_status": "NOT OBSERVED — 0 schi-10 icons. Baseline had 11 schi-10 (all inferred, schi-10 = single-source). Absence here consistent with different specialty mix."
+}

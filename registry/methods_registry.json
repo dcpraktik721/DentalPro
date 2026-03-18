@@ -1,6 +1,6 @@
 {
   "registry_name": "methods_registry",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "status": "v1_2_new_methods_added_2026_03_18",
   "source": "artifacts/dentalpro_verified_methods_registry.json",
   "entry_schema": {
@@ -43,7 +43,15 @@
       "auth_dependency": true,
       "editorial_note": "Broad project-wide ready; confirmed by multiple domain passes",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10",
+        "2026-02-15",
+        "2026-02-16"
+      ],
+      "cross_date_stable": true
     },
     {
       "method_id": "direct_tab_url_access",
@@ -70,7 +78,15 @@
       "auth_dependency": true,
       "editorial_note": "Confirmed via patient card and report shells; route contracts documented in screen-map",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10",
+        "2026-02-15",
+        "2026-02-16"
+      ],
+      "cross_date_stable": true
     },
     {
       "method_id": "storagestate_auth_reuse",
@@ -96,7 +112,11 @@
       "auth_dependency": true,
       "editorial_note": "CRITICAL: storageState missing from repo. Ready in method definition but has untracked external dep",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "blocked",
+      "date_validated": null,
+      "cross_date_validated": [],
+      "cross_date_stable": false
     },
     {
       "method_id": "accepted_api_path_usage",
@@ -125,7 +145,11 @@
       "auth_dependency": true,
       "editorial_note": "API proof basis depends on external SoT; local evidence limited to governed verdicts",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": null,
+      "cross_date_validated": [],
+      "cross_date_stable": false
     },
     {
       "method_id": "dom_extraction",
@@ -152,7 +176,15 @@
       "auth_dependency": true,
       "editorial_note": "Confirmed across schedule forensic and cashbox passes",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10",
+        "2026-02-15",
+        "2026-02-16"
+      ],
+      "cross_date_stable": true
     },
     {
       "method_id": "hidden_attribute_harvesting",
@@ -179,7 +211,11 @@
       "auth_dependency": true,
       "editorial_note": "ready_with_limits: structural observation confirmed, semantic closure not guaranteed",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": null,
+      "cross_date_validated": [],
+      "cross_date_stable": false
     },
     {
       "method_id": "popup_clean_click_probe",
@@ -208,7 +244,15 @@
       "auth_dependency": true,
       "editorial_note": "54/56 proven on 10.03.2026; subset-based, not global",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10",
+        "2026-02-15",
+        "2026-02-16"
+      ],
+      "cross_date_stable": true
     },
     {
       "method_id": "focused_rc_tooltip_extraction",
@@ -237,7 +281,15 @@
       "auth_dependency": true,
       "editorial_note": "293/304 proven; schi-10 (11 tickets) remains inferred — must not be promoted",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10",
+        "2026-02-15",
+        "2026-02-16"
+      ],
+      "cross_date_stable": true
     },
     {
       "method_id": "stale_layer_prevention",
@@ -264,7 +316,11 @@
       "auth_dependency": true,
       "editorial_note": "Operational hygiene method; prerequisite for popup and tooltip probes",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": null,
+      "cross_date_validated": [],
+      "cross_date_stable": false
     },
     {
       "method_id": "chair_view_cross_map",
@@ -291,7 +347,15 @@
       "auth_dependency": true,
       "editorial_note": "Workaround by design; canonical only until direct field is discovered",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10",
+        "2026-02-15",
+        "2026-02-16"
+      ],
+      "cross_date_stable": true
     },
     {
       "method_id": "report_formation_probe",
@@ -319,7 +383,11 @@
       "auth_dependency": true,
       "editorial_note": "Confirmed for RPT_18, 23, 33; other families require separate passes",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": null,
+      "cross_date_validated": [],
+      "cross_date_stable": false
     },
     {
       "method_id": "export_tracking_direct_vs_async",
@@ -347,7 +415,11 @@
       "auth_dependency": false,
       "editorial_note": "Mechanics contract proven for RPT_21, 24, 48; direct vs async distinction is stable",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": null,
+      "cross_date_validated": [],
+      "cross_date_stable": false
     },
     {
       "method_id": "parsed_xlsx_extraction",
@@ -374,7 +446,13 @@
       "auth_dependency": false,
       "editorial_note": "ready; local XLSX artifacts exist in excel/ folder",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10"
+      ],
+      "cross_date_stable": false
     },
     {
       "method_id": "grouped_header_leaf_extraction",
@@ -400,7 +478,13 @@
       "auth_dependency": false,
       "editorial_note": "Narrow scope: RPT_18 only; do not apply to other reports without evidence",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10"
+      ],
+      "cross_date_stable": false
     },
     {
       "method_id": "explicit_normalization_policy",
@@ -429,7 +513,13 @@
       "auth_dependency": false,
       "editorial_note": "Core operating principle; evidence exists in governed verdicts",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10"
+      ],
+      "cross_date_stable": false
     },
     {
       "method_id": "family_aware_canonicalization",
@@ -456,7 +546,13 @@
       "auth_dependency": false,
       "editorial_note": "Covers priority families 23/24/34/35/36/48; others require separate validation",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10"
+      ],
+      "cross_date_stable": false
     },
     {
       "method_id": "detail_vs_summary_reconciliation",
@@ -482,7 +578,13 @@
       "auth_dependency": false,
       "editorial_note": "Dual-layer guardrail model confirmed for RPT_34/35",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10"
+      ],
+      "cross_date_stable": false
     },
     {
       "method_id": "file_first_dataset_modeling",
@@ -509,7 +611,13 @@
       "auth_dependency": false,
       "editorial_note": "Canonical model for async export families; do not apply to sync families",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready",
+      "date_validated": "2026-03-10",
+      "cross_date_validated": [
+        "2026-03-10"
+      ],
+      "cross_date_stable": false
     },
     {
       "method_id": "row_document_split_by_act_reference",
@@ -537,7 +645,13 @@
       "auth_dependency": false,
       "editorial_note": "Document-grain model confirmed for 2 reference cases; global closure pending",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": "2026-03-18",
+      "cross_date_validated": [
+        "2026-03-18"
+      ],
+      "cross_date_stable": false
     },
     {
       "method_id": "delta_pass_strategy",
@@ -565,7 +679,11 @@
       "auth_dependency": false,
       "editorial_note": "Project-wide operating discipline; confirmed by v1→v5 lineage",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": null,
+      "cross_date_validated": [],
+      "cross_date_stable": false
     },
     {
       "method_id": "network_capture_analysis",
@@ -597,7 +715,11 @@
       "current_status": "current",
       "editorial_note": "Used in empty_cards forensic pass; not yet registered — adding now. Artifact-proven only.",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "ready_with_limits",
+      "date_validated": null,
+      "cross_date_validated": [],
+      "cross_date_stable": false
     },
     {
       "method_id": "file_modal_search",
@@ -630,7 +752,11 @@
       "current_status": "current",
       "editorial_note": "Used in dossier files tab; structurally observed. Needs targeted pass to promote to proven.",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "validation_required",
+      "date_validated": null,
+      "cross_date_validated": [],
+      "cross_date_stable": false
     },
     {
       "method_id": "auth_smoke_check",
@@ -658,7 +784,11 @@
       "current_status": "template",
       "editorial_note": "CRITICAL GAP: this method is blocked because storageState is missing from repo. Adding as placeholder to surface the gap explicitly.",
       "editorial_reviewed": true,
-      "editorial_reviewed_date": "2026-03-18"
+      "editorial_reviewed_date": "2026-03-18",
+      "status": "blocked",
+      "date_validated": null,
+      "cross_date_validated": [],
+      "cross_date_stable": false
     }
   ],
   "editorial_notes": {
@@ -680,5 +810,7 @@
     "validation_required_methods": [
       "file_modal_search"
     ]
-  }
+  },
+  "last_updated": "2026-03-18",
+  "cross_date_validation_added": "2026-03-18"
 }

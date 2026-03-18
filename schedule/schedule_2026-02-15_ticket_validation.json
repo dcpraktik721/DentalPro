@@ -1,0 +1,39 @@
+{
+  "date": "2026-02-15",
+  "run_date": "2026-03-18",
+  "total_visit_rows": 6,
+  "total_icons_observed": 33,
+  "avg_icons_per_row": 5.5,
+  "schi_10_count": 0,
+  "tooltip_captures": 2,
+  "unique_icon_families": [
+    {"family": "green-checkmark", "count": 5, "interpretation": "visit confirmed / attendance"},
+    {"family": "red-tooth-cross", "count": 5, "interpretation": "dental ticket type marker"},
+    {"family": "yellow-lightning-bolt", "count": 1, "interpretation": "special flag — observed only on БАШЕВА (Первичная консультация), possible first-visit indicator"},
+    {"family": "grey-circle", "count": 6, "interpretation": "status/category indicator"},
+    {"family": "grey-square", "count": 5, "interpretation": "document or checklist"},
+    {"family": "red-circle", "count": 3, "interpretation": "alert or flag"},
+    {"family": "red-heart", "count": 1, "interpretation": "observed on КОЗЛОВА (Ортодонт) — possible DMS/insurance indicator"},
+    {"family": "phone", "count": 5, "interpretation": "contact available"}
+  ],
+  "visits_with_tickets": [
+    {"patient": "АБИЛОВ Т.А.", "doctor": "Храпонова Н.А.", "icon_count": 6, "notable": "green-check, red-tooth, orange, grey, red, phone"},
+    {"patient": "ФЕШКОВА А.И.", "doctor": "Храпонова Н.А.", "icon_count": 5, "notable": "green-check, red-tooth, grey-square, red, phone"},
+    {"patient": "БАШЕВА Е.Е.", "doctor": "Храпонова Н.А.", "icon_count": 6, "notable": "green-check, red-tooth, yellow-lightning-bolt, grey-square, red, phone — UNIQUE lightning bolt"},
+    {"patient": "ИЗМАЙЛОВ Р.А.", "doctor": "Храпонова Н.А.", "icon_count": 6, "notable": "green-check, red-tooth, grey-circle x2, grey-square, phone"},
+    {"patient": "ИЗМАЙЛОВА А.А.", "doctor": "Храпонова Н.А.", "icon_count": 6, "notable": "green-check, red-tooth, grey-circle x2, grey-square, phone"},
+    {"patient": "КОЗЛОВА К.А.", "doctor": "Литвинова Е.", "icon_count": 4, "notable": "red-heart, grey-circle, red, phone — UNIQUE red-heart, no tooth icon"}
+  ],
+  "drift_vs_baseline_10_03": {
+    "drift_detected": false,
+    "new_families": ["yellow-lightning-bolt", "red-heart"],
+    "missing_families_vs_baseline": [],
+    "note": "New icon families observed but likely existing — CSS class names not confirmable via accessibility tree. Tooltip format stable. schi-10 not observed on this day."
+  },
+  "tooltip_captured_texts": [
+    "Продолжение лечения гигиенист (hover near АБИЛОВ card area)",
+    "Продолжение лечения ортодонт (hover near КОЗЛОВА card area)"
+  ],
+  "proven_families_status": "MAINTAINED — core icon families confirmed, tooltip extraction works",
+  "schi_10_status": "NOT OBSERVED — 0 schi-10 icons on this date"
+}

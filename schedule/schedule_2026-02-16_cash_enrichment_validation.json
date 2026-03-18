@@ -1,0 +1,32 @@
+{
+  "date": "2026-02-16",
+  "run_date": "2026-03-18",
+  "proof_boundary": "patient-day grain only — NOT visit-level",
+  "enrichment_source": "RPT_24 (not available for Feb 2026 in repo)",
+  "total_candidate_patient_rows": 67,
+  "matched_rows": 0,
+  "unmatched_rows": 67,
+  "match_rate": 0.0,
+  "rpt24_feb_data_available": false,
+  "payment_icon_observations": {
+    "rows_with_payment_icon": 65,
+    "rows_without": 2,
+    "icon_rate": 0.97,
+    "note": "green-check on 65/67 rows = strong indicator that payments exist for most visits. But amounts not visible on card faces."
+  },
+  "baseline_comparison": {
+    "baseline_date": "2026-03-10",
+    "baseline_match_rate": 0.911,
+    "baseline_total_rows": 56,
+    "note": "Feb 16 has 67 patient rows vs 56 on baseline — larger day. Payment icon rate higher (97% vs ~91% conditional match on baseline)"
+  },
+  "degradation_vs_baseline": "CANNOT_ASSESS — RPT_24 Feb data not in repo",
+  "cash_visit_level_claim": "FORBIDDEN — not attempted",
+  "notes": [
+    "High payment icon rate (97%) suggests most visits were processed through cashbox",
+    "ХАМОШИНА (Первичная, no icon) and ПРИСЯЖНЮК (minimal icons) are the 2 rows without payment icon",
+    "To complete cash enrichment: pull RPT_24 for 2026-02-16, match by doctor+date+patient_name grain"
+  ],
+  "verdict": "BLOCKED — RPT_24 Feb 2026 data not in repo. Payment icon pattern strongly suggests high match rate if data were available.",
+  "next_step": "Pull RPT_24 for 2026-02-01 to 2026-02-28"
+}

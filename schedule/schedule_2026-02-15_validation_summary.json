@@ -1,0 +1,57 @@
+{
+  "validation_date": "2026-02-15",
+  "run_date": "2026-03-18",
+  "day_of_week": "Sunday (воскресенье)",
+  "auth_status": "authenticated",
+  "page_loaded": true,
+  "route_stable": true,
+  "url_used": "https://dcpraktik.dental-pro.online/visits/schedule/index?date=2026-02-15",
+  "schedule": {
+    "total_rows": 6,
+    "patient_rows": 6,
+    "service_slots": 0,
+    "doctors_count": 2,
+    "doctors": ["Храпонова Н.А.", "Литвинова Е."],
+    "cabinets": ["Кабинет 23 (Л)", "Кабинет 23 (П)"],
+    "specializations_active": ["Гигиенисты", "Ортодонты"],
+    "layout_drift": false,
+    "date_targeting_works": true
+  },
+  "patient_identity": {
+    "total_rows": 6,
+    "patient_id_resolved": 6,
+    "unresolved": 0,
+    "resolution_rate": 1.0,
+    "method": "popup_clean_click_probe → /cbase/detail.html?id=XXXXX"
+  },
+  "ticket_layer": {
+    "total_icons_observed": 33,
+    "unique_icon_families": [
+      "green-checkmark",
+      "red-tooth-cross",
+      "yellow-lightning-bolt",
+      "grey-circle",
+      "grey-square",
+      "red-circle",
+      "red-heart",
+      "phone"
+    ],
+    "schi_10_count": 0,
+    "tooltip_captures": 2,
+    "new_families_vs_baseline": ["yellow-lightning-bolt (БАШЕВА — possible first-visit flag)", "red-heart (КОЗЛОВА — possible DMS indicator)"]
+  },
+  "cash_layer": {
+    "rows_with_payment_icon": 0,
+    "all_visits_show_оплатить_button": true,
+    "payment_amounts_visible": false,
+    "match_possible": false,
+    "notes": "All 6 visits unpaid as of extraction. No green payment marker. 'Оплатить' button visible in all popups."
+  },
+  "findings": [
+    "Sunday operation confirmed — schedule IS accessible and populated on a non-working day",
+    "Only 2 specializations active (Гигиенисты + Ортодонты), both in Кабинет 23",
+    "ИЗМАЙЛОВ + ИЗМАЙЛОВА — family pair sharing phone, both children (5 and 7 years), same doctor",
+    "АБИЛОВ — insurance patient (АО СОГАЗ, polissy до 31.03.2026)",
+    "100% patient_id resolution on full day subset (6/6)"
+  ]
+}

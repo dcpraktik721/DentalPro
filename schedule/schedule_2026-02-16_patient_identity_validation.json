@@ -1,0 +1,26 @@
+{
+  "date": "2026-02-16",
+  "run_date": "2026-03-18",
+  "total_patient_rows": 67,
+  "service_family_rows": 2,
+  "rows_probed": 5,
+  "patient_id_resolved_probed": 5,
+  "resolution_rate_probed_subset": 1.0,
+  "full_day_resolution_extrapolated": "NOT_PROVEN — subset only",
+  "method": "popup_clean_click_probe → /cbase/detail.html?id=XXXXX",
+  "probed_patients": [
+    {"patient_name": "МАРЧЕНКО НАТАЛЬЯ СЕРГЕЕВНА", "patient_id": "15327", "doctor": "Храпонова Н.А.", "dob": "02.09.2002", "age": 23, "phone": "79323267705", "online_booking": true, "proof": "proven"},
+    {"patient_name": "ТКАЧЕНКО ЮЛИЯ ДМИТРИЕВНА", "patient_id": "17371", "doctor": "Оленев А.О.", "dob": "10.01.1990", "age": 36, "phone": "79292674866", "proof": "proven"},
+    {"patient_name": "ЗАБОЛОТНЫЙ АЛЕКСАНДР СЕРГЕЕВИЧ", "patient_id": "17914", "doctor": "Оленев А.О.", "dob": "27.04.1983", "age": 42, "phone": "79097378386", "service": "Примерка реставрации на имплантате", "proof": "proven"},
+    {"patient_name": "ХАМОШИНА НЕЛЛИ ПЕТРОВНА", "patient_id": "18988", "doctor": "Оленев А.О.", "dob": "07.01.1942", "age": 84, "phone": "79612081051", "service": "Первичная консультация ортопеда", "proof": "proven"},
+    {"patient_name": "ГРАЧЕВА АНАСТАСИЯ ПЕТРОВНА", "patient_id": "12498", "doctor": "Храпонова Н.А.", "dob": "23.04.1985", "age": 40, "phone": "79129296505", "proof": "proven"}
+  ],
+  "unresolved_reasons": "Not probed — 62 rows remain at inferred status (not visited in popup probe)",
+  "popup_success_rate_on_probed": 1.0,
+  "route_drift": false,
+  "notable_findings": [
+    "МАРЧЕНКО Н.С. appears twice on same day: Храпонова 14:00 (id=15327) AND Мамонтова 16:00 — likely different patients or duplicate entry",
+    "ХАМОШИНА (84y) — oldest patient observed in validation. Первичная consultation with no payment icon → possible unprocessed visit",
+    "popup_clean_click_probe functional on 67-row Monday schedule"
+  ]
+}

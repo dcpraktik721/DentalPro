@@ -1762,5 +1762,95 @@
     "migration_decision": "migrate_now",
     "reason": "Current state-machine summary for documents tab load/download and create boundary",
     "notes": "Useful for operational method closure"
+  },
+  {
+    "path": "schedule/schedule_2026-02-15_operational_validation.md",
+    "type": "validation_report",
+    "date": "2026-02-15",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-15_validation_summary.json",
+    "type": "validation_data",
+    "date": "2026-02-15",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-15_ticket_validation.json",
+    "type": "validation_data",
+    "date": "2026-02-15",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-15_patient_identity_validation.json",
+    "type": "validation_data",
+    "date": "2026-02-15",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-15_cash_enrichment_validation.json",
+    "type": "validation_data",
+    "date": "2026-02-15",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-16_operational_validation.md",
+    "type": "validation_report",
+    "date": "2026-02-16",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-16_validation_summary.json",
+    "type": "validation_data",
+    "date": "2026-02-16",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-16_ticket_validation.json",
+    "type": "validation_data",
+    "date": "2026-02-16",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-16_patient_identity_validation.json",
+    "type": "validation_data",
+    "date": "2026-02-16",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "schedule/schedule_2026-02-16_cash_enrichment_validation.json",
+    "type": "validation_data",
+    "date": "2026-02-16",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "reports/cross_date_validation_2026-02-15_2026-02-16_vs_2026-03-10.md",
+    "type": "comparison_report",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "reports/cross_date_validation_matrix.json",
+    "type": "comparison_data",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "reports/phase6A_cross_date_and_repo_hardening_report.md",
+    "type": "phase_report",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "runtime/auth_smoke_check.js",
+    "type": "script",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "docs/auth_runtime_readiness.md",
+    "type": "documentation",
+    "created": "2026-03-18"
+  },
+  {
+    "path": "docs/external_sot_extraction_worklog.md",
+    "type": "documentation",
+    "created": "2026-03-18"
   }
 ]

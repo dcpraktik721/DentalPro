@@ -1,0 +1,45 @@
+{
+  "validation_date": "2026-02-16",
+  "run_date": "2026-03-18",
+  "day_of_week": "Monday (понедельник)",
+  "auth_status": "authenticated",
+  "page_loaded": true,
+  "route_stable": true,
+  "url_used": "https://dcpraktik.dental-pro.online/visits/schedule/index?date=2026-02-16",
+  "schedule": {
+    "total_rows_extracted": 69,
+    "patient_rows": 67,
+    "service_slots": 2,
+    "doctors_count": 12,
+    "doctors": ["Храпонова Н.А.", "Оленев А.О.", "Гулямхайдаров А.А.", "Кулешов К.А.", "Мамонтова С.А.", "Буряк Л.А.", "Жихар З.К.", "Зотов В.Д.", "Аушева М.А.", "Дышлевой К.А.", "Иващенко А.Н.", "Логвинчук Д.Н."],
+    "new_doctors_vs_10_03": ["Мамонтова С.А.", "Дышлевой К.А."],
+    "cabinets_confirmed": ["Кабинет 23 (Л)", "Кабинет 19"],
+    "layout_drift": false,
+    "date_targeting_works": true,
+    "online_booking_visits": 2
+  },
+  "patient_identity": {
+    "total_rows": 67,
+    "rows_probed": 5,
+    "patient_id_resolved_probed": 5,
+    "resolution_rate_probed": 1.0,
+    "full_day_resolution_rate": "NOT_MEASURED (subset probe only)",
+    "method": "popup_clean_click_probe → /cbase/detail.html?id=XXXXX"
+  },
+  "ticket_layer": {
+    "total_icons_observed": "~300 estimated",
+    "unique_icon_families": 8,
+    "schi_10_count": 0,
+    "tooltip_captures": 3,
+    "new_families_vs_baseline": ["black-square", "red-check"],
+    "lightning_bolt_patients": ["ХАМОШИНА Н.П.", "ОЛЬДТ Е.Г.", "МЕЗЕЦ А.Н."]
+  },
+  "cash_layer": {
+    "rows_with_payment_icon": 65,
+    "rows_without_payment_icon": 2,
+    "payment_icon_rate": 0.97,
+    "rpt24_feb_data": false,
+    "patient_day_matching_possible": false,
+    "cash_visit_level_claim": "FORBIDDEN"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-15",
+  "run_date": "2026-03-18",
+  "proof_boundary": "patient-day grain only — NOT visit-level",
+  "enrichment_source": "RPT_24 equivalent (if available for Feb period)",
+  "total_candidate_patient_rows": 6,
+  "matched_rows": 0,
+  "unmatched_rows": 6,
+  "match_rate": 0.0,
+  "rpt24_feb_data_available": false,
+  "baseline_comparison": {
+    "baseline_date": "2026-03-10",
+    "baseline_match_rate": 0.911,
+    "baseline_conditional_match": 49,
+    "baseline_heuristic_match": 2,
+    "baseline_no_match": 5
+  },
+  "degradation_vs_baseline": "NOT_COMPARABLE — RPT_24 Feb period data not in repo",
+  "payment_status_on_cards": "All 6 visits show 'Оплатить' button → zero paid at time of extraction",
+  "cash_visit_level_claim": "FORBIDDEN — not attempted",
+  "notes": [
+    "No RPT_24 Feb 2026 data in repo to perform patient-day matching",
+    "Geyushova_2026-02 file covers only Геюшова's patients — not Храпонова or Литвинова",
+    "Feb 15 cash enrichment requires separate RPT_24 pull for Feb 2026 period across all doctors",
+    "All visits unpaid at extraction time — payment likely processed later in day or post-visit"
+  ],
+  "verdict": "BLOCKED — cannot perform cash matching without RPT_24 Feb data",
+  "next_step": "Pull RPT_24 for 2026-02-01 to 2026-02-28 to enable patient-day matching"
+}

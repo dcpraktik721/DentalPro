@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-15",
+  "run_date": "2026-03-18",
+  "total_patient_rows": 6,
+  "service_family_rows": 0,
+  "rows_probed": 6,
+  "patient_id_resolved": 6,
+  "unresolved": 0,
+  "resolution_rate": 1.0,
+  "method": "popup_clean_click_probe → Информация о пациенте → /cbase/detail.html?id=XXXXX",
+  "patients": [
+    {"patient_name": "АБИЛОВ ТУРАЛ АБИЛЬ ОГЛЫ", "patient_id": "17733", "doctor": "Храпонова Н.А.", "dob": "14.10.1993", "age": 32, "phone": "79199371254", "insurance": "АО СОГАЗ до 31.03.2026", "proof": "proven"},
+    {"patient_name": "ФЕШКОВА АНАСТАСИЯ ИГОРЕВНА", "patient_id": "13779", "doctor": "Храпонова Н.А.", "dob": "30.03.1992", "age": 33, "phone": "79523499994", "proof": "proven"},
+    {"patient_name": "БАШЕВА ЕЛЕНА ЕВГЕНЬЕВНА", "patient_id": "19044", "doctor": "Храпонова Н.А.", "dob": "24.01.1988", "age": 38, "phone": "79091827715", "proof": "proven"},
+    {"patient_name": "ИЗМАЙЛОВ РАГНАР АРТУРОВИЧ", "patient_id": "6264", "doctor": "Храпонова Н.А.", "dob": "31.05.2020", "age": 5, "phone": "79829305721", "note": "child patient, shares phone with ИЗМАЙЛОВА", "proof": "proven"},
+    {"patient_name": "ИЗМАЙЛОВА АЛЕКСАНДРА АРТУРОВНА", "patient_id": "6348", "doctor": "Храпонова Н.А.", "dob": "14.04.2018", "age": 7, "phone": "79829305721", "note": "child patient, shares phone with ИЗМАЙЛОВ — family pair", "proof": "proven"},
+    {"patient_name": "КОЗЛОВА КСЕНИЯ АНДРЕЕВНА", "patient_id": "2133", "doctor": "Литвинова Е.", "dob": "06.02.1994", "age": 32, "phone": "79326232003", "proof": "proven"}
+  ],
+  "unresolved_list": [],
+  "popup_success_rate": 1.0,
+  "route_drift": false,
+  "family_service_slots_excluded": true,
+  "notable_findings": [
+    "ИЗМАЙЛОВ + ИЗМАЙЛОВА: sibling pair (5y + 7y), same phone number — family multi-visit pattern",
+    "АБИЛОВ: DMS patient with active СОГАЗ insurance policy",
+    "popup_clean_click_probe fully functional on Sunday date"
+  ]
+}
