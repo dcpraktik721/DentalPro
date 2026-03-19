@@ -170,3 +170,8 @@
   - accepted API composite remains `mobile/owner/efficiency + mobile/schedule`
   - runtime UI remains the validation target
   - single-endpoint replacement remains forbidden
+- `RPT_24` live slice (`2026-02-18`) is now locked as:
+  - runtime UI row count and totals matched the accepted API composite
+  - operational status stays `ready_with_limits`
+  - xray performer row-level key remains unresolved
+  - accepted API composite must not be promoted as fully canonical report truth

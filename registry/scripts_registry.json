@@ -1,7 +1,7 @@
 {
   "registry_name": "scripts_registry",
-  "version": "0.4.3",
-  "status": "current_curated_registry_plus_rpt3_rpt9_rpt18_paths",
+  "version": "0.4.4",
+  "status": "current_curated_registry_plus_rpt3_rpt9_rpt18_rpt24_paths",
   "entry_schema": {
     "script_id": "",
     "path": "",
@@ -382,6 +382,35 @@
         "Normalization policy remains report-family specific"
       ],
       "notes": "Repo-local workbook/meta builder for RPT_18 verified slices; validated on 2026-02-18"
+    },
+    {
+      "script_id": "script_build_report_rpt24_workbook",
+      "path": "scripts/build_report_rpt24_workbook.py",
+      "language": "python",
+      "purpose": "Build normalized RPT_24 workbook and meta from saved UI/API artifacts",
+      "domain": "reporting, finance",
+      "inputs": [
+        "reporting/report-24-YYYY-MM-DD-YYYY-MM-DD.json",
+        "reporting/report-24-api-analysis-YYYY-MM-DD-YYYY-MM-DD.json",
+        "reports/RPT_24_live_report_YYYY-MM-DD.md",
+        "reports/RPT_24_problem_log_YYYY-MM-DD.md"
+      ],
+      "outputs": [
+        "scripts/build_report_rpt24_workbook.py"
+      ],
+      "artifacts_produced": [
+        "excel/RPT_24_2026-02-18_normalized.xlsx",
+        "artifacts/RPT_24_2026-02-18_meta.json"
+      ],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Does not execute live DentalPRO extraction by itself",
+        "Assumes saved UI and API artifacts already exist",
+        "Xray performer row-level key remains unresolved",
+        "Accepted API composite must not be promoted as fully canonical report truth"
+      ],
+      "notes": "Repo-local workbook/meta builder for RPT_24 verified-with-limits slices; validated on 2026-02-18"
     }
   ]
 }
