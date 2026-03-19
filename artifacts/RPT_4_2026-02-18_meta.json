@@ -1,0 +1,37 @@
+{
+  "report_code": "RPT_4",
+  "report_name": "Первичные пациенты",
+  "date_start": "2026-02-18",
+  "date_end": "2026-02-18",
+  "generated_at": "2026-03-19T16:54:25.073Z",
+  "run_status": "success_with_warnings",
+  "primary_truth": "runtime_html_anchored_api_replay",
+  "runtime_checked": true,
+  "export_checked": false,
+  "export_available": false,
+  "runtime_row_count": 7,
+  "export_row_count": null,
+  "parity_status": "verified_fields_mismatch",
+  "warnings": [
+    {
+      "warning_code": "VERIFIED_FIELD_MISMATCH",
+      "severity": "high",
+      "layer": "ui_vs_api",
+      "message": "Verified fields mismatched on 2 comparisons."
+    },
+    {
+      "warning_code": "HIDDEN_BACKEND_PREDICATE",
+      "severity": "high",
+      "layer": "selection",
+      "message": "Full row selection logic for RPT_4 is still not closed; at least one hidden backend predicate remains."
+    },
+    {
+      "warning_code": "BRANCH_COORDINATOR_NOT_CLOSED",
+      "severity": "medium",
+      "layer": "field_closure",
+      "message": "Филиал and Координатор remain intentionally unclosed in the accepted API replay."
+    }
+  ],
+  "safe_claim_boundary": "UI-anchored API replay for this date. Row identity and selected field semantics are verified against the live report; hidden backend predicate plus Филиал/Координатор remain unclosed.",
+  "normalized_workbook_path": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_4_2026-02-18_normalized.xlsx"
+}

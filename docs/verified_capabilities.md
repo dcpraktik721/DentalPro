@@ -78,6 +78,7 @@
   - `RPT_24` has a `2026-02-18` verified-with-limits slice where runtime UI totals and accepted API composite totals match
   - `RPT_29` has a verified single-date empty-runtime slice on `2026-02-18`, packaged as normalized workbook plus meta from repo-local artifacts
   - `RPT_39` has a verified single-date no-data slice on `2026-02-18`, packaged as normalized workbook plus meta from repo-local artifacts
+  - `RPT_4` has a `2026-02-18` live slice with repo-local UI capture and accepted API replay package, including normalized workbook and explicit mismatch log
 - limits:
   - not every report family is production-closed
   - `RPT_9` workbook keeps `runtime_html` as primary truth and accepted API as supporting layer only
@@ -86,6 +87,7 @@
   - `RPT_24` still has the xray performer row-level key unresolved and therefore stays `ready_with_limits`
   - `RPT_29` keeps `runtime_html` as primary truth; annual/default unpaid family composites remain supporting-only and not date-specific evidence for `2026-02-18`
   - `RPT_39` keeps `runtime_html` as primary truth; candidate API mappings remain catalog-level only and are not verified report truth for `2026-02-18`
+  - `RPT_4` still has residual replay mismatches and unresolved hidden backend predicate/field-closure gaps, so it remains below full parity closure
 
 ## Runtime/auth
 

@@ -187,3 +187,9 @@
   - `runtime_html` remains primary truth
   - candidate API sources remain catalog-level only and not verified report truth for this slice
   - operational status stays `usable_with_limits`
+- `RPT_4` live slice (`2026-02-18`) is now locked as:
+  - repo-local UI capture plus accepted replay were both run on the same single-date slice
+  - replay returned `7` rows for `7` UI rows
+  - residual verified-field mismatches remain (`2` mismatches on doctor/current-primary-date fields)
+  - `runtime_html` remains the anchoring truth for this slice
+  - operational status stays `usable_with_limits`
