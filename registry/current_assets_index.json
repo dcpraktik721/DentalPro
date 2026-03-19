@@ -2601,5 +2601,209 @@
     "migration_decision": "migrate_now",
     "reason": "Normalized Excel output for RPT_4 single-date slice",
     "notes": "Built only from repo-local artifacts"
+  },
+  {
+    "asset_id": "reporting_rpt23_runtime_live_2026_02_18",
+    "title": "RPT_23 runtime live dataset for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_runtime_live_2026-02-18.json",
+    "repo_path": "reporting/RPT_23_runtime_live_2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Runtime primary evidence for RPT_23 on 2026-02-18",
+    "notes": "Structured runtime table with 66 rows; remains the primary truth layer"
+  },
+  {
+    "asset_id": "reporting_rpt23_export_live_2026_02_18",
+    "title": "RPT_23 export live artifact for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_export_live_2026-02-18.json",
+    "repo_path": "reporting/RPT_23_export_live_2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Native export capture metadata for RPT_23 on 2026-02-18",
+    "notes": "Secondary audit layer only; export availability is proven but not canonical truth"
+  },
+  {
+    "asset_id": "reporting_rpt23_file_parse_2026_02_18",
+    "title": "RPT_23 file parse dataset for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_file_parse_2026-02-18.json",
+    "repo_path": "reporting/RPT_23_file_parse_2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Parsed export/file dataset for governed comparison on RPT_23",
+    "notes": "66 parsed rows with exact header match to runtime"
+  },
+  {
+    "asset_id": "reporting_rpt23_family_classification_2026_02_18",
+    "title": "RPT_23 family classification for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_family_classification_2026-02-18.json",
+    "repo_path": "reporting/RPT_23_family_classification_2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Governed family classification for RPT_23 slice",
+    "notes": "Classifies the slice as runtime_table_export_table"
+  },
+  {
+    "asset_id": "reporting_rpt23_extraction_policy_2026_02_18",
+    "title": "RPT_23 extraction policy for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_extraction_policy_2026-02-18.json",
+    "repo_path": "reporting/RPT_23_extraction_policy_2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Governed extraction policy for RPT_23 slice",
+    "notes": "Locks runtime-first extraction with file as secondary boundary check"
+  },
+  {
+    "asset_id": "reporting_rpt23_comparison_policy_2026_02_18",
+    "title": "RPT_23 comparison policy for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_comparison_policy_2026-02-18.json",
+    "repo_path": "reporting/RPT_23_comparison_policy_2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Governed parity comparison policy for RPT_23 slice",
+    "notes": "Footer exclusion and first-column unresolved normalization remain explicit"
+  },
+  {
+    "asset_id": "reporting_rpt23_final_verdict_2026_02_18",
+    "title": "RPT_23 final governed verdict for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_final_governed_verdict_2026-02-18.json",
+    "repo_path": "reporting/RPT_23_final_governed_verdict_2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Final governed verdict for RPT_23 single-date slice",
+    "notes": "Raw parity failed, normalized business parity partial, canonicalization still not canonical"
+  },
+  {
+    "asset_id": "artifact_rpt23_native_export_2026_02_18",
+    "title": "RPT_23 native export file for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/RPT_23_2026-02-18_native_export.xlsx",
+    "repo_path": "artifacts/RPT_23_2026-02-18_native_export.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Saved native export file for RPT_23 2026-02-18",
+    "notes": "Secondary audit artifact only"
+  },
+  {
+    "asset_id": "report_rpt23_live_report_2026_02_18",
+    "title": "RPT_23 live report for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reports/RPT_23_live_report_2026-02-18.md",
+    "repo_path": "reports/RPT_23_live_report_2026-02-18.md",
+    "asset_type": "report",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Human-readable live slice report for RPT_23",
+    "notes": "Runtime-first boundary and governed verdict summarized"
+  },
+  {
+    "asset_id": "report_rpt23_problem_log_2026_02_18",
+    "title": "RPT_23 problem log for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reports/RPT_23_problem_log_2026-02-18.md",
+    "repo_path": "reports/RPT_23_problem_log_2026-02-18.md",
+    "asset_type": "report",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Explicit unresolved-item registry for RPT_23 slice",
+    "notes": "Tracks failed raw parity and unresolved first-column canonicalization"
+  },
+  {
+    "asset_id": "artifact_rpt23_meta_2026_02_18",
+    "title": "RPT_23 meta sidecar for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/RPT_23_2026-02-18_meta.json",
+    "repo_path": "artifacts/RPT_23_2026-02-18_meta.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Machine-readable sidecar for RPT_23 workbook package",
+    "notes": "Runtime-first, export checked, parity partial"
+  },
+  {
+    "asset_id": "excel_rpt23_2026_02_18_normalized",
+    "title": "RPT_23 normalized workbook for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_23_2026-02-18_normalized.xlsx",
+    "repo_path": "excel/RPT_23_2026-02-18_normalized.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Normalized Excel output for the RPT_23 2026-02-18 slice",
+    "notes": "Built from repo-local artifacts; keeps runtime_html as primary truth"
   }
 ]

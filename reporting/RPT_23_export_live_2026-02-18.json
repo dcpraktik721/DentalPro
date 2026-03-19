@@ -1,0 +1,21 @@
+{
+  "report_id": 23,
+  "report_code": "RPT_23",
+  "target_date": "2026-02-18",
+  "export_available": "yes",
+  "export_mode": "direct_download",
+  "async_detected": false,
+  "direct_download": true,
+  "resolved_file_url": "https://dcpraktik.dental-pro.online/content/cache/dpfile_1773939520_i9NJdxwbxy.xlsx",
+  "file_received": true,
+  "saved_file_path": "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/downloads/dpfile_1773939520_i9NJdxwbxy.xlsx",
+  "evidence_reference": [
+    "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_runtime_live_2026-02-18.json"
+  ],
+  "notes": [
+    "export_status=download_received",
+    "step_url=https://dcpraktik.dental-pro.online/exporter/step_export?plugin=reports&schema=reportsDefault&params%5Bid%5D=23&params%5Bfilter%5D=eyJpZCI6IjIzIiwiZGF0ZV9yYW5nZSI6eyJzdGFydCI6IjIwMjYtMDItMTgiLCJlbmQiOiIyMDI2LTAyLTE4In19&params%5Bshow_only_groups%5D=0",
+    "process_url=https://dcpraktik.dental-pro.online/exporter/process_export?plugin=reports&schema=reportsDefault&params%5Bid%5D=23&params%5Bfilter%5D=eyJpZCI6IjIzIiwiZGF0ZV9yYW5nZSI6eyJzdGFydCI6IjIwMjYtMDItMTgiLCJlbmQiOiIyMDI2LTAyLTE4In19&params%5Bshow_only_groups%5D=0",
+    "export flow completed"
+  ]
+}

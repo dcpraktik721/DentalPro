@@ -568,6 +568,37 @@
         "Keeps UI-anchored replay boundary; does not claim full parity when mismatches remain"
       ],
       "notes": "Current workbook builder for RPT_4 single-date repo-local package"
+    },
+    {
+      "script_id": "script_build_report_rpt23_workbook",
+      "path": "scripts/build_report_rpt23_workbook.py",
+      "language": "python",
+      "purpose": "Build normalized workbook and meta sidecar for RPT_23",
+      "domain": "reporting, finance",
+      "inputs": [
+        "reporting/RPT_23_runtime_live_<date>.json",
+        "reporting/RPT_23_export_live_<date>.json",
+        "reporting/RPT_23_file_parse_<date>.json",
+        "reporting/RPT_23_final_governed_verdict_<date>.json",
+        "reports/RPT_23_live_report_<date>.md",
+        "reports/RPT_23_problem_log_<date>.md"
+      ],
+      "outputs": [
+        "excel/RPT_23_2026-02-18_normalized.xlsx",
+        "artifacts/RPT_23_2026-02-18_meta.json"
+      ],
+      "artifacts_produced": [
+        "excel/RPT_23_2026-02-18_normalized.xlsx",
+        "artifacts/RPT_23_2026-02-18_meta.json"
+      ],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Builds from saved repo artifacts only",
+        "Keeps runtime_html as primary truth and file/export as secondary audit support only",
+        "Does not claim full parity or canonicalization when first-column policy remains unresolved"
+      ],
+      "notes": "Current workbook/meta builder for RPT_23 single-date repo-local package"
     }
   ]
 }

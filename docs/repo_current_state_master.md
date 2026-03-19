@@ -193,3 +193,10 @@
   - residual verified-field mismatches remain (`2` mismatches on doctor/current-primary-date fields)
   - `runtime_html` remains the anchoring truth for this slice
   - operational status stays `usable_with_limits`
+- `RPT_23` live slice (`2026-02-18`) is now locked as:
+  - runtime and native export/file were both captured on the same single-date slice
+  - runtime row count = `66`, file row count = `66`, exact headers match
+  - raw parity remains failed and normalized business parity remains partial
+  - `runtime_html` remains primary truth and export/file remains secondary audit support
+  - canonicalization stays `still_not_canonical`
+  - operational status stays `usable_with_limits`

@@ -1,0 +1,19 @@
+{
+  "report_id": 23,
+  "report_code": "RPT_23",
+  "target_date": "2026-02-18",
+  "primary_truth_layer": "runtime",
+  "extraction_rule": "extract structured runtime HTML table first; use file as secondary audit layer",
+  "field_boundary_strategy": "runtime headers define business columns; file headers used as secondary boundary check",
+  "runtime_only_field_policy": "none_observed",
+  "export_only_field_policy": "none_proven",
+  "evidence_reference": [
+    "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_family_classification_2026-02-18.json",
+    "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_runtime_live_2026-02-18.json",
+    "/Users/macbook15/Downloads/YDIREKT_code/mac-ai-os/dentalpro-playwright/artifacts/RPT_23_file_parse_2026-02-18.json"
+  ],
+  "notes": [
+    "RPT_23 uses a runtime-first extraction rule when both runtime and file are structured.",
+    "Footer row is classified separately and must not be treated as a business row."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "report_code": "RPT_23",
+  "report_name": "Услуги за период",
+  "date_start": "2026-02-18",
+  "date_end": "2026-02-18",
+  "generated_at": "2026-03-19T17:05:07.456795+00:00",
+  "run_status": "success_with_warnings",
+  "primary_truth": "runtime_html",
+  "runtime_checked": true,
+  "export_checked": true,
+  "export_available": true,
+  "runtime_row_count": 66,
+  "export_row_count": 66,
+  "parity_status": "partial",
+  "warnings": [
+    {
+      "warning_code": "RAW_PARITY_FAILED",
+      "severity": "high",
+      "layer": "runtime_vs_export_file",
+      "message": "Raw parity failed; row-count equality is not sufficient for final parity on this slice."
+    },
+    {
+      "warning_code": "NORMALIZED_PARITY_PARTIAL",
+      "severity": "high",
+      "layer": "governed_verdict",
+      "message": "Normalized business parity is only partial because first-column policy is unresolved."
+    },
+    {
+      "warning_code": "STILL_NOT_CANONICAL",
+      "severity": "high",
+      "layer": "canonicalization",
+      "message": "Canonicalization remains still_not_canonical; do not collapse runtime labels into file labels silently."
+    },
+    {
+      "warning_code": "RUNTIME_FIRST_REQUIRED",
+      "severity": "medium",
+      "layer": "truth_boundary",
+      "message": "Runtime HTML remains the primary truth layer; export/file is secondary audit support only."
+    }
+  ],
+  "safe_claim_boundary": "For 2026-02-18, RPT_23 is runtime-first. Native export/file is a secondary audit layer. Raw parity failed, normalized business parity is partial, and first-column canonicalization remains unresolved. Do not claim full parity or canonicalization.",
+  "export_file_path": "/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/RPT_23_2026-02-18_native_export.xlsx",
+  "runtime_artifact_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_runtime_live_2026-02-18.json",
+  "file_parse_artifact_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_file_parse_2026-02-18.json",
+  "governed_verdict_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_final_governed_verdict_2026-02-18.json",
+  "workbook_path": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_23_2026-02-18_normalized.xlsx"
+}
