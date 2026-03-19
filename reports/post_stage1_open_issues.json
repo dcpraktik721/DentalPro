@@ -1,0 +1,45 @@
+[
+  {
+    "issue_id": "cleanup-001",
+    "title": "current_assets_index contains mixed legacy entry shapes",
+    "severity": "medium",
+    "area": "registry",
+    "affected_files": [
+      "registry/current_assets_index.json"
+    ],
+    "description": "The index mixes full asset records with older phase-report entries that only expose path/type/date/created fields, so the file is consistent enough for current lookup but not fully schema-unified.",
+    "evidence": "Entry at index 105 lacks asset_id and uses the legacy path/type/date/created shape.",
+    "recommended_fix": "Run a dedicated registry normalization pass that converts legacy entries to the current asset schema or moves them into a separate phase-report registry.",
+    "status": "open"
+  },
+  {
+    "issue_id": "cleanup-002",
+    "title": "auth_refresh_result.json is a tracked volatile runtime snapshot",
+    "severity": "medium",
+    "area": "runtime",
+    "affected_files": [
+      "runtime/auth_refresh_result.json"
+    ],
+    "description": "The file changes on every auth refresh and dirties the repo unless it is explicitly restored or intentionally committed.",
+    "evidence": "This cleanup pass had to restore the file byte-exact after prior auth runs to return the repo to a clean working state.",
+    "recommended_fix": "Decide whether auth_refresh_result.json should remain tracked evidence or be moved to a generated/ignored artifact path with docs updated accordingly.",
+    "status": "open"
+  },
+  {
+    "issue_id": "cleanup-003",
+    "title": "Non-Stage-1 extra slices were removed instead of integrated",
+    "severity": "low",
+    "area": "working_tree",
+    "affected_files": [
+      "schedule/*",
+      "reports/*",
+      "reporting/*",
+      "excel/*",
+      "scripts/*"
+    ],
+    "description": "Ad hoc post-Stage-1 outputs for 2025-03-05, 2026-03-18, and reports-summary work were removed from the working tree because they were not integrated into current registries or docs.",
+    "evidence": "40 untracked files were classified as generated noise and removed during this cleanup.",
+    "recommended_fix": "If any of those slices are still needed, reintroduce them through a dedicated package pass with registry/docs updates instead of leaving them as untracked drift.",
+    "status": "open"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-03-19T22:45:00+05:00",
+  "repo_root": "/Users/macbook15/Downloads/MacAi/DentalPro",
+  "boundaries_retained": {
+    "schi_10": "inferred",
+    "cash": "patient-day only",
+    "auth": "ready_with_limits"
+  },
+  "checks": [
+    {
+      "area": "stage1_evidence_packages",
+      "status": "closed",
+      "details": "All eight Stage 1 workbook/meta/live-report/problem-log packages remain present."
+    },
+    {
+      "area": "registry_methods",
+      "status": "closed",
+      "details": "Drifted 2025-03-05 validated_dates removed; file kept aligned with committed evidence only."
+    },
+    {
+      "area": "registry_scripts",
+      "status": "cleaned",
+      "details": "RPT_9 builder entry no longer points at untracked 2026-03-18 output; committed slice is 2026-02-18 only."
+    },
+    {
+      "area": "registry_current_assets",
+      "status": "cleaned",
+      "details": "Removed RPT_9 2026-03-18 workbook entry because the file was not integrated into git history."
+    },
+    {
+      "area": "repo_current_state_master",
+      "status": "cleaned",
+      "details": "Removed reference to untracked RPT_9 2026-03-18 workbook and narrowed wording to committed 2026-02-18 slice."
+    },
+    {
+      "area": "readme_usage",
+      "status": "cleaned",
+      "details": "RPT_9 wrapper example narrowed to committed 2026-02-18 slice."
+    },
+    {
+      "area": "rpt23_cold_rerun",
+      "status": "closed",
+      "details": "Cold rerun recreated workbook and meta sidecar without manual post-write patching."
+    },
+    {
+      "area": "runtime_auth_result",
+      "status": "cleaned",
+      "details": "Volatile tracked file restored to baseline bytes; no auth claim promoted."
+    },
+    {
+      "area": "working_tree_noise",
+      "status": "cleaned",
+      "details": "Removed 31 non-Stage-1 untracked generated files from working tree."
+    },
+    {
+      "area": "excel_lockfiles",
+      "status": "cleaned",
+      "details": "Added ignore rules for temporary Excel lock files."
+    },
+    {
+      "area": "repo_cleanliness_target",
+      "status": "still_open",
+      "details": "One registry still has mixed legacy entry shapes; documented as open issue, not promoted as fully normalized."
+    }
+  ]
+}

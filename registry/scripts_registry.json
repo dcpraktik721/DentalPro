@@ -262,11 +262,10 @@
         "reports/RPT_9_problem_log_YYYY-MM-DD.md"
       ],
       "outputs": [
-        "scripts/build_report_rpt9_workbook.py"
+        "excel/RPT_9_2026-02-18_normalized.xlsx"
       ],
       "artifacts_produced": [
-        "excel/RPT_9_2026-02-18_normalized.xlsx",
-        "excel/RPT_9_2026-03-18_normalized.xlsx"
+        "excel/RPT_9_2026-02-18_normalized.xlsx"
       ],
       "proof_scope": "artifact_proven",
       "current_status": "current",
@@ -276,7 +275,7 @@
         "Handles empty runtime slices by emitting placeholder normalized rows",
         "RPT_9 remains usable_with_limits rather than fully closed"
       ],
-      "notes": "Repo-local workbook rebuild for RPT_9 from saved artifacts; validated on 2026-02-18 empty-runtime slice and 2026-03-18 non-empty slice"
+      "notes": "Repo-local workbook rebuild for RPT_9 from saved artifacts; committed validation slice is 2026-02-18 with runtime_html kept as primary truth"
     },
     {
       "script_id": "tool_rpt9_wrapper",

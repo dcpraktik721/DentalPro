@@ -24,4 +24,5 @@ data/raw/tmp/
 data/exports/tmp/
 *.swp
 *.swo
-
+~$*.xlsx
+excel/~$*.xlsx
