@@ -12,9 +12,9 @@ dependencies = [
   "pandas",
   "requests",
   "pydantic",
-  "python-dotenv"
+  "python-dotenv",
+  "beautifulsoup4"
 ]
 
 [tool.setuptools]
 py-modules = []
-

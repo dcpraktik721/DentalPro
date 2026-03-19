@@ -13,9 +13,20 @@ const OUT_FILE = path.join(REPO_ROOT, 'runtime', 'auth_refresh_result.json');
 
 const LOGIN = process.env.DP_LOGIN || '';
 const PASSWORD = process.env.DP_PASSWORD || '';
+const AUTH_ROUTE_PATTERNS = [
+  '/visits/schedule/week',
+  '/visits/schedule/index',
+  '/cbase/detail.html',
+  '/apisettings/api/test',
+];
+const AUTH_TEXT_MARKERS = ['Корытников Р.В.', 'Пациенты', 'Карты пациентов', 'Отчёты', 'Отчеты'];
 
 function clean(value) {
   return String(value ?? '').replace(/\s+/g, ' ').trim();
+}
+
+function hasAcceptedAuthenticatedRoute(url) {
+  return AUTH_ROUTE_PATTERNS.some((pattern) => String(url || '').includes(pattern));
 }
 
 async function fillFirst(page, selectors, value) {
@@ -68,6 +79,9 @@ async function main() {
     title: '',
     authenticated: false,
     schedule_root_present: false,
+    authenticated_shell_detected: false,
+    authenticated_markers_found: [],
+    success_reason: '',
     status: 'unknown',
     notes: [],
   };
@@ -92,21 +106,43 @@ async function main() {
     await navPromise;
     await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
 
-    const probeUrl = `${BASE_URL}/visits/schedule/index?date=2026-03-10`;
-    await page.goto(probeUrl, { waitUntil: 'domcontentloaded', timeout: 120000 });
-    await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
-
     const pageState = await page.evaluate(() => ({
       final_url: location.href,
       title: document.title,
       schedule_root_present: Boolean(document.querySelector('#schedule-day-container')),
       login_like: Boolean(document.querySelector('input[type="password"], input[name="password"], form[action*="login"]')),
+      body_text: document.body ? document.body.innerText : '',
+      nav_markers: Array.from(document.querySelectorAll('a,button,span,div'))
+        .map((node) => (node.innerText || '').trim())
+        .filter(Boolean)
+        .slice(0, 400),
     }));
 
     result.final_url = clean(pageState.final_url);
     result.title = clean(pageState.title);
     result.schedule_root_present = Boolean(pageState.schedule_root_present);
-    result.authenticated = result.schedule_root_present && !pageState.login_like;
+    const visibleText = clean(pageState.body_text);
+    const authenticatedMarkersFound = [];
+    if (result.title.includes('Расписание')) authenticatedMarkersFound.push('title:Расписание');
+    for (const marker of AUTH_TEXT_MARKERS) {
+      if (visibleText.includes(marker) || pageState.nav_markers.some((item) => item.includes(marker))) {
+        authenticatedMarkersFound.push(`text:${marker}`);
+      }
+    }
+    result.authenticated_markers_found = Array.from(new Set(authenticatedMarkersFound));
+    const nonLoginUrl = result.final_url && !result.final_url.includes('/user/login');
+    const acceptedRoute = hasAcceptedAuthenticatedRoute(result.final_url);
+    result.authenticated_shell_detected = nonLoginUrl && acceptedRoute && result.authenticated_markers_found.length > 0;
+    result.authenticated = !pageState.login_like && (result.schedule_root_present || result.authenticated_shell_detected);
+    if (result.schedule_root_present) {
+      result.success_reason = 'day_schedule_marker_detected';
+    } else if (result.authenticated_shell_detected) {
+      result.success_reason = 'authenticated_shell_detected_without_day_marker';
+    } else if (pageState.login_like) {
+      result.success_reason = 'login_like_page_after_submit';
+    } else {
+      result.success_reason = 'no_authenticated_marker_match';
+    }
     result.status = result.authenticated ? 'refreshed' : 'failed';
 
     if (result.authenticated) {
@@ -114,7 +150,7 @@ async function main() {
       const stats = fs.statSync(STORAGE_STATE);
       result.notes.push(`storageState saved (${stats.size} bytes)`);
     } else {
-      result.notes.push('post-login probe did not reach authenticated schedule page');
+      result.notes.push('post-login probe did not meet authenticated day/shell criteria');
     }
 
     fs.writeFileSync(OUT_FILE, JSON.stringify(result, null, 2), 'utf-8');

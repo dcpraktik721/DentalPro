@@ -1,0 +1,124 @@
+{
+  "report_code": "RPT_3",
+  "report_name": "Задолженности и авансы",
+  "focus_column": "Долг",
+  "generated_at": "2026-03-19",
+  "tested_date": "2026-02-18",
+  "column_shape_runtime": {
+    "ui_column_name": "Долг",
+    "paired_columns": [
+      "Аванс",
+      "Доступно собственных средств",
+      "Дата последней операции"
+    ],
+    "observed_formula": "available_own_funds = advance - debt"
+  },
+  "candidate_sources": [
+    {
+      "source": "patient cashbox debt account balance on patient card",
+      "path_family": "cbase/detail.html?id=<patient_id>&tab=cashbox\\cbase\\bills",
+      "status": "proven_for_sampled_rows",
+      "evidence": [
+        "patient 625: report debt 17800.00; patient cashbox shows 'Долговой счёт пациента Баланс: -17 800.00 ₽'",
+        "patient 710: report debt 7750.00; patient cashbox shows 'Долговой счёт пациента Баланс: -7 750.00 ₽'",
+        "patient 2230: report debt 0.00 and advance 200.00; patient cashbox shows 'Персональный счёт пациента Баланс: 200.00 ₽' and no debt balance"
+      ],
+      "interpretation_rule": "RPT_3 column 'Долг' renders the absolute value of the negative debt-account balance"
+    },
+    {
+      "source": "RPT_45 first-row finance linkage",
+      "path_family": "existing forensic artifact family",
+      "status": "artifact_proven_support",
+      "evidence": [
+        "RPT_45 first-row finance linkage already ties the same debt/advance row shape to patient cashbox balances and bills ledger for patient 625"
+      ],
+      "interpretation_rule": "RPT_3 and RPT_45 share the same debts-and-advances business family, but RPT_3 is not promoted to full family equivalence from this alone"
+    },
+    {
+      "source": "i/balance",
+      "path_family": "/api/i/balance",
+      "status": "not_proven_as_read_source",
+      "evidence": [
+        "API settings describe i/balance as 'Импортирует суммы долгов и авансов'",
+        "test form parameters are externalClientId, amountTypeInt, sum, debt, branchId",
+        "live call with native patient id 625 returned status=false and error='Клиент не найден.'"
+      ],
+      "interpretation_rule": "Do not treat i/balance as a direct read API for RPT_3 rows"
+    },
+    {
+      "source": "i/client",
+      "path_family": "/api/i/client",
+      "status": "proven_identity_only",
+      "evidence": [
+        "Useful for patient name and phone identity on sampled rows",
+        "Does not explain debt/advance/available row values"
+      ],
+      "interpretation_rule": "Identity source only, not finance source"
+    },
+    {
+      "source": "invoice/detail and patient bills ledger",
+      "path_family": "invoice/detail + patient cashbox bills",
+      "status": "partial_support",
+      "evidence": [
+        "Earlier RPT_45 linkage proved that invoice detail can confirm last operation timestamps after invoice ids are resolved from patient cashbox ledger",
+        "It does not act as a single direct source for the aggregate debt number"
+      ],
+      "interpretation_rule": "Supporting evidence only after ledger-to-invoice resolution"
+    }
+  ],
+  "sampled_rows": [
+    {
+      "patient_id": 625,
+      "patient_name": "ДУДИНА ЛЮДМИЛА ИВАНОВНА",
+      "runtime_row": {
+        "debt": 17800.0,
+        "advance": 0.0,
+        "available_own_funds": -17800.0,
+        "last_operation_date": "27.10.2020"
+      },
+      "cashbox_card_evidence": {
+        "personal_account_balance": 0.0,
+        "debt_account_balance": -17800.0,
+        "observed_text": "Персональный счёт пациента Баланс: 0.00 ₽; Долговой счёт пациента Баланс: -17 800.00 ₽"
+      },
+      "verdict": "proven_match"
+    },
+    {
+      "patient_id": 710,
+      "patient_name": "ЗАМИРАЛОВ КИРИЛЛ АНДРЕЕВИЧ",
+      "runtime_row": {
+        "debt": 7750.0,
+        "advance": 0.0,
+        "available_own_funds": -7750.0,
+        "last_operation_date": "27.10.2020"
+      },
+      "cashbox_card_evidence": {
+        "personal_account_balance": 0.0,
+        "debt_account_balance": -7750.0,
+        "observed_text": "Персональный счёт пациента Баланс: 0.00 ₽; Долговой счёт пациента Баланс: -7 750.00 ₽"
+      },
+      "verdict": "proven_match"
+    },
+    {
+      "patient_id": 2230,
+      "patient_name": "АБИЛОВА КАМАЛЯ АСЛАНОВНА",
+      "runtime_row": {
+        "debt": 0.0,
+        "advance": 200.0,
+        "available_own_funds": 200.0,
+        "last_operation_date": "21.12.2023"
+      },
+      "cashbox_card_evidence": {
+        "personal_account_balance": 200.0,
+        "debt_account_balance": null,
+        "observed_text": "Персональный счёт пациента Баланс: 200.00 ₽; Долговой счёт пациента Счет еще не открыт"
+      },
+      "verdict": "proven_match_for_zero_debt_case"
+    }
+  ],
+  "final_verdict": {
+    "proven": "On sampled patients, RPT_3 column 'Долг' is explained by the patient cashbox debt-account balance rendered on patient cashbox tabs.",
+    "partial": "The exact backend assembly path for the whole report remains hidden/server-side.",
+    "not_proven": "No published API read method is proven as the direct source of 'Долг' for RPT_3; i/balance must not be promoted to that role."
+  }
+}

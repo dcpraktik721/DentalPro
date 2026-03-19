@@ -1,0 +1,37 @@
+{
+  "report_code": "RPT_3",
+  "report_name": "Задолженности и авансы",
+  "aliases": [
+    "RPT_3",
+    "Отчет_3",
+    "Задолженности_и_авансы"
+  ],
+  "report_id": 3,
+  "base_url": "https://dcpraktik.dental-pro.online",
+  "route_path": "/reports/reports/view",
+  "filter_mode": "date_range",
+  "runtime_columns": [
+    "Пациент",
+    "Телефон",
+    "Долг",
+    "Аванс",
+    "Доступно собственных средств",
+    "Дата последней операции"
+  ],
+  "primary_truth": "runtime_html",
+  "secondary_truth": "native_export_optional",
+  "export_flow_type": "two_step_async_export",
+  "debt_source_guardrail": "sample_proven_cashbox_based",
+  "ibalance_guardrail": "not_proven_as_direct_read_source",
+  "output_patterns": {
+    "normalized_xlsx": "RPT_3_{date_segment}_normalized.xlsx",
+    "meta_json": "RPT_3_{date_segment}_meta.json",
+    "native_export_xlsx": "RPT_3_{date_segment}_native_export.xlsx"
+  },
+  "safe_claim_boundary": [
+    "Primary truth for output workbook is runtime_html.",
+    "Native export is secondary parity-check layer only.",
+    "Do not promote i/balance to direct source.",
+    "Do not claim runtime/export parity unless builder run confirms it."
+  ]
+}

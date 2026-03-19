@@ -1,0 +1,195 @@
+{
+  "report_code": "RPT_3",
+  "report_name": "Задолженности и авансы",
+  "generated_at": "2026-03-19",
+  "probe_type": "live_runtime_report_probe",
+  "report_filter_date": "2026-02-18",
+  "runtime_url": "https://dcpraktik.dental-pro.online/reports/reports/view?id=3&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18",
+  "runtime_observed": {
+    "authenticated": true,
+    "title": "Задолженности и авансы",
+    "ui_type": "server_rendered_html_table",
+    "columns": [
+      "Пациент",
+      "Телефон",
+      "Долг",
+      "Аванс",
+      "Доступно собственных средств",
+      "Дата последней операции"
+    ],
+    "runtime_row_count": 241,
+    "runtime_footer": {
+      "debt": 140600.0,
+      "advance": 4253790.2,
+      "available_own_funds": 4113190.2
+    },
+    "loaded_assets": [
+      "cashbox.7b7846634f66e3cfebdb903bcdb8533f.js",
+      "pay_debt.0d31cf306d2d42103c70d7a74a7afe68.js",
+      "cashbox.2d48992dabce7f34090af3848e3dfab3.css",
+      "cashbox.f4364eda08038cd10b9748738a15b77d.css",
+      "reports.d00821c4b5e9866dfce8ee34f32a604f.css"
+    ],
+    "arithmetic_rule_observed": "available_own_funds = advance - debt"
+  },
+  "runtime_sample_rows": [
+    {
+      "row_index": 1,
+      "patient_id": 625,
+      "patient_name": "ДУДИНА ЛЮДМИЛА ИВАНОВНА",
+      "phone": "79199583045",
+      "debt": 17800.0,
+      "advance": 0.0,
+      "available_own_funds": -17800.0,
+      "last_operation_date": "27.10.2020"
+    },
+    {
+      "row_index": 2,
+      "patient_id": 710,
+      "patient_name": "ЗАМИРАЛОВ КИРИЛЛ АНДРЕЕВИЧ",
+      "phone": "79199360615",
+      "debt": 7750.0,
+      "advance": 0.0,
+      "available_own_funds": -7750.0,
+      "last_operation_date": "27.10.2020"
+    },
+    {
+      "row_index": 3,
+      "patient_id": 1755,
+      "patient_name": "НИКИТИН СЕРГЕЙ ФЕДОРОВИЧ",
+      "phone": "79825940230",
+      "debt": 115050.0,
+      "advance": 0.0,
+      "available_own_funds": -115050.0,
+      "last_operation_date": "19.11.2020"
+    },
+    {
+      "row_index": 4,
+      "patient_id": 12923,
+      "patient_name": "АБАКАР АЛЗУБАИР АХМЕД БАШИР",
+      "phone": "79504831648",
+      "debt": 0.0,
+      "advance": 40.0,
+      "available_own_funds": 40.0,
+      "last_operation_date": "10.01.2024"
+    },
+    {
+      "row_index": 5,
+      "patient_id": 2230,
+      "patient_name": "АБИЛОВА КАМАЛЯ АСЛАНОВНА",
+      "phone": "79044626268",
+      "debt": 0.0,
+      "advance": 200.0,
+      "available_own_funds": 200.0,
+      "last_operation_date": "21.12.2023"
+    }
+  ],
+  "export_layer": {
+    "export_entry_route": "/exporter/index?plugin=reports&schema=reportsDefault&params[id]=3&params[filter]=<base64-filter>",
+    "export_flow_type": "two_step_async_export",
+    "process_export_result": "export_done('/content/cache/dpfile_1773892081_pMoBNOVROi.xlsx')",
+    "export_file_saved": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_3_2026-02-18_live_export.xlsx",
+    "export_workbook_sheet": "Отчёт",
+    "export_row_count_excluding_total": 243,
+    "export_footer": {
+      "debt": 140600.0,
+      "advance": 3350956.2,
+      "available_own_funds": 3210356.2
+    }
+  },
+  "runtime_export_comparison": {
+    "status": "mismatch_detected",
+    "runtime_rows": 241,
+    "export_rows_excluding_total": 243,
+    "runtime_only_patients_count": 5,
+    "runtime_only_patients": [
+      "АСКАРОВА РЕГИНА КАМИЛЬЕВНА",
+      "ЕРШОВА ИРИНА ВИКТОРОВНА",
+      "КОЖЕВНИКОВА СВЕТЛАНА СЕРГЕЕВНА",
+      "МАЙЕР ПОЛИНА ОЛЕГОВНА",
+      "ФАРАДЖАЕВ РАШИД ГУСЕЙНОВИЧ"
+    ],
+    "export_only_patients_count": 7,
+    "export_only_patients": [
+      "БЕЛОБОРОДОВ АЛЕКСЕЙ ВИКТОРОВИЧ",
+      "ЗАДОРОЖНЮК НАТАЛЬЯ АЛЕКСАНДРОВНА",
+      "ЗАРУБА НИНА ОЛЕГОВНА",
+      "МИНАСЯН ВЛАДИМИР КАРЕНОВИЧ",
+      "ПЕРЕДНЯ ТАТЬЯНА ГЕННАДЬЕВНА",
+      "ХАЛИТОВА АННА АЛЕКСАНДРОВНА",
+      "ШАГИМЕРДАНОВ РУСЛАН НИЯЗОВИЧ"
+    ],
+    "same_patient_field_mismatches_count": 3,
+    "same_patient_field_mismatches": [
+      {
+        "patient_name": "МАКАРЬ ДОЙНА НИКОЛАЕВНА",
+        "runtime": {
+          "advance": 15370.0,
+          "available_own_funds": 15370.0,
+          "last_operation_date": "06.10.2025"
+        },
+        "export": {
+          "advance": 7205.0,
+          "available_own_funds": 7205.0,
+          "last_operation_date": "16.03.2026"
+        }
+      },
+      {
+        "patient_name": "ОСЕТРОВ АЛЕКСАНДР ВЛАДИМИРОВИЧ",
+        "runtime": {
+          "advance": 10000.0,
+          "available_own_funds": 10000.0,
+          "last_operation_date": "20.12.2025"
+        },
+        "export": {
+          "advance": 140.0,
+          "available_own_funds": 140.0,
+          "last_operation_date": "09.03.2026"
+        }
+      },
+      {
+        "patient_name": "ШМУНК ЛЮБОВЬ ВЛАДИМИРОВНА",
+        "runtime": {
+          "advance": 570000.0,
+          "available_own_funds": 570000.0,
+          "last_operation_date": "16.02.2026"
+        },
+        "export": {
+          "advance": 250000.0,
+          "available_own_funds": 250000.0,
+          "last_operation_date": "11.03.2026"
+        }
+      }
+    ]
+  },
+  "evidence_classification": {
+    "proven": [
+      "RPT_3 opens authenticated and renders a six-column HTML table on 2026-02-18",
+      "Runtime row values are directly readable from server-rendered HTML",
+      "Native export exists and is a two-step async exporter flow",
+      "Runtime arithmetic pattern is available_own_funds = advance - debt",
+      "Debt/advance values align sample-wise with patient cashbox balances on patient card cashbox tabs"
+    ],
+    "partial": [
+      "RPT_3 belongs to the same debts-and-advances family as RPT_45",
+      "Export layer is functional but not parity-safe with runtime on this tested date",
+      "Debt column is explainable from patient cashbox balance views on sampled patients, but hidden backend aggregation path is not directly exposed"
+    ],
+    "not_proven": [
+      "No single published API method is proven as the direct row source for the full RPT_3 table",
+      "i/balance is not proven as a read source for RPT_3 rows",
+      "Runtime-to-export row parity is not proven for 2026-02-18"
+    ]
+  },
+  "final_verdict": {
+    "report_readiness": "ready_with_limits",
+    "debt_column_source_verdict": "sample-proven via patient cashbox balances; backend generation path remains partial",
+    "export_parity_verdict": "not_proven_due_to_runtime_export_mismatch",
+    "safe_claim_boundary": [
+      "Use runtime HTML as primary evidence for this slice",
+      "Treat native export as a separate layer with observed mismatch",
+      "Do not promote i/balance to direct report source",
+      "Do not promote RPT_3 export to canonical parity artifact for 2026-02-18"
+    ]
+  }
+}

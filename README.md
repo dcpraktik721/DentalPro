@@ -139,6 +139,17 @@ python3 /absolute/path/to/script.py
 2. использовать абсолютные пути в artifacts;
 3. сохранять outputs в доменную папку или в `artifacts/` с понятным naming.
 
+Пример repo-local wrapper для `RPT_3`:
+
+```bash
+./tools/rpt3 2026-02-18
+./tools/rpt3 2026-02-01 2026-02-29
+```
+
+Wrapper:
+- вычисляет repo root относительно самого файла wrapper
+- прокидывает аргументы в `scripts/build_report_rpt3.py` без изменений через `"$@"`
+
 ## 10. Как запускать Node scripts
 
 Базовый паттерн:

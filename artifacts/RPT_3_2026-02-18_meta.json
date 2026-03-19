@@ -1,0 +1,223 @@
+{
+  "report_code": "RPT_3",
+  "report_name": "Задолженности и авансы",
+  "date_start": "2026-02-18",
+  "date_end": "2026-02-18",
+  "generated_at": "2026-03-19T18:51:36",
+  "run_status": "success_with_warnings",
+  "auth": {
+    "authenticated": true,
+    "auth_mode": "auth_refresh_js_plus_storage_state",
+    "redirect_detected": false,
+    "refresh_result_path": "runtime/auth_refresh_result.json"
+  },
+  "runtime": {
+    "url": "https://dcpraktik.dental-pro.online/reports/reports/view?id=3&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18",
+    "columns": [
+      "Пациент",
+      "Телефон",
+      "Долг",
+      "Аванс",
+      "Доступно собственных средств",
+      "Дата последней операции"
+    ],
+    "row_count": 241,
+    "footer": {
+      "debt": 140600.0,
+      "advance": 4253790.2,
+      "available_own_funds": 4113190.2
+    }
+  },
+  "export": {
+    "checked": true,
+    "available": true,
+    "flow_type": "two_step_async_export",
+    "file_path": "artifacts/RPT_3_2026-02-18_native_export.xlsx",
+    "row_count": 243,
+    "footer": {
+      "debt": 140600.0,
+      "advance": 3350956.2,
+      "available_own_funds": 3210356.2
+    },
+    "entry_url": "https://dcpraktik.dental-pro.online/exporter/index?plugin=reports&schema=reportsDefault&params%5Bid%5D=3&params%5Bfilter%5D=eyJpZCI6IjMiLCJkYXRlX3JhbmdlIjp7InN0YXJ0IjoiMjAyNi0wMi0xOCIsImVuZCI6IjIwMjYtMDItMTgifX0%3D",
+    "process_export_url": "https://dcpraktik.dental-pro.online/exporter/process_export?plugin=reports&schema=reportsDefault&params%5Bid%5D=3&params%5Bfilter%5D=eyJpZCI6IjMiLCJkYXRlX3JhbmdlIjp7InN0YXJ0IjoiMjAyNi0wMi0xOCIsImVuZCI6IjIwMjYtMDItMTgifX0%3D",
+    "download_url": "https://dcpraktik.dental-pro.online/content/cache/dpfile_1773928321_Z6j8CpJpTD.xlsx"
+  },
+  "parity": {
+    "status": "mismatch_detected",
+    "mismatch_detected": true,
+    "runtime_row_count": 241,
+    "export_row_count": 243,
+    "runtime_only_count": 5,
+    "runtime_only_rows": [
+      {
+        "patient_name": "АСКАРОВА РЕГИНА КАМИЛЬЕВНА",
+        "phone": "79324708157"
+      },
+      {
+        "patient_name": "ЕРШОВА ИРИНА ВИКТОРОВНА",
+        "phone": "79088730363"
+      },
+      {
+        "patient_name": "КОЖЕВНИКОВА СВЕТЛАНА СЕРГЕЕВНА",
+        "phone": "79224807898"
+      },
+      {
+        "patient_name": "МАЙЕР ПОЛИНА ОЛЕГОВНА",
+        "phone": "79224755914"
+      },
+      {
+        "patient_name": "ФАРАДЖАЕВ РАШИД ГУСЕЙНОВИЧ",
+        "phone": "79123928415"
+      }
+    ],
+    "export_only_count": 7,
+    "export_only_rows": [
+      {
+        "patient_name": "БЕЛОБОРОДОВ АЛЕКСЕЙ ВИКТОРОВИЧ",
+        "phone": "79505025000"
+      },
+      {
+        "patient_name": "ЗАДОРОЖНЮК НАТАЛЬЯ АЛЕКСАНДРОВНА",
+        "phone": "79222847474"
+      },
+      {
+        "patient_name": "ЗАРУБА НИНА ОЛЕГОВНА",
+        "phone": "79220272945"
+      },
+      {
+        "patient_name": "МИНАСЯН ВЛАДИМИР КАРЕНОВИЧ",
+        "phone": "79923125044"
+      },
+      {
+        "patient_name": "ПЕРЕДНЯ ТАТЬЯНА ГЕННАДЬЕВНА",
+        "phone": "79504863250"
+      },
+      {
+        "patient_name": "ХАЛИТОВА АННА АЛЕКСАНДРОВНА",
+        "phone": "79123987525"
+      },
+      {
+        "patient_name": "ШАГИМЕРДАНОВ РУСЛАН НИЯЗОВИЧ",
+        "phone": "79185168098"
+      }
+    ],
+    "field_mismatch_count": 3,
+    "field_mismatches": [
+      {
+        "patient_name": "МАКАРЬ ДОЙНА НИКОЛАЕВНА",
+        "phone": "79224742823",
+        "diffs": {
+          "advance": {
+            "runtime": 15370.0,
+            "export": 7205.0
+          },
+          "available_own_funds": {
+            "runtime": 15370.0,
+            "export": 7205.0
+          },
+          "last_operation_date": {
+            "runtime": "2025-10-06",
+            "export": "2026-03-16"
+          }
+        }
+      },
+      {
+        "patient_name": "ОСЕТРОВ АЛЕКСАНДР ВЛАДИМИРОВИЧ",
+        "phone": "79026240652",
+        "diffs": {
+          "advance": {
+            "runtime": 10000.0,
+            "export": 140.0
+          },
+          "available_own_funds": {
+            "runtime": 10000.0,
+            "export": 140.0
+          },
+          "last_operation_date": {
+            "runtime": "2025-12-20",
+            "export": "2026-03-09"
+          }
+        }
+      },
+      {
+        "patient_name": "ШМУНК ЛЮБОВЬ ВЛАДИМИРОВНА",
+        "phone": "79199239214",
+        "diffs": {
+          "advance": {
+            "runtime": 570000.0,
+            "export": 250000.0
+          },
+          "available_own_funds": {
+            "runtime": 570000.0,
+            "export": 250000.0
+          },
+          "last_operation_date": {
+            "runtime": "2026-02-16",
+            "export": "2026-03-11"
+          }
+        }
+      }
+    ],
+    "footer_mismatch": {
+      "advance": {
+        "runtime": 4253790.2,
+        "export": 3350956.2
+      },
+      "available_own_funds": {
+        "runtime": 4113190.2,
+        "export": 3210356.2
+      }
+    },
+    "notes": []
+  },
+  "source_classification": {
+    "primary_truth": "runtime_html",
+    "secondary_truth": "native_export_optional",
+    "debt_source_status": "sample_proven_cashbox_based",
+    "ibalance_status": "not_proven_as_direct_read_source"
+  },
+  "warnings": [
+    {
+      "warning_code": "IBALANCE_NOT_PROVEN",
+      "severity": "medium",
+      "layer": "source_mapping",
+      "message": "Do not promote i/balance to direct read source for RPT_3."
+    },
+    {
+      "warning_code": "DEBT_SOURCE_SAMPLE_ONLY",
+      "severity": "medium",
+      "layer": "source_mapping",
+      "message": "Debt source is sample-proven via patient cashbox balances, not fully backend-closed."
+    },
+    {
+      "warning_code": "EXPORT_RUNTIME_MISMATCH",
+      "severity": "high",
+      "layer": "parity",
+      "message": "Native export and runtime HTML differ for this run; runtime remains primary truth."
+    }
+  ],
+  "problem_log": [
+    {
+      "code": "EXPORT_RUNTIME_MISMATCH",
+      "severity": "high",
+      "details": {
+        "runtime_row_count": 241,
+        "export_row_count": 243,
+        "runtime_only_count": 5,
+        "export_only_count": 7,
+        "field_mismatch_count": 3,
+        "footer_mismatch": {
+          "advance": {
+            "runtime": 4253790.2,
+            "export": 3350956.2
+          },
+          "available_own_funds": {
+            "runtime": 4113190.2,
+            "export": 3210356.2
+          }
+        }
+      }
+    }
+  ]
+}
