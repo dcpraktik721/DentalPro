@@ -74,10 +74,12 @@
   - selected governed verdicts
   - `RPT_9` normalized workbook can be rebuilt from saved repo artifacts without new live run, including the `2026-02-18` empty-runtime slice
   - `RPT_3` has a production-safe builder and normalized workbook on the live slice `2026-02-18`
+  - `RPT_18` has a verified single-date slice on `2026-02-18` with row/totals parity confirmed by the accepted API composite and runtime UI
 - limits:
   - not every report family is production-closed
   - `RPT_9` workbook keeps `runtime_html` as primary truth and accepted API as supporting layer only
   - `RPT_3` keeps `runtime_html` as primary truth; native export is secondary parity-check only
+  - `RPT_18` still requires the dual-source accepted API composite; a single API endpoint must not be promoted to full report truth
 
 ## Runtime/auth
 

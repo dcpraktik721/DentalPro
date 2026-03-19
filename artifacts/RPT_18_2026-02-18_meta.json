@@ -1,0 +1,33 @@
+{
+  "report_code": "RPT_18",
+  "report_name": "Ключевые показатели эффективности",
+  "date_start": "2026-02-18",
+  "date_end": "2026-02-18",
+  "generated_at": "2026-03-19T15:53:27.149Z",
+  "run_status": "success",
+  "primary_truth": "accepted_api_composite_validated_against_runtime_html",
+  "runtime_checked": true,
+  "export_checked": false,
+  "export_available": false,
+  "runtime_row_count": 10,
+  "api_row_count": 10,
+  "export_row_count": null,
+  "parity_status": "confirmed",
+  "warnings": [
+    {
+      "code": "DUAL_SOURCE_REQUIRED",
+      "severity": "medium",
+      "layer": "source_classification",
+      "message": "RPT_18 requires mobile/owner/efficiency rows plus mobile/schedule unique-patient supplement; a single accepted API is not sufficient for full totals closure."
+    },
+    {
+      "code": "FAMILY_SPECIFIC_CANONICALIZATION",
+      "severity": "low",
+      "layer": "normalization",
+      "message": "Grouped-header/business-header projection is proven for the RPT_18 family and must not be promoted automatically to unrelated report families."
+    }
+  ],
+  "safe_claim_boundary": "For 2026-02-18, RPT_18 is verified via the accepted API composite mobile/owner/efficiency plus mobile/schedule for unique-patient totals, validated against runtime UI. This does not prove that a single API endpoint fully reproduces the report, and the normalization policy remains family-specific.",
+  "source_artifact_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/efficiency-report-verification-2026-02-18.json",
+  "workbook_path": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_18_2026-02-18_normalized.xlsx"
+}

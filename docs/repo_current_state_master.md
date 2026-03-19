@@ -165,3 +165,8 @@
   - runtime/export mismatch remains explicit
   - `runtime_html` remains primary truth
   - operational status stays `ready_with_limits`
+- `RPT_18` live slice (`2026-02-18`) is now locked as:
+  - existing accepted verifier re-run passed row-level and totals-level parity
+  - accepted API composite remains `mobile/owner/efficiency + mobile/schedule`
+  - runtime UI remains the validation target
+  - single-endpoint replacement remains forbidden

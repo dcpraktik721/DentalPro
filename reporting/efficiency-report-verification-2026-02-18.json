@@ -1,0 +1,1877 @@
+{
+  "generated_at": "2026-03-19T15:53:27.149Z",
+  "target_date": "2026-02-18",
+  "target_date_start": "2026-02-18",
+  "target_date_end": "2026-02-18",
+  "target_range_label": "2026-02-18",
+  "report_id": "18",
+  "report_url": "https://dcpraktik.dental-pro.online/reports/reports/view?id=18&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18",
+  "api_method": "mobile/owner/efficiency",
+  "verdict": {
+    "pass": true,
+    "row_level_pass": true,
+    "totals_pass": true,
+    "comparable_totals_pass": true,
+    "unique_patient_totals_pass": true
+  },
+  "evidence": {
+    "test_form": {
+      "action": "/api/mobile/owner/efficiency",
+      "method": "get",
+      "fields": [
+        {
+          "name": null,
+          "placeholder": null,
+          "type": "text"
+        },
+        {
+          "name": null,
+          "placeholder": null,
+          "type": "text"
+        },
+        {
+          "name": "token",
+          "placeholder": "Токен",
+          "type": "text"
+        },
+        {
+          "name": "secret",
+          "placeholder": "Сгенерированный секрет",
+          "type": "text"
+        },
+        {
+          "name": "date_start",
+          "placeholder": "date_start",
+          "type": "textarea"
+        },
+        {
+          "name": "date_end",
+          "placeholder": "date_end",
+          "type": "textarea"
+        },
+        {
+          "name": "branch_id",
+          "placeholder": "branch_id",
+          "type": "number"
+        },
+        {
+          "name": "coefficient",
+          "placeholder": "coefficient",
+          "type": "number"
+        },
+        {
+          "name": "graph_time_settings",
+          "placeholder": "graph_time_settings",
+          "type": "textarea"
+        }
+      ]
+    },
+    "fresh_report_page_network": {
+      "request_count": 148,
+      "api_request_count": 0,
+      "api_requests": [],
+      "requests": [
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/5.nprogress.eca9185a90e0a9463c17398463b18147.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "document",
+          "url": "https://dcpraktik.dental-pro.online/reports/reports/view?id=18&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/1.jquery.00727d1d5d9c90f7de826f1a4a9cc632.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/7.xtea.f90149642cb738981c5d7b10da326c9f.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/9.1.bootstrap-datetimepicker.min.6b83607a3e6e1e4587b6bf6e90fa9b14.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/10.ion.rangeglider.14668d29e4781cd0ab5a2077a9ab39f7.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/12.2.select2_locale_ru.8820d9cb3bd8a3493fcd91ee448fabdc.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/15.bootstrap.progress.5532e4de1026cab4ecbffc18e0315fcc.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/18.sweetalert.a593d78a33788481455612e58f917d97.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/23.jui-touch-panch.f8cbe912fb9d97fb5943a450c833ecbe.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/autosize.386b37914c9f1e448280e3a57c84fc7b.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/bootstrap-notify.min.3dbb57fb9a2861767f503e20039232f4.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/12.1.select2.a2c03ae2e79621c3e93e0fc07a095710.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/chartjs-plugin-datalabels.c032b6b7aea40812ef220e70633ce1d1.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/daterangepicker.efe32d035393c514015af56b89840104.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/formatMoney.368e56427ad72ce2bf2adc8aa41e1463.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/ion.sound.e6f534be750ff9219ed60dd993232b41.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/jq.autocomplete.cd8f4e8d76132fb158a4a2c6f4e8d08f.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/jquery.cookie.d1d59c011885a6f14ccbbc5f1152683d.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/jquery.ui.widget.3601568d302496eadb08d02384daa935.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/jquery.uploadifive.min.a2a1f904c15b516e8283998bc74a99a4.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/print.this.eab8444e2bf429a0d128e6600ddfd593.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/print.min.b2f4aa2fae632a53909030c0f7728eb5.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/livequery.5cb3f2de4e3ea69d524c292fad8c1df5.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/app.bffc2ea2d7ba66e4eff679b0cc9426b2.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/pwstrength-bootstrap.min.e462f00c2c7cc46355a3668562276a4a.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/charts.989a21e26f5f5531b49a197b6ed2c72a.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/mivioform.bf14431686c70225733ce481b09e5d58.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/core.a257f24d66dfa0be3f8ddf00578fbbf0.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/mv.ajaxpage.62562f8ac46ac74c675358b94d6ce1a3.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/mv.notifycron.f6ad858fea8ad6176f244a03ac1eef4d.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/2.1.moment.min.4fe4946bd57b57bcc7db534128e240c7.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/mv.user.373a43f52cf79ca77274dea08442dd74.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/auth.6226a01cb30d557e2379ddf77deb7b87.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/voiceSpeech.db31b00919545caf188b7833afdff80d.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/align.min.117b25aff09137481d99ef3d660e774f.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/16.jquicore.575236e609d3466e55182f315ee6e477.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/code_beautifier.min.cd0919a6c9ec05faf9bbb48ce555433b.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/code_view.min.3c013d4ef90a9aad54b464eb1c2fd56e.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/colors.min.81e6f61f2a621e6ad9d4874c69c931ff.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/entities.min.315d57bd2909d3e2bc170f7b38f4a8b3.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/font_family.min.4049fe6b1c2a73253174b89ad214f50c.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/font_size.min.c5b76bc16c3fa1cad079a6daa6bf6862.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/forms.min.b84a02734a8f04136cb7c20f2f0dd483.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/fullscreen.min.e5ae7b755040a7b7811b5d9464669d5e.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/jquery.fancybox.min.3fa4b4993260aba2778633f0426fe5f5.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/help.min.adbf1eea2230db73302cffc199813f83.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/image.min.79bc9b77ba795ea2277d0a4cbc9314ac.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/line_breaker.min.0619ce57e29a0247e9dbf63981d78a28.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/line_height.min.11615a5b9592e70d05ec086cd9a49f51.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/lists.min.946b7f9187f5eb38b23040b7b7f1695c.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/paragraph_format.min.2a169f660f4f23368c08574baaaf8e60.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/paragraph_style.min.53f0a255c2bb4b15a27730f24ed222b6.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/quick_insert.min.ea7c6fb1ebc8a842facd08de8d6af0e1.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/quote.min.f9a849b90099ae7ac8753ff1bbe5b5bb.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/special_characters.min.426c6833c021422d103d2269ff00e9bd.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/table.min.e8bb459d8eff21435796c81bcd8b5dbe.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/bootstrap.d78cc54dc9826df31c881990d61c814a.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/draggable.min.900eeced615b949da2acfe88a7920a2f.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/word_paste.min.f34caac31f9237892e3633e05d6f5105.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/ru.5de25e4fa60f9b5d0eb5540210ad2aeb.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.50884a102f078a4f32cabb8751f05dac.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/calendar.05f0e5006e798f2d468757a836fc708b.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/doctorEdit.ba3e170aa2cabf570bf6f0ffd524028d.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/Chart.min.bee77a7cbcefd5809c54957cc0bfeb41.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.25109640717ee116bbfa10af0cf07016.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.e9e64dba2304249a007eeb830735d92d.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.cb85176fe1156354588fd3e489107b7e.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/imagecrop.475d9f9d2afa5d0d0d39f614b8f9c834.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/user.77ffcd9a9f1ee6a09471fb3d8f66e1d8.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/files.e01a05e5874939207e2709aaaa8ac082.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.5e012ffaa1f83474dde03e4dad97b268.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.642358328e2993d5679713466823387c.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/tasks.6956238d38e872dccb6b3654e3420d2c.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/dp-notify.30f0c537a2ba0d796522f2137007bf81.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/card.ab7cbf5f0c36f92e442b30e4628a08db.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/history.e02c85e7bbd00a19084a91f9bf1afb2e.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/tickets.064d97ffb6573d37c5054c5364af930d.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/main.91811eb276463304dee1f97324f8fc9a.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/schedule.94a5688cc76a38b6004d3dbee2b9e0a1.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/dashboard.75a35cb1718e26e67a6e980dd79c5f33.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/inputmask.02d296611431b08935e08617495cce23.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.ef922641f5653c9537ee4f4fdd6e2fa9.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.4c765d1a47aa5bc645d12e3557431c7b.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.b5b74084c6d9d478ad83c12c56570377.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/focuslock.25e56dd14f3534ae71d7d7ef7e2ec3e0.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.7d25bfab9eb18928a4ac442d4e2dfcc8.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.7b13318f598a2d7b740badd89b762aae.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/medical.69d9c978b771a988bea7217aa16b0ead.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/scripts.47aec4277a8c8627d29a34d3887bd5f0.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/settings.acee1d8292714f622851b29a4f3a1ecb.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/cashbox.7b7846634f66e3cfebdb903bcdb8533f.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/detail.433c15594ad3ee1858ca3331c06d691b.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/pay_debt.0d31cf306d2d42103c70d7a74a7afe68.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/price.c8b7c114d88a7997d6cdb28a64e0c8a1.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.f64b23b67c82c3e1af90eaf61487a854.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/settingsPrepaymentItems.51bbc99682b4fa649ab897886e4f0e59.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.ecc094ce1a1cd349df1c9a3473a069d9.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/documents.2cfb29f38739a29394599260d7868c9d.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/insurance.e9a3e5a0fb8447f2bc6df85def11d376.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/invoiceWizard.44e0b3a44f793a2fbe93eebb3ef3f799.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/constructor.afb873fd868cd6c0a90b6f3b983f4bad.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/discounts.890ff4ef287a7c1f54cedac61a637b0e.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/editor.b0e6fae51e1a1c48b30b664ca679d8e9.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/main.564f4356d70a0530c37630116ba31f28.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/app_template_form.0deeb4ff918a2539a0aa7943f3996636.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.134d73ee015ce98396cc3f55eed880bb.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/fiscalreg.e80ef70873c08f86ef124d80a87e093c.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.6654f0034d1132878bd0427f36898917.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/prepaid.c23158e881997663d1e125602d2b00fa.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/prepayment.32aa4fb8b42b75b74704d3f141d83aa9.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.3b4970458df50285eee16dae81418c7a.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/console.d3e4b0c46e1eb4ce4b59af5628982874.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.8a08d79cae2da8dea9e7930728314a30.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/waybill.b32fca5af53057924db9497b8e1b482e.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.b87976784b4c56e32da6259586eae4cc.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.1cf28591ddcf3a9ca9598fff0345f412.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/form.a842f8b8b3fd2d837614ec141e9644f1.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.0eb38f71c244923073d859b8066d655a.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/hooks.3a5da751792140d30ba8649641a30a7d.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.a632d8fb817f482347f0732c4a9e51df.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/mobile.50fba039a981412814409988abe8ea7d.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/chain.a442555725d681fb4d9e312ac1446505.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/editPriceList.1cf82c4db8ed965b8630f7b237a044c8.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/fact.f5d9c434ab907c48eacbe4351b476fae.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/medcard.261be8fa26afdad6b3776d0cf0cadb95.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/problems.ae9acd8872386d316cda3d9ebce349fc.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/tooths.64a6d706e13119f12e0853893bdaec4d.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/scripts.55be0ecdd861fdcb8475f9759803ab69.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/toothsmap.9c22ef8d7b70172e49d00f923b3cad0f.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.a05e8edc2893a3f210db2412240117df.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/pushStorage.19a45aa7349aeeb08e7ac60f2a426d07.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/push.39df256ba2404daa169ed8a49901b72a.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/scripts.aac1f1085a2260891d153dc4c1ee8954.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/stats.d8153facf4a5f6d02885b83b53a387aa.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/widget.37fbd0e1c79c7c7934a0bf243efe7200.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/wysibb.min.121e95cb484ceb1271f058fd5d833a37.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/capture.688671fdaf34970922ebbb7471952a18.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.2d00f6234472de770ef010ec3657f4d6.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.11e5d081d25fbe9a9f882186cf5c543a.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/support.dfad0eb06cef7593a1ed7e45380d4a2f.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/script.8c4d47a16c26f59edb54284d308c43ac.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/sip-0.7.8.4c4b67333bab9eaacc3f5ddbbb5fcd45.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/froala_editor.min.55f58573ae12e3e6e7117d9e12a3ce64.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/content/cache/assets/canvasjs.min.2b34e340286a7e30cbde0bab69a681b6.js",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "GET",
+          "resourceType": "script",
+          "url": "https://dcpraktik.dental-pro.online/core/assets/build/vendor.js?v=fe63de8f9cbcbc87b13b8c5144470342",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "POST",
+          "resourceType": "xhr",
+          "url": "https://dcpraktik.dental-pro.online/license/notification/notify",
+          "status": 200,
+          "failureText": null
+        },
+        {
+          "method": "POST",
+          "resourceType": "xhr",
+          "url": "https://dcpraktik.dental-pro.online/dppush/push/getConnectionString",
+          "status": 200,
+          "failureText": null
+        }
+      ]
+    },
+    "field_mapping": {
+      "row_fields": [
+        {
+          "ui_label": "ФИО",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "name",
+          "transform": "trim string",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Норма выручки за час",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "money_per_hour",
+          "transform": "raw / 100, currency formatting, read from first-cell tooltip",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Рабочих часов",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "graphTime",
+          "transform": "HH:MM string",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Выработано часов",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "workTime",
+          "transform": "HH:MM string",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Загрузка",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "percentGraphOnWork",
+          "transform": "percent",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Финансовый план",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "cashPlan",
+          "transform": "raw / 100, currency formatting",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Выручка",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "cashTotal",
+          "transform": "raw / 100, currency formatting",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Выполнено",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "percentCashDone",
+          "transform": "percent",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Первичные",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "countPrimaryRecords",
+          "transform": "integer",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Приемов",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "countRecords",
+          "transform": "integer",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Ф.Л.",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "countClients",
+          "transform": "integer",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Посещений физ. лицом",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "countRecords,countClients",
+          "transform": "countRecords / countClients, rounded to 2 decimals; raw countVisits does not match period slices",
+          "evidence": "row equality verified on day and month slices"
+        },
+        {
+          "ui_label": "Стоимость посещения",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "avgCashVisits",
+          "transform": "raw / 100, currency formatting",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Выручка на Ф.Л.",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "avgCashClients",
+          "transform": "raw / 100, currency formatting",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Стоимость факт. часа работы",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "avgCashHour",
+          "transform": "raw / 100, currency formatting",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Первичных к посещениям",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "percentPrimaryOnVisits",
+          "transform": "percent",
+          "evidence": "row equality verified"
+        },
+        {
+          "ui_label": "Показатель повторности",
+          "api_method": "mobile/owner/efficiency",
+          "api_key": "percentPrimaryToTotalRecords",
+          "transform": "percent",
+          "evidence": "row equality verified"
+        }
+      ],
+      "totals": {
+        "direct_from_efficiency_sum": [
+          "Рабочих часов",
+          "Выработано часов",
+          "Финансовый план",
+          "Выручка",
+          "Первичные",
+          "Приемов"
+        ],
+        "derived_from_efficiency_sum": [
+          "Загрузка",
+          "Выполнено",
+          "Стоимость посещения",
+          "Стоимость факт. часа работы",
+          "Показатель повторности"
+        ],
+        "verified_via_schedule_distinct_patients": [
+          "Ф.Л. (итого, уникальные пациенты)",
+          "Посещений физ. лицом (итого)",
+          "Выручка на Ф.Л. (итого)",
+          "Первичных к посещениям (итого)"
+        ],
+        "notes": [
+          "Fresh report page load did not issue a browser-side /api/mobile/owner/efficiency request; the correspondence is proven by value-level verification between server-rendered UI and API payload.",
+          "UI total unique patients cannot be obtained by summing row-level countClients from mobile/owner/efficiency; it must be computed as a distinct patient set, independently reproducible from mobile/schedule for the report doctor set."
+        ]
+      }
+    },
+    "notes": [
+      "Row-level verification compares rendered UI values to parsed API values after unit normalization.",
+      "Unique-patient totals are cross-checked via mobile/schedule because mobile/owner/efficiency only exposes per-doctor countClients."
+    ]
+  },
+  "api": {
+    "envelope_keys": [
+      "method",
+      "data",
+      "status",
+      "error",
+      "page",
+      "total",
+      "paginated",
+      "limit",
+      "api_version",
+      "version"
+    ],
+    "sample_keys": [
+      "id",
+      "money_per_hour",
+      "name",
+      "graphTime",
+      "graphTimeRaw",
+      "workTime",
+      "workTimeRaw",
+      "percentGraphOnWork",
+      "cashPlan",
+      "cashTotal",
+      "percentCashDone",
+      "countPrimaryRecords",
+      "countRecords",
+      "countClients",
+      "countVisits",
+      "avgCashVisits",
+      "avgCashClients",
+      "avgCashHour",
+      "percentPrimaryOnVisits",
+      "percentPrimaryToTotalRecords"
+    ],
+    "row_count": 10,
+    "rows": [
+      {
+        "doctor_id": "30",
+        "doctor": "Аушева М.А.",
+        "money_per_hour_rub": 11700,
+        "planned_hours": "08:00",
+        "actual_hours": "05:00",
+        "load_pct": 62.5,
+        "plan_rub": 93600,
+        "revenue_rub": 46765,
+        "complete_pct": 50,
+        "primary_count": 3,
+        "visits_count": 6,
+        "patients_count": 6,
+        "visits_per_patient_raw": 1,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 7794.17,
+        "revenue_per_patient": 7794.17,
+        "revenue_per_hour": 9353,
+        "primary_share_pct": 50,
+        "repeat_pct": 50
+      },
+      {
+        "doctor_id": "8",
+        "doctor": "Буряк Л.А.",
+        "money_per_hour_rub": 9000,
+        "planned_hours": "04:00",
+        "actual_hours": "04:00",
+        "load_pct": 100,
+        "plan_rub": 36000,
+        "revenue_rub": 41803,
+        "complete_pct": 116.1,
+        "primary_count": 0,
+        "visits_count": 4,
+        "patients_count": 4,
+        "visits_per_patient_raw": 1,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 10450.75,
+        "revenue_per_patient": 10450.75,
+        "revenue_per_hour": 10450.75,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor_id": "3",
+        "doctor": "Геюшова Я.Н.",
+        "money_per_hour_rub": 17000,
+        "planned_hours": "05:00",
+        "actual_hours": "03:45",
+        "load_pct": 75,
+        "plan_rub": 85000,
+        "revenue_rub": 69229,
+        "complete_pct": 81.4,
+        "primary_count": 2,
+        "visits_count": 6,
+        "patients_count": 6,
+        "visits_per_patient_raw": 1,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 11538.17,
+        "revenue_per_patient": 11538.17,
+        "revenue_per_hour": 18461.07,
+        "primary_share_pct": 33.3,
+        "repeat_pct": 33.3
+      },
+      {
+        "doctor_id": "31",
+        "doctor": "Жихар З.К.",
+        "money_per_hour_rub": 9900,
+        "planned_hours": "07:00",
+        "actual_hours": "04:45",
+        "load_pct": 67.9,
+        "plan_rub": 69300,
+        "revenue_rub": 55671,
+        "complete_pct": 80.3,
+        "primary_count": 0,
+        "visits_count": 6,
+        "patients_count": 6,
+        "visits_per_patient_raw": 1,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 9278.5,
+        "revenue_per_patient": 9278.5,
+        "revenue_per_hour": 11720.21,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor_id": "1",
+        "doctor": "Иващенко А.Н.",
+        "money_per_hour_rub": 29000,
+        "planned_hours": "06:00",
+        "actual_hours": "05:30",
+        "load_pct": 91.7,
+        "plan_rub": 174000,
+        "revenue_rub": 110295,
+        "complete_pct": 63.4,
+        "primary_count": 0,
+        "visits_count": 7,
+        "patients_count": 7,
+        "visits_per_patient_raw": 1,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 15756.43,
+        "revenue_per_patient": 15756.43,
+        "revenue_per_hour": 20053.64,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor_id": "54",
+        "doctor": "Клячина Ю.В.",
+        "money_per_hour_rub": 0,
+        "planned_hours": "02:30",
+        "actual_hours": "01:45",
+        "load_pct": 70,
+        "plan_rub": 0,
+        "revenue_rub": 12615,
+        "complete_pct": 0,
+        "primary_count": 0,
+        "visits_count": 3,
+        "patients_count": 3,
+        "visits_per_patient_raw": 1,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 4205,
+        "revenue_per_patient": 4205,
+        "revenue_per_hour": 7208.57,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor_id": "53",
+        "doctor": "Кулешов К.А.",
+        "money_per_hour_rub": 0,
+        "planned_hours": "06:00",
+        "actual_hours": "03:00",
+        "load_pct": 50,
+        "plan_rub": 0,
+        "revenue_rub": 16060,
+        "complete_pct": 0,
+        "primary_count": 2,
+        "visits_count": 4,
+        "patients_count": 4,
+        "visits_per_patient_raw": 1,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 4015,
+        "revenue_per_patient": 4015,
+        "revenue_per_hour": 5353.33,
+        "primary_share_pct": 50,
+        "repeat_pct": 50
+      },
+      {
+        "doctor_id": "38",
+        "doctor": "Логвинчук Д.Н.",
+        "money_per_hour_rub": 22000,
+        "planned_hours": "05:00",
+        "actual_hours": "02:30",
+        "load_pct": 50,
+        "plan_rub": 110000,
+        "revenue_rub": 88708,
+        "complete_pct": 80.6,
+        "primary_count": 0,
+        "visits_count": 4,
+        "patients_count": 4,
+        "visits_per_patient_raw": 1,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 22177,
+        "revenue_per_patient": 22177,
+        "revenue_per_hour": 35483.2,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor_id": "45",
+        "doctor": "Оленев А.О.",
+        "money_per_hour_rub": 20000,
+        "planned_hours": "04:00",
+        "actual_hours": "02:30",
+        "load_pct": 62.5,
+        "plan_rub": 80000,
+        "revenue_rub": 141880,
+        "complete_pct": 177.4,
+        "primary_count": 0,
+        "visits_count": 3,
+        "patients_count": 3,
+        "visits_per_patient_raw": 1,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 47293.33,
+        "revenue_per_patient": 47293.33,
+        "revenue_per_hour": 56752,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor_id": "52",
+        "doctor": "Храпонова Н.А.",
+        "money_per_hour_rub": 0,
+        "planned_hours": "02:30",
+        "actual_hours": "02:15",
+        "load_pct": 90,
+        "plan_rub": 0,
+        "revenue_rub": 10345,
+        "complete_pct": 0,
+        "primary_count": 0,
+        "visits_count": 2,
+        "patients_count": 2,
+        "visits_per_patient_raw": 1,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 5172.5,
+        "revenue_per_patient": 5172.5,
+        "revenue_per_hour": 4597.78,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      }
+    ],
+    "computed_totals": {
+      "planned_hours": "50:00",
+      "actual_hours": "35:00",
+      "load_pct": 70,
+      "plan_rub": 647900,
+      "revenue_rub": 593371,
+      "complete_pct": 91.6,
+      "primary_count": 7,
+      "visits_count": 45,
+      "revenue_per_visit": 13186.02,
+      "revenue_per_hour": 16953.46,
+      "repeat_pct": 15.6
+    },
+    "computed_unique_patient_totals": {
+      "patients_count": 41,
+      "visits_per_patient": 1.1,
+      "revenue_per_patient": 14472.46,
+      "primary_share_pct": 17.1
+    }
+  },
+  "ui": {
+    "title": "Ключевые показатели эффективности",
+    "empty": false,
+    "rows": [
+      {
+        "doctor": "Аушева М.А.",
+        "money_per_hour_rub": 11700,
+        "money_per_hour_hint": "Норма выручки за час: 11 700.00 ₽",
+        "planned_hours": "08:00",
+        "actual_hours": "05:00",
+        "load_pct": 62.5,
+        "plan_rub": 93600,
+        "revenue_rub": 46765,
+        "complete_pct": 50,
+        "primary_count": 3,
+        "visits_count": 6,
+        "patients_count": 6,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 7794.17,
+        "revenue_per_patient": 7794.17,
+        "revenue_per_hour": 9353,
+        "primary_share_pct": 50,
+        "repeat_pct": 50
+      },
+      {
+        "doctor": "Буряк Л.А.",
+        "money_per_hour_rub": 9000,
+        "money_per_hour_hint": "Норма выручки за час: 9 000.00 ₽",
+        "planned_hours": "04:00",
+        "actual_hours": "04:00",
+        "load_pct": 100,
+        "plan_rub": 36000,
+        "revenue_rub": 41803,
+        "complete_pct": 116.1,
+        "primary_count": 0,
+        "visits_count": 4,
+        "patients_count": 4,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 10450.75,
+        "revenue_per_patient": 10450.75,
+        "revenue_per_hour": 10450.75,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor": "Геюшова Я.Н.",
+        "money_per_hour_rub": 17000,
+        "money_per_hour_hint": "Норма выручки за час: 17 000.00 ₽",
+        "planned_hours": "05:00",
+        "actual_hours": "03:45",
+        "load_pct": 75,
+        "plan_rub": 85000,
+        "revenue_rub": 69229,
+        "complete_pct": 81.4,
+        "primary_count": 2,
+        "visits_count": 6,
+        "patients_count": 6,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 11538.17,
+        "revenue_per_patient": 11538.17,
+        "revenue_per_hour": 18461.07,
+        "primary_share_pct": 33.3,
+        "repeat_pct": 33.3
+      },
+      {
+        "doctor": "Жихар З.К.",
+        "money_per_hour_rub": 9900,
+        "money_per_hour_hint": "Норма выручки за час: 9 900.00 ₽",
+        "planned_hours": "07:00",
+        "actual_hours": "04:45",
+        "load_pct": 67.9,
+        "plan_rub": 69300,
+        "revenue_rub": 55671,
+        "complete_pct": 80.3,
+        "primary_count": 0,
+        "visits_count": 6,
+        "patients_count": 6,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 9278.5,
+        "revenue_per_patient": 9278.5,
+        "revenue_per_hour": 11720.21,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor": "Иващенко А.Н.",
+        "money_per_hour_rub": 29000,
+        "money_per_hour_hint": "Норма выручки за час: 29 000.00 ₽",
+        "planned_hours": "06:00",
+        "actual_hours": "05:30",
+        "load_pct": 91.7,
+        "plan_rub": 174000,
+        "revenue_rub": 110295,
+        "complete_pct": 63.4,
+        "primary_count": 0,
+        "visits_count": 7,
+        "patients_count": 7,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 15756.43,
+        "revenue_per_patient": 15756.43,
+        "revenue_per_hour": 20053.64,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor": "Клячина Ю.В.",
+        "money_per_hour_rub": 0,
+        "money_per_hour_hint": "Норма выручки за час: 0.00 ₽",
+        "planned_hours": "02:30",
+        "actual_hours": "01:45",
+        "load_pct": 70,
+        "plan_rub": 0,
+        "revenue_rub": 12615,
+        "complete_pct": 0,
+        "primary_count": 0,
+        "visits_count": 3,
+        "patients_count": 3,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 4205,
+        "revenue_per_patient": 4205,
+        "revenue_per_hour": 7208.57,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor": "Кулешов К.А.",
+        "money_per_hour_rub": 0,
+        "money_per_hour_hint": "Норма выручки за час: 0.00 ₽",
+        "planned_hours": "06:00",
+        "actual_hours": "03:00",
+        "load_pct": 50,
+        "plan_rub": 0,
+        "revenue_rub": 16060,
+        "complete_pct": 0,
+        "primary_count": 2,
+        "visits_count": 4,
+        "patients_count": 4,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 4015,
+        "revenue_per_patient": 4015,
+        "revenue_per_hour": 5353.33,
+        "primary_share_pct": 50,
+        "repeat_pct": 50
+      },
+      {
+        "doctor": "Логвинчук Д.Н.",
+        "money_per_hour_rub": 22000,
+        "money_per_hour_hint": "Норма выручки за час: 22 000.00 ₽",
+        "planned_hours": "05:00",
+        "actual_hours": "02:30",
+        "load_pct": 50,
+        "plan_rub": 110000,
+        "revenue_rub": 88708,
+        "complete_pct": 80.6,
+        "primary_count": 0,
+        "visits_count": 4,
+        "patients_count": 4,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 22177,
+        "revenue_per_patient": 22177,
+        "revenue_per_hour": 35483.2,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor": "Оленев А.О.",
+        "money_per_hour_rub": 20000,
+        "money_per_hour_hint": "Норма выручки за час: 20 000.00 ₽",
+        "planned_hours": "04:00",
+        "actual_hours": "02:30",
+        "load_pct": 62.5,
+        "plan_rub": 80000,
+        "revenue_rub": 141880,
+        "complete_pct": 177.4,
+        "primary_count": 0,
+        "visits_count": 3,
+        "patients_count": 3,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 47293.33,
+        "revenue_per_patient": 47293.33,
+        "revenue_per_hour": 56752,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      },
+      {
+        "doctor": "Храпонова Н.А.",
+        "money_per_hour_rub": 0,
+        "money_per_hour_hint": "Норма выручки за час: 0.00 ₽",
+        "planned_hours": "02:30",
+        "actual_hours": "02:15",
+        "load_pct": 90,
+        "plan_rub": 0,
+        "revenue_rub": 10345,
+        "complete_pct": 0,
+        "primary_count": 0,
+        "visits_count": 2,
+        "patients_count": 2,
+        "visits_per_patient": 1,
+        "revenue_per_visit": 5172.5,
+        "revenue_per_patient": 5172.5,
+        "revenue_per_hour": 4597.78,
+        "primary_share_pct": 0,
+        "repeat_pct": 0
+      }
+    ],
+    "totals": {
+      "planned_hours": "50:00",
+      "actual_hours": "35:00",
+      "load_pct": 70,
+      "plan_rub": 647900,
+      "revenue_rub": 593371,
+      "complete_pct": 91.6,
+      "primary_count": 7,
+      "visits_count": 45,
+      "patients_count": 41,
+      "patients_note": "",
+      "visits_per_patient": 1.1,
+      "revenue_per_visit": 13186.02,
+      "revenue_per_patient": 14472.46,
+      "revenue_per_hour": 16953.46,
+      "primary_share_pct": 17.1,
+      "repeat_pct": 15.6
+    }
+  },
+  "schedule_evidence": {
+    "method": "mobile/schedule",
+    "date_start": "2026-02-18",
+    "date_end": "2026-02-18",
+    "uniquePatientsCount": 41,
+    "perDoctor": {
+      "1": {
+        "visit_count": 7,
+        "unique_patients_count": 7
+      },
+      "3": {
+        "visit_count": 6,
+        "unique_patients_count": 6
+      },
+      "8": {
+        "visit_count": 4,
+        "unique_patients_count": 4
+      },
+      "30": {
+        "visit_count": 6,
+        "unique_patients_count": 6
+      },
+      "31": {
+        "visit_count": 6,
+        "unique_patients_count": 6
+      },
+      "38": {
+        "visit_count": 4,
+        "unique_patients_count": 4
+      },
+      "45": {
+        "visit_count": 3,
+        "unique_patients_count": 3
+      },
+      "52": {
+        "visit_count": 2,
+        "unique_patients_count": 2
+      },
+      "53": {
+        "visit_count": 4,
+        "unique_patients_count": 4
+      },
+      "54": {
+        "visit_count": 3,
+        "unique_patients_count": 3
+      }
+    }
+  },
+  "comparisons": {
+    "row_level": {
+      "pass": true,
+      "diffCount": 0,
+      "diffs": []
+    },
+    "totals": {
+      "pass": true,
+      "comparablePass": true,
+      "uniquePatientPass": true,
+      "details": {
+        "comparable": {
+          "planned_hours": true,
+          "actual_hours": true,
+          "load_pct": true,
+          "plan_rub": true,
+          "revenue_rub": true,
+          "complete_pct": true,
+          "primary_count": true,
+          "visits_count": true,
+          "revenue_per_visit": true,
+          "revenue_per_hour": true,
+          "repeat_pct": true
+        },
+        "uniquePatientBased": {
+          "patients_count": true,
+          "visits_per_patient": true,
+          "revenue_per_patient": true,
+          "primary_share_pct": true
+        },
+        "apiComparableTotals": {
+          "planned_hours": "50:00",
+          "actual_hours": "35:00",
+          "load_pct": 70,
+          "plan_rub": 647900,
+          "revenue_rub": 593371,
+          "complete_pct": 91.6,
+          "primary_count": 7,
+          "visits_count": 45,
+          "revenue_per_visit": 13186.02,
+          "revenue_per_hour": 16953.46,
+          "repeat_pct": 15.6
+        },
+        "apiUniquePatientTotals": {
+          "patients_count": 41,
+          "visits_per_patient": 1.1,
+          "revenue_per_patient": 14472.46,
+          "primary_share_pct": 17.1
+        },
+        "uiTotals": {
+          "planned_hours": "50:00",
+          "actual_hours": "35:00",
+          "load_pct": 70,
+          "plan_rub": 647900,
+          "revenue_rub": 593371,
+          "complete_pct": 91.6,
+          "primary_count": 7,
+          "visits_count": 45,
+          "patients_count": 41,
+          "patients_note": "",
+          "visits_per_patient": 1.1,
+          "revenue_per_visit": 13186.02,
+          "revenue_per_patient": 14472.46,
+          "revenue_per_hour": 16953.46,
+          "primary_share_pct": 17.1,
+          "repeat_pct": 15.6
+        }
+      }
+    }
+  }
+}

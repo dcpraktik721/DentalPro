@@ -1,7 +1,7 @@
 {
   "registry_name": "scripts_registry",
-  "version": "0.4.2",
-  "status": "current_curated_registry_plus_rpt3_and_rpt9_workbook_paths",
+  "version": "0.4.3",
+  "status": "current_curated_registry_plus_rpt3_rpt9_rpt18_paths",
   "entry_schema": {
     "script_id": "",
     "path": "",
@@ -354,6 +354,34 @@
         "Requires python3 and repo-local builder"
       ],
       "notes": "Computes repo root relative to wrapper and execs scripts/build_report_rpt3.py with \"$@\""
+    },
+    {
+      "script_id": "script_build_report_rpt18_workbook",
+      "path": "scripts/build_report_rpt18_workbook.py",
+      "language": "python",
+      "purpose": "Build normalized RPT_18 workbook and meta from saved verifier artifact",
+      "domain": "reporting, KPI",
+      "inputs": [
+        "reporting/efficiency-report-verification-YYYY-MM-DD.json",
+        "reports/RPT_18_live_report_YYYY-MM-DD.md",
+        "reports/RPT_18_problem_log_YYYY-MM-DD.md"
+      ],
+      "outputs": [
+        "scripts/build_report_rpt18_workbook.py"
+      ],
+      "artifacts_produced": [
+        "excel/RPT_18_2026-02-18_normalized.xlsx",
+        "artifacts/RPT_18_2026-02-18_meta.json"
+      ],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Does not execute live DentalPRO extraction by itself",
+        "Assumes saved verifier artifact already exists",
+        "RPT_18 remains a dual-source accepted API composite; one endpoint alone must not be promoted as full report truth",
+        "Normalization policy remains report-family specific"
+      ],
+      "notes": "Repo-local workbook/meta builder for RPT_18 verified slices; validated on 2026-02-18"
     }
   ]
 }
