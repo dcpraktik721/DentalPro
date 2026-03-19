@@ -1,0 +1,78 @@
+{
+  "report_code": "RPT_29",
+  "report_name": "Квитанции без оплаты",
+  "date_start": "2026-02-18",
+  "date_end": "2026-02-18",
+  "generated_at": "2026-03-19T16:40:46.134Z",
+  "run_status": "success_with_warnings",
+  "auth": {
+    "authenticated": true,
+    "final_url": "https://dcpraktik.dental-pro.online/reports/reports/view?id=29&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18",
+    "redirect_detected": false,
+    "success_reason": "runtime_report_opened"
+  },
+  "runtime": {
+    "url": "https://dcpraktik.dental-pro.online/reports/reports/view?id=29&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18",
+    "raw_capture_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report-29-2026-02-18-2026-02-18.json",
+    "screenshot_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report-29-2026-02-18-2026-02-18.png",
+    "title": "Квитанции без оплаты",
+    "columns": [
+      "Статус квитанции / Кем изменено / Пациент",
+      "Квитанция",
+      "Филиал",
+      "Создатель квитанции",
+      "Дата создания",
+      "Дата изменения",
+      "Причина",
+      "Сумма к оплате"
+    ],
+    "structure": {
+      "group_levels": [],
+      "distinct_leaf_rows_observed": 0,
+      "table_rendering": "single_summary_table"
+    },
+    "empty_report_observed": true,
+    "observed_group_row": null,
+    "observed_leaf_row": null,
+    "totals_row": {
+      "label": "ИТОГО",
+      "amount_due": 0
+    }
+  },
+  "accepted_api_support": {
+    "checked": false,
+    "available": false,
+    "raw_capture_path": null,
+    "note": "No date-specific accepted API support was run for this slice. Annual/default unpaid family composite must not be reused as 2026-02-18 evidence."
+  },
+  "source_classification": {
+    "primary_truth": "runtime_html",
+    "secondary_support": [
+      "existing_unpaid_family_artifacts_only"
+    ],
+    "report_equivalence_status": "partial",
+    "safe_claim_boundary": "On 2026-02-18 the live RPT_29 runtime report rendered as an empty report with only an ИТОГО row. Annual/default unpaid family composite artifacts remain family-level supporting evidence only and are not date-specific truth for this slice."
+  },
+  "warnings": [
+    {
+      "code": "RUNTIME_EMPTY_REPORT",
+      "severity": "medium",
+      "message": "Runtime RPT_29 rendered no business leaf rows on 2026-02-18; only totals row was present."
+    },
+    {
+      "code": "DATE_RANGE_ROUTE_REQUIRED",
+      "severity": "medium",
+      "message": "Saved report 29 requires date_range[start]/date_range[end]; date[start]/date[end] was observed to fall back to annual defaults."
+    },
+    {
+      "code": "ANNUAL_COMPOSITE_NOT_DATE_SPECIFIC",
+      "severity": "high",
+      "message": "Existing report-29 annual composite artifacts remain family-level evidence only and were not promoted into this single-date slice."
+    },
+    {
+      "code": "UPDATER_HISTORY_NOT_PROVEN",
+      "severity": "high",
+      "message": "Updater/reason/history semantics for RPT_29 remain unresolved in accepted readable sources."
+    }
+  ]
+}

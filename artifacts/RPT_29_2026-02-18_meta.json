@@ -1,0 +1,39 @@
+{
+  "report_code": "RPT_29",
+  "report_name": "Квитанции без оплаты",
+  "date_start": "2026-02-18",
+  "date_end": "2026-02-18",
+  "generated_at": "2026-03-19T16:40:46.134Z",
+  "run_status": "success_with_warnings",
+  "primary_truth": "runtime_html",
+  "runtime_checked": true,
+  "export_checked": false,
+  "export_available": false,
+  "runtime_row_count": 0,
+  "export_row_count": null,
+  "parity_status": "not_checked",
+  "warnings": [
+    {
+      "code": "RUNTIME_EMPTY_REPORT",
+      "severity": "medium",
+      "message": "Runtime RPT_29 rendered no business leaf rows on 2026-02-18; only totals row was present."
+    },
+    {
+      "code": "DATE_RANGE_ROUTE_REQUIRED",
+      "severity": "medium",
+      "message": "Saved report 29 requires date_range[start]/date_range[end]; date[start]/date[end] was observed to fall back to annual defaults."
+    },
+    {
+      "code": "ANNUAL_COMPOSITE_NOT_DATE_SPECIFIC",
+      "severity": "high",
+      "message": "Existing report-29 annual composite artifacts remain family-level evidence only and were not promoted into this single-date slice."
+    },
+    {
+      "code": "UPDATER_HISTORY_NOT_PROVEN",
+      "severity": "high",
+      "message": "Updater/reason/history semantics for RPT_29 remain unresolved in accepted readable sources."
+    }
+  ],
+  "safe_claim_boundary": "On 2026-02-18 the live RPT_29 runtime report rendered as an empty report with only an ИТОГО row. Annual/default unpaid family composite artifacts remain family-level supporting evidence only and are not date-specific truth for this slice.",
+  "normalized_workbook_path": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_29_2026-02-18_normalized.xlsx"
+}

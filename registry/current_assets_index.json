@@ -2295,5 +2295,107 @@
     "migration_decision": "migrate_now",
     "reason": "Normalized workbook for RPT_24 2026-02-18",
     "notes": "Usable with limits; xray performer gap preserved"
+  },
+  {
+    "asset_id": "reporting_rpt29_ui_2026_02_18",
+    "title": "RPT_29 raw runtime capture for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report-29-2026-02-18-2026-02-18.json",
+    "repo_path": "reporting/report-29-2026-02-18-2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Single-date runtime primary evidence for RPT_29 on 2026-02-18",
+    "notes": "Empty-runtime slice with totals row only"
+  },
+  {
+    "asset_id": "reporting_rpt29_live_probe_2026_02_18",
+    "title": "RPT_29 curated live probe for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_29_live_probe_2026-02-18.json",
+    "repo_path": "reporting/RPT_29_live_probe_2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Curated single-date live slice with explicit empty-runtime boundary",
+    "notes": "Keeps annual unpaid-family composites out of date-specific truth"
+  },
+  {
+    "asset_id": "report_rpt29_live_report_2026_02_18",
+    "title": "RPT_29 live report for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reports/RPT_29_live_report_2026-02-18.md",
+    "repo_path": "reports/RPT_29_live_report_2026-02-18.md",
+    "asset_type": "report",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Human-readable live slice report for RPT_29",
+    "notes": "Verified-with-limits closure"
+  },
+  {
+    "asset_id": "report_rpt29_problem_log_2026_02_18",
+    "title": "RPT_29 problem log for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reports/RPT_29_problem_log_2026-02-18.md",
+    "repo_path": "reports/RPT_29_problem_log_2026-02-18.md",
+    "asset_type": "report",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Explicit no-overclaim problem registry for RPT_29",
+    "notes": "Tracks empty-runtime and annual composite boundary"
+  },
+  {
+    "asset_id": "artifact_rpt29_meta_2026_02_18",
+    "title": "RPT_29 meta sidecar for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/RPT_29_2026-02-18_meta.json",
+    "repo_path": "artifacts/RPT_29_2026-02-18_meta.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Machine-readable sidecar for RPT_29 workbook package",
+    "notes": "Runtime primary, no accepted API parity claim"
+  },
+  {
+    "asset_id": "excel_rpt29_2026_02_18_normalized",
+    "title": "RPT_29 normalized workbook for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_29_2026-02-18_normalized.xlsx",
+    "repo_path": "excel/RPT_29_2026-02-18_normalized.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Normalized Excel output for RPT_29 single-date slice",
+    "notes": "Built only from repo-local artifacts"
   }
 ]

@@ -175,3 +175,9 @@
   - operational status stays `ready_with_limits`
   - xray performer row-level key remains unresolved
   - accepted API composite must not be promoted as fully canonical report truth
+- `RPT_29` live slice (`2026-02-18`) is now locked as:
+  - saved report `29` requires `date_range[start]` / `date_range[end]` for single-date replay
+  - runtime report rendered as an empty slice with only `ИТОГО 0.00 ₽`
+  - `runtime_html` remains primary truth
+  - annual/default unpaid-family composites remain supporting-only and not date-specific truth
+  - operational status stays `usable_with_limits`
