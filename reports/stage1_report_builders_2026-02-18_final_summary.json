@@ -1,0 +1,154 @@
+{
+  "stage": "Stage 1 - report builders 2026-02-18",
+  "date": "2026-02-18",
+  "reports": [
+    {
+      "report_code": "RPT_3",
+      "run_status": "success_with_warnings",
+      "primary_truth": "runtime_html",
+      "workbook_path": "excel/RPT_3_2026-02-18_normalized.xlsx",
+      "meta_path": "artifacts/RPT_3_2026-02-18_meta.json",
+      "live_report_path": "reports/RPT_3_live_report_2026-02-18.md",
+      "problem_log_path": "reports/RPT_3_problem_log_2026-02-18.md",
+      "commit_hash": "c9ac972",
+      "closure_level": "verified_with_limits",
+      "notes": "Runtime/export mismatch remains explicit; debt source is sample-proven via patient cashbox only."
+    },
+    {
+      "report_code": "RPT_9",
+      "run_status": "success_with_warnings",
+      "primary_truth": "runtime_html",
+      "workbook_path": "excel/RPT_9_2026-02-18_normalized.xlsx",
+      "meta_path": "artifacts/RPT_9_2026-02-18_meta.json",
+      "live_report_path": "reports/RPT_9_live_report_2026-02-18.md",
+      "problem_log_path": "reports/RPT_9_problem_log_2026-02-18.md",
+      "commit_hash": "f8c2999",
+      "closure_level": "verified_with_limits",
+      "notes": "Empty-runtime slice; accepted API remains supporting-only and broader than report output."
+    },
+    {
+      "report_code": "RPT_18",
+      "run_status": "success_with_warnings",
+      "primary_truth": "runtime_html_validated_with_accepted_api_composite",
+      "workbook_path": "excel/RPT_18_2026-02-18_normalized.xlsx",
+      "meta_path": "artifacts/RPT_18_2026-02-18_meta.json",
+      "live_report_path": "reports/RPT_18_live_report_2026-02-18.md",
+      "problem_log_path": "reports/RPT_18_problem_log_2026-02-18.md",
+      "commit_hash": "6098dbd",
+      "closure_level": "verified_with_limits",
+      "notes": "Existing accepted verifier re-run passed row/totals parity, but single-endpoint replacement remains forbidden."
+    },
+    {
+      "report_code": "RPT_24",
+      "run_status": "success_with_warnings",
+      "primary_truth": "runtime_html_validated_with_accepted_api_composite",
+      "workbook_path": "excel/RPT_24_2026-02-18_normalized.xlsx",
+      "meta_path": "artifacts/RPT_24_2026-02-18_meta.json",
+      "live_report_path": "reports/RPT_24_live_report_2026-02-18.md",
+      "problem_log_path": "reports/RPT_24_problem_log_2026-02-18.md",
+      "commit_hash": "bc1e0bd",
+      "closure_level": "verified_with_limits",
+      "notes": "Runtime totals and accepted API composite totals match; xray performer linkage remains unresolved."
+    },
+    {
+      "report_code": "RPT_29",
+      "run_status": "success_with_warnings",
+      "primary_truth": "runtime_html",
+      "workbook_path": "excel/RPT_29_2026-02-18_normalized.xlsx",
+      "meta_path": "artifacts/RPT_29_2026-02-18_meta.json",
+      "live_report_path": "reports/RPT_29_live_report_2026-02-18.md",
+      "problem_log_path": "reports/RPT_29_problem_log_2026-02-18.md",
+      "commit_hash": "5662f26",
+      "closure_level": "verified_with_limits",
+      "notes": "Single-date route requires date_range params; this slice is an empty runtime result with only footer total."
+    },
+    {
+      "report_code": "RPT_39",
+      "run_status": "partial",
+      "primary_truth": "runtime_html",
+      "workbook_path": "excel/RPT_39_2026-02-18_normalized.xlsx",
+      "meta_path": "artifacts/RPT_39_2026-02-18_meta.json",
+      "live_report_path": "reports/RPT_39_live_report_2026-02-18.md",
+      "problem_log_path": "reports/RPT_39_problem_log_2026-02-18.md",
+      "commit_hash": "00fdd40",
+      "closure_level": "partial",
+      "notes": "Authenticated runtime route opened but rendered no table; candidate API mapping remains unverified."
+    },
+    {
+      "report_code": "RPT_4",
+      "run_status": "partial",
+      "primary_truth": "runtime_html",
+      "workbook_path": "excel/RPT_4_2026-02-18_normalized.xlsx",
+      "meta_path": "artifacts/RPT_4_2026-02-18_meta.json",
+      "live_report_path": "reports/RPT_4_live_report_2026-02-18.md",
+      "problem_log_path": "reports/RPT_4_problem_log_2026-02-18.md",
+      "commit_hash": "307c076",
+      "closure_level": "partial",
+      "notes": "Repo-local UI capture plus accepted replay show 2 residual field mismatches; hidden backend predicate remains unresolved."
+    },
+    {
+      "report_code": "RPT_23",
+      "run_status": "success_with_warnings",
+      "primary_truth": "runtime_html",
+      "workbook_path": "excel/RPT_23_2026-02-18_normalized.xlsx",
+      "meta_path": "artifacts/RPT_23_2026-02-18_meta.json",
+      "live_report_path": "reports/RPT_23_live_report_2026-02-18.md",
+      "problem_log_path": "reports/RPT_23_problem_log_2026-02-18.md",
+      "commit_hash": "665c9ff",
+      "closure_level": "verified_with_limits",
+      "notes": "Runtime and export/file both captured; raw parity failed, normalized business parity partial, canonicalization still_not_canonical."
+    }
+  ],
+  "global": {
+    "fully_verified_count": 0,
+    "verified_with_limits_count": 6,
+    "partial_count": 2,
+    "blocked_count": 0,
+    "report_families_needing_second_pass": [
+      "RPT_24 xray performer subfamily",
+      "RPT_4 hidden predicate + field closure",
+      "RPT_23 first-column canonicalization",
+      "RPT_39 candidate API mapping if non-empty slice appears"
+    ],
+    "builders_or_wrappers_added": [
+      "scripts/run_report_rpt29_live_probe.js",
+      "scripts/build_report_rpt29_workbook.py",
+      "scripts/run_report_rpt39_live_probe.js",
+      "scripts/build_report_rpt39_workbook.py",
+      "scripts/run_report_rpt4_ui_capture.js",
+      "scripts/build_report_rpt4_workbook.py",
+      "scripts/build_report_rpt23_workbook.py"
+    ],
+    "methods_reused": [
+      "repo-local auth refresh path",
+      "repo-local auth smoke path",
+      "runtime HTML table extraction",
+      "native export capture where available",
+      "workbook-from-saved-artifacts builders",
+      "accepted API support replay for governed report families"
+    ],
+    "new_methods_appeared": [
+      "safe single-date saved report replay with date_range params for RPT_29",
+      "repo-local no-data runtime capture path for RPT_39",
+      "repo-local UI anchor feeding accepted replay for RPT_4",
+      "repo-local runtime-first workbook/meta packaging for runtime_table_export_table family on RPT_23"
+    ],
+    "safe_to_run_by_command": [
+      "./tools/rpt3 2026-02-18",
+      "./tools/rpt9 --date 2026-02-18",
+      "python3 scripts/build_report_rpt18_workbook.py --date 2026-02-18",
+      "python3 scripts/build_report_rpt24_workbook.py --date 2026-02-18",
+      "python3 scripts/build_report_rpt29_workbook.py --date 2026-02-18",
+      "python3 scripts/build_report_rpt39_workbook.py --date 2026-02-18",
+      "python3 scripts/build_report_rpt4_workbook.py --date 2026-02-18",
+      "python3 scripts/build_report_rpt23_workbook.py --date 2026-02-18"
+    ],
+    "unresolved_drift": [
+      "RPT_3 runtime vs native export mismatch",
+      "RPT_9 accepted API wider than report output",
+      "RPT_24 xray performer key unresolved",
+      "RPT_4 residual replay mismatches",
+      "RPT_23 first-column canonicalization unresolved"
+    ]
+  }
+}
