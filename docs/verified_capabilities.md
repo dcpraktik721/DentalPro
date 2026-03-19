@@ -72,8 +72,10 @@
 - proven:
   - curated report family map
   - selected governed verdicts
+  - `RPT_9` normalized workbook can be rebuilt from saved repo artifacts without new live run
 - limits:
   - not every report family is production-closed
+  - `RPT_9` workbook keeps `runtime_html` as primary truth and accepted API as supporting layer only
 
 ## Runtime/auth
 

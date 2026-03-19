@@ -1904,5 +1904,22 @@
     "path": "reports/final_repo_verification_report.md",
     "type": "phase_report",
     "created": "2026-03-18"
+  },
+  {
+    "asset_id": "excel_rpt9_2026_03_18_normalized_workbook",
+    "title": "RPT_9 normalized workbook for 2026-03-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_9_2026-03-18_normalized.xlsx",
+    "repo_path": "excel/RPT_9_2026-03-18_normalized.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Current normalized workbook for the saved RPT_9 live slice on 2026-03-18",
+    "notes": "Built from saved repo artifacts only; runtime_html remains primary truth and accepted API remains supporting layer"
   }
 ]

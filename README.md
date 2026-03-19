@@ -150,6 +150,17 @@ Wrapper:
 - вычисляет repo root относительно самого файла wrapper
 - прокидывает аргументы в `scripts/build_report_rpt3.py` без изменений через `"$@"`
 
+Repo-local wrapper для `RPT_9` workbook:
+
+```bash
+./tools/rpt9 --date 2026-03-18
+```
+
+Boundary:
+- workbook rebuild uses only saved repo artifacts
+- `runtime_html` stays primary truth
+- accepted API stays supporting layer
+
 ## 10. Как запускать Node scripts
 
 Базовый паттерн:

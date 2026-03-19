@@ -60,11 +60,13 @@
   - report universe mapping
   - selected governed report-family verdicts
   - export/file-first report interpretation on curated families
+  - `RPT_9` normalized workbook build from saved repo artifacts, without new live run
 - Primary assets:
   - [report_universe_2026_03_16.json](/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report_universe_2026_03_16.json)
   - [RPT_18_final_governed_verdict_2026-03-18.json](/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_18_final_governed_verdict_2026-03-18.json)
   - [RPT_23_final_governed_verdict_2026-03-11.json](/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_23_final_governed_verdict_2026-03-11.json)
   - [RPT_33_final_governed_verdict_2026-03-15.json](/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_33_final_governed_verdict_2026-03-15.json)
+  - [RPT_9_2026-03-18_normalized.xlsx](/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_9_2026-03-18_normalized.xlsx)
 
 ### Finance
 
@@ -152,3 +154,8 @@
   - March baseline closed at patient-day grain
   - February partial only
   - not fully internalized as repo SoT
+- `RPT_9` workbook slice is now locked as:
+  - built from saved `2026-03-18` runtime/API artifacts only
+  - `runtime_html` remains primary truth
+  - accepted API remains supporting layer only
+  - operational status stays `usable_with_limits`
