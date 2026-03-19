@@ -1,0 +1,54 @@
+{
+  "report_code": "RPT_39",
+  "report_name": "Касса: товары и услуги",
+  "date_start": "2026-02-18",
+  "date_end": "2026-02-18",
+  "generated_at": "2026-03-19T16:48:06.426Z",
+  "run_status": "success_with_warnings",
+  "auth": {
+    "authenticated": true,
+    "final_url": "https://dcpraktik.dental-pro.online/reports/reports/view?id=39&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18",
+    "redirect_detected": false,
+    "success_reason": "runtime_report_opened"
+  },
+  "runtime": {
+    "url": "https://dcpraktik.dental-pro.online/reports/reports/view?id=39&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18",
+    "raw_capture_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report-39-2026-02-18-2026-02-18.json",
+    "screenshot_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report-39-2026-02-18-2026-02-18.png",
+    "title": "Касса: товары и услуги",
+    "no_data_detected": true,
+    "columns": [],
+    "structure": {
+      "table_count": 0,
+      "distinct_leaf_rows_observed": 0,
+      "table_rendering": "no_table_no_data_message"
+    },
+    "message_text": "Нет данных по вашему запросу"
+  },
+  "accepted_api_support": {
+    "checked": false,
+    "available": false,
+    "raw_capture_path": null,
+    "note": "No accepted API mapping was verified for this slice. Candidate sources remain catalog-level only."
+  },
+  "source_classification": {
+    "primary_truth": "runtime_html",
+    "secondary_support": [
+      "catalog_level_candidate_sources_only"
+    ],
+    "report_equivalence_status": "partial",
+    "safe_claim_boundary": "On 2026-02-18 the live RPT_39 runtime report opened authenticated but rendered no table and showed Нет данных по вашему запросу. Candidate API sources remain catalog-level only and were not promoted into report truth for this slice."
+  },
+  "warnings": [
+    {
+      "code": "RUNTIME_NO_DATA",
+      "severity": "medium",
+      "message": "Runtime RPT_39 rendered no data and no business table for 2026-02-18."
+    },
+    {
+      "code": "API_MAPPING_NOT_VERIFIED",
+      "severity": "high",
+      "message": "Candidate sources for RPT_39 remain catalog-level only and were not verified as report truth in this slice."
+    }
+  ]
+}

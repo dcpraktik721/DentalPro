@@ -181,3 +181,9 @@
   - `runtime_html` remains primary truth
   - annual/default unpaid-family composites remain supporting-only and not date-specific truth
   - operational status stays `usable_with_limits`
+- `RPT_39` live slice (`2026-02-18`) is now locked as:
+  - saved report `39` opened authenticated on the requested single-date slice
+  - runtime report rendered no table and showed `Нет данных по вашему запросу`
+  - `runtime_html` remains primary truth
+  - candidate API sources remain catalog-level only and not verified report truth for this slice
+  - operational status stays `usable_with_limits`

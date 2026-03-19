@@ -1,0 +1,29 @@
+{
+  "report_code": "RPT_39",
+  "report_name": "Касса: товары и услуги",
+  "date_start": "2026-02-18",
+  "date_end": "2026-02-18",
+  "generated_at": "2026-03-19T16:48:06.426Z",
+  "run_status": "success_with_warnings",
+  "primary_truth": "runtime_html",
+  "runtime_checked": true,
+  "export_checked": false,
+  "export_available": false,
+  "runtime_row_count": 0,
+  "export_row_count": null,
+  "parity_status": "not_checked",
+  "warnings": [
+    {
+      "code": "RUNTIME_NO_DATA",
+      "severity": "medium",
+      "message": "Runtime RPT_39 rendered no data and no business table for 2026-02-18."
+    },
+    {
+      "code": "API_MAPPING_NOT_VERIFIED",
+      "severity": "high",
+      "message": "Candidate sources for RPT_39 remain catalog-level only and were not verified as report truth in this slice."
+    }
+  ],
+  "safe_claim_boundary": "On 2026-02-18 the live RPT_39 runtime report opened authenticated but rendered no table and showed Нет данных по вашему запросу. Candidate API sources remain catalog-level only and were not promoted into report truth for this slice.",
+  "normalized_workbook_path": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_39_2026-02-18_normalized.xlsx"
+}

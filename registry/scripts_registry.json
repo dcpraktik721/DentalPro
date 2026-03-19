@@ -1,7 +1,7 @@
 {
   "registry_name": "scripts_registry",
-  "version": "0.4.5",
-  "status": "current_curated_registry_plus_rpt3_rpt9_rpt18_rpt24_rpt29_paths",
+  "version": "0.4.6",
+  "status": "current_curated_registry_plus_rpt3_rpt9_rpt18_rpt24_rpt29_rpt39_paths",
   "entry_schema": {
     "script_id": "",
     "path": "",
@@ -464,6 +464,59 @@
         "Keeps runtime_html as primary truth for empty-runtime slice"
       ],
       "notes": "Current workbook builder for RPT_29 single-date repo-local package"
+    },
+    {
+      "script_id": "script_run_report_rpt39_live_probe",
+      "path": "scripts/run_report_rpt39_live_probe.js",
+      "language": "node",
+      "purpose": "Run single-date live probe for RPT_39",
+      "domain": "reporting, finance, runtime",
+      "inputs": [
+        "DP_DATE via environment"
+      ],
+      "outputs": [
+        "reporting/RPT_39_live_probe_2026-02-18.json",
+        "reporting/report-39-2026-02-18-2026-02-18.json"
+      ],
+      "artifacts_produced": [
+        "reporting/RPT_39_live_probe_2026-02-18.json",
+        "reporting/report-39-2026-02-18-2026-02-18.json",
+        "reporting/report-39-2026-02-18-2026-02-18.png"
+      ],
+      "proof_scope": "proven",
+      "current_status": "current",
+      "limitations": [
+        "Single-date runtime probe only",
+        "Candidate API mappings remain catalog-level only for this slice"
+      ],
+      "notes": "Current repo-local safe path for RPT_39 single-date runtime capture"
+    },
+    {
+      "script_id": "script_build_report_rpt39_workbook",
+      "path": "scripts/build_report_rpt39_workbook.py",
+      "language": "python",
+      "purpose": "Build normalized workbook and meta sidecar for RPT_39",
+      "domain": "reporting, finance",
+      "inputs": [
+        "reporting/RPT_39_live_probe_<date>.json",
+        "reports/RPT_39_live_report_<date>.md",
+        "reports/RPT_39_problem_log_<date>.md"
+      ],
+      "outputs": [
+        "excel/RPT_39_2026-02-18_normalized.xlsx",
+        "artifacts/RPT_39_2026-02-18_meta.json"
+      ],
+      "artifacts_produced": [
+        "excel/RPT_39_2026-02-18_normalized.xlsx",
+        "artifacts/RPT_39_2026-02-18_meta.json"
+      ],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Builds from saved repo artifacts only",
+        "Keeps runtime_html as primary truth for no-data slice"
+      ],
+      "notes": "Current workbook builder for RPT_39 single-date repo-local package"
     }
   ]
 }

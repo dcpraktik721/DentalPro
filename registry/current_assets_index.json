@@ -2397,5 +2397,107 @@
     "migration_decision": "migrate_now",
     "reason": "Normalized Excel output for RPT_29 single-date slice",
     "notes": "Built only from repo-local artifacts"
+  },
+  {
+    "asset_id": "reporting_rpt39_ui_2026_02_18",
+    "title": "RPT_39 raw runtime capture for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report-39-2026-02-18-2026-02-18.json",
+    "repo_path": "reporting/report-39-2026-02-18-2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Single-date runtime primary evidence for RPT_39 on 2026-02-18",
+    "notes": "No-data slice with no runtime table"
+  },
+  {
+    "asset_id": "reporting_rpt39_live_probe_2026_02_18",
+    "title": "RPT_39 curated live probe for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_39_live_probe_2026-02-18.json",
+    "repo_path": "reporting/RPT_39_live_probe_2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Curated single-date no-data slice for RPT_39",
+    "notes": "Candidate API mappings remain unverified in this slice"
+  },
+  {
+    "asset_id": "report_rpt39_live_report_2026_02_18",
+    "title": "RPT_39 live report for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reports/RPT_39_live_report_2026-02-18.md",
+    "repo_path": "reports/RPT_39_live_report_2026-02-18.md",
+    "asset_type": "report",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Human-readable live slice report for RPT_39",
+    "notes": "Partial closure with explicit no-data boundary"
+  },
+  {
+    "asset_id": "report_rpt39_problem_log_2026_02_18",
+    "title": "RPT_39 problem log for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reports/RPT_39_problem_log_2026-02-18.md",
+    "repo_path": "reports/RPT_39_problem_log_2026-02-18.md",
+    "asset_type": "report",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Explicit no-overclaim problem registry for RPT_39",
+    "notes": "Tracks no-data runtime and unverified API mapping boundary"
+  },
+  {
+    "asset_id": "artifact_rpt39_meta_2026_02_18",
+    "title": "RPT_39 meta sidecar for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/RPT_39_2026-02-18_meta.json",
+    "repo_path": "artifacts/RPT_39_2026-02-18_meta.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Machine-readable sidecar for RPT_39 workbook package",
+    "notes": "Runtime primary, API mapping unverified"
+  },
+  {
+    "asset_id": "excel_rpt39_2026_02_18_normalized",
+    "title": "RPT_39 normalized workbook for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_39_2026-02-18_normalized.xlsx",
+    "repo_path": "excel/RPT_39_2026-02-18_normalized.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Normalized Excel output for RPT_39 single-date slice",
+    "notes": "Built only from repo-local artifacts"
   }
 ]
