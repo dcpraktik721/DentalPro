@@ -1,7 +1,7 @@
 {
   "registry_name": "scripts_registry",
-  "version": "0.4.1",
-  "status": "phase5_remaining_dossier_tabs_curated_assets_plus_rpt9_workbook",
+  "version": "0.4.2",
+  "status": "current_curated_registry_plus_rpt3_and_rpt9_workbook_paths",
   "entry_schema": {
     "script_id": "",
     "path": "",
@@ -298,6 +298,59 @@
         "Requires python3 and existing saved RPT_9 artifacts"
       ],
       "notes": "Computes repo root relative to wrapper and execs scripts/build_report_rpt9_workbook.py with \"$@\""
+    },
+    {
+      "script_id": "script_build_report_rpt3",
+      "path": "scripts/build_report_rpt3.py",
+      "language": "python",
+      "purpose": "Build normalized RPT_3 workbook and meta from live runtime/export pass",
+      "domain": "reporting, finance",
+      "inputs": [
+        "single date or date range CLI",
+        "repo-local auth refresh",
+        "runtime HTML page",
+        "optional native export"
+      ],
+      "outputs": [
+        "scripts/build_report_rpt3.py"
+      ],
+      "artifacts_produced": [
+        "excel/RPT_3_2026-02-18_normalized.xlsx",
+        "artifacts/RPT_3_2026-02-18_meta.json",
+        "artifacts/RPT_3_2026-02-18_native_export.xlsx"
+      ],
+      "proof_scope": "proven",
+      "current_status": "current",
+      "limitations": [
+        "runtime_html stays primary truth",
+        "native export is secondary parity-check layer only",
+        "i/balance must not be promoted as direct read source"
+      ],
+      "notes": "Production-safe builder for the debts-and-advances report family on accepted RPT_3 path"
+    },
+    {
+      "script_id": "tool_rpt3_wrapper",
+      "path": "tools/rpt3",
+      "language": "shell",
+      "purpose": "Repo-local executable wrapper for the RPT_3 builder",
+      "domain": "reporting",
+      "inputs": [
+        "CLI args passed through as-is"
+      ],
+      "outputs": [
+        "tools/rpt3"
+      ],
+      "artifacts_produced": [
+        "excel/RPT_3_YYYY-MM-DD_normalized.xlsx",
+        "artifacts/RPT_3_YYYY-MM-DD_meta.json"
+      ],
+      "proof_scope": "artifact_proven",
+      "current_status": "current",
+      "limitations": [
+        "Wrapper only; no standalone report logic",
+        "Requires python3 and repo-local builder"
+      ],
+      "notes": "Computes repo root relative to wrapper and execs scripts/build_report_rpt3.py with \"$@\""
     }
   ]
 }

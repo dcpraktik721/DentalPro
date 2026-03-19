@@ -159,3 +159,8 @@
   - `runtime_html` remains primary truth
   - accepted API remains supporting layer only
   - operational status stays `usable_with_limits`
+- `RPT_3` live slice (`2026-02-18`) is now locked as:
+  - runtime HTML and native export were both checked
+  - runtime/export mismatch remains explicit
+  - `runtime_html` remains primary truth
+  - operational status stays `ready_with_limits`

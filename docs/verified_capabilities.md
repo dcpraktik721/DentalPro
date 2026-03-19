@@ -73,9 +73,11 @@
   - curated report family map
   - selected governed verdicts
   - `RPT_9` normalized workbook can be rebuilt from saved repo artifacts without new live run
+  - `RPT_3` has a production-safe builder and normalized workbook on the live slice `2026-02-18`
 - limits:
   - not every report family is production-closed
   - `RPT_9` workbook keeps `runtime_html` as primary truth and accepted API as supporting layer only
+  - `RPT_3` keeps `runtime_html` as primary truth; native export is secondary parity-check only
 
 ## Runtime/auth
 

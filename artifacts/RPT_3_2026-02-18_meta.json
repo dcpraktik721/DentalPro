@@ -3,7 +3,7 @@
   "report_name": "Задолженности и авансы",
   "date_start": "2026-02-18",
   "date_end": "2026-02-18",
-  "generated_at": "2026-03-19T18:51:36",
+  "generated_at": "2026-03-19T20:38:29",
   "run_status": "success_with_warnings",
   "auth": {
     "authenticated": true,
@@ -41,7 +41,7 @@
     },
     "entry_url": "https://dcpraktik.dental-pro.online/exporter/index?plugin=reports&schema=reportsDefault&params%5Bid%5D=3&params%5Bfilter%5D=eyJpZCI6IjMiLCJkYXRlX3JhbmdlIjp7InN0YXJ0IjoiMjAyNi0wMi0xOCIsImVuZCI6IjIwMjYtMDItMTgifX0%3D",
     "process_export_url": "https://dcpraktik.dental-pro.online/exporter/process_export?plugin=reports&schema=reportsDefault&params%5Bid%5D=3&params%5Bfilter%5D=eyJpZCI6IjMiLCJkYXRlX3JhbmdlIjp7InN0YXJ0IjoiMjAyNi0wMi0xOCIsImVuZCI6IjIwMjYtMDItMTgifX0%3D",
-    "download_url": "https://dcpraktik.dental-pro.online/content/cache/dpfile_1773928321_Z6j8CpJpTD.xlsx"
+    "download_url": "https://dcpraktik.dental-pro.online/content/cache/dpfile_1773934729_5wuqWAnJVq.xlsx"
   },
   "parity": {
     "status": "mismatch_detected",

@@ -1921,5 +1921,107 @@
     "migration_decision": "migrate_now",
     "reason": "Current normalized workbook for the saved RPT_9 live slice on 2026-03-18",
     "notes": "Built from saved repo artifacts only; runtime_html remains primary truth and accepted API remains supporting layer"
+  },
+  {
+    "asset_id": "reporting_rpt3_live_probe_2026_02_18",
+    "title": "RPT_3 live probe for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/RPT_3_live_probe_2026-02-18.json",
+    "repo_path": "reporting/RPT_3_live_probe_2026-02-18.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Live runtime/API probe for RPT_3 on 2026-02-18",
+    "notes": "Primary evidence slice for report closure on this date"
+  },
+  {
+    "asset_id": "report_rpt3_live_report_2026_02_18",
+    "title": "RPT_3 live report for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reports/RPT_3_live_report_2026-02-18.md",
+    "repo_path": "reports/RPT_3_live_report_2026-02-18.md",
+    "asset_type": "report",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Human-readable governed report slice for RPT_3",
+    "notes": "Documents runtime/export mismatch and debt-source boundary"
+  },
+  {
+    "asset_id": "report_rpt3_problem_log_2026_02_18",
+    "title": "RPT_3 problem log for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reports/RPT_3_problem_log_2026-02-18.md",
+    "repo_path": "reports/RPT_3_problem_log_2026-02-18.md",
+    "asset_type": "report",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Problem log for RPT_3 live slice",
+    "notes": "Captures export/runtime mismatch and source guardrails"
+  },
+  {
+    "asset_id": "artifact_rpt3_meta_2026_02_18",
+    "title": "RPT_3 meta sidecar for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/RPT_3_2026-02-18_meta.json",
+    "repo_path": "artifacts/RPT_3_2026-02-18_meta.json",
+    "asset_type": "artifact_json",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Machine-readable sidecar for current RPT_3 run",
+    "notes": "Includes runtime/export parity and safe claim boundary"
+  },
+  {
+    "asset_id": "excel_rpt3_2026_02_18_normalized",
+    "title": "RPT_3 normalized workbook for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/excel/RPT_3_2026-02-18_normalized.xlsx",
+    "repo_path": "excel/RPT_3_2026-02-18_normalized.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Current normalized workbook for the RPT_3 live slice",
+    "notes": "Runtime HTML remains primary truth"
+  },
+  {
+    "asset_id": "artifact_rpt3_native_export_2026_02_18",
+    "title": "RPT_3 native export for 2026-02-18",
+    "source_path": "/Users/macbook15/Downloads/MacAi/DentalPro/artifacts/RPT_3_2026-02-18_native_export.xlsx",
+    "repo_path": "artifacts/RPT_3_2026-02-18_native_export.xlsx",
+    "asset_type": "artifact_xlsx",
+    "domain": [
+      "reporting",
+      "finance"
+    ],
+    "proof_status": "artifact_proven",
+    "readiness": "ready_with_limits",
+    "lifecycle": "current",
+    "migration_decision": "migrate_now",
+    "reason": "Secondary export artifact for RPT_3 parity-check layer",
+    "notes": "Not canonical by default"
   }
 ]
