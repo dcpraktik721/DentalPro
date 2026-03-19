@@ -1,0 +1,469 @@
+{
+  "generated_at": "2026-03-19T15:42:08.880Z",
+  "date_from": "2026-02-18",
+  "date_to": "2026-02-18",
+  "methods_checked": [
+    "z/pays",
+    "invoice/detail"
+  ],
+  "z_pays": {
+    "row_count": 59,
+    "sample_keys": [
+      "id",
+      "object",
+      "object_id",
+      "object_text_name",
+      "payer_id",
+      "client_id",
+      "branch_id",
+      "pay_positions",
+      "payment_date",
+      "payment_user_id",
+      "status",
+      "status_data",
+      "tooth_ids",
+      "total",
+      "total_after_discount",
+      "total_discount",
+      "doctor_id",
+      "mediline_record_id",
+      "medical_appointment_record"
+    ],
+    "page_stats": [
+      {
+        "page": 0,
+        "len": 50,
+        "total": 87434,
+        "limit": 50,
+        "paginated": true
+      },
+      {
+        "page": 1,
+        "len": 9,
+        "total": 87434,
+        "limit": 50,
+        "paginated": true
+      }
+    ],
+    "status_counts": {
+      "Оплачена": 58,
+      "Сторнирование": 1
+    },
+    "sample_rows": [
+      {
+        "id": "85999",
+        "object": "medical_appointment_records",
+        "object_id": 718281,
+        "object_text_name": "Зуб(ы):33-34, 36  Удаление имплантата",
+        "mediline_record_id": 129027,
+        "total": "920000",
+        "total_after_discount": 920000,
+        "status": 3,
+        "status_data": {
+          "color": "success",
+          "text": "Оплачена",
+          "status_date": "2026-02-18 09:53:50",
+          "is_overdue": false,
+          "fiscalregType": "ФР",
+          "paymentsTypes": "Наличная оплата"
+        },
+        "client_id": 19049,
+        "branch_id": 2,
+        "pay_positions_sample": [
+          {
+            "id": "198341",
+            "object": "medical_services",
+            "object_id": "3130",
+            "object_text_name": "Изоляция с помощью Оптрагейт",
+            "created_at": "2026-02-18 09:47:15",
+            "created_user_id": "7",
+            "cost": "95000",
+            "quantity": "1",
+            "vat": "0",
+            "is_product": "1",
+            "total": "95000",
+            "total_after_discount": "95000",
+            "total_discount": "0",
+            "total_margin": null,
+            "price_id": "45",
+            "pay_id": "85999",
+            "delete_date": null,
+            "delete_user": null,
+            "discount_value": null,
+            "modifier_type": null,
+            "modifier_id": null,
+            "norecalc": "0",
+            "allocated": null
+          },
+          {
+            "id": "198342",
+            "object": "medical_services",
+            "object_id": "3629",
+            "object_text_name": "Внутрикостная дентальная имплантация. Установка Заглушки Dentium, Osstem, Anthogyr, Medentika",
+            "created_at": "2026-02-18 09:47:15",
+            "created_user_id": "7",
+            "cost": "275000",
+            "quantity": "3",
+            "vat": "0",
+            "is_product": "0",
+            "total": "825000",
+            "total_after_discount": "825000",
+            "total_discount": "0",
+            "total_margin": null,
+            "price_id": "45",
+            "pay_id": "85999",
+            "delete_date": null,
+            "delete_user": null,
+            "discount_value": null,
+            "modifier_type": null,
+            "modifier_id": null,
+            "norecalc": "0",
+            "allocated": null
+          }
+        ],
+        "medical_appointment_record": 718281
+      },
+      {
+        "id": "86000",
+        "object": "medical_appointment_records",
+        "object_id": 718273,
+        "object_text_name": "Зуб(ы):0  Имплантация Dentium.",
+        "mediline_record_id": 129090,
+        "total": "0",
+        "total_after_discount": 0,
+        "status": 3,
+        "status_data": {
+          "color": "success",
+          "text": "Оплачена",
+          "status_date": "2026-02-18 18:42:22",
+          "is_overdue": false,
+          "fiscalregType": "Виртуальный",
+          "paymentsTypes": "Наличная оплата"
+        },
+        "client_id": 18036,
+        "branch_id": 2,
+        "pay_positions_sample": [
+          {
+            "id": "198344",
+            "object": "medical_services",
+            "object_id": "4549",
+            "object_text_name": "Прием (осмотр, консультация) врача - стоматолога",
+            "created_at": "2026-02-18 10:22:50",
+            "created_user_id": "100",
+            "cost": "0",
+            "quantity": "1",
+            "vat": "0",
+            "is_product": "1",
+            "total": "0",
+            "total_after_discount": "0",
+            "total_discount": "0",
+            "total_margin": null,
+            "price_id": "45",
+            "pay_id": "86000",
+            "delete_date": null,
+            "delete_user": null,
+            "discount_value": null,
+            "modifier_type": null,
+            "modifier_id": null,
+            "norecalc": "0",
+            "allocated": null
+          }
+        ],
+        "medical_appointment_record": 718273
+      },
+      {
+        "id": "86001",
+        "object": "xray",
+        "object_id": 29381,
+        "object_text_name": "Рентген №: 29381 Ортопантомография",
+        "mediline_record_id": null,
+        "total": "462000",
+        "total_after_discount": 0,
+        "status": 3,
+        "status_data": {
+          "color": "success",
+          "text": "Оплачена",
+          "status_date": "2026-02-18 20:00:49",
+          "is_overdue": false,
+          "fiscalregType": "Виртуальный",
+          "paymentsTypes": "Наличная оплата"
+        },
+        "client_id": 15035,
+        "branch_id": 2,
+        "pay_positions_sample": [
+          {
+            "id": "198345",
+            "object": "medical_services",
+            "object_id": "2184",
+            "object_text_name": "Ортопантомография цифровая (панорамный снимок)",
+            "created_at": "2026-02-18 10:29:56",
+            "created_user_id": "182",
+            "cost": "110000",
+            "quantity": "1",
+            "vat": null,
+            "is_product": "0",
+            "total": "110000",
+            "total_after_discount": "0",
+            "total_discount": "110000",
+            "total_margin": null,
+            "price_id": "40",
+            "pay_id": "86001",
+            "delete_date": null,
+            "delete_user": null,
+            "discount_value": "100",
+            "modifier_type": null,
+            "modifier_id": null,
+            "norecalc": "0",
+            "allocated": null
+          },
+          {
+            "id": "198346",
+            "object": "medical_services",
+            "object_id": "2185",
+            "object_text_name": "Компьютерная томография челюстно-лицевой области  8*15 (верхняя и нижняя челюсть)",
+            "created_at": "2026-02-18 10:29:56",
+            "created_user_id": "182",
+            "cost": "352000",
+            "quantity": "1",
+            "vat": null,
+            "is_product": "0",
+            "total": "352000",
+            "total_after_discount": "0",
+            "total_discount": "352000",
+            "total_margin": null,
+            "price_id": "40",
+            "pay_id": "86001",
+            "delete_date": null,
+            "delete_user": null,
+            "discount_value": "100",
+            "modifier_type": null,
+            "modifier_id": null,
+            "norecalc": "0",
+            "allocated": null
+          }
+        ],
+        "medical_appointment_record": null
+      },
+      {
+        "id": "86002",
+        "object": "xray",
+        "object_id": 29382,
+        "object_text_name": "Рентген №: 29382 Ортопантомография",
+        "mediline_record_id": null,
+        "total": "150000",
+        "total_after_discount": 0,
+        "status": 3,
+        "status_data": {
+          "color": "success",
+          "text": "Оплачена",
+          "status_date": "2026-02-18 10:58:26",
+          "is_overdue": false,
+          "fiscalregType": "Виртуальный",
+          "paymentsTypes": "Наличная оплата"
+        },
+        "client_id": 16040,
+        "branch_id": 2,
+        "pay_positions_sample": [
+          {
+            "id": "198347",
+            "object": "medical_services",
+            "object_id": "2184",
+            "object_text_name": "Ортопантомография цифровая (панорамный снимок)",
+            "created_at": "2026-02-18 10:38:49",
+            "created_user_id": "182",
+            "cost": "150000",
+            "quantity": "1",
+            "vat": null,
+            "is_product": "0",
+            "total": "150000",
+            "total_after_discount": "0",
+            "total_discount": "150000",
+            "total_margin": null,
+            "price_id": "45",
+            "pay_id": "86002",
+            "delete_date": null,
+            "delete_user": null,
+            "discount_value": "100",
+            "modifier_type": null,
+            "modifier_id": null,
+            "norecalc": "0",
+            "allocated": null
+          }
+        ],
+        "medical_appointment_record": null
+      },
+      {
+        "id": "86003",
+        "object": "xray",
+        "object_id": 29383,
+        "object_text_name": "Рентген №: 29383 Ортопантомография",
+        "mediline_record_id": null,
+        "total": "150000",
+        "total_after_discount": 0,
+        "status": 3,
+        "status_data": {
+          "color": "success",
+          "text": "Оплачена",
+          "status_date": "2026-02-18 11:09:07",
+          "is_overdue": false,
+          "fiscalregType": "ФР",
+          "paymentsTypes": "Банковская карта"
+        },
+        "client_id": 19063,
+        "branch_id": 2,
+        "pay_positions_sample": [
+          {
+            "id": "198348",
+            "object": "medical_services",
+            "object_id": "2184",
+            "object_text_name": "Ортопантомография цифровая (панорамный снимок)",
+            "created_at": "2026-02-18 10:42:53",
+            "created_user_id": "182",
+            "cost": "150000",
+            "quantity": "1",
+            "vat": null,
+            "is_product": "0",
+            "total": "150000",
+            "total_after_discount": "0",
+            "total_discount": "150000",
+            "total_margin": null,
+            "price_id": "45",
+            "pay_id": "86003",
+            "delete_date": null,
+            "delete_user": null,
+            "discount_value": "100",
+            "modifier_type": null,
+            "modifier_id": null,
+            "norecalc": "0",
+            "allocated": null
+          }
+        ],
+        "medical_appointment_record": null
+      }
+    ]
+  },
+  "invoice_detail": {
+    "sample_lookups": [
+      {
+        "id": "85999",
+        "ok": true,
+        "keys": [
+          "id",
+          "name",
+          "status",
+          "status_name",
+          "clientID",
+          "branchID",
+          "paymentDate",
+          "createdDate",
+          "total",
+          "totalAfterDiscount",
+          "totalDiscount",
+          "paymentTypes",
+          "paymentNames"
+        ],
+        "sample": {
+          "id": 85999,
+          "status": 3,
+          "total": 920000
+        }
+      },
+      {
+        "id": "86000",
+        "ok": true,
+        "keys": [
+          "id",
+          "name",
+          "status",
+          "status_name",
+          "clientID",
+          "branchID",
+          "paymentDate",
+          "createdDate",
+          "total",
+          "totalAfterDiscount",
+          "totalDiscount",
+          "paymentTypes",
+          "paymentNames"
+        ],
+        "sample": {
+          "id": 86000,
+          "status": 3,
+          "total": 0
+        }
+      },
+      {
+        "id": "86001",
+        "ok": true,
+        "keys": [
+          "id",
+          "name",
+          "status",
+          "status_name",
+          "clientID",
+          "branchID",
+          "paymentDate",
+          "createdDate",
+          "total",
+          "totalAfterDiscount",
+          "totalDiscount",
+          "paymentTypes",
+          "paymentNames"
+        ],
+        "sample": {
+          "id": 86001,
+          "status": 3,
+          "total": 462000
+        }
+      },
+      {
+        "id": "86002",
+        "ok": true,
+        "keys": [
+          "id",
+          "name",
+          "status",
+          "status_name",
+          "clientID",
+          "branchID",
+          "paymentDate",
+          "createdDate",
+          "total",
+          "totalAfterDiscount",
+          "totalDiscount",
+          "paymentTypes",
+          "paymentNames"
+        ],
+        "sample": {
+          "id": 86002,
+          "status": 3,
+          "total": 150000
+        }
+      },
+      {
+        "id": "86003",
+        "ok": true,
+        "keys": [
+          "id",
+          "name",
+          "status",
+          "status_name",
+          "clientID",
+          "branchID",
+          "paymentDate",
+          "createdDate",
+          "total",
+          "totalAfterDiscount",
+          "totalDiscount",
+          "paymentTypes",
+          "paymentNames"
+        ],
+        "sample": {
+          "id": 86003,
+          "status": 3,
+          "total": 150000
+        }
+      }
+    ]
+  }
+}

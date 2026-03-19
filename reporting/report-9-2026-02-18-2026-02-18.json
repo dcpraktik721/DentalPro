@@ -1,0 +1,465 @@
+{
+  "generated_at": "2026-03-19T15:42:06.415Z",
+  "report_url": "https://dcpraktik.dental-pro.online/reports/reports/view?id=9&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18",
+  "screenshot": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report-9-2026-02-18-2026-02-18.png",
+  "page": {
+    "title": "Квитанции без оплаты",
+    "h1": ""
+  },
+  "forms": [
+    {
+      "id": "",
+      "action": "",
+      "method": "GET",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "18.02.2026 - 18.02.2026",
+          "placeholder": "Отчётный период"
+        },
+        {
+          "tag": "input",
+          "type": "hidden",
+          "name": "date_range[start]",
+          "value": "2026-02-18",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "hidden",
+          "name": "date_range[end]",
+          "value": "2026-02-18",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "select",
+          "type": "",
+          "name": "group_by",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "select",
+          "type": "",
+          "name": "order_by",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "select",
+          "type": "",
+          "name": "order_direction",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "select",
+          "type": "",
+          "name": "status",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "hidden",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "hidden",
+          "name": "client_id",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "select",
+          "type": "",
+          "name": "seller_id",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "",
+          "value": "",
+          "placeholder": ""
+        },
+        {
+          "tag": "select",
+          "type": "",
+          "name": "updated_user_id",
+          "value": "",
+          "placeholder": ""
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "headers": [
+        "Статус квитанции / Кем изменено / Пациент",
+        "Квитанция",
+        "Филиал",
+        "Создатель квитанции",
+        "Дата создания",
+        "Дата изменения",
+        "Причина",
+        "Сумма к оплате"
+      ],
+      "rows": [
+        [
+          "Статус квитанции / Кем изменено / Пациент",
+          "Квитанция",
+          "Филиал",
+          "Создатель квитанции",
+          "Дата создания",
+          "Дата изменения",
+          "Причина",
+          "Сумма к оплате"
+        ],
+        [
+          "ИТОГО",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "0.00 ₽"
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "text": "Мой профиль",
+      "href": "https://dcpraktik.dental-pro.online/user.html"
+    },
+    {
+      "text": "Информация о зарплате",
+      "href": "https://dcpraktik.dental-pro.online/salary/journal/my"
+    },
+    {
+      "text": "Личный кабинет",
+      "href": "https://dcpraktik.dental-pro.online/dashboard/widgets/index"
+    },
+    {
+      "text": "Расписание",
+      "href": "https://dcpraktik.dental-pro.online/visits/schedule/index"
+    },
+    {
+      "text": "Сообщения 0",
+      "href": "https://dcpraktik.dental-pro.online/messages/pages/index"
+    },
+    {
+      "text": "Записи VIP-пациентов: Комплексный П.П.",
+      "href": "https://dcpraktik.dental-pro.online/cbase/index.html?record_date[start]=2026-03-19&record_date[end]=2026-03-19&manager=176&columns[]=surname&columns[]=name&columns[]=second_name&columns[]=birthday&columns[]=records"
+    },
+    {
+      "text": "Записи VIP-пациентов: Летаева К.К.",
+      "href": "https://dcpraktik.dental-pro.online/cbase/index.html?record_date[start]=2026-03-19&record_date[end]=2026-03-19&manager=219&columns[]=surname&columns[]=name&columns[]=second_name&columns[]=birthday&columns[]=records"
+    },
+    {
+      "text": "Записи VIP-пациентов: Ольховская С.В.",
+      "href": "https://dcpraktik.dental-pro.online/cbase/index.html?record_date[start]=2026-03-19&record_date[end]=2026-03-19&manager=97&columns[]=surname&columns[]=name&columns[]=second_name&columns[]=birthday&columns[]=records"
+    },
+    {
+      "text": "Записи страховых пациентов",
+      "href": "https://dcpraktik.dental-pro.online/insurance/schedule"
+    },
+    {
+      "text": "VIP-пациенты без координатора",
+      "href": "https://dcpraktik.dental-pro.online/cbase/index.html?manager=-1"
+    },
+    {
+      "text": "Список VIP-пациентов: Ольховская С.В.",
+      "href": "https://dcpraktik.dental-pro.online/vip/clients/index?id=97"
+    },
+    {
+      "text": "Список VIP-пациентов: Комплексный П.П.",
+      "href": "https://dcpraktik.dental-pro.online/vip/clients/index?id=176"
+    },
+    {
+      "text": "Список VIP-пациентов: Летаева К.К.",
+      "href": "https://dcpraktik.dental-pro.online/vip/clients/index?id=219"
+    },
+    {
+      "text": "Список пациентов",
+      "href": "https://dcpraktik.dental-pro.online/cbase/index.html"
+    },
+    {
+      "text": "Список VIP-пациентов",
+      "href": "https://dcpraktik.dental-pro.online/vip/clients/index?vm=any"
+    },
+    {
+      "text": "Группы пациентов",
+      "href": "https://dcpraktik.dental-pro.online/cbase/groups"
+    },
+    {
+      "text": "Заявки с сайта",
+      "href": "https://dcpraktik.dental-pro.online/mail/Inbox/bxforms"
+    },
+    {
+      "text": "История вызовов",
+      "href": "https://dcpraktik.dental-pro.online/callcentr/history.html"
+    },
+    {
+      "text": "СМС",
+      "href": "https://dcpraktik.dental-pro.online/sms/index.html"
+    },
+    {
+      "text": "ЦОЗ координатора: Комплексный П.П.",
+      "href": "https://dcpraktik.dental-pro.online/callcentr/Tickets/index?managerUserID=176"
+    },
+    {
+      "text": "ЦОЗ координатора: Летаева К.К.",
+      "href": "https://dcpraktik.dental-pro.online/callcentr/Tickets/index?managerUserID=219"
+    },
+    {
+      "text": "ЦОЗ координатора: Ольховская С.В.",
+      "href": "https://dcpraktik.dental-pro.online/callcentr/Tickets/index?managerUserID=97"
+    },
+    {
+      "text": "Центр обработки звонков",
+      "href": "https://dcpraktik.dental-pro.online/callcentr/Tickets/index"
+    },
+    {
+      "text": "Карты пациентов",
+      "href": "https://dcpraktik.dental-pro.online/medblock/cards/index"
+    },
+    {
+      "text": "Задачи 0",
+      "href": "https://dcpraktik.dental-pro.online/task/Task/open"
+    },
+    {
+      "text": "Склад",
+      "href": "https://dcpraktik.dental-pro.online/warehouse/Requests/index"
+    },
+    {
+      "text": "Отчёты",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index"
+    },
+    {
+      "text": "Светофоры",
+      "href": "https://dcpraktik.dental-pro.online/semaphore/pages/index"
+    },
+    {
+      "text": "Dental Store 0",
+      "href": "https://dcpraktik.dental-pro.online/billing/index"
+    },
+    {
+      "text": "Касса",
+      "href": "https://dcpraktik.dental-pro.online/cashbox/index"
+    },
+    {
+      "text": "Рентген кабинет",
+      "href": "https://dcpraktik.dental-pro.online/xray/Images/index"
+    },
+    {
+      "text": "Журнал зарплат",
+      "href": "https://dcpraktik.dental-pro.online/salary/journal/index"
+    },
+    {
+      "text": "Настройка расчета зарплат",
+      "href": "https://dcpraktik.dental-pro.online/salary/settings/index"
+    },
+    {
+      "text": "Расчет зарплат",
+      "href": "https://dcpraktik.dental-pro.online/salary/calculation/index"
+    },
+    {
+      "text": "Табель",
+      "href": "https://dcpraktik.dental-pro.online/timesheet/Timesheets/index"
+    },
+    {
+      "text": "Магазин",
+      "href": "https://dcpraktik.dental-pro.online/iblock/Market/index?action=all&page=0"
+    },
+    {
+      "text": "Каталог",
+      "href": "https://dcpraktik.dental-pro.online/iblock/Iblocks/iblockList"
+    },
+    {
+      "text": "Настройки",
+      "href": "https://dcpraktik.dental-pro.online/iblock/Iblocks/index"
+    },
+    {
+      "text": "Личный кабинет",
+      "href": "https://dcpraktik.dental-pro.online/dashboard/widgets/index"
+    },
+    {
+      "text": "Отчётный модуль",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index"
+    },
+    {
+      "text": "Поиск по пациентам",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Отложенная запись",
+      "href": "https://dcpraktik.dental-pro.online/holdrecord/ajax.json?action=add"
+    },
+    {
+      "text": "Вернуться к списку",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/index?group=financial"
+    },
+    {
+      "text": "Печать",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/view?id=9&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18#"
+    },
+    {
+      "text": "Редактировать",
+      "href": "https://dcpraktik.dental-pro.online/reports/reports/edit?id=9"
+    },
+    {
+      "text": "Экспорт в Excel",
+      "href": "https://dcpraktik.dental-pro.online/exporter/index?plugin=reports&schema=reportsDefault&params%5Bid%5D=9&params%5Bfilter%5D=eyJpZCI6IjkiLCJkYXRlX3JhbmdlIjp7InN0YXJ0IjoiMjAyNi0wMi0xOCIsImVuZCI6IjIwMjYtMDItMTgifX0%3D"
+    },
+    {
+      "text": "По статусу квитанции",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "По алфавиту",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "По возрастанию",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Выберите значение",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Кликните, чтобы начать поиск",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Выберите значение",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "Выберите значение",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "0",
+      "href": "https://dcpraktik.dental-pro.online/notification/notifications/sidebar"
+    },
+    {
+      "text": "",
+      "href": "https://dcpraktik.dental-pro.online/search/sidepage"
+    },
+    {
+      "text": "",
+      "href": "https://dcpraktik.dental-pro.online/dentalpro/settings/freeDoctors"
+    },
+    {
+      "text": "",
+      "href": "https://dcpraktik.dental-pro.online/support/sidebar/index"
+    },
+    {
+      "text": "",
+      "href": "https://dcpraktik.dental-pro.online/dentalpro/settings/menu"
+    }
+  ],
+  "api_requests": []
+}

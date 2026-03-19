@@ -84,6 +84,9 @@ def build_summary_rows(curated: dict[str, Any], raw_api: dict[str, Any]) -> list
     api_support = curated["accepted_api_support"]
     auth = curated["auth"]
     sc = curated["source_classification"]
+    group_row = runtime.get("observed_group_row") or {}
+    target_invoice = api_support.get("targeted_invoice_detail") or {}
+    target_pay = api_support.get("targeted_z_pays_match") or {}
     return [
         {"section": "run", "metric": "report_code", "value": curated["report_code"], "notes": ""},
         {"section": "run", "metric": "report_name", "value": curated["report_name"], "notes": ""},
@@ -98,17 +101,17 @@ def build_summary_rows(curated: dict[str, Any], raw_api: dict[str, Any]) -> list
         {"section": "runtime", "metric": "table_rendering", "value": runtime["structure"]["table_rendering"], "notes": ""},
         {"section": "runtime", "metric": "distinct_leaf_rows_observed", "value": runtime["structure"]["distinct_leaf_rows_observed"], "notes": ""},
         {"section": "runtime", "metric": "observed_group_levels", "value": " -> ".join(runtime["structure"]["group_levels"]), "notes": ""},
-        {"section": "runtime", "metric": "branch_group", "value": runtime["observed_group_row"]["branch"], "notes": ""},
-        {"section": "runtime", "metric": "status_group", "value": runtime["observed_group_row"]["status_group"], "notes": ""},
-        {"section": "runtime", "metric": "creator_group", "value": runtime["observed_group_row"]["creator_group"], "notes": ""},
-        {"section": "runtime", "metric": "patient_group", "value": runtime["observed_group_row"]["patient_group"], "notes": ""},
-        {"section": "runtime", "metric": "leaf_invoice_id", "value": runtime["observed_leaf_row"]["cashbox_form_id"], "notes": ""},
-        {"section": "runtime", "metric": "leaf_patient_id", "value": runtime["observed_leaf_row"]["patient_id"], "notes": ""},
-        {"section": "runtime", "metric": "leaf_amount_due", "value": runtime["observed_leaf_row"]["amount_due"], "notes": ""},
+        {"section": "runtime", "metric": "branch_group", "value": group_row.get("branch"), "notes": ""},
+        {"section": "runtime", "metric": "status_group", "value": group_row.get("status_group"), "notes": ""},
+        {"section": "runtime", "metric": "creator_group", "value": group_row.get("creator_group"), "notes": ""},
+        {"section": "runtime", "metric": "patient_group", "value": group_row.get("patient_group"), "notes": ""},
+        {"section": "runtime", "metric": "leaf_invoice_id", "value": (runtime.get("observed_leaf_row") or {}).get("cashbox_form_id"), "notes": ""},
+        {"section": "runtime", "metric": "leaf_patient_id", "value": (runtime.get("observed_leaf_row") or {}).get("patient_id"), "notes": ""},
+        {"section": "runtime", "metric": "leaf_amount_due", "value": (runtime.get("observed_leaf_row") or {}).get("amount_due"), "notes": ""},
         {"section": "api", "metric": "z_pays_date_row_count", "value": api_support["z_pays_date_row_count"], "notes": "broader than report output"},
         {"section": "api", "metric": "z_pays_status_counts", "value": api_support["z_pays_status_counts"], "notes": ""},
-        {"section": "api", "metric": "target_invoice_status_name", "value": api_support["targeted_invoice_detail"]["status_name"], "notes": ""},
-        {"section": "api", "metric": "target_z_pays_status_text", "value": api_support["targeted_z_pays_match"]["status_text"], "notes": ""},
+        {"section": "api", "metric": "target_invoice_status_name", "value": target_invoice.get("status_name"), "notes": ""},
+        {"section": "api", "metric": "target_z_pays_status_text", "value": target_pay.get("status_text"), "notes": ""},
         {"section": "api", "metric": "missing_fields", "value": api_support["missing_fields_in_accepted_api"], "notes": "not proven via accepted APIs"},
         {"section": "boundary", "metric": "report_equivalence_status", "value": sc["report_equivalence_status"], "notes": ""},
         {"section": "boundary", "metric": "safe_claim_boundary", "value": sc["safe_claim_boundary"], "notes": ""},
@@ -117,8 +120,35 @@ def build_summary_rows(curated: dict[str, Any], raw_api: dict[str, Any]) -> list
 
 
 def build_normalized_rows(curated: dict[str, Any]) -> list[dict[str, Any]]:
-    row = curated["runtime"]["observed_leaf_row"]
-    api = curated["accepted_api_support"]
+    row = curated["runtime"].get("observed_leaf_row")
+    api = curated.get("accepted_api_support", {})
+    if not row:
+        return [
+            {
+                "report_code": curated["report_code"],
+                "report_name": curated["report_name"],
+                "date_start": curated["date_start"],
+                "date_end": curated["date_end"],
+                "row_source": "runtime_html",
+                "row_index": None,
+                "patient_name": None,
+                "patient_id": None,
+                "invoice_id": None,
+                "invoice_name": None,
+                "branch": None,
+                "creator_name": None,
+                "created_at": None,
+                "changed_at": None,
+                "reason": None,
+                "amount_due": None,
+                "status_group": None,
+                "invoice_detail_status_name": None,
+                "z_pays_status_text": None,
+                "runtime_api_identity_match": None,
+                "updater_history_semantics_status": "not_proven",
+                "notes": "runtime report rendered with no leaf rows for this date",
+            }
+        ]
     return [
         {
             "report_code": curated["report_code"],
@@ -138,8 +168,8 @@ def build_normalized_rows(curated: dict[str, Any]) -> list[dict[str, Any]]:
             "reason": row["reason"],
             "amount_due": row["amount_due"],
             "status_group": row["status_group"],
-            "invoice_detail_status_name": api["targeted_invoice_detail"]["status_name"],
-            "z_pays_status_text": api["targeted_z_pays_match"]["status_text"],
+            "invoice_detail_status_name": api.get("targeted_invoice_detail", {}).get("status_name"),
+            "z_pays_status_text": api.get("targeted_z_pays_match", {}).get("status_text"),
             "runtime_api_identity_match": True,
             "updater_history_semantics_status": "not_proven",
             "notes": "single observed leaf row for this date",
@@ -148,8 +178,18 @@ def build_normalized_rows(curated: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def build_group_rows(curated: dict[str, Any]) -> list[dict[str, Any]]:
-    group = curated["runtime"]["observed_group_row"]
+    group = curated["runtime"].get("observed_group_row")
     structure = curated["runtime"]["structure"]
+    if not group:
+        return [
+            {
+                "group_level_index": None,
+                "group_level_name": "no_groups",
+                "group_value": None,
+                "group_amount": None,
+                "notes": "runtime report contained no grouped business rows on this date",
+            }
+        ]
     rows = []
     for idx, level in enumerate(structure["group_levels"], start=1):
         key = {
@@ -171,8 +211,8 @@ def build_group_rows(curated: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def build_api_rows(curated: dict[str, Any], raw_api: dict[str, Any]) -> list[dict[str, Any]]:
-    target_invoice = curated["accepted_api_support"]["targeted_invoice_detail"]
-    target_pay = curated["accepted_api_support"]["targeted_z_pays_match"]
+    target_invoice = curated["accepted_api_support"].get("targeted_invoice_detail")
+    target_pay = curated["accepted_api_support"].get("targeted_z_pays_match")
     rows = [
         {
             "layer": "z_pays_summary",
@@ -187,10 +227,12 @@ def build_api_rows(curated: dict[str, Any], raw_api: dict[str, Any]) -> list[dic
             "notes": "",
         },
     ]
-    for key, value in target_invoice.items():
-        rows.append({"layer": "invoice_detail_targeted", "field": key, "value": value, "notes": "invoice 87642"})
-    for key, value in target_pay.items():
-        rows.append({"layer": "z_pays_targeted", "field": key, "value": value, "notes": "invoice 87642"})
+    if target_invoice:
+        for key, value in target_invoice.items():
+            rows.append({"layer": "invoice_detail_targeted", "field": key, "value": value, "notes": "targeted invoice"})
+    if target_pay:
+        for key, value in target_pay.items():
+            rows.append({"layer": "z_pays_targeted", "field": key, "value": value, "notes": "targeted invoice"})
     for missing in curated["accepted_api_support"]["missing_fields_in_accepted_api"]:
         rows.append({"layer": "accepted_api_gap", "field": missing, "value": "missing", "notes": "not exposed as direct accepted read field"})
     if raw_api["invoice_detail"].get("sample_lookups"):
@@ -236,7 +278,7 @@ def build_notes_rows(date: str) -> list[dict[str, Any]]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", default="2026-03-18")
-    parser.add_argument("--output", default=str(EXCEL_DIR / "RPT_9_2026-03-18_normalized.xlsx"))
+    parser.add_argument("--output")
     args = parser.parse_args()
 
     date = args.date
@@ -270,7 +312,7 @@ def main() -> None:
     for ws in wb.worksheets:
         autofit(ws)
 
-    output_path = Path(args.output)
+    output_path = Path(args.output) if args.output else EXCEL_DIR / f"RPT_9_{date}_normalized.xlsx"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     wb.save(output_path)
     load_workbook(output_path)

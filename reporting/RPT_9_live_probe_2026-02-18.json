@@ -1,0 +1,92 @@
+{
+  "report_code": "RPT_9",
+  "report_name": "Квитанции без оплаты",
+  "date_start": "2026-02-18",
+  "date_end": "2026-02-18",
+  "generated_at": "2026-03-19T15:44:11.774498+00:00",
+  "run_status": "success_with_warnings",
+  "auth": {
+    "authenticated": true,
+    "final_url": "https://dcpraktik.dental-pro.online/visits/schedule/week",
+    "success_reason": "authenticated_shell_detected_without_day_marker",
+    "authenticated_shell_detected": true
+  },
+  "runtime": {
+    "url": "https://dcpraktik.dental-pro.online/reports/reports/view?id=9&date_range%5Bstart%5D=2026-02-18&date_range%5Bend%5D=2026-02-18",
+    "raw_capture_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report-9-2026-02-18-2026-02-18.json",
+    "screenshot_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report-9-2026-02-18-2026-02-18.png",
+    "title": "Квитанции без оплаты",
+    "columns": [
+      "Статус квитанции / Кем изменено / Пациент",
+      "Квитанция",
+      "Филиал",
+      "Создатель квитанции",
+      "Дата создания",
+      "Дата изменения",
+      "Причина",
+      "Сумма к оплате"
+    ],
+    "structure": {
+      "group_levels": [],
+      "distinct_leaf_rows_observed": 0,
+      "table_rendering": "single_summary_table"
+    },
+    "empty_report_observed": true,
+    "observed_group_row": null,
+    "observed_leaf_row": null,
+    "totals_row": {
+      "label": "ИТОГО",
+      "amount_due": 0.0
+    }
+  },
+  "cashbox_detail_support": {
+    "detail_url": null,
+    "tabs_observed": [],
+    "history_table_observed": null,
+    "history_rows_observed": null,
+    "note": "No runtime drilldown row existed on this date, so hidden history layer was not sampled in this pass."
+  },
+  "accepted_api_support": {
+    "raw_capture_path": "/Users/macbook15/Downloads/MacAi/DentalPro/reporting/report-9-api-analysis-2026-02-18-2026-02-18.json",
+    "z_pays_date_row_count": 59,
+    "z_pays_status_counts": {
+      "Оплачена": 58,
+      "Сторнирование": 1
+    },
+    "targeted_invoice_detail": null,
+    "targeted_z_pays_match": null,
+    "missing_fields_in_accepted_api": [
+      "updated_user_id",
+      "updated_user_name",
+      "reason",
+      "history[]"
+    ]
+  },
+  "source_classification": {
+    "primary_truth": "runtime_html",
+    "secondary_support": [
+      "z/pays",
+      "invoice/detail",
+      "cashbox/forms/detail"
+    ],
+    "report_equivalence_status": "partial",
+    "safe_claim_boundary": "On 2026-02-18 the live RPT_9 runtime report rendered as an empty report with only an ИТОГО row. Accepted finance APIs still returned broader same-date pay rows, so API output must remain supporting evidence only and not report truth."
+  },
+  "warnings": [
+    {
+      "code": "RUNTIME_EMPTY_REPORT",
+      "severity": "medium",
+      "message": "Runtime RPT_9 rendered no business leaf rows on 2026-02-18; only totals row was present."
+    },
+    {
+      "code": "API_BROADER_THAN_REPORT",
+      "severity": "high",
+      "message": "z/pays for the same date returns 59 finance rows, which is broader than the empty runtime report output."
+    },
+    {
+      "code": "UPDATER_HISTORY_NOT_PROVEN",
+      "severity": "high",
+      "message": "Accepted APIs still do not expose updater/reason/history semantics one-to-one with RPT_9 UI columns."
+    }
+  ]
+}

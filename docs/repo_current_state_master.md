@@ -155,7 +155,8 @@
   - February partial only
   - not fully internalized as repo SoT
 - `RPT_9` workbook slice is now locked as:
-  - built from saved `2026-03-18` runtime/API artifacts only
+  - built from saved repo artifacts only
+  - validated on `2026-03-18` non-empty slice and `2026-02-18` empty-runtime slice
   - `runtime_html` remains primary truth
   - accepted API remains supporting layer only
   - operational status stays `usable_with_limits`

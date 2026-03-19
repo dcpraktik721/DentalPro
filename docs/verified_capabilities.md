@@ -72,7 +72,7 @@
 - proven:
   - curated report family map
   - selected governed verdicts
-  - `RPT_9` normalized workbook can be rebuilt from saved repo artifacts without new live run
+  - `RPT_9` normalized workbook can be rebuilt from saved repo artifacts without new live run, including the `2026-02-18` empty-runtime slice
   - `RPT_3` has a production-safe builder and normalized workbook on the live slice `2026-02-18`
 - limits:
   - not every report family is production-closed

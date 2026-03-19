@@ -265,6 +265,7 @@
         "scripts/build_report_rpt9_workbook.py"
       ],
       "artifacts_produced": [
+        "excel/RPT_9_2026-02-18_normalized.xlsx",
         "excel/RPT_9_2026-03-18_normalized.xlsx"
       ],
       "proof_scope": "artifact_proven",
@@ -272,9 +273,10 @@
       "limitations": [
         "Does not run live DentalPRO extraction",
         "Keeps runtime_html as primary truth and accepted API as supporting layer only",
+        "Handles empty runtime slices by emitting placeholder normalized rows",
         "RPT_9 remains usable_with_limits rather than fully closed"
       ],
-      "notes": "Repo-local workbook rebuild for RPT_9 from saved 2026-03-18 artifacts"
+      "notes": "Repo-local workbook rebuild for RPT_9 from saved artifacts; validated on 2026-02-18 empty-runtime slice and 2026-03-18 non-empty slice"
     },
     {
       "script_id": "tool_rpt9_wrapper",
@@ -295,7 +297,8 @@
       "current_status": "current",
       "limitations": [
         "Wrapper only; no standalone report logic",
-        "Requires python3 and existing saved RPT_9 artifacts"
+        "Requires python3 and existing saved RPT_9 artifacts",
+        "Does not perform live DentalPRO extraction"
       ],
       "notes": "Computes repo root relative to wrapper and execs scripts/build_report_rpt9_workbook.py with \"$@\""
     },

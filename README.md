@@ -153,6 +153,7 @@ Wrapper:
 Repo-local wrapper для `RPT_9` workbook:
 
 ```bash
+./tools/rpt9 --date 2026-02-18
 ./tools/rpt9 --date 2026-03-18
 ```
 
